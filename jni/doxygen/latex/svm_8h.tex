@@ -1,0 +1,335 @@
+\hypertarget{svm_8h}{\section{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M/svm.h File Reference}
+\label{svm_8h}\index{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M/svm.\-h@{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M/svm.\-h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsvm__node}{svm\-\_\-node}
+\item 
+struct \hyperlink{structsvm__problem}{svm\-\_\-problem}
+\item 
+struct \hyperlink{structsvm__parameter}{svm\-\_\-parameter}
+\item 
+struct \hyperlink{structsvm__model}{svm\-\_\-model}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{svm_8h_ac7f5361b69ddd196a885f142b3c1d261}{L\-I\-B\-S\-V\-M\-\_\-\-V\-E\-R\-S\-I\-O\-N}~311
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+\hyperlink{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7a89cc33eead98f5e072fd76dcdb8da6f8}{C\-\_\-\-S\-V\-C}, 
+\hyperlink{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7aca90881af01036a7221b791eb08d03fc}{N\-U\-\_\-\-S\-V\-C}, 
+\hyperlink{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7a8bfb80856312eb703072e02f7ebd5e6b}{O\-N\-E\-\_\-\-C\-L\-A\-S\-S}, 
+\hyperlink{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7ae8edabc208c6076619bdfb064b68815a}{E\-P\-S\-I\-L\-O\-N\-\_\-\-S\-V\-R}, 
+\\*
+\hyperlink{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7a9e113c85baa91dc44fe128028e384309}{N\-U\-\_\-\-S\-V\-R}, 
+\hyperlink{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7aa35451af521dcff7d09b914a6b1bbe62}{O\-P\-E\-N\-\_\-\-S\-E\-T}, 
+\hyperlink{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7a9f6367cda57e21e3d72236892fd9da37}{W\-S\-V\-M}, 
+\hyperlink{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7a857b03c85633fd1e9a98cec0a4f5379d}{O\-P\-E\-N\-\_\-\-B\-S\-E\-T}
+ \}
+\item 
+enum \{ \\*
+\hyperlink{svm_8h_a99fb83031ce9923c84392b4e92f956b5adc101ebf31c49c2d4b80b7c6f59f22cb}{L\-I\-N\-E\-A\-R}, 
+\hyperlink{svm_8h_a99fb83031ce9923c84392b4e92f956b5a7d85766d041d397d096dcbc0d7c793fd}{P\-O\-L\-Y}, 
+\hyperlink{svm_8h_a99fb83031ce9923c84392b4e92f956b5a7e039b006aa5830e8c45a1ccd0c4204f}{R\-B\-F}, 
+\hyperlink{svm_8h_a99fb83031ce9923c84392b4e92f956b5a11c1096689b7d3504dbcc4f61d854883}{S\-I\-G\-M\-O\-I\-D}, 
+\\*
+\hyperlink{svm_8h_a99fb83031ce9923c84392b4e92f956b5a27a6ccce9f5a44692a040b08a6923285}{P\-R\-E\-C\-O\-M\-P\-U\-T\-E\-D}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$ \hyperlink{svm_8h_a79ce3e65d01f2be1a4e5288c588c48a8}{svm\-\_\-train} (const struct \hyperlink{structsvm__problem}{svm\-\_\-problem} $\ast$\hyperlink{_2svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}, const struct \hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param})
+\item 
+void \hyperlink{svm_8h_abe12fd0b263f0b31fdce8d48d9c38a32}{svm\-\_\-cross\-\_\-validation} (const struct \hyperlink{structsvm__problem}{svm\-\_\-problem} $\ast$\hyperlink{_2svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}, const struct \hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param}, int \hyperlink{_2svm-train_8cpp_a8e8ea59d1060e411ced9b25867c66651}{nr\-\_\-fold}, double $\ast$target)
+\item 
+int \hyperlink{svm_8h_ae6aefb92d3b0b1a5158bd4b15ca8f8e2}{svm\-\_\-save\-\_\-model} (const char $\ast$model\-\_\-file\-\_\-name, const struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model})
+\item 
+struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$ \hyperlink{svm_8h_a569bb1a06e5181dfb19d66587463af4b}{svm\-\_\-load\-\_\-model} (const char $\ast$model\-\_\-file\-\_\-name)
+\item 
+int \hyperlink{svm_8h_add0a326d36e24044cf958a420d6f4e19}{svm\-\_\-get\-\_\-svm\-\_\-type} (const struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model})
+\item 
+int \hyperlink{svm_8h_a73c7339cbc8a38eb9f1e8ad6fbe11ae8}{svm\-\_\-get\-\_\-nr\-\_\-class} (const struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model})
+\item 
+void \hyperlink{svm_8h_a1eafdf09b884847a04a72cf22ddb95f2}{svm\-\_\-get\-\_\-labels} (const struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model}, int $\ast$label)
+\item 
+double \hyperlink{svm_8h_a3f15a9a6c23b2f0927fc48ef2f549001}{svm\-\_\-get\-\_\-svr\-\_\-probability} (const struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model})
+\item 
+double \hyperlink{svm_8h_aa34079376b55cfef083b8ff523d77f55}{svm\-\_\-predict\-\_\-values} (const struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model}, const struct \hyperlink{structsvm__node}{svm\-\_\-node} $\ast$\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, double $\ast$dec\-\_\-values)
+\item 
+double \hyperlink{svm_8h_a21101855995845e86b8b663e119478dc}{svm\-\_\-predict\-\_\-values\-\_\-extended} (const struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model}, const struct \hyperlink{structsvm__node}{svm\-\_\-node} $\ast$\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, double $\ast$\&dec\-\_\-values, double $\ast$$\ast$\&scores, int $\ast$\&vote)
+\item 
+double \hyperlink{svm_8h_af7c913d98f7cd411b147f8990a97f576}{svm\-\_\-predict} (const struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model}, const struct \hyperlink{structsvm__node}{svm\-\_\-node} $\ast$\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x})
+\item 
+double \hyperlink{svm_8h_a5b3a84b86101b041773e05c1138d365e}{svm\-\_\-predict\-\_\-extended} (const struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model}, const struct \hyperlink{structsvm__node}{svm\-\_\-node} $\ast$\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, double $\ast$$\ast$\&scores, int $\ast$\&vote)
+\item 
+double \hyperlink{svm_8h_a301070a1fda12e1257d76c08f97322a5}{svm\-\_\-predict\-\_\-probability} (const struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model}, const struct \hyperlink{structsvm__node}{svm\-\_\-node} $\ast$\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, double $\ast$prob\-\_\-estimates)
+\item 
+void \hyperlink{svm_8h_a851dce2f69b666a414d67e0edef3ead9}{svm\-\_\-free\-\_\-model\-\_\-content} (struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$model\-\_\-ptr)
+\item 
+void \hyperlink{svm_8h_afa14733010ded94cc8f2ba177b0b24c8}{svm\-\_\-free\-\_\-and\-\_\-destroy\-\_\-model} (struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$$\ast$model\-\_\-ptr\-\_\-ptr)
+\item 
+void \hyperlink{svm_8h_aaf17ba299f99cb74dc97f64bb29f4c06}{svm\-\_\-destroy\-\_\-param} (struct \hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param})
+\item 
+const char $\ast$ \hyperlink{svm_8h_aa72a8c645b58830df32383fd1835aad0}{svm\-\_\-check\-\_\-parameter} (const struct \hyperlink{structsvm__problem}{svm\-\_\-problem} $\ast$\hyperlink{_2svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}, const struct \hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param})
+\item 
+int \hyperlink{svm_8h_aeb231380b36264637caeccdae4fbad1a}{svm\-\_\-check\-\_\-probability\-\_\-model} (const struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model})
+\item 
+void \hyperlink{svm_8h_a308f7948988441f4a1a5c8c8abc367be}{svm\-\_\-set\-\_\-print\-\_\-string\-\_\-function} (void($\ast$print\-\_\-func)(const char $\ast$))
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{svm_8h_a9ba41253b462f42e64917cc38e0f2cc7}{libsvm\-\_\-version}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{svm_8h_ac7f5361b69ddd196a885f142b3c1d261}{\index{svm.\-h@{svm.\-h}!L\-I\-B\-S\-V\-M\-\_\-\-V\-E\-R\-S\-I\-O\-N@{L\-I\-B\-S\-V\-M\-\_\-\-V\-E\-R\-S\-I\-O\-N}}
+\index{L\-I\-B\-S\-V\-M\-\_\-\-V\-E\-R\-S\-I\-O\-N@{L\-I\-B\-S\-V\-M\-\_\-\-V\-E\-R\-S\-I\-O\-N}!svm.h@{svm.\-h}}
+\subsubsection[{L\-I\-B\-S\-V\-M\-\_\-\-V\-E\-R\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-I\-B\-S\-V\-M\-\_\-\-V\-E\-R\-S\-I\-O\-N~311}}\label{svm_8h_ac7f5361b69ddd196a885f142b3c1d261}
+
+
+Definition at line 4 of file svm.\-h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{C\-\_\-\-S\-V\-C@{C\-\_\-\-S\-V\-C}!svm.\-h@{svm.\-h}}\index{svm.\-h@{svm.\-h}!C\-\_\-\-S\-V\-C@{C\-\_\-\-S\-V\-C}}\item[{\em 
+\hypertarget{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7a89cc33eead98f5e072fd76dcdb8da6f8}{C\-\_\-\-S\-V\-C}\label{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7a89cc33eead98f5e072fd76dcdb8da6f8}
+}]\index{N\-U\-\_\-\-S\-V\-C@{N\-U\-\_\-\-S\-V\-C}!svm.\-h@{svm.\-h}}\index{svm.\-h@{svm.\-h}!N\-U\-\_\-\-S\-V\-C@{N\-U\-\_\-\-S\-V\-C}}\item[{\em 
+\hypertarget{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7aca90881af01036a7221b791eb08d03fc}{N\-U\-\_\-\-S\-V\-C}\label{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7aca90881af01036a7221b791eb08d03fc}
+}]\index{O\-N\-E\-\_\-\-C\-L\-A\-S\-S@{O\-N\-E\-\_\-\-C\-L\-A\-S\-S}!svm.\-h@{svm.\-h}}\index{svm.\-h@{svm.\-h}!O\-N\-E\-\_\-\-C\-L\-A\-S\-S@{O\-N\-E\-\_\-\-C\-L\-A\-S\-S}}\item[{\em 
+\hypertarget{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7a8bfb80856312eb703072e02f7ebd5e6b}{O\-N\-E\-\_\-\-C\-L\-A\-S\-S}\label{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7a8bfb80856312eb703072e02f7ebd5e6b}
+}]\index{E\-P\-S\-I\-L\-O\-N\-\_\-\-S\-V\-R@{E\-P\-S\-I\-L\-O\-N\-\_\-\-S\-V\-R}!svm.\-h@{svm.\-h}}\index{svm.\-h@{svm.\-h}!E\-P\-S\-I\-L\-O\-N\-\_\-\-S\-V\-R@{E\-P\-S\-I\-L\-O\-N\-\_\-\-S\-V\-R}}\item[{\em 
+\hypertarget{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7ae8edabc208c6076619bdfb064b68815a}{E\-P\-S\-I\-L\-O\-N\-\_\-\-S\-V\-R}\label{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7ae8edabc208c6076619bdfb064b68815a}
+}]\index{N\-U\-\_\-\-S\-V\-R@{N\-U\-\_\-\-S\-V\-R}!svm.\-h@{svm.\-h}}\index{svm.\-h@{svm.\-h}!N\-U\-\_\-\-S\-V\-R@{N\-U\-\_\-\-S\-V\-R}}\item[{\em 
+\hypertarget{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7a9e113c85baa91dc44fe128028e384309}{N\-U\-\_\-\-S\-V\-R}\label{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7a9e113c85baa91dc44fe128028e384309}
+}]\index{O\-P\-E\-N\-\_\-\-S\-E\-T@{O\-P\-E\-N\-\_\-\-S\-E\-T}!svm.\-h@{svm.\-h}}\index{svm.\-h@{svm.\-h}!O\-P\-E\-N\-\_\-\-S\-E\-T@{O\-P\-E\-N\-\_\-\-S\-E\-T}}\item[{\em 
+\hypertarget{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7aa35451af521dcff7d09b914a6b1bbe62}{O\-P\-E\-N\-\_\-\-S\-E\-T}\label{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7aa35451af521dcff7d09b914a6b1bbe62}
+}]\index{W\-S\-V\-M@{W\-S\-V\-M}!svm.\-h@{svm.\-h}}\index{svm.\-h@{svm.\-h}!W\-S\-V\-M@{W\-S\-V\-M}}\item[{\em 
+\hypertarget{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7a9f6367cda57e21e3d72236892fd9da37}{W\-S\-V\-M}\label{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7a9f6367cda57e21e3d72236892fd9da37}
+}]\index{O\-P\-E\-N\-\_\-\-B\-S\-E\-T@{O\-P\-E\-N\-\_\-\-B\-S\-E\-T}!svm.\-h@{svm.\-h}}\index{svm.\-h@{svm.\-h}!O\-P\-E\-N\-\_\-\-B\-S\-E\-T@{O\-P\-E\-N\-\_\-\-B\-S\-E\-T}}\item[{\em 
+\hypertarget{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7a857b03c85633fd1e9a98cec0a4f5379d}{O\-P\-E\-N\-\_\-\-B\-S\-E\-T}\label{svm_8h_adf764cbdea00d65edcd07bb9953ad2b7a857b03c85633fd1e9a98cec0a4f5379d}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 23 of file svm.\-h.
+
+\hypertarget{svm_8h_a99fb83031ce9923c84392b4e92f956b5}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{svm_8h_a99fb83031ce9923c84392b4e92f956b5}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{L\-I\-N\-E\-A\-R@{L\-I\-N\-E\-A\-R}!svm.\-h@{svm.\-h}}\index{svm.\-h@{svm.\-h}!L\-I\-N\-E\-A\-R@{L\-I\-N\-E\-A\-R}}\item[{\em 
+\hypertarget{svm_8h_a99fb83031ce9923c84392b4e92f956b5adc101ebf31c49c2d4b80b7c6f59f22cb}{L\-I\-N\-E\-A\-R}\label{svm_8h_a99fb83031ce9923c84392b4e92f956b5adc101ebf31c49c2d4b80b7c6f59f22cb}
+}]\index{P\-O\-L\-Y@{P\-O\-L\-Y}!svm.\-h@{svm.\-h}}\index{svm.\-h@{svm.\-h}!P\-O\-L\-Y@{P\-O\-L\-Y}}\item[{\em 
+\hypertarget{svm_8h_a99fb83031ce9923c84392b4e92f956b5a7d85766d041d397d096dcbc0d7c793fd}{P\-O\-L\-Y}\label{svm_8h_a99fb83031ce9923c84392b4e92f956b5a7d85766d041d397d096dcbc0d7c793fd}
+}]\index{R\-B\-F@{R\-B\-F}!svm.\-h@{svm.\-h}}\index{svm.\-h@{svm.\-h}!R\-B\-F@{R\-B\-F}}\item[{\em 
+\hypertarget{svm_8h_a99fb83031ce9923c84392b4e92f956b5a7e039b006aa5830e8c45a1ccd0c4204f}{R\-B\-F}\label{svm_8h_a99fb83031ce9923c84392b4e92f956b5a7e039b006aa5830e8c45a1ccd0c4204f}
+}]\index{S\-I\-G\-M\-O\-I\-D@{S\-I\-G\-M\-O\-I\-D}!svm.\-h@{svm.\-h}}\index{svm.\-h@{svm.\-h}!S\-I\-G\-M\-O\-I\-D@{S\-I\-G\-M\-O\-I\-D}}\item[{\em 
+\hypertarget{svm_8h_a99fb83031ce9923c84392b4e92f956b5a11c1096689b7d3504dbcc4f61d854883}{S\-I\-G\-M\-O\-I\-D}\label{svm_8h_a99fb83031ce9923c84392b4e92f956b5a11c1096689b7d3504dbcc4f61d854883}
+}]\index{P\-R\-E\-C\-O\-M\-P\-U\-T\-E\-D@{P\-R\-E\-C\-O\-M\-P\-U\-T\-E\-D}!svm.\-h@{svm.\-h}}\index{svm.\-h@{svm.\-h}!P\-R\-E\-C\-O\-M\-P\-U\-T\-E\-D@{P\-R\-E\-C\-O\-M\-P\-U\-T\-E\-D}}\item[{\em 
+\hypertarget{svm_8h_a99fb83031ce9923c84392b4e92f956b5a27a6ccce9f5a44692a040b08a6923285}{P\-R\-E\-C\-O\-M\-P\-U\-T\-E\-D}\label{svm_8h_a99fb83031ce9923c84392b4e92f956b5a27a6ccce9f5a44692a040b08a6923285}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 26 of file svm.\-h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{svm_8h_aa72a8c645b58830df32383fd1835aad0}{\index{svm.\-h@{svm.\-h}!svm\-\_\-check\-\_\-parameter@{svm\-\_\-check\-\_\-parameter}}
+\index{svm\-\_\-check\-\_\-parameter@{svm\-\_\-check\-\_\-parameter}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-check\-\_\-parameter}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ svm\-\_\-check\-\_\-parameter (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf svm\-\_\-problem} $\ast$}]{prob, }
+\item[{const struct {\bf svm\-\_\-parameter} $\ast$}]{param}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_aa72a8c645b58830df32383fd1835aad0}
+\hypertarget{svm_8h_aeb231380b36264637caeccdae4fbad1a}{\index{svm.\-h@{svm.\-h}!svm\-\_\-check\-\_\-probability\-\_\-model@{svm\-\_\-check\-\_\-probability\-\_\-model}}
+\index{svm\-\_\-check\-\_\-probability\-\_\-model@{svm\-\_\-check\-\_\-probability\-\_\-model}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-check\-\_\-probability\-\_\-model}]{\setlength{\rightskip}{0pt plus 5cm}int svm\-\_\-check\-\_\-probability\-\_\-model (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf svm\-\_\-model} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_aeb231380b36264637caeccdae4fbad1a}
+\hypertarget{svm_8h_abe12fd0b263f0b31fdce8d48d9c38a32}{\index{svm.\-h@{svm.\-h}!svm\-\_\-cross\-\_\-validation@{svm\-\_\-cross\-\_\-validation}}
+\index{svm\-\_\-cross\-\_\-validation@{svm\-\_\-cross\-\_\-validation}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-cross\-\_\-validation}]{\setlength{\rightskip}{0pt plus 5cm}void svm\-\_\-cross\-\_\-validation (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf svm\-\_\-problem} $\ast$}]{prob, }
+\item[{const struct {\bf svm\-\_\-parameter} $\ast$}]{param, }
+\item[{int}]{nr\-\_\-fold, }
+\item[{double $\ast$}]{target}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_abe12fd0b263f0b31fdce8d48d9c38a32}
+\hypertarget{svm_8h_aaf17ba299f99cb74dc97f64bb29f4c06}{\index{svm.\-h@{svm.\-h}!svm\-\_\-destroy\-\_\-param@{svm\-\_\-destroy\-\_\-param}}
+\index{svm\-\_\-destroy\-\_\-param@{svm\-\_\-destroy\-\_\-param}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-destroy\-\_\-param}]{\setlength{\rightskip}{0pt plus 5cm}void svm\-\_\-destroy\-\_\-param (
+\begin{DoxyParamCaption}
+\item[{struct {\bf svm\-\_\-parameter} $\ast$}]{param}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_aaf17ba299f99cb74dc97f64bb29f4c06}
+
+
+Definition at line 2826 of file svm.\-cpp.
+
+\hypertarget{svm_8h_afa14733010ded94cc8f2ba177b0b24c8}{\index{svm.\-h@{svm.\-h}!svm\-\_\-free\-\_\-and\-\_\-destroy\-\_\-model@{svm\-\_\-free\-\_\-and\-\_\-destroy\-\_\-model}}
+\index{svm\-\_\-free\-\_\-and\-\_\-destroy\-\_\-model@{svm\-\_\-free\-\_\-and\-\_\-destroy\-\_\-model}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-free\-\_\-and\-\_\-destroy\-\_\-model}]{\setlength{\rightskip}{0pt plus 5cm}void svm\-\_\-free\-\_\-and\-\_\-destroy\-\_\-model (
+\begin{DoxyParamCaption}
+\item[{struct {\bf svm\-\_\-model} $\ast$$\ast$}]{model\-\_\-ptr\-\_\-ptr}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_afa14733010ded94cc8f2ba177b0b24c8}
+
+
+Definition at line 2818 of file svm.\-cpp.
+
+\hypertarget{svm_8h_a851dce2f69b666a414d67e0edef3ead9}{\index{svm.\-h@{svm.\-h}!svm\-\_\-free\-\_\-model\-\_\-content@{svm\-\_\-free\-\_\-model\-\_\-content}}
+\index{svm\-\_\-free\-\_\-model\-\_\-content@{svm\-\_\-free\-\_\-model\-\_\-content}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-free\-\_\-model\-\_\-content}]{\setlength{\rightskip}{0pt plus 5cm}void svm\-\_\-free\-\_\-model\-\_\-content (
+\begin{DoxyParamCaption}
+\item[{struct {\bf svm\-\_\-model} $\ast$}]{model\-\_\-ptr}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_a851dce2f69b666a414d67e0edef3ead9}
+
+
+Definition at line 2788 of file svm.\-cpp.
+
+\hypertarget{svm_8h_a1eafdf09b884847a04a72cf22ddb95f2}{\index{svm.\-h@{svm.\-h}!svm\-\_\-get\-\_\-labels@{svm\-\_\-get\-\_\-labels}}
+\index{svm\-\_\-get\-\_\-labels@{svm\-\_\-get\-\_\-labels}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-get\-\_\-labels}]{\setlength{\rightskip}{0pt plus 5cm}void svm\-\_\-get\-\_\-labels (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf svm\-\_\-model} $\ast$}]{model, }
+\item[{int $\ast$}]{label}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_a1eafdf09b884847a04a72cf22ddb95f2}
+\hypertarget{svm_8h_a73c7339cbc8a38eb9f1e8ad6fbe11ae8}{\index{svm.\-h@{svm.\-h}!svm\-\_\-get\-\_\-nr\-\_\-class@{svm\-\_\-get\-\_\-nr\-\_\-class}}
+\index{svm\-\_\-get\-\_\-nr\-\_\-class@{svm\-\_\-get\-\_\-nr\-\_\-class}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-get\-\_\-nr\-\_\-class}]{\setlength{\rightskip}{0pt plus 5cm}int svm\-\_\-get\-\_\-nr\-\_\-class (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf svm\-\_\-model} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_a73c7339cbc8a38eb9f1e8ad6fbe11ae8}
+\hypertarget{svm_8h_add0a326d36e24044cf958a420d6f4e19}{\index{svm.\-h@{svm.\-h}!svm\-\_\-get\-\_\-svm\-\_\-type@{svm\-\_\-get\-\_\-svm\-\_\-type}}
+\index{svm\-\_\-get\-\_\-svm\-\_\-type@{svm\-\_\-get\-\_\-svm\-\_\-type}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-get\-\_\-svm\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}int svm\-\_\-get\-\_\-svm\-\_\-type (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf svm\-\_\-model} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_add0a326d36e24044cf958a420d6f4e19}
+\hypertarget{svm_8h_a3f15a9a6c23b2f0927fc48ef2f549001}{\index{svm.\-h@{svm.\-h}!svm\-\_\-get\-\_\-svr\-\_\-probability@{svm\-\_\-get\-\_\-svr\-\_\-probability}}
+\index{svm\-\_\-get\-\_\-svr\-\_\-probability@{svm\-\_\-get\-\_\-svr\-\_\-probability}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-get\-\_\-svr\-\_\-probability}]{\setlength{\rightskip}{0pt plus 5cm}double svm\-\_\-get\-\_\-svr\-\_\-probability (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf svm\-\_\-model} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_a3f15a9a6c23b2f0927fc48ef2f549001}
+\hypertarget{svm_8h_a569bb1a06e5181dfb19d66587463af4b}{\index{svm.\-h@{svm.\-h}!svm\-\_\-load\-\_\-model@{svm\-\_\-load\-\_\-model}}
+\index{svm\-\_\-load\-\_\-model@{svm\-\_\-load\-\_\-model}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-load\-\_\-model}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf svm\-\_\-model}$\ast$ svm\-\_\-load\-\_\-model (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{model\-\_\-file\-\_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [read]}}}\label{svm_8h_a569bb1a06e5181dfb19d66587463af4b}
+
+
+Definition at line 2605 of file svm.\-cpp.
+
+\hypertarget{svm_8h_af7c913d98f7cd411b147f8990a97f576}{\index{svm.\-h@{svm.\-h}!svm\-\_\-predict@{svm\-\_\-predict}}
+\index{svm\-\_\-predict@{svm\-\_\-predict}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-predict}]{\setlength{\rightskip}{0pt plus 5cm}double svm\-\_\-predict (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf svm\-\_\-model} $\ast$}]{model, }
+\item[{const struct {\bf svm\-\_\-node} $\ast$}]{x}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_af7c913d98f7cd411b147f8990a97f576}
+\hypertarget{svm_8h_a5b3a84b86101b041773e05c1138d365e}{\index{svm.\-h@{svm.\-h}!svm\-\_\-predict\-\_\-extended@{svm\-\_\-predict\-\_\-extended}}
+\index{svm\-\_\-predict\-\_\-extended@{svm\-\_\-predict\-\_\-extended}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-predict\-\_\-extended}]{\setlength{\rightskip}{0pt plus 5cm}double svm\-\_\-predict\-\_\-extended (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf svm\-\_\-model} $\ast$}]{model, }
+\item[{const struct {\bf svm\-\_\-node} $\ast$}]{x, }
+\item[{double $\ast$$\ast$\&}]{scores, }
+\item[{int $\ast$\&}]{vote}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_a5b3a84b86101b041773e05c1138d365e}
+\hypertarget{svm_8h_a301070a1fda12e1257d76c08f97322a5}{\index{svm.\-h@{svm.\-h}!svm\-\_\-predict\-\_\-probability@{svm\-\_\-predict\-\_\-probability}}
+\index{svm\-\_\-predict\-\_\-probability@{svm\-\_\-predict\-\_\-probability}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-predict\-\_\-probability}]{\setlength{\rightskip}{0pt plus 5cm}double svm\-\_\-predict\-\_\-probability (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf svm\-\_\-model} $\ast$}]{model, }
+\item[{const struct {\bf svm\-\_\-node} $\ast$}]{x, }
+\item[{double $\ast$}]{prob\-\_\-estimates}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_a301070a1fda12e1257d76c08f97322a5}
+\hypertarget{svm_8h_aa34079376b55cfef083b8ff523d77f55}{\index{svm.\-h@{svm.\-h}!svm\-\_\-predict\-\_\-values@{svm\-\_\-predict\-\_\-values}}
+\index{svm\-\_\-predict\-\_\-values@{svm\-\_\-predict\-\_\-values}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-predict\-\_\-values}]{\setlength{\rightskip}{0pt plus 5cm}double svm\-\_\-predict\-\_\-values (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf svm\-\_\-model} $\ast$}]{model, }
+\item[{const struct {\bf svm\-\_\-node} $\ast$}]{x, }
+\item[{double $\ast$}]{dec\-\_\-values}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_aa34079376b55cfef083b8ff523d77f55}
+\hypertarget{svm_8h_a21101855995845e86b8b663e119478dc}{\index{svm.\-h@{svm.\-h}!svm\-\_\-predict\-\_\-values\-\_\-extended@{svm\-\_\-predict\-\_\-values\-\_\-extended}}
+\index{svm\-\_\-predict\-\_\-values\-\_\-extended@{svm\-\_\-predict\-\_\-values\-\_\-extended}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-predict\-\_\-values\-\_\-extended}]{\setlength{\rightskip}{0pt plus 5cm}double svm\-\_\-predict\-\_\-values\-\_\-extended (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf svm\-\_\-model} $\ast$}]{model, }
+\item[{const struct {\bf svm\-\_\-node} $\ast$}]{x, }
+\item[{double $\ast$\&}]{dec\-\_\-values, }
+\item[{double $\ast$$\ast$\&}]{scores, }
+\item[{int $\ast$\&}]{vote}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_a21101855995845e86b8b663e119478dc}
+\hypertarget{svm_8h_ae6aefb92d3b0b1a5158bd4b15ca8f8e2}{\index{svm.\-h@{svm.\-h}!svm\-\_\-save\-\_\-model@{svm\-\_\-save\-\_\-model}}
+\index{svm\-\_\-save\-\_\-model@{svm\-\_\-save\-\_\-model}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-save\-\_\-model}]{\setlength{\rightskip}{0pt plus 5cm}int svm\-\_\-save\-\_\-model (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{model\-\_\-file\-\_\-name, }
+\item[{const struct {\bf svm\-\_\-model} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_ae6aefb92d3b0b1a5158bd4b15ca8f8e2}
+\hypertarget{svm_8h_a308f7948988441f4a1a5c8c8abc367be}{\index{svm.\-h@{svm.\-h}!svm\-\_\-set\-\_\-print\-\_\-string\-\_\-function@{svm\-\_\-set\-\_\-print\-\_\-string\-\_\-function}}
+\index{svm\-\_\-set\-\_\-print\-\_\-string\-\_\-function@{svm\-\_\-set\-\_\-print\-\_\-string\-\_\-function}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-set\-\_\-print\-\_\-string\-\_\-function}]{\setlength{\rightskip}{0pt plus 5cm}void svm\-\_\-set\-\_\-print\-\_\-string\-\_\-function (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(const char $\ast$)}]{print\-\_\-func}
+\end{DoxyParamCaption}
+)}}\label{svm_8h_a308f7948988441f4a1a5c8c8abc367be}
+
+
+Definition at line 2941 of file svm.\-cpp.
+
+\hypertarget{svm_8h_a79ce3e65d01f2be1a4e5288c588c48a8}{\index{svm.\-h@{svm.\-h}!svm\-\_\-train@{svm\-\_\-train}}
+\index{svm\-\_\-train@{svm\-\_\-train}!svm.h@{svm.\-h}}
+\subsubsection[{svm\-\_\-train}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf svm\-\_\-model}$\ast$ svm\-\_\-train (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf svm\-\_\-problem} $\ast$}]{prob, }
+\item[{const struct {\bf svm\-\_\-parameter} $\ast$}]{param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [read]}}}\label{svm_8h_a79ce3e65d01f2be1a4e5288c588c48a8}
+
+
+\subsection{Variable Documentation}
+\hypertarget{svm_8h_a9ba41253b462f42e64917cc38e0f2cc7}{\index{svm.\-h@{svm.\-h}!libsvm\-\_\-version@{libsvm\-\_\-version}}
+\index{libsvm\-\_\-version@{libsvm\-\_\-version}!svm.h@{svm.\-h}}
+\subsubsection[{libsvm\-\_\-version}]{\setlength{\rightskip}{0pt plus 5cm}int libsvm\-\_\-version}}\label{svm_8h_a9ba41253b462f42e64917cc38e0f2cc7}
+
+
+Definition at line 18 of file svm.\-cpp.
+

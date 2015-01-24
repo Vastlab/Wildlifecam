@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/startGroup" >
+        <item
+            android:id="@+id/menu_start"
+            android:orderInCategory="100"
+            android:showAsAction="never"
+            android:title="@string/menu_start"/>
+    </group>
+    <group android:id="@+id/stopGroup" >
+        <item
+            android:id="@+id/menu_stop"
+            android:orderInCategory="100"
+            android:showAsAction="never"
+            android:title="@string/menu_stop"/>
+     </group>
+
+</menu>

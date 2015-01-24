@@ -1,0 +1,7 @@
+../../Data/sqTrain/102.jpg
+../../Data/sqTrain/198.jpg
+../../Data/sqTrain/22.jpg
+../../Data/sqTrain/356.jpg
+../../Data/sqTrain/357.jpg
+../../Data/sqTrain/56.jpg
+../../Data/sqTrain/61.jpg

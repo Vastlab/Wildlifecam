@@ -1,0 +1,23 @@
+22
+Models/July8/July8_model1.txt 197 125
+Models/July8/July8_model2.txt 197 125
+Models/July8/July8_model3.txt 224 269
+Models/July8/July8_model4.txt 224 269
+Models/July8/July8_model5.txt 156 168
+Models/July8/July8_model6.txt 156 168
+Models/July8/July8_model7.txt 174 131
+Models/July8/July8_model8.txt 174 131
+Models/July8/July8_model9.txt 278 388
+Models/July8/July8_model10.txt 278 388
+Models/July8/July8_model11.txt 415 331
+Models/July8/July8_model12.txt 415 331
+Models/July8/July8_model13.txt 260 350
+Models/July8/July8_model14.txt 260 350
+Models/July8/July8_model15.txt 242 172
+Models/July8/July8_model16.txt 242 172
+Models/July8/July8_model17.txt 232 159
+Models/July8/July8_model18.txt 232 159
+Models/July8/July8_model19.txt 203 148
+Models/July8/July8_model20.txt 203 148
+Models/July8/July8_model21.txt 435 260
+Models/July8/July8_model22.txt 435 260

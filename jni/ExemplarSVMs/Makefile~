@@ -1,0 +1,36 @@
+#OS=OSX
+OS=LINUX
+
+OBJS = ExemplarSVMs
+CXX = gcc
+CFLAGS = -O3
+INCLUDE = include
+
+ifeq ($(OS), OSX)
+	CVINCLUDE = /opt/local/include/opencv/
+	CVINCLUDE2 = /opt/local/include/opencv2/
+	LOCALLIB = /opt/local/lib
+	LOCALINCLUDE = /opt/local/include
+else 
+	CVINCLUDE = /usr/local/include/opencv/
+	CVINCLUDE2 = /usr/local/include/opencv2/
+	LOCALLIB = /usr/local/lib
+	LOCALINCLUDE = /usr/local/include
+
+endif
+
+
+#LIBS = -stdlib=libstdc++ -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_objdetect -lopencv_ml -lpthread 
+LIBS = /usr/local/lib/libopencv_calib3d.so /usr/local/lib/libopencv_contrib.so /usr/local/lib/libopencv_core.so /usr/local/lib/libopencv_features2d.so /usr/local/lib/libopencv_flann.so /usr/local/lib/libopencv_gpu.so /usr/local/lib/libopencv_highgui.so /usr/local/lib/libopencv_imgproc.so /usr/local/lib/libopencv_legacy.so /usr/local/lib/libopencv_ml.so /usr/local/lib/libopencv_nonfree.so /usr/local/lib/libopencv_objdetect.so /usr/local/lib/libopencv_photo.so /usr/local/lib/libopencv_stitching.so /usr/local/lib/libopencv_ts.so /usr/local/lib/libopencv_video.so /usr/local/lib/libopencv_videostab.so -lpthread 
+
+SRCFILE = main.cpp ./utils/ImageSet.cpp ./utils/ColorDetection.cpp ./internal/TrainModels.cpp ./internal/TestModels.cpp ./internal/Detect.cpp ./internal/NMS.cpp ./internal/PiCoDes.cpp ./internal/Pyramid.cpp ./libsvm/svmtrain.c ./libsvm/svm.c ./libMR/MetaRecognition.cpp ./libMR/weibull.cpp 
+TARGET = ExemplarSVMs
+
+
+$(TARGET):	$(SRCFILE)
+	$(CXX) $(CFLAGS) $(SRCFILE) -I$(INCLUDE) -I$(CVINCLUDE) -I$(CVINCLUDE2) -L$(LOCALLIB) -I$(LOCALINCLUDE) $(LIBS) -o $(OBJS)
+
+all: $(TARGET)
+
+clean:
+	rm -f $(OBJS)

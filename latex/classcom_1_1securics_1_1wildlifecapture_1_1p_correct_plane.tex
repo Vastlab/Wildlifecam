@@ -1,0 +1,93 @@
+\hypertarget{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_plane}{\section{com.\+securics.\+wildlifecapture.\+p\+Correct\+Plane Class Reference}
+\label{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_plane}\index{com.\+securics.\+wildlifecapture.\+p\+Correct\+Plane@{com.\+securics.\+wildlifecapture.\+p\+Correct\+Plane}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_plane_afc9247db19d02fec531b460cf33fa667}{p\+Correct\+Plane} ()
+\item 
+\hyperlink{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_plane}{p\+Correct\+Plane} \hyperlink{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_plane_ae6141328b1b213f5be434fb8111bb4f0}{return\+Intermediate\+Plane} (\hyperlink{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_camera}{p\+Correct\+Camera} cam, double cam\+Dist\+From\+Plane)
+\item 
+\hyperlink{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_point}{p\+Correct\+Point}\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_plane_ad6025bdf4a73113ebfee4a3db21a3d8f}{calc\+Corners} (\hyperlink{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_plane}{p\+Correct\+Plane} input, \hyperlink{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_camera}{p\+Correct\+Camera} in\+Cam)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a re-\/implementation of the original p\+Correct plane class. 
+
+Definition at line 4 of file p\+Correct\+Plane.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_plane_afc9247db19d02fec531b460cf33fa667}{\index{com\+::securics\+::wildlifecapture\+::p\+Correct\+Plane@{com\+::securics\+::wildlifecapture\+::p\+Correct\+Plane}!p\+Correct\+Plane@{p\+Correct\+Plane}}
+\index{p\+Correct\+Plane@{p\+Correct\+Plane}!com\+::securics\+::wildlifecapture\+::p\+Correct\+Plane@{com\+::securics\+::wildlifecapture\+::p\+Correct\+Plane}}
+\subsubsection[{p\+Correct\+Plane}]{\setlength{\rightskip}{0pt plus 5cm}com.\+securics.\+wildlifecapture.\+p\+Correct\+Plane.\+p\+Correct\+Plane (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_plane_afc9247db19d02fec531b460cf33fa667}
+Sets and fills image\+Point\+Array with new instance of \hyperlink{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_point}{p\+Correct\+Point} These are the vertices of the correction trapezoid. 
+
+Definition at line 20 of file p\+Correct\+Plane.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+p\+Correct\+Plane.\+return\+Intermediate\+Plane().
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_plane_ad6025bdf4a73113ebfee4a3db21a3d8f}{\index{com\+::securics\+::wildlifecapture\+::p\+Correct\+Plane@{com\+::securics\+::wildlifecapture\+::p\+Correct\+Plane}!calc\+Corners@{calc\+Corners}}
+\index{calc\+Corners@{calc\+Corners}!com\+::securics\+::wildlifecapture\+::p\+Correct\+Plane@{com\+::securics\+::wildlifecapture\+::p\+Correct\+Plane}}
+\subsubsection[{calc\+Corners}]{\setlength{\rightskip}{0pt plus 5cm}{\bf p\+Correct\+Point} \mbox{[}$\,$\mbox{]} com.\+securics.\+wildlifecapture.\+p\+Correct\+Plane.\+calc\+Corners (
+\begin{DoxyParamCaption}
+\item[{{\bf p\+Correct\+Plane}}]{input, }
+\item[{{\bf p\+Correct\+Camera}}]{in\+Cam}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_plane_ad6025bdf4a73113ebfee4a3db21a3d8f}
+calculates the locations of the corners and shift them is necessary 
+\begin{DoxyParams}{Parameters}
+{\em input} & \\
+\hline
+{\em in\+Cam} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+For the lower-\/left corner (in theory) This is Math.\+abs'd because we can't have negative coordinates in a picture.
+
+This will force-\/shift the image to prevent clipping at low vertical heights.
+
+Set this to the raw difference between the horizontal and vertical points. 
+
+Definition at line 88 of file p\+Correct\+Plane.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+p\+Correct\+Point.\+x, com.\+securics.\+wildlifecapture.\+p\+Correct\+Camera.\+x, and com.\+securics.\+wildlifecapture.\+p\+Correct\+Camera.\+y.
+
+\hypertarget{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_plane_ae6141328b1b213f5be434fb8111bb4f0}{\index{com\+::securics\+::wildlifecapture\+::p\+Correct\+Plane@{com\+::securics\+::wildlifecapture\+::p\+Correct\+Plane}!return\+Intermediate\+Plane@{return\+Intermediate\+Plane}}
+\index{return\+Intermediate\+Plane@{return\+Intermediate\+Plane}!com\+::securics\+::wildlifecapture\+::p\+Correct\+Plane@{com\+::securics\+::wildlifecapture\+::p\+Correct\+Plane}}
+\subsubsection[{return\+Intermediate\+Plane}]{\setlength{\rightskip}{0pt plus 5cm}{\bf p\+Correct\+Plane} com.\+securics.\+wildlifecapture.\+p\+Correct\+Plane.\+return\+Intermediate\+Plane (
+\begin{DoxyParamCaption}
+\item[{{\bf p\+Correct\+Camera}}]{cam, }
+\item[{double}]{cam\+Dist\+From\+Plane}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_plane_ae6141328b1b213f5be434fb8111bb4f0}
+Perform calculations. This was the most C\+P\+U intensive part of p\+Correct, and it is now reduced to something that should take a second at most. Make the output plane.
+
+Angl\+X was originally cam.\+pitch, angl\+Y cam.\+roll, angl\+Z, cam.\+azimuth 
+
+Definition at line 40 of file p\+Correct\+Plane.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+p\+Correct\+Camera.\+height, com.\+securics.\+wildlifecapture.\+p\+Correct\+Plane.\+p\+Correct\+Plane(), com.\+securics.\+wildlifecapture.\+p\+Correct\+Camera.\+x, and com.\+securics.\+wildlifecapture.\+p\+Correct\+Camera.\+y.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/com/securics/wildlifecapture/\hyperlink{p_correct_plane_8java}{p\+Correct\+Plane.\+java}\end{DoxyCompactItemize}

@@ -1,0 +1,159 @@
+\hypertarget{_squirrel__pipeline_8h}{\section{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/\-Squirrel\-\_\-pipeline.h File Reference}
+\label{_squirrel__pipeline_8h}\index{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/\-Squirrel\-\_\-pipeline.\-h@{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/\-Squirrel\-\_\-pipeline.\-h}}
+}
+{\ttfamily \#include $<$opencv2/opencv.\-hpp$>$}\\*
+{\ttfamily \#include $<$opencv2/nonfree/features2d.\-hpp$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$dirent.\-h$>$}\\*
+{\ttfamily \#include $<$errno.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}G\-R\-A\-B/\-Key\-Points/\-G\-R\-A\-B-\/kp.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}onevset\-S\-V\-M/predict.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$malloc.\-h$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ int $>$ $>$ \hyperlink{_squirrel__pipeline_8h_a94d409fa8be282d87967edc11a1e613f}{start\-Grab} (int $\ast$arr, vector$<$ Key\-Point $>$ kp, Mat img)
+\item 
+int $\ast$$\ast$ \hyperlink{_squirrel__pipeline_8h_a496909490d62f16c3312b17ab97737e4}{get\-Center\-Points} (char $\ast$f\-Name, vector$<$ Key\-Point $>$ kp)
+\item 
+void \hyperlink{_squirrel__pipeline_8h_a413cdc31e04ef889db1a49d30b0d16b2}{Update\-\_\-\-Threshold\-\_\-\-Background} (bool first\-Frame, Mat input\-Frame, Mat \hyperlink{cvjni_8cpp_a97dabeac10a34403d1bbfa64be7ffc1f}{Background1}, Mat \hyperlink{cvjni_8cpp_acb58e6fb7cf362a1886ccb5289ec0ff3}{Background2}, Mat \hyperlink{cvjni_8cpp_aeb3a274bd2dc7efe76e002aade3793a7}{Thresholds}, Mat Blobs, Mat Classifications, int G\-L\-O\-B\-A\-L\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D)
+\item 
+void \hyperlink{_squirrel__pipeline_8h_ac984044bb07c2d0e1b60687b4489823a}{Background\-\_\-\-Subtraction} (Mat input\-Frame, Mat \hyperlink{cvjni_8cpp_a97dabeac10a34403d1bbfa64be7ffc1f}{Background1}, Mat \hyperlink{cvjni_8cpp_acb58e6fb7cf362a1886ccb5289ec0ff3}{Background2}, Mat \hyperlink{cvjni_8cpp_aeb3a274bd2dc7efe76e002aade3793a7}{Thresholds}, Mat Detected\-\_\-\-Image\-\_\-\-H\-I, Mat Detected\-\_\-\-Image\-\_\-\-L\-O\-W, Mat \hyperlink{cvjni_8cpp_a05ce7a2b500916215a61204566a1a6ae}{classification\-Map}, int G\-L\-O\-B\-A\-L\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D, int H\-I\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D\-\_\-\-I\-N\-C)
+\item 
+void \hyperlink{_squirrel__pipeline_8h_a6860445d8742452450e52b3c58956cc8}{Q\-C\-C} (Mat img\-Hi, Mat img\-Low, Mat parent\-Image)
+\item 
+void \hyperlink{_squirrel__pipeline_8h_ab1dfd46b3af54621e0713279f6fd8140}{Find\-Blobs} (const cv\-::\-Mat \&\hyperlink{image_split-pl_8h_a00cada095f0419ea7056b3f1c37f6a2d}{binary}, std\-::vector$<$ std\-::vector$<$ cv\-::\-Point2i $>$ $>$ \&blobs)
+\item 
+vector$<$ int $>$ \hyperlink{_squirrel__pipeline_8h_a60ed724506f5eb16b769420847822c09}{run\-\_\-program} (int fudge, int scale, bool first\-Frame, Mat gray\-Image, Mat b1, Mat b2, Mat thresh, Mat Hi, Mat Lo, Mat \hyperlink{cvjni_8cpp_a05ce7a2b500916215a61204566a1a6ae}{classification\-Map}, const char $\ast$base\-Dir, const char $\ast$base\-Name, int $\ast$grab\-Params)
+\item 
+int \hyperlink{_squirrel__pipeline_8h_ac98cbfe6e5d13d259a9baa760a446212}{svmpredict} (float $\ast$$\ast$values, int $\ast$$\ast$indices, int row\-Num, int col\-Num, int is\-Prob, const char $\ast$model\-File, int $\ast$labels, double $\ast$scores, int numclasses)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_squirrel__pipeline_8h_ac984044bb07c2d0e1b60687b4489823a}{\index{Squirrel\-\_\-pipeline.\-h@{Squirrel\-\_\-pipeline.\-h}!Background\-\_\-\-Subtraction@{Background\-\_\-\-Subtraction}}
+\index{Background\-\_\-\-Subtraction@{Background\-\_\-\-Subtraction}!Squirrel_pipeline.h@{Squirrel\-\_\-pipeline.\-h}}
+\subsubsection[{Background\-\_\-\-Subtraction}]{\setlength{\rightskip}{0pt plus 5cm}void Background\-\_\-\-Subtraction (
+\begin{DoxyParamCaption}
+\item[{Mat}]{input\-Frame, }
+\item[{Mat}]{Background1, }
+\item[{Mat}]{Background2, }
+\item[{Mat}]{Thresholds, }
+\item[{Mat}]{Detected\-\_\-\-Image\-\_\-\-H\-I, }
+\item[{Mat}]{Detected\-\_\-\-Image\-\_\-\-L\-O\-W, }
+\item[{Mat}]{classification\-Map, }
+\item[{int}]{G\-L\-O\-B\-A\-L\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D, }
+\item[{int}]{H\-I\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D\-\_\-\-I\-N\-C}
+\end{DoxyParamCaption}
+)}}\label{_squirrel__pipeline_8h_ac984044bb07c2d0e1b60687b4489823a}
+\hypertarget{_squirrel__pipeline_8h_ab1dfd46b3af54621e0713279f6fd8140}{\index{Squirrel\-\_\-pipeline.\-h@{Squirrel\-\_\-pipeline.\-h}!Find\-Blobs@{Find\-Blobs}}
+\index{Find\-Blobs@{Find\-Blobs}!Squirrel_pipeline.h@{Squirrel\-\_\-pipeline.\-h}}
+\subsubsection[{Find\-Blobs}]{\setlength{\rightskip}{0pt plus 5cm}void Find\-Blobs (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{binary, }
+\item[{std\-::vector$<$ std\-::vector$<$ cv\-::\-Point2i $>$ $>$ \&}]{blobs}
+\end{DoxyParamCaption}
+)}}\label{_squirrel__pipeline_8h_ab1dfd46b3af54621e0713279f6fd8140}
+Find\-Blobs
+
+This module locates blobs in an image
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & cv\-::\-Mat \&binary -\/ binary image of data on pixels above threshold \\
+\hline
+{\em std\-::vector$<$std\-::vector$<$cv\-::\-Point2i$>$} & $>$ \&blobs -\/ blobs that are found from binary image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 576 of file Squirrel\-\_\-pipeline.\-cpp.
+
+\hypertarget{_squirrel__pipeline_8h_a496909490d62f16c3312b17ab97737e4}{\index{Squirrel\-\_\-pipeline.\-h@{Squirrel\-\_\-pipeline.\-h}!get\-Center\-Points@{get\-Center\-Points}}
+\index{get\-Center\-Points@{get\-Center\-Points}!Squirrel_pipeline.h@{Squirrel\-\_\-pipeline.\-h}}
+\subsubsection[{get\-Center\-Points}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ get\-Center\-Points (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{f\-Name, }
+\item[{vector$<$ Key\-Point $>$}]{kp}
+\end{DoxyParamCaption}
+)}}\label{_squirrel__pipeline_8h_a496909490d62f16c3312b17ab97737e4}
+\hypertarget{_squirrel__pipeline_8h_a6860445d8742452450e52b3c58956cc8}{\index{Squirrel\-\_\-pipeline.\-h@{Squirrel\-\_\-pipeline.\-h}!Q\-C\-C@{Q\-C\-C}}
+\index{Q\-C\-C@{Q\-C\-C}!Squirrel_pipeline.h@{Squirrel\-\_\-pipeline.\-h}}
+\subsubsection[{Q\-C\-C}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-C (
+\begin{DoxyParamCaption}
+\item[{Mat}]{img\-Hi, }
+\item[{Mat}]{img\-Low, }
+\item[{Mat}]{parent\-Image}
+\end{DoxyParamCaption}
+)}}\label{_squirrel__pipeline_8h_a6860445d8742452450e52b3c58956cc8}
+\hypertarget{_squirrel__pipeline_8h_a60ed724506f5eb16b769420847822c09}{\index{Squirrel\-\_\-pipeline.\-h@{Squirrel\-\_\-pipeline.\-h}!run\-\_\-program@{run\-\_\-program}}
+\index{run\-\_\-program@{run\-\_\-program}!Squirrel_pipeline.h@{Squirrel\-\_\-pipeline.\-h}}
+\subsubsection[{run\-\_\-program}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$ run\-\_\-program (
+\begin{DoxyParamCaption}
+\item[{int}]{fudge, }
+\item[{int}]{scale, }
+\item[{bool}]{first\-Frame, }
+\item[{Mat}]{gray\-Image, }
+\item[{Mat}]{b1, }
+\item[{Mat}]{b2, }
+\item[{Mat}]{thresh, }
+\item[{Mat}]{Hi, }
+\item[{Mat}]{Lo, }
+\item[{Mat}]{classification\-Map, }
+\item[{const char $\ast$}]{base\-Dir, }
+\item[{const char $\ast$}]{base\-Name, }
+\item[{int $\ast$}]{grab\-Params}
+\end{DoxyParamCaption}
+)}}\label{_squirrel__pipeline_8h_a60ed724506f5eb16b769420847822c09}
+\hypertarget{_squirrel__pipeline_8h_a94d409fa8be282d87967edc11a1e613f}{\index{Squirrel\-\_\-pipeline.\-h@{Squirrel\-\_\-pipeline.\-h}!start\-Grab@{start\-Grab}}
+\index{start\-Grab@{start\-Grab}!Squirrel_pipeline.h@{Squirrel\-\_\-pipeline.\-h}}
+\subsubsection[{start\-Grab}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ vector$<$int$>$ $>$ start\-Grab (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{arr, }
+\item[{vector$<$ Key\-Point $>$}]{kp, }
+\item[{Mat}]{img}
+\end{DoxyParamCaption}
+)}}\label{_squirrel__pipeline_8h_a94d409fa8be282d87967edc11a1e613f}
+\hypertarget{_squirrel__pipeline_8h_ac98cbfe6e5d13d259a9baa760a446212}{\index{Squirrel\-\_\-pipeline.\-h@{Squirrel\-\_\-pipeline.\-h}!svmpredict@{svmpredict}}
+\index{svmpredict@{svmpredict}!Squirrel_pipeline.h@{Squirrel\-\_\-pipeline.\-h}}
+\subsubsection[{svmpredict}]{\setlength{\rightskip}{0pt plus 5cm}int svmpredict (
+\begin{DoxyParamCaption}
+\item[{float $\ast$$\ast$}]{values, }
+\item[{int $\ast$$\ast$}]{indices, }
+\item[{int}]{row\-Num, }
+\item[{int}]{col\-Num, }
+\item[{int}]{is\-Prob, }
+\item[{const char $\ast$}]{model\-File, }
+\item[{int $\ast$}]{labels, }
+\item[{double $\ast$}]{scores, }
+\item[{int}]{numclasses}
+\end{DoxyParamCaption}
+)}}\label{_squirrel__pipeline_8h_ac98cbfe6e5d13d259a9baa760a446212}
+
+
+Definition at line 528 of file svm-\/predict.\-cpp.
+
+\hypertarget{_squirrel__pipeline_8h_a413cdc31e04ef889db1a49d30b0d16b2}{\index{Squirrel\-\_\-pipeline.\-h@{Squirrel\-\_\-pipeline.\-h}!Update\-\_\-\-Threshold\-\_\-\-Background@{Update\-\_\-\-Threshold\-\_\-\-Background}}
+\index{Update\-\_\-\-Threshold\-\_\-\-Background@{Update\-\_\-\-Threshold\-\_\-\-Background}!Squirrel_pipeline.h@{Squirrel\-\_\-pipeline.\-h}}
+\subsubsection[{Update\-\_\-\-Threshold\-\_\-\-Background}]{\setlength{\rightskip}{0pt plus 5cm}void Update\-\_\-\-Threshold\-\_\-\-Background (
+\begin{DoxyParamCaption}
+\item[{bool}]{first\-Frame, }
+\item[{Mat}]{input\-Frame, }
+\item[{Mat}]{Background1, }
+\item[{Mat}]{Background2, }
+\item[{Mat}]{Thresholds, }
+\item[{Mat}]{Blobs, }
+\item[{Mat}]{Classifications, }
+\item[{int}]{G\-L\-O\-B\-A\-L\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D}
+\end{DoxyParamCaption}
+)}}\label{_squirrel__pipeline_8h_a413cdc31e04ef889db1a49d30b0d16b2}

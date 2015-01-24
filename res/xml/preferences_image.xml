@@ -1,0 +1,41 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/file_locations_title" >
+        <com.securics.wildlifecapture.MyStringPreference
+            android:defaultValue="@string/gallery_default"
+            android:key="@string/gallery_key"
+            android:summary="@string/gallery_summary"
+            android:title="@string/gallery_title" />
+        <com.securics.wildlifecapture.MyStringPreference
+            android:defaultValue="@string/processed_default"
+            android:key="@string/processed_key"
+            android:summary="@string/processed_summary"
+            android:title="@string/processed_title" />
+        <com.securics.wildlifecapture.MyStringPreference
+            android:defaultValue="@string/chips_default"
+            android:key="@string/chips_key"
+            android:summary="@string/chips_summary"
+            android:title="@string/chips_title" />
+        <com.securics.wildlifecapture.MyStringPreference
+            android:defaultValue="@string/model_default"
+            android:key="@string/model_key"
+            android:summary="@string/model_summary"
+            android:title="@string/model_title" />
+        <com.securics.wildlifecapture.MyStringPreference
+            android:defaultValue="@string/processlog_default"
+            android:key="@string/processlog_key"
+            android:summary="@string/processlog_summary"
+            android:title="@string/processlog_title" />
+        <com.securics.wildlifecapture.MyStringPreference
+            android:defaultValue="@string/applog_default"
+            android:key="@string/applog_key"
+            android:summary="@string/applog_summary"
+            android:title="@string/applog_title" />
+         <com.securics.wildlifecapture.MyStringPreference
+            android:defaultValue="@string/output_default"
+            android:key="@string/output_key"
+            android:summary="@string/output_summary"
+            android:title="@string/output_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

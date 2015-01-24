@@ -1,0 +1,12 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="My Preferences / Settings" >
+	    
+		<EditTextPreference
+            android:key="Camera Vertical Position"
+            android:title="Camera Position"
+            android:summary="Please enter how high up the camera is off the ground." 
+            android:defaultValue="5"/>
+    </PreferenceCategory>
+</PreferenceScreen>

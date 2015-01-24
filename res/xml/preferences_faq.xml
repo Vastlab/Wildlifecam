@@ -1,0 +1,7 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <com.securics.squirrelgpu.FAQ
+        android:id="@+id/FAQ_list"
+        android:title="@string/faq_title" />
+ 
+</PreferenceScreen>

@@ -1,0 +1,119 @@
+\hypertarget{log_8h}{\section{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/log.h File Reference}
+\label{log_8h}\index{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/log.\-h@{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/log.\-h}}
+}
+{\ttfamily \#include $<$stdarg.\-h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6}{android\-\_\-\-Log\-Priority} \hyperlink{log_8h_a73e497bb346e9243cbb55a8e2423c712}{android\-\_\-\-Log\-Priority}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6}{android\-\_\-\-Log\-Priority} \{ \\*
+\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a6927fcfc48b12aa4c2495182c1a77abc}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-U\-N\-K\-N\-O\-W\-N} =  0, 
+\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a78eac1c0035b045de012f3a42660c1e0}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-F\-A\-U\-L\-T}, 
+\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a0adbaa5c45010323cfffffa93234578c}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}, 
+\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a3357428f473998c530d5de9519a74d45}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}, 
+\\*
+\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6ad46329103f1e9bf318b889f331d1ea8b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-I\-N\-F\-O}, 
+\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a14a2da1996b5063456ac916077f2597e}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-N}, 
+\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6af1067b5ff6e64a6ece3249c113d2d164}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R}, 
+\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a28ceb8fa306acd280b7b891214ec2de2}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-F\-A\-T\-A\-L}, 
+\\*
+\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a8daee540c7d1fc04a9dfecc2db988f3b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-S\-I\-L\-E\-N\-T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{log_8h_a32a7173b092ec978b50490bd12ee523b}{\-\_\-\-\_\-android\-\_\-log\-\_\-write} (int prio, const char $\ast$tag, const char $\ast$text)
+\item 
+int \hyperlink{log_8h_ac60e52c9711c53803ad9af639083afd5}{\-\_\-\-\_\-android\-\_\-log\-\_\-print} (int prio, const char $\ast$tag, const char $\ast$fmt,...)
+\item 
+int \hyperlink{log_8h_ad494481eb4e3dec072fa99e281e30c7c}{\-\_\-\-\_\-android\-\_\-log\-\_\-vprint} (int prio, const char $\ast$tag, const char $\ast$fmt, va\-\_\-list ap)
+\item 
+void \hyperlink{log_8h_a612e57971e51fb6d3760ee7c1ae34049}{\-\_\-\-\_\-android\-\_\-log\-\_\-assert} (const char $\ast$cond, const char $\ast$tag, const char $\ast$fmt,...)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{log_8h_a73e497bb346e9243cbb55a8e2423c712}{\index{log.\-h@{log.\-h}!android\-\_\-\-Log\-Priority@{android\-\_\-\-Log\-Priority}}
+\index{android\-\_\-\-Log\-Priority@{android\-\_\-\-Log\-Priority}!log.h@{log.\-h}}
+\subsubsection[{android\-\_\-\-Log\-Priority}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf android\-\_\-\-Log\-Priority}  {\bf android\-\_\-\-Log\-Priority}}}\label{log_8h_a73e497bb346e9243cbb55a8e2423c712}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6}{\index{log.\-h@{log.\-h}!android\-\_\-\-Log\-Priority@{android\-\_\-\-Log\-Priority}}
+\index{android\-\_\-\-Log\-Priority@{android\-\_\-\-Log\-Priority}!log.h@{log.\-h}}
+\subsubsection[{android\-\_\-\-Log\-Priority}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf android\-\_\-\-Log\-Priority}}}\label{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-U\-N\-K\-N\-O\-W\-N@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-U\-N\-K\-N\-O\-W\-N}!log.\-h@{log.\-h}}\index{log.\-h@{log.\-h}!A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-U\-N\-K\-N\-O\-W\-N@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-U\-N\-K\-N\-O\-W\-N}}\item[{\em 
+\hypertarget{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a6927fcfc48b12aa4c2495182c1a77abc}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-U\-N\-K\-N\-O\-W\-N}\label{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a6927fcfc48b12aa4c2495182c1a77abc}
+}]\index{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-F\-A\-U\-L\-T@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-F\-A\-U\-L\-T}!log.\-h@{log.\-h}}\index{log.\-h@{log.\-h}!A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-F\-A\-U\-L\-T@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-F\-A\-U\-L\-T}}\item[{\em 
+\hypertarget{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a78eac1c0035b045de012f3a42660c1e0}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-F\-A\-U\-L\-T}\label{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a78eac1c0035b045de012f3a42660c1e0}
+}]\index{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}!log.\-h@{log.\-h}}\index{log.\-h@{log.\-h}!A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}}\item[{\em 
+\hypertarget{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a0adbaa5c45010323cfffffa93234578c}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}\label{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a0adbaa5c45010323cfffffa93234578c}
+}]\index{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}!log.\-h@{log.\-h}}\index{log.\-h@{log.\-h}!A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}}\item[{\em 
+\hypertarget{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a3357428f473998c530d5de9519a74d45}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}\label{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a3357428f473998c530d5de9519a74d45}
+}]\index{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-I\-N\-F\-O@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-I\-N\-F\-O}!log.\-h@{log.\-h}}\index{log.\-h@{log.\-h}!A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-I\-N\-F\-O@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-I\-N\-F\-O}}\item[{\em 
+\hypertarget{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6ad46329103f1e9bf318b889f331d1ea8b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-I\-N\-F\-O}\label{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6ad46329103f1e9bf318b889f331d1ea8b}
+}]\index{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-N@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-N}!log.\-h@{log.\-h}}\index{log.\-h@{log.\-h}!A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-N@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-N}}\item[{\em 
+\hypertarget{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a14a2da1996b5063456ac916077f2597e}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-N}\label{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a14a2da1996b5063456ac916077f2597e}
+}]\index{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R}!log.\-h@{log.\-h}}\index{log.\-h@{log.\-h}!A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R}}\item[{\em 
+\hypertarget{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6af1067b5ff6e64a6ece3249c113d2d164}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R}\label{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6af1067b5ff6e64a6ece3249c113d2d164}
+}]\index{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-F\-A\-T\-A\-L@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-F\-A\-T\-A\-L}!log.\-h@{log.\-h}}\index{log.\-h@{log.\-h}!A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-F\-A\-T\-A\-L@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-F\-A\-T\-A\-L}}\item[{\em 
+\hypertarget{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a28ceb8fa306acd280b7b891214ec2de2}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-F\-A\-T\-A\-L}\label{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a28ceb8fa306acd280b7b891214ec2de2}
+}]\index{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-S\-I\-L\-E\-N\-T@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-S\-I\-L\-E\-N\-T}!log.\-h@{log.\-h}}\index{log.\-h@{log.\-h}!A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-S\-I\-L\-E\-N\-T@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-S\-I\-L\-E\-N\-T}}\item[{\em 
+\hypertarget{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a8daee540c7d1fc04a9dfecc2db988f3b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-S\-I\-L\-E\-N\-T}\label{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a8daee540c7d1fc04a9dfecc2db988f3b}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 79 of file log.\-h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{log_8h_a612e57971e51fb6d3760ee7c1ae34049}{\index{log.\-h@{log.\-h}!\-\_\-\-\_\-android\-\_\-log\-\_\-assert@{\-\_\-\-\_\-android\-\_\-log\-\_\-assert}}
+\index{\-\_\-\-\_\-android\-\_\-log\-\_\-assert@{\-\_\-\-\_\-android\-\_\-log\-\_\-assert}!log.h@{log.\-h}}
+\subsubsection[{\-\_\-\-\_\-android\-\_\-log\-\_\-assert}]{\setlength{\rightskip}{0pt plus 5cm}void \-\_\-\-\_\-android\-\_\-log\-\_\-assert (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{cond, }
+\item[{const char $\ast$}]{tag, }
+\item[{const char $\ast$}]{fmt, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{log_8h_a612e57971e51fb6d3760ee7c1ae34049}
+\hypertarget{log_8h_ac60e52c9711c53803ad9af639083afd5}{\index{log.\-h@{log.\-h}!\-\_\-\-\_\-android\-\_\-log\-\_\-print@{\-\_\-\-\_\-android\-\_\-log\-\_\-print}}
+\index{\-\_\-\-\_\-android\-\_\-log\-\_\-print@{\-\_\-\-\_\-android\-\_\-log\-\_\-print}!log.h@{log.\-h}}
+\subsubsection[{\-\_\-\-\_\-android\-\_\-log\-\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}int \-\_\-\-\_\-android\-\_\-log\-\_\-print (
+\begin{DoxyParamCaption}
+\item[{int}]{prio, }
+\item[{const char $\ast$}]{tag, }
+\item[{const char $\ast$}]{fmt, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{log_8h_ac60e52c9711c53803ad9af639083afd5}
+\hypertarget{log_8h_ad494481eb4e3dec072fa99e281e30c7c}{\index{log.\-h@{log.\-h}!\-\_\-\-\_\-android\-\_\-log\-\_\-vprint@{\-\_\-\-\_\-android\-\_\-log\-\_\-vprint}}
+\index{\-\_\-\-\_\-android\-\_\-log\-\_\-vprint@{\-\_\-\-\_\-android\-\_\-log\-\_\-vprint}!log.h@{log.\-h}}
+\subsubsection[{\-\_\-\-\_\-android\-\_\-log\-\_\-vprint}]{\setlength{\rightskip}{0pt plus 5cm}int \-\_\-\-\_\-android\-\_\-log\-\_\-vprint (
+\begin{DoxyParamCaption}
+\item[{int}]{prio, }
+\item[{const char $\ast$}]{tag, }
+\item[{const char $\ast$}]{fmt, }
+\item[{va\-\_\-list}]{ap}
+\end{DoxyParamCaption}
+)}}\label{log_8h_ad494481eb4e3dec072fa99e281e30c7c}
+\hypertarget{log_8h_a32a7173b092ec978b50490bd12ee523b}{\index{log.\-h@{log.\-h}!\-\_\-\-\_\-android\-\_\-log\-\_\-write@{\-\_\-\-\_\-android\-\_\-log\-\_\-write}}
+\index{\-\_\-\-\_\-android\-\_\-log\-\_\-write@{\-\_\-\-\_\-android\-\_\-log\-\_\-write}!log.h@{log.\-h}}
+\subsubsection[{\-\_\-\-\_\-android\-\_\-log\-\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}int \-\_\-\-\_\-android\-\_\-log\-\_\-write (
+\begin{DoxyParamCaption}
+\item[{int}]{prio, }
+\item[{const char $\ast$}]{tag, }
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)}}\label{log_8h_a32a7173b092ec978b50490bd12ee523b}

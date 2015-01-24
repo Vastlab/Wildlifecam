@@ -1,0 +1,32 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <com.securics.wildlifecapture.CameraPreference
+        android:id="@+id/camera_list"
+        android:title="@string/camera_title" />
+    
+    <!-- These represent minimum detectable sizes. 
+    Now all I need to do is find out what, exactly, these units mean!-->
+    <EditTextPreference
+        	android:title="Min Obj Width"
+        	android:summary="Set minimum detectable object width."
+        	android:key="minObjWidth"
+        	android:defaultValue="2"/>
+    <EditTextPreference 
+        android:title="Min Obj Height"
+        android:summary="Set minimum detectable object height."
+        android:key="minObjHeight"
+        android:defaultValue="2"/>
+    
+    <!-- These represent maximum detectable sizes. -->
+    <EditTextPreference
+        android:title="Max Obj Width"
+        android:summary="Set maximum detectable object width."
+        android:key="maxObjWidth"
+        android:defaultValue="20"/>
+    <EditTextPreference
+        android:title="Max Obj Height"
+        android:summary="Set maximum detectable object height."
+        android:key="maxObjHeight"
+        android:defaultValue="20"/>
+ 
+</PreferenceScreen>

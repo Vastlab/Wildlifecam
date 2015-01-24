@@ -1,0 +1,158 @@
+\hypertarget{lib_m_r_8cpp}{\section{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M/lib\-M\-R.cpp File Reference}
+\label{lib_m_r_8cpp}\index{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M/lib\-M\-R.\-cpp@{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M/lib\-M\-R.\-cpp}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$memory.\-h$>$}\\*
+{\ttfamily \#include $<$float.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$jni.\-h$>$}\\*
+{\ttfamily \#include $<$malloc.\-h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$android/log.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}weibull.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Meta\-Recognition.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{lib_m_r_8cpp_af3d016e4e99ca6f1988a90dd40de933b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}~\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a3357428f473998c530d5de9519a74d45}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}
+\item 
+\#define \hyperlink{lib_m_r_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}~\char`\"{}J\-N\-I\-Lib\-M\-R\char`\"{}
+\item 
+\#define \hyperlink{lib_m_r_8cpp_ab78bd305488c62caf8515ee765b1ed49}{L\-O\-G\-V}(...)~\hyperlink{log_8h_ac60e52c9711c53803ad9af639083afd5}{\-\_\-\-\_\-android\-\_\-log\-\_\-print}(\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a8daee540c7d1fc04a9dfecc2db988f3b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-S\-I\-L\-E\-N\-T}, \hyperlink{_squirrel__pipeline_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{lib_m_r_8cpp_a5512e59d578a380a441a70256af997d0}{L\-O\-G\-I}(...)~\hyperlink{log_8h_ac60e52c9711c53803ad9af639083afd5}{\-\_\-\-\_\-android\-\_\-log\-\_\-print}(\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6ad46329103f1e9bf318b889f331d1ea8b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-I\-N\-F\-O}, \hyperlink{_squirrel__pipeline_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{lib_m_r_8cpp_ae02538a80ad5fc009caec73487d11a8d}{L\-O\-G\-E}(...)~\hyperlink{log_8h_ac60e52c9711c53803ad9af639083afd5}{\-\_\-\-\_\-android\-\_\-log\-\_\-print}(\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6af1067b5ff6e64a6ece3249c113d2d164}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R}, \hyperlink{_squirrel__pipeline_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{lib_m_r_8cpp_aa839997a58e14061861cd634fdb7664d}{L\-O\-G\-D}(...)~\hyperlink{log_8h_ac60e52c9711c53803ad9af639083afd5}{\-\_\-\-\_\-android\-\_\-log\-\_\-print}(\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a3357428f473998c530d5de9519a74d45}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}, \hyperlink{_squirrel__pipeline_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{lib_m_r_8cpp_af5abd28c44c29b7397c84f1fec4b1d84}{A\-L\-P\-H\-A}~0.\-05
+\item 
+\#define \hyperlink{lib_m_r_8cpp_a89ce8f4dfb11e45616dd31a2cb5b4cce}{F\-I\-T\-T\-I\-N\-G\-\_\-\-S\-I\-Z\-E}~9
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{lib_m_r_8cpp_afea2a015cf6fee567e75c01affa81c7a}{tthrow} (int \hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, char $\ast$msg)
+\item 
+\hyperlink{jni_8h_a5ef9c7c852d5e0abf2ae84d4e9c5a7b7}{J\-N\-I\-E\-X\-P\-O\-R\-T} \hyperlink{jni_8h_a7970b87de8d49c1fe5facc1ecda5d560}{jdouble\-Array} \hyperlink{jni_8h_a75ae116b9b28eeeb6a479622e476c1ed}{J\-N\-I\-C\-A\-L\-L} \hyperlink{lib_m_r_8cpp_a85fc53df8514f4100e3f6cb0c134c3cc}{Java\-\_\-heflin\-\_\-vast\-\_\-com\-\_\-\-Fd\-View\-\_\-\-Meta\-Recognition} (\hyperlink{jni_8h_a2d06d32b6b6f1519799078a36fe2e380}{J\-N\-I\-Env} $\ast$env, \hyperlink{jni_8h_a24647d2a2f02c39f6338c2c6ce4c1004}{jobject} thiz)
+\item 
+\hyperlink{jni_8h_a5ef9c7c852d5e0abf2ae84d4e9c5a7b7}{J\-N\-I\-E\-X\-P\-O\-R\-T} \hyperlink{jni_8h_a7970b87de8d49c1fe5facc1ecda5d560}{jdouble\-Array} \hyperlink{jni_8h_a75ae116b9b28eeeb6a479622e476c1ed}{J\-N\-I\-C\-A\-L\-L} \hyperlink{lib_m_r_8cpp_a7a1f52297803c665f4c527d74bdf741b}{Java\-\_\-heflin\-\_\-vast\-\_\-com\-\_\-\-Fd\-View\-\_\-\-Weibull} (\hyperlink{jni_8h_a2d06d32b6b6f1519799078a36fe2e380}{J\-N\-I\-Env} $\ast$env, \hyperlink{jni_8h_a24647d2a2f02c39f6338c2c6ce4c1004}{jobject} thiz)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{lib_m_r_8cpp_af5abd28c44c29b7397c84f1fec4b1d84}{\index{lib\-M\-R.\-cpp@{lib\-M\-R.\-cpp}!A\-L\-P\-H\-A@{A\-L\-P\-H\-A}}
+\index{A\-L\-P\-H\-A@{A\-L\-P\-H\-A}!libMR.cpp@{lib\-M\-R.\-cpp}}
+\subsubsection[{A\-L\-P\-H\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-L\-P\-H\-A~0.\-05}}\label{lib_m_r_8cpp_af5abd28c44c29b7397c84f1fec4b1d84}
+
+
+Definition at line 30 of file lib\-M\-R.\-cpp.
+
+\hypertarget{lib_m_r_8cpp_af3d016e4e99ca6f1988a90dd40de933b}{\index{lib\-M\-R.\-cpp@{lib\-M\-R.\-cpp}!A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}}
+\index{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}!libMR.cpp@{lib\-M\-R.\-cpp}}
+\subsubsection[{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E~{\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}}}\label{lib_m_r_8cpp_af3d016e4e99ca6f1988a90dd40de933b}
+
+
+Definition at line 16 of file lib\-M\-R.\-cpp.
+
+\hypertarget{lib_m_r_8cpp_a89ce8f4dfb11e45616dd31a2cb5b4cce}{\index{lib\-M\-R.\-cpp@{lib\-M\-R.\-cpp}!F\-I\-T\-T\-I\-N\-G\-\_\-\-S\-I\-Z\-E@{F\-I\-T\-T\-I\-N\-G\-\_\-\-S\-I\-Z\-E}}
+\index{F\-I\-T\-T\-I\-N\-G\-\_\-\-S\-I\-Z\-E@{F\-I\-T\-T\-I\-N\-G\-\_\-\-S\-I\-Z\-E}!libMR.cpp@{lib\-M\-R.\-cpp}}
+\subsubsection[{F\-I\-T\-T\-I\-N\-G\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-I\-T\-T\-I\-N\-G\-\_\-\-S\-I\-Z\-E~9}}\label{lib_m_r_8cpp_a89ce8f4dfb11e45616dd31a2cb5b4cce}
+
+
+Definition at line 31 of file lib\-M\-R.\-cpp.
+
+\hypertarget{lib_m_r_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{\index{lib\-M\-R.\-cpp@{lib\-M\-R.\-cpp}!L\-O\-G\-\_\-\-T\-A\-G@{L\-O\-G\-\_\-\-T\-A\-G}}
+\index{L\-O\-G\-\_\-\-T\-A\-G@{L\-O\-G\-\_\-\-T\-A\-G}!libMR.cpp@{lib\-M\-R.\-cpp}}
+\subsubsection[{L\-O\-G\-\_\-\-T\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-\_\-\-T\-A\-G~\char`\"{}J\-N\-I\-Lib\-M\-R\char`\"{}}}\label{lib_m_r_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}
+
+
+Definition at line 17 of file lib\-M\-R.\-cpp.
+
+\hypertarget{lib_m_r_8cpp_aa839997a58e14061861cd634fdb7664d}{\index{lib\-M\-R.\-cpp@{lib\-M\-R.\-cpp}!L\-O\-G\-D@{L\-O\-G\-D}}
+\index{L\-O\-G\-D@{L\-O\-G\-D}!libMR.cpp@{lib\-M\-R.\-cpp}}
+\subsubsection[{L\-O\-G\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-D(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-android\-\_\-log\-\_\-print}({\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}, {\bf L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{lib_m_r_8cpp_aa839997a58e14061861cd634fdb7664d}
+
+
+Definition at line 21 of file lib\-M\-R.\-cpp.
+
+\hypertarget{lib_m_r_8cpp_ae02538a80ad5fc009caec73487d11a8d}{\index{lib\-M\-R.\-cpp@{lib\-M\-R.\-cpp}!L\-O\-G\-E@{L\-O\-G\-E}}
+\index{L\-O\-G\-E@{L\-O\-G\-E}!libMR.cpp@{lib\-M\-R.\-cpp}}
+\subsubsection[{L\-O\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-E(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-android\-\_\-log\-\_\-print}({\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R}, {\bf L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{lib_m_r_8cpp_ae02538a80ad5fc009caec73487d11a8d}
+
+
+Definition at line 20 of file lib\-M\-R.\-cpp.
+
+\hypertarget{lib_m_r_8cpp_a5512e59d578a380a441a70256af997d0}{\index{lib\-M\-R.\-cpp@{lib\-M\-R.\-cpp}!L\-O\-G\-I@{L\-O\-G\-I}}
+\index{L\-O\-G\-I@{L\-O\-G\-I}!libMR.cpp@{lib\-M\-R.\-cpp}}
+\subsubsection[{L\-O\-G\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-I(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-android\-\_\-log\-\_\-print}({\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-I\-N\-F\-O}, {\bf L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{lib_m_r_8cpp_a5512e59d578a380a441a70256af997d0}
+
+
+Definition at line 19 of file lib\-M\-R.\-cpp.
+
+\hypertarget{lib_m_r_8cpp_ab78bd305488c62caf8515ee765b1ed49}{\index{lib\-M\-R.\-cpp@{lib\-M\-R.\-cpp}!L\-O\-G\-V@{L\-O\-G\-V}}
+\index{L\-O\-G\-V@{L\-O\-G\-V}!libMR.cpp@{lib\-M\-R.\-cpp}}
+\subsubsection[{L\-O\-G\-V}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-V(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-android\-\_\-log\-\_\-print}({\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-S\-I\-L\-E\-N\-T}, {\bf L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{lib_m_r_8cpp_ab78bd305488c62caf8515ee765b1ed49}
+
+
+Definition at line 18 of file lib\-M\-R.\-cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{lib_m_r_8cpp_a85fc53df8514f4100e3f6cb0c134c3cc}{\index{lib\-M\-R.\-cpp@{lib\-M\-R.\-cpp}!Java\-\_\-heflin\-\_\-vast\-\_\-com\-\_\-\-Fd\-View\-\_\-\-Meta\-Recognition@{Java\-\_\-heflin\-\_\-vast\-\_\-com\-\_\-\-Fd\-View\-\_\-\-Meta\-Recognition}}
+\index{Java\-\_\-heflin\-\_\-vast\-\_\-com\-\_\-\-Fd\-View\-\_\-\-Meta\-Recognition@{Java\-\_\-heflin\-\_\-vast\-\_\-com\-\_\-\-Fd\-View\-\_\-\-Meta\-Recognition}!libMR.cpp@{lib\-M\-R.\-cpp}}
+\subsubsection[{Java\-\_\-heflin\-\_\-vast\-\_\-com\-\_\-\-Fd\-View\-\_\-\-Meta\-Recognition}]{\setlength{\rightskip}{0pt plus 5cm}{\bf J\-N\-I\-E\-X\-P\-O\-R\-T} {\bf jdouble\-Array} {\bf J\-N\-I\-C\-A\-L\-L} Java\-\_\-heflin\-\_\-vast\-\_\-com\-\_\-\-Fd\-View\-\_\-\-Meta\-Recognition (
+\begin{DoxyParamCaption}
+\item[{{\bf J\-N\-I\-Env} $\ast$}]{env, }
+\item[{{\bf jobject}}]{thiz}
+\end{DoxyParamCaption}
+)}}\label{lib_m_r_8cpp_a85fc53df8514f4100e3f6cb0c134c3cc}
+
+
+Definition at line 38 of file lib\-M\-R.\-cpp.
+
+\hypertarget{lib_m_r_8cpp_a7a1f52297803c665f4c527d74bdf741b}{\index{lib\-M\-R.\-cpp@{lib\-M\-R.\-cpp}!Java\-\_\-heflin\-\_\-vast\-\_\-com\-\_\-\-Fd\-View\-\_\-\-Weibull@{Java\-\_\-heflin\-\_\-vast\-\_\-com\-\_\-\-Fd\-View\-\_\-\-Weibull}}
+\index{Java\-\_\-heflin\-\_\-vast\-\_\-com\-\_\-\-Fd\-View\-\_\-\-Weibull@{Java\-\_\-heflin\-\_\-vast\-\_\-com\-\_\-\-Fd\-View\-\_\-\-Weibull}!libMR.cpp@{lib\-M\-R.\-cpp}}
+\subsubsection[{Java\-\_\-heflin\-\_\-vast\-\_\-com\-\_\-\-Fd\-View\-\_\-\-Weibull}]{\setlength{\rightskip}{0pt plus 5cm}{\bf J\-N\-I\-E\-X\-P\-O\-R\-T} {\bf jdouble\-Array} {\bf J\-N\-I\-C\-A\-L\-L} Java\-\_\-heflin\-\_\-vast\-\_\-com\-\_\-\-Fd\-View\-\_\-\-Weibull (
+\begin{DoxyParamCaption}
+\item[{{\bf J\-N\-I\-Env} $\ast$}]{env, }
+\item[{{\bf jobject}}]{thiz}
+\end{DoxyParamCaption}
+)}}\label{lib_m_r_8cpp_a7a1f52297803c665f4c527d74bdf741b}
+
+
+Definition at line 257 of file lib\-M\-R.\-cpp.
+
+\hypertarget{lib_m_r_8cpp_afea2a015cf6fee567e75c01affa81c7a}{\index{lib\-M\-R.\-cpp@{lib\-M\-R.\-cpp}!tthrow@{tthrow}}
+\index{tthrow@{tthrow}!libMR.cpp@{lib\-M\-R.\-cpp}}
+\subsubsection[{tthrow}]{\setlength{\rightskip}{0pt plus 5cm}static int tthrow (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{char $\ast$}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{lib_m_r_8cpp_afea2a015cf6fee567e75c01affa81c7a}
+
+
+Definition at line 33 of file lib\-M\-R.\-cpp.
+

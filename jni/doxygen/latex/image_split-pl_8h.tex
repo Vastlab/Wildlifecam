@@ -1,0 +1,86 @@
+\hypertarget{image_split-pl_8h}{\section{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/\-G\-R\-A\-B/\-Pipeline/image\-Split-\/pl.h File Reference}
+\label{image_split-pl_8h}\index{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/\-G\-R\-A\-B/\-Pipeline/image\-Split-\/pl.\-h@{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/\-G\-R\-A\-B/\-Pipeline/image\-Split-\/pl.\-h}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$opencv/cv.\-h$>$}\\*
+{\ttfamily \#include $<$opencv/highgui.\-h$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include \char`\"{}G\-R\-A\-B.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structhist_values}{hist\-Values}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{image_split-pl_8h_acd58075f859b8f6752c07cd78aa58e13}{quick\-Sort\-\_\-\-Partition} (struct \hyperlink{structhist_values}{hist\-Values}\mbox{[}$\,$\mbox{]}, int, int)
+\item 
+void \hyperlink{image_split-pl_8h_a5fea9ab1ac0a507c6b70e4709ffdf023}{quick\-Sort\-\_\-\-Struct} (struct \hyperlink{structhist_values}{hist\-Values}\mbox{[}$\,$\mbox{]}, int, int)
+\item 
+string \hyperlink{image_split-pl_8h_a6f15c1976c17c86183b725028b469d3f}{itos} (int i)
+\item 
+void \hyperlink{image_split-pl_8h_a00cada095f0419ea7056b3f1c37f6a2d}{binary} (int, int\mbox{[}$\,$\mbox{]})
+\item 
+bool \hyperlink{image_split-pl_8h_a4c0e4f1b5db82cc8f99bd1a38d0dea9e}{uniform\-\_\-pattern} (int)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{image_split-pl_8h_a00cada095f0419ea7056b3f1c37f6a2d}{\index{image\-Split-\/pl.\-h@{image\-Split-\/pl.\-h}!binary@{binary}}
+\index{binary@{binary}!imageSplit-pl.h@{image\-Split-\/pl.\-h}}
+\subsubsection[{binary}]{\setlength{\rightskip}{0pt plus 5cm}void binary (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{int}]{\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{image_split-pl_8h_a00cada095f0419ea7056b3f1c37f6a2d}
+\hypertarget{image_split-pl_8h_a6f15c1976c17c86183b725028b469d3f}{\index{image\-Split-\/pl.\-h@{image\-Split-\/pl.\-h}!itos@{itos}}
+\index{itos@{itos}!imageSplit-pl.h@{image\-Split-\/pl.\-h}}
+\subsubsection[{itos}]{\setlength{\rightskip}{0pt plus 5cm}string itos (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{image_split-pl_8h_a6f15c1976c17c86183b725028b469d3f}
+
+
+Definition at line 13 of file image\-Split-\/pl.\-h.
+
+\hypertarget{image_split-pl_8h_acd58075f859b8f6752c07cd78aa58e13}{\index{image\-Split-\/pl.\-h@{image\-Split-\/pl.\-h}!quick\-Sort\-\_\-\-Partition@{quick\-Sort\-\_\-\-Partition}}
+\index{quick\-Sort\-\_\-\-Partition@{quick\-Sort\-\_\-\-Partition}!imageSplit-pl.h@{image\-Split-\/pl.\-h}}
+\subsubsection[{quick\-Sort\-\_\-\-Partition}]{\setlength{\rightskip}{0pt plus 5cm}int quick\-Sort\-\_\-\-Partition (
+\begin{DoxyParamCaption}
+\item[{struct {\bf hist\-Values}}]{\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{image_split-pl_8h_acd58075f859b8f6752c07cd78aa58e13}
+
+
+Definition at line 190 of file image\-Split-\/pl.\-cpp.
+
+\hypertarget{image_split-pl_8h_a5fea9ab1ac0a507c6b70e4709ffdf023}{\index{image\-Split-\/pl.\-h@{image\-Split-\/pl.\-h}!quick\-Sort\-\_\-\-Struct@{quick\-Sort\-\_\-\-Struct}}
+\index{quick\-Sort\-\_\-\-Struct@{quick\-Sort\-\_\-\-Struct}!imageSplit-pl.h@{image\-Split-\/pl.\-h}}
+\subsubsection[{quick\-Sort\-\_\-\-Struct}]{\setlength{\rightskip}{0pt plus 5cm}void quick\-Sort\-\_\-\-Struct (
+\begin{DoxyParamCaption}
+\item[{struct {\bf hist\-Values}}]{\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{image_split-pl_8h_a5fea9ab1ac0a507c6b70e4709ffdf023}
+
+
+Definition at line 182 of file image\-Split-\/pl.\-cpp.
+
+\hypertarget{image_split-pl_8h_a4c0e4f1b5db82cc8f99bd1a38d0dea9e}{\index{image\-Split-\/pl.\-h@{image\-Split-\/pl.\-h}!uniform\-\_\-pattern@{uniform\-\_\-pattern}}
+\index{uniform\-\_\-pattern@{uniform\-\_\-pattern}!imageSplit-pl.h@{image\-Split-\/pl.\-h}}
+\subsubsection[{uniform\-\_\-pattern}]{\setlength{\rightskip}{0pt plus 5cm}bool uniform\-\_\-pattern (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{image_split-pl_8h_a4c0e4f1b5db82cc8f99bd1a38d0dea9e}
+
+
+Definition at line 232 of file image\-Split-\/pl.\-cpp.
+

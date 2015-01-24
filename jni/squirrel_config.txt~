@@ -1,0 +1,83 @@
+#///============================================================================
+#/// Name        : squirrel_config.txt
+#/// Author      : RC Johnson
+#/// Version     :
+#/// Copyright   : Copyright Securics Inc
+#/// Description : Config file for the squirrel pipeline
+#/// Note		 : tabs separate elements from values
+#///============================================================================
+
+
+#Stuff
+fudge				20
+scale				16
+
+#Squirrel Size
+squirrelMinArea		513
+squirrelMaxArea		512000
+
+#GRAB configs
+numberingMode		1
+detectionMode		0
+patternMode			1
+rotationMode		1
+maxWindowSize		9
+minWindowSize		1
+patternCheck		1
+threshLowerBound	0
+threshStep			1
+sizeX				0
+sizeY				0
+windowStep			2
+preview				0
+weight				0
+
+#SVM Model file location
+# newer tablets, older tablets and phones, windows, linux/osx
+#model_dir			/Removable/MicroSD/model/
+#model_dir			/mnt/sdcard/model/
+#model_dir			../../model/
+model_dir			./ExemplarSVMs/Models
+
+
+#Hour of the day (0-24)
+starttime			6
+endtime				18
+
+#Log file location (newer tablets, older tablets and phones, windows, linux/osx)
+logFile				/Removable/MicroSD/squirrel_log.txt
+#logFile			/mnt/sdcard/squirrel_log.txt
+#logFile			../../squirrel_log.txt	
+#logFile			./squirrel_log.txt
+
+
+deviceID						0
+CONDITION1_HI					6
+CONDITION1_LOW					4
+CONDITION2_LOW					100
+UPDATE_NUMBER					1
+HI_THRESHOLD_INC				16
+GLOBAL_INCREMENT				15
+GLOBAL_THRESHOLD_INIT				50
+THRESHOLD_DECREMENT_NUMBER			20
+THRESHOLD_DECREMENT_VALUE			3
+
+maxRatio					0.10
+octavesBelow					0
+octavesAbove					0
+scaleFactor 					0.1
+step						8
+windowSize					64
+
+
+processedImages					./processedImages/
+positiveExemplars				./positiveExemplars/
+image_chips					./imageChips/
+outputFile					./squirrel_output.txt
+
+# Use only a part of the image as defined by a rectangle
+# of X, Y, Width, Height
+imageX						1000
+imageY						760
+imageWidth					0
+imageHeight					0

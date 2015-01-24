@@ -1,0 +1,30 @@
+SHELL=/bin/sh
+
+CVLIB       = /opt/local/lib
+CVINCLUDE	= /opt/local/include/opencv
+CV2INCLUDE	= /opt/local/include/opencv2/nonfree
+INCLUDE		= /opt/local/include
+
+CC 	= g++
+LLIBS   =  -lopencv_core -lopencv_highgui -lopencv_objdetect -lopencv_features2d -lopencv_imgproc -lopencv_nonfree -lfftw3 -lm -ljpeg
+CFLAGS  =  -g
+
+SRC_SUBTRACTION     = Squirrel_pipeline.cpp GRAB/KeyPoints/GRAB-kp.cpp GRAB/KeyPoints/Neighborhood-kp.cpp ./onevsetSVM/svm.cpp ./onevsetSVM/svm-predict.cpp
+#BackgroundSubtraction.cpp NewImage.cpp
+
+OBJ_SUBTRACTION			= $(patsubst %.cpp, %.o, $(SRC_SUBTRACTION))
+
+
+CCC = $(CC) $(CFLAGS) -I. -I$(INCLUDE) -I$(CVINCLUDE) -I$(CV2INCLUDE) -L$(CVLIB) $(LLIBS)
+
+subtraction: $(OBJ_SUBTRACTION) $(LIBS)
+	$(CCC) $(OBJ_SUBTRACTION)  $(LLIBS) -o subtraction
+
+
+%.o: %.cpp 
+	$(CCC) -c $< -o $@
+
+all: subtraction
+
+clean :
+	rm -f subtraction $(OBJ_SUBTRACTION)

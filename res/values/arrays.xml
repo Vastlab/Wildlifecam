@@ -1,0 +1,117 @@
+<resources>
+
+    <!-- FAQ Arrays -->
+    <array name="FAQ1">
+        <item>The First FAQ</item>
+        <item>the first is the one before the second. It is also the begining.
+        the first is the one before the second. It is also the begining.
+        the first is the one before the second. It is also the begining.\n
+        the first is the one before the second. It is also the begining.
+        the first is the one before the second. It is also the begining.
+        the first is the one before the second. It is also the begining.</item>
+    </array>
+    <array name="FAQ2">
+        <item>The Second FAQ</item>
+        <item>The second is not the first, but the one that comes after the first.</item>
+    </array>
+
+    <string-array name="modes">
+        <item>Capture and Process Images. (Slowest)</item>
+        <item>Capture images only.</item>
+        <!-- <item>Process images only.</item> -->
+    </string-array>
+    <string-array name="modeValues">
+        <item>1</item>
+        <item>2</item>
+        <!-- <item>3</item> -->
+    </string-array>
+
+    <array name="FAQ3">
+        <item>Why is this program so amazing?</item>
+        <item>Because the people who wrote the program are amazing.</item>
+    </array>
+
+    <!-- Array of parameters -->
+
+    <string-array name="General_Squirrel_Params">
+        <item>fudge</item>
+        <item>0.1</item>
+        <item>scale</item>
+        <item>12</item>
+        <item>UPDATE_NUMBER</item>
+        <item>1</item>
+        <item>HI_THRESHOLD_INC</item>
+        <item>10</item>
+        <item>GLOBAL_INCREMENT</item>
+        <item>20</item>
+        <item>GLOBAL_THRESHOLD_INIT</item>
+        <item>15</item>
+        <item>THRESHOLD_DECREMENT_NUMBER</item>
+        <item>3</item>
+        <item>THRESHOLD_DECREMENT_VALUE</item>
+        <item>1</item>
+        <item>THRESHOLD_UPDATE_NEG_EXEMPLAR</item>
+        <item>3</item>
+        <item>THRESHOLD_UPDATE_POS_EXEMPLAR</item>
+        <item>0</item>
+        <item>THRESHOLD_UPDATE_TOO_BIG_SMALL</item>
+        <item>3</item>
+        <item>UPDATE_BACKGROUND_INC</item>
+        <item>1</item>
+        <item>MIN_AREA_QCC</item>
+        <item>0</item>
+        <item>PERCENT_PIXELS_NEEDED_HIGH_ONLY</item>
+        <item>0.10</item>
+        <item>PERCENT_PIXELS_NEEDED_HIGH</item>
+        <item>0.9</item>
+        <item>PERCENT_PIXELS_NEEDED_LOW</item>
+        <item>0.3</item>
+        <item>NUMBER_OLD_FRAMES</item>
+        <item>50</item>
+        <item>USE_MAX_AREA</item>
+        <item>0</item>
+        <item>USE_MIN_AREA</item>
+        <item>0</item>
+        <item>mMaxArea</item>
+        <item>162.821</item>
+        <item>bMaxArea</item>
+        <item>-63702.139</item>
+        <item>mMinArea</item>
+        <item>60.0661</item>
+        <item>bMinArea</item>
+        <item>-35551.40</item>
+        <item>maxAreaFudge</item>
+        <item>1000000</item>
+        <item>minAreaFudge</item>
+        <item>35000</item>
+        <item>minROIWidth</item>
+        <item>8</item>
+        <item>minROIHeight</item>
+        <item>8</item>
+        <item>maxOverlapBeforeMerge</item>
+        <item>0.5</item>
+        <item>USE_MAX_AREA_AFTER_MERGE</item>
+        <item>0</item>
+        <item>mMaxAreaAfterMerge</item>
+        <item>162.821</item>
+        <item>bMaxAreaAfterMerge</item>
+        <item>-63702.139</item>
+        <item>maxAreaFudgeAfterMerge</item>
+        <item>1000000</item>
+        <item>maxRatio</item>
+        <item>0.15</item>
+        <item>maxCorrVal</item>
+        <item>0.94</item>
+        <item>minWidthOutputBox</item>
+        <item>20</item>
+        <item>minHeightOutputBox</item>
+        <item>0</item>
+        <item>cropFudgeFactorExemplar</item>
+        <item>4</item>
+        <item>minExemplarValue</item>
+        <item>0.15</item>
+        <item>SAVE_NEGATIVE_EXEMPLARS</item>
+        <item>0</item>
+    </string-array>
+
+</resources>

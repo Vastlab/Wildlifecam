@@ -1,0 +1,15 @@
+14
+Models/July7/July7_model1.txt 204 234
+Models/July7/July7_model2.txt 204 234
+Models/July7/July7_model3.txt 422 235
+Models/July7/July7_model4.txt 422 235
+Models/July7/July7_model5.txt 281 204
+Models/July7/July7_model6.txt 281 204
+Models/July7/July7_model7.txt 214 168
+Models/July7/July7_model8.txt 214 168
+Models/July7/July7_model9.txt 237 165
+Models/July7/July7_model10.txt 237 165
+Models/July7/July7_model11.txt 197 125
+Models/July7/July7_model12.txt 197 125
+Models/July7/July7_model13.txt 291 222
+Models/July7/July7_model14.txt 291 222

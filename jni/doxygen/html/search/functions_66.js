@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['find_5fbounding_5fboxes',['Find_Bounding_Boxes',['../_squirrel__pipeline_8cpp.html#a396191979b1665cc104b97840568de44',1,'Squirrel_pipeline.cpp']]],
+  ['find_5frectangles',['Find_Rectangles',['../_squirrel__pipeline_8cpp.html#aea0731f99aa86802e52db38826cc01dc',1,'Squirrel_pipeline.cpp']]],
+  ['findblobs',['FindBlobs',['../_squirrel__pipeline_8cpp.html#ab1dfd46b3af54621e0713279f6fd8140',1,'FindBlobs(const cv::Mat &amp;binary, std::vector&lt; std::vector&lt; cv::Point2i &gt; &gt; &amp;blobs):&#160;Squirrel_pipeline.cpp'],['../_squirrel__pipeline_8h.html#ab1dfd46b3af54621e0713279f6fd8140',1,'FindBlobs(const cv::Mat &amp;binary, std::vector&lt; std::vector&lt; cv::Point2i &gt; &gt; &amp;blobs):&#160;Squirrel_pipeline.cpp']]],
+  ['findneighbors',['findNeighbors',['../class_neighborhood.html#a5f66d233e0d1048773773ff0c3312078',1,'Neighborhood::findNeighbors(int windowSize)'],['../class_neighborhood.html#a5f66d233e0d1048773773ff0c3312078',1,'Neighborhood::findNeighbors(int windowSize)']]],
+  ['fithigh',['FitHigh',['../class_meta_recognition.html#a40386f63ea6a8088cffc54505d959afb',1,'MetaRecognition::FitHigh(double *inputData, int inputDataSize)'],['../class_meta_recognition.html#a40386f63ea6a8088cffc54505d959afb',1,'MetaRecognition::FitHigh(double *inputData, int inputDataSize)']]],
+  ['fitlow',['FitLow',['../class_meta_recognition.html#ac5ccbad6727a464df72e743c27a0be80',1,'MetaRecognition::FitLow(double *inputData, int inputDataSize)'],['../class_meta_recognition.html#ac5ccbad6727a464df72e743c27a0be80',1,'MetaRecognition::FitLow(double *inputData, int inputDataSize)']]],
+  ['fitsvm',['FitSVM',['../class_meta_recognition.html#ad040c8334ffb7af7ea8e777cdfeb56c8',1,'MetaRecognition::FitSVM(svm_node_libsvm *SVMdata, int inputDataSize, int label_of_interest=1, bool label_has_positive_score=true, bool reject_complement=1)'],['../class_meta_recognition.html#ad040c8334ffb7af7ea8e777cdfeb56c8',1,'MetaRecognition::FitSVM(svm_node_libsvm *SVMdata, int inputDataSize, int label_of_interest=1, bool label_has_positive_score=true, bool reject_complement=1)']]],
+  ['fix',['fix',['../weibull_8cpp.html#a7426cd1068c313e1761d33b1951db12d',1,'fix(double n):&#160;weibull.cpp'],['../_2weibull_8cpp.html#a7426cd1068c313e1761d33b1951db12d',1,'fix(double n):&#160;weibull.cpp']]]
+];

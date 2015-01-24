@@ -1,0 +1,201 @@
+\hypertarget{_2glob_8h}{\section{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M-\//glob.h File Reference}
+\label{_2glob_8h}\index{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M-\//glob.\-h@{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M-\//glob.\-h}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$sys/cdefs.\-h$>$}\\*
+{\ttfamily \#include $<$sys/\-\_\-types.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structglob__t}{glob\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_2glob_8h_a263efce0e5cda1d387a1a43f94715445}{N\-I\-L}~0
+\item 
+\#define \hyperlink{_2glob_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{T\-R\-U\-E}~1
+\item 
+\#define \hyperlink{_2glob_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\-A\-L\-S\-E}~0
+\item 
+\#define \hyperlink{_2glob_8h_a8b8e6396e0a565ab6cb6895bdfcf1e73}{\-\_\-\-G\-L\-O\-B\-\_\-\-H\-\_\-}
+\item 
+\#define \hyperlink{_2glob_8h_affe776513b24d84b39af8ab0930fef7f}{max}(a, b)~((a) $>$ (b) ? (a) \-: (b))
+\item 
+\#define \hyperlink{_2glob_8h_ac6afabdc09a49a433ee19d8a9486056d}{min}(a, b)~((a) $<$ (b) ? (a) \-: (b))
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \hyperlink{_2glob_8h_afcb01e1f082b5034c4d6afabb5582016}{L\-I\-N\-T}
+\item 
+typedef float \hyperlink{_2glob_8h_a8d06b04c04132c6f7c0fcb08c6167455}{F\-L\-O\-A\-T}
+\item 
+typedef double \hyperlink{_2glob_8h_aeb90fd78c942591ef3a935cf98baf4f8}{D\-O\-U\-B\-L\-E}
+\item 
+typedef unsigned char \hyperlink{_2glob_8h_a112e3146cb38b6ee95e64d85842e380a}{B\-O\-O\-L\-E\-A\-N}
+\item 
+typedef char $\ast$ \hyperlink{_2glob_8h_a94a9e1e03b75fd8f5c2cc4774a0b9515}{Filename}
+\item 
+typedef \hyperlink{glob_8h_afcb01e1f082b5034c4d6afabb5582016}{L\-I\-N\-T} \hyperlink{_2glob_8h_ab092f4b3e82c2f30ac53e45bedd50d9d}{Item}
+\item 
+typedef \hyperlink{glob_8h_afcb01e1f082b5034c4d6afabb5582016}{L\-I\-N\-T} \hyperlink{_2glob_8h_ae72026a65b7d40257f07da0b37e9e77b}{Tid}
+\item 
+typedef \hyperlink{glob_8h_afcb01e1f082b5034c4d6afabb5582016}{L\-I\-N\-T} \hyperlink{_2glob_8h_adc91aa2c7e0f863e2b0924ba8ddcbf2a}{Cid}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\-\_\-\-\_\-\-B\-E\-G\-I\-N\-\_\-\-D\-E\-C\-L\-S int \hyperlink{_2glob_8h_a90c6531c9a2af0800aab587f459dadcd}{glob} (const char $\ast$, int, int($\ast$)(const char $\ast$, int), \hyperlink{structglob__t}{glob\-\_\-t} $\ast$)
+\item 
+void \hyperlink{_2glob_8h_a6ae33d17ffd323f7cd4e2775d77f47c3}{globfree} (\hyperlink{structglob__t}{glob\-\_\-t} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\-\_\-\-\_\-\-E\-N\-D\-\_\-\-D\-E\-C\-L\-S typedef char \hyperlink{_2glob_8h_a1d1ca125262e8ef507148fc11417758b}{C\-H\-A\-R}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_2glob_8h_a8b8e6396e0a565ab6cb6895bdfcf1e73}{\index{/glob.\-h@{/glob.\-h}!\-\_\-\-G\-L\-O\-B\-\_\-\-H\-\_\-@{\-\_\-\-G\-L\-O\-B\-\_\-\-H\-\_\-}}
+\index{\-\_\-\-G\-L\-O\-B\-\_\-\-H\-\_\-@{\-\_\-\-G\-L\-O\-B\-\_\-\-H\-\_\-}!/glob.h@{/glob.\-h}}
+\subsubsection[{\-\_\-\-G\-L\-O\-B\-\_\-\-H\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-\-G\-L\-O\-B\-\_\-\-H\-\_\-}}\label{_2glob_8h_a8b8e6396e0a565ab6cb6895bdfcf1e73}
+
+
+Definition at line 15 of file glob.\-h.
+
+\hypertarget{_2glob_8h_aa93f0eb578d23995850d61f7d61c55c1}{\index{/glob.\-h@{/glob.\-h}!F\-A\-L\-S\-E@{F\-A\-L\-S\-E}}
+\index{F\-A\-L\-S\-E@{F\-A\-L\-S\-E}!/glob.h@{/glob.\-h}}
+\subsubsection[{F\-A\-L\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-A\-L\-S\-E~0}}\label{_2glob_8h_aa93f0eb578d23995850d61f7d61c55c1}
+
+
+Definition at line 12 of file glob.\-h.
+
+\hypertarget{_2glob_8h_affe776513b24d84b39af8ab0930fef7f}{\index{/glob.\-h@{/glob.\-h}!max@{max}}
+\index{max@{max}!/glob.h@{/glob.\-h}}
+\subsubsection[{max}]{\setlength{\rightskip}{0pt plus 5cm}\#define max(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)~((a) $>$ (b) ? (a) \-: (b))}}\label{_2glob_8h_affe776513b24d84b39af8ab0930fef7f}
+
+
+Definition at line 97 of file glob.\-h.
+
+\hypertarget{_2glob_8h_ac6afabdc09a49a433ee19d8a9486056d}{\index{/glob.\-h@{/glob.\-h}!min@{min}}
+\index{min@{min}!/glob.h@{/glob.\-h}}
+\subsubsection[{min}]{\setlength{\rightskip}{0pt plus 5cm}\#define min(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)~((a) $<$ (b) ? (a) \-: (b))}}\label{_2glob_8h_ac6afabdc09a49a433ee19d8a9486056d}
+
+
+Definition at line 98 of file glob.\-h.
+
+\hypertarget{_2glob_8h_a263efce0e5cda1d387a1a43f94715445}{\index{/glob.\-h@{/glob.\-h}!N\-I\-L@{N\-I\-L}}
+\index{N\-I\-L@{N\-I\-L}!/glob.h@{/glob.\-h}}
+\subsubsection[{N\-I\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-I\-L~0}}\label{_2glob_8h_a263efce0e5cda1d387a1a43f94715445}
+
+
+Definition at line 7 of file glob.\-h.
+
+\hypertarget{_2glob_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\index{/glob.\-h@{/glob.\-h}!T\-R\-U\-E@{T\-R\-U\-E}}
+\index{T\-R\-U\-E@{T\-R\-U\-E}!/glob.h@{/glob.\-h}}
+\subsubsection[{T\-R\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-R\-U\-E~1}}\label{_2glob_8h_aa8cecfc5c5c054d2875c03e77b7be15d}
+
+
+Definition at line 11 of file glob.\-h.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_2glob_8h_a112e3146cb38b6ee95e64d85842e380a}{\index{/glob.\-h@{/glob.\-h}!B\-O\-O\-L\-E\-A\-N@{B\-O\-O\-L\-E\-A\-N}}
+\index{B\-O\-O\-L\-E\-A\-N@{B\-O\-O\-L\-E\-A\-N}!/glob.h@{/glob.\-h}}
+\subsubsection[{B\-O\-O\-L\-E\-A\-N}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf B\-O\-O\-L\-E\-A\-N}}}\label{_2glob_8h_a112e3146cb38b6ee95e64d85842e380a}
+
+
+Definition at line 89 of file glob.\-h.
+
+\hypertarget{_2glob_8h_adc91aa2c7e0f863e2b0924ba8ddcbf2a}{\index{/glob.\-h@{/glob.\-h}!Cid@{Cid}}
+\index{Cid@{Cid}!/glob.h@{/glob.\-h}}
+\subsubsection[{Cid}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf L\-I\-N\-T} {\bf Cid}}}\label{_2glob_8h_adc91aa2c7e0f863e2b0924ba8ddcbf2a}
+
+
+Definition at line 104 of file glob.\-h.
+
+\hypertarget{_2glob_8h_aeb90fd78c942591ef3a935cf98baf4f8}{\index{/glob.\-h@{/glob.\-h}!D\-O\-U\-B\-L\-E@{D\-O\-U\-B\-L\-E}}
+\index{D\-O\-U\-B\-L\-E@{D\-O\-U\-B\-L\-E}!/glob.h@{/glob.\-h}}
+\subsubsection[{D\-O\-U\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}typedef double {\bf D\-O\-U\-B\-L\-E}}}\label{_2glob_8h_aeb90fd78c942591ef3a935cf98baf4f8}
+
+
+Definition at line 88 of file glob.\-h.
+
+\hypertarget{_2glob_8h_a94a9e1e03b75fd8f5c2cc4774a0b9515}{\index{/glob.\-h@{/glob.\-h}!Filename@{Filename}}
+\index{Filename@{Filename}!/glob.h@{/glob.\-h}}
+\subsubsection[{Filename}]{\setlength{\rightskip}{0pt plus 5cm}typedef char$\ast$ {\bf Filename}}}\label{_2glob_8h_a94a9e1e03b75fd8f5c2cc4774a0b9515}
+
+
+Definition at line 101 of file glob.\-h.
+
+\hypertarget{_2glob_8h_a8d06b04c04132c6f7c0fcb08c6167455}{\index{/glob.\-h@{/glob.\-h}!F\-L\-O\-A\-T@{F\-L\-O\-A\-T}}
+\index{F\-L\-O\-A\-T@{F\-L\-O\-A\-T}!/glob.h@{/glob.\-h}}
+\subsubsection[{F\-L\-O\-A\-T}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf F\-L\-O\-A\-T}}}\label{_2glob_8h_a8d06b04c04132c6f7c0fcb08c6167455}
+
+
+Definition at line 87 of file glob.\-h.
+
+\hypertarget{_2glob_8h_ab092f4b3e82c2f30ac53e45bedd50d9d}{\index{/glob.\-h@{/glob.\-h}!Item@{Item}}
+\index{Item@{Item}!/glob.h@{/glob.\-h}}
+\subsubsection[{Item}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf L\-I\-N\-T} {\bf Item}}}\label{_2glob_8h_ab092f4b3e82c2f30ac53e45bedd50d9d}
+
+
+Definition at line 102 of file glob.\-h.
+
+\hypertarget{_2glob_8h_afcb01e1f082b5034c4d6afabb5582016}{\index{/glob.\-h@{/glob.\-h}!L\-I\-N\-T@{L\-I\-N\-T}}
+\index{L\-I\-N\-T@{L\-I\-N\-T}!/glob.h@{/glob.\-h}}
+\subsubsection[{L\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf L\-I\-N\-T}}}\label{_2glob_8h_afcb01e1f082b5034c4d6afabb5582016}
+
+
+Definition at line 86 of file glob.\-h.
+
+\hypertarget{_2glob_8h_ae72026a65b7d40257f07da0b37e9e77b}{\index{/glob.\-h@{/glob.\-h}!Tid@{Tid}}
+\index{Tid@{Tid}!/glob.h@{/glob.\-h}}
+\subsubsection[{Tid}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf L\-I\-N\-T} {\bf Tid}}}\label{_2glob_8h_ae72026a65b7d40257f07da0b37e9e77b}
+
+
+Definition at line 103 of file glob.\-h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_2glob_8h_a90c6531c9a2af0800aab587f459dadcd}{\index{/glob.\-h@{/glob.\-h}!glob@{glob}}
+\index{glob@{glob}!/glob.h@{/glob.\-h}}
+\subsubsection[{glob}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-\-B\-E\-G\-I\-N\-\_\-\-D\-E\-C\-L\-S int glob (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{, }
+\item[{int}]{, }
+\item[{int($\ast$)(const char $\ast$, int)}]{, }
+\item[{{\bf glob\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_2glob_8h_a90c6531c9a2af0800aab587f459dadcd}
+\hypertarget{_2glob_8h_a6ae33d17ffd323f7cd4e2775d77f47c3}{\index{/glob.\-h@{/glob.\-h}!globfree@{globfree}}
+\index{globfree@{globfree}!/glob.h@{/glob.\-h}}
+\subsubsection[{globfree}]{\setlength{\rightskip}{0pt plus 5cm}void globfree (
+\begin{DoxyParamCaption}
+\item[{{\bf glob\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_2glob_8h_a6ae33d17ffd323f7cd4e2775d77f47c3}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_2glob_8h_a1d1ca125262e8ef507148fc11417758b}{\index{/glob.\-h@{/glob.\-h}!C\-H\-A\-R@{C\-H\-A\-R}}
+\index{C\-H\-A\-R@{C\-H\-A\-R}!/glob.h@{/glob.\-h}}
+\subsubsection[{C\-H\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-\-E\-N\-D\-\_\-\-D\-E\-C\-L\-S typedef char C\-H\-A\-R}}\label{_2glob_8h_a1d1ca125262e8ef507148fc11417758b}
+
+
+Definition at line 85 of file glob.\-h.
+

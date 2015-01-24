@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.securics.wildlifecapture"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+
+    <!-- Features and permissions inherited from SquirrelGPU -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.securics.wildlifecapture.MainActivity"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="SettingsActivity"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+        
+        <activity
+            android:name="ChangeResolutionActivity"
+            android:label="@string/title_activity_change_resolution" >
+        </activity>
+        
+        <activity
+            android:name="Documentation"
+            android:label="@string/title_activity_documentation" >
+        </activity>
+        
+        <activity
+            android:name="FreqChanger"
+            android:label="@string/title_activity_freq_changer"
+            android:theme="@android:style/Theme.Holo.DialogWhenLarge" >
+        </activity>
+ 
+        <receiver
+            android:name="StartAtBoot"
+            android:enabled="true"
+            android:exported="true"
+            android:label="StartMyServiceAtBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+        
+    </application>
+
+</manifest>

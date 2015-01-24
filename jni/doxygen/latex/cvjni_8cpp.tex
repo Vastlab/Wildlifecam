@@ -1,0 +1,219 @@
+\hypertarget{cvjni_8cpp}{\section{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/cvjni.cpp File Reference}
+\label{cvjni_8cpp}\index{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/cvjni.\-cpp@{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/cvjni.\-cpp}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$memory.\-h$>$}\\*
+{\ttfamily \#include $<$float.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$jni.\-h$>$}\\*
+{\ttfamily \#include $<$malloc.\-h$>$}\\*
+{\ttfamily \#include $<$android/log.\-h$>$}\\*
+{\ttfamily \#include $<$android/bitmap.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}com\-\_\-securics\-\_\-photosnapper\-\_\-\-Photo\-Snapper\-Activity.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Squirrel\-\_\-pipeline.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$opencv2/opencv.\-hpp$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cvjni_8cpp_af3d016e4e99ca6f1988a90dd40de933b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}~\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a3357428f473998c530d5de9519a74d45}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}
+\item 
+\#define \hyperlink{cvjni_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}~\char`\"{}C\-V\-J\-N\-I\char`\"{}
+\item 
+\#define \hyperlink{cvjni_8cpp_ab78bd305488c62caf8515ee765b1ed49}{L\-O\-G\-V}(...)~\hyperlink{log_8h_ac60e52c9711c53803ad9af639083afd5}{\-\_\-\-\_\-android\-\_\-log\-\_\-print}(\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a8daee540c7d1fc04a9dfecc2db988f3b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-S\-I\-L\-E\-N\-T}, \hyperlink{_squirrel__pipeline_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{cvjni_8cpp_a5512e59d578a380a441a70256af997d0}{L\-O\-G\-I}(...)~\hyperlink{log_8h_ac60e52c9711c53803ad9af639083afd5}{\-\_\-\-\_\-android\-\_\-log\-\_\-print}(\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6ad46329103f1e9bf318b889f331d1ea8b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-I\-N\-F\-O}, \hyperlink{_squirrel__pipeline_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{cvjni_8cpp_ae02538a80ad5fc009caec73487d11a8d}{L\-O\-G\-E}(...)~\hyperlink{log_8h_ac60e52c9711c53803ad9af639083afd5}{\-\_\-\-\_\-android\-\_\-log\-\_\-print}(\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6af1067b5ff6e64a6ece3249c113d2d164}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R}, \hyperlink{_squirrel__pipeline_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{jni_8h_a5ef9c7c852d5e0abf2ae84d4e9c5a7b7}{J\-N\-I\-E\-X\-P\-O\-R\-T} \hyperlink{jni_8h_a2bf7845ae665f91517ba1ea33f659701}{jint\-Array} \hyperlink{cvjni_8cpp_a7332eb80df6ddfdffa15d3642365dc08}{Java\-\_\-com\-\_\-securics\-\_\-photosnapper\-\_\-\-Photo\-Snapper\-Activity\-\_\-push\-Image} (\hyperlink{jni_8h_a2d06d32b6b6f1519799078a36fe2e380}{J\-N\-I\-Env} $\ast$env, \hyperlink{jni_8h_a5b236a554a9caf14a835f4e83b4c16b3}{jclass} clazz, \hyperlink{jni_8h_a24647d2a2f02c39f6338c2c6ce4c1004}{jobject} bitmapcolor, \hyperlink{jni_8h_a3e597066bbafe45e3d729fc1f4f9829f}{jboolean} first\-Frame, \hyperlink{jni_8h_a6b61b4d7ccdc1edb60f2c735f9b401c9}{jstring} location, \hyperlink{jni_8h_a6b61b4d7ccdc1edb60f2c735f9b401c9}{jstring} name)
+\item 
+static int \hyperlink{cvjni_8cpp_a9b4778a7564af976ace60bbf6e6f6ccc}{jni\-Register\-Native\-Methods} (\hyperlink{jni_8h_a2d06d32b6b6f1519799078a36fe2e380}{J\-N\-I\-Env} $\ast$env, const char $\ast$class\-Name, \hyperlink{struct_j_n_i_native_method}{J\-N\-I\-Native\-Method} $\ast$Methods, int num\-Methods)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{cvjni_8cpp_a746bc79de1877508caed884165c34757}{g\-Height} = 2448
+\item 
+int \hyperlink{cvjni_8cpp_a057f0586e38af9f9b4011981cd2b8d30}{g\-Width} = 3264
+\item 
+cv\-::\-Mat \hyperlink{cvjni_8cpp_a97dabeac10a34403d1bbfa64be7ffc1f}{Background1}
+\item 
+cv\-::\-Mat \hyperlink{cvjni_8cpp_acb58e6fb7cf362a1886ccb5289ec0ff3}{Background2}
+\item 
+cv\-::\-Mat \hyperlink{cvjni_8cpp_aeb3a274bd2dc7efe76e002aade3793a7}{Thresholds}
+\item 
+cv\-::\-Mat \hyperlink{cvjni_8cpp_acfa974761375766abb84d52bb82b602c}{d\-I\-\_\-\-Hi}
+\item 
+cv\-::\-Mat \hyperlink{cvjni_8cpp_aad5039fac853ddff8b7b1e7eac173fab}{d\-I\-\_\-\-Lo}
+\item 
+cv\-::\-Mat \hyperlink{cvjni_8cpp_a05ce7a2b500916215a61204566a1a6ae}{classification\-Map}
+\item 
+static \hyperlink{struct_j_n_i_native_method}{J\-N\-I\-Native\-Method} \hyperlink{cvjni_8cpp_ae32d33890d0c6fa56df27c1d0b08838f}{s\-Methods} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{cvjni_8cpp_af3d016e4e99ca6f1988a90dd40de933b}{\index{cvjni.\-cpp@{cvjni.\-cpp}!A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}}
+\index{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E~{\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}}}\label{cvjni_8cpp_af3d016e4e99ca6f1988a90dd40de933b}
+
+
+Definition at line 30 of file cvjni.\-cpp.
+
+\hypertarget{cvjni_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{\index{cvjni.\-cpp@{cvjni.\-cpp}!L\-O\-G\-\_\-\-T\-A\-G@{L\-O\-G\-\_\-\-T\-A\-G}}
+\index{L\-O\-G\-\_\-\-T\-A\-G@{L\-O\-G\-\_\-\-T\-A\-G}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{L\-O\-G\-\_\-\-T\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-\_\-\-T\-A\-G~\char`\"{}C\-V\-J\-N\-I\char`\"{}}}\label{cvjni_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}
+
+
+Definition at line 31 of file cvjni.\-cpp.
+
+\hypertarget{cvjni_8cpp_ae02538a80ad5fc009caec73487d11a8d}{\index{cvjni.\-cpp@{cvjni.\-cpp}!L\-O\-G\-E@{L\-O\-G\-E}}
+\index{L\-O\-G\-E@{L\-O\-G\-E}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{L\-O\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-E(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-android\-\_\-log\-\_\-print}({\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R}, {\bf L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{cvjni_8cpp_ae02538a80ad5fc009caec73487d11a8d}
+
+
+Definition at line 34 of file cvjni.\-cpp.
+
+\hypertarget{cvjni_8cpp_a5512e59d578a380a441a70256af997d0}{\index{cvjni.\-cpp@{cvjni.\-cpp}!L\-O\-G\-I@{L\-O\-G\-I}}
+\index{L\-O\-G\-I@{L\-O\-G\-I}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{L\-O\-G\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-I(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-android\-\_\-log\-\_\-print}({\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-I\-N\-F\-O}, {\bf L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{cvjni_8cpp_a5512e59d578a380a441a70256af997d0}
+
+
+Definition at line 33 of file cvjni.\-cpp.
+
+\hypertarget{cvjni_8cpp_ab78bd305488c62caf8515ee765b1ed49}{\index{cvjni.\-cpp@{cvjni.\-cpp}!L\-O\-G\-V@{L\-O\-G\-V}}
+\index{L\-O\-G\-V@{L\-O\-G\-V}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{L\-O\-G\-V}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-V(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-android\-\_\-log\-\_\-print}({\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-S\-I\-L\-E\-N\-T}, {\bf L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{cvjni_8cpp_ab78bd305488c62caf8515ee765b1ed49}
+
+
+Definition at line 32 of file cvjni.\-cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{cvjni_8cpp_a7332eb80df6ddfdffa15d3642365dc08}{\index{cvjni.\-cpp@{cvjni.\-cpp}!Java\-\_\-com\-\_\-securics\-\_\-photosnapper\-\_\-\-Photo\-Snapper\-Activity\-\_\-push\-Image@{Java\-\_\-com\-\_\-securics\-\_\-photosnapper\-\_\-\-Photo\-Snapper\-Activity\-\_\-push\-Image}}
+\index{Java\-\_\-com\-\_\-securics\-\_\-photosnapper\-\_\-\-Photo\-Snapper\-Activity\-\_\-push\-Image@{Java\-\_\-com\-\_\-securics\-\_\-photosnapper\-\_\-\-Photo\-Snapper\-Activity\-\_\-push\-Image}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{Java\-\_\-com\-\_\-securics\-\_\-photosnapper\-\_\-\-Photo\-Snapper\-Activity\-\_\-push\-Image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf J\-N\-I\-E\-X\-P\-O\-R\-T} {\bf jint\-Array} Java\-\_\-com\-\_\-securics\-\_\-photosnapper\-\_\-\-Photo\-Snapper\-Activity\-\_\-push\-Image (
+\begin{DoxyParamCaption}
+\item[{{\bf J\-N\-I\-Env} $\ast$}]{env, }
+\item[{{\bf jclass}}]{clazz, }
+\item[{{\bf jobject}}]{bitmapcolor, }
+\item[{{\bf jboolean}}]{first\-Frame, }
+\item[{{\bf jstring}}]{location, }
+\item[{{\bf jstring}}]{name}
+\end{DoxyParamCaption}
+)}}\label{cvjni_8cpp_a7332eb80df6ddfdffa15d3642365dc08}
+
+
+Definition at line 56 of file cvjni.\-cpp.
+
+\hypertarget{cvjni_8cpp_a9b4778a7564af976ace60bbf6e6f6ccc}{\index{cvjni.\-cpp@{cvjni.\-cpp}!jni\-Register\-Native\-Methods@{jni\-Register\-Native\-Methods}}
+\index{jni\-Register\-Native\-Methods@{jni\-Register\-Native\-Methods}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{jni\-Register\-Native\-Methods}]{\setlength{\rightskip}{0pt plus 5cm}static int jni\-Register\-Native\-Methods (
+\begin{DoxyParamCaption}
+\item[{{\bf J\-N\-I\-Env} $\ast$}]{env, }
+\item[{const char $\ast$}]{class\-Name, }
+\item[{{\bf J\-N\-I\-Native\-Method} $\ast$}]{Methods, }
+\item[{int}]{num\-Methods}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{cvjni_8cpp_a9b4778a7564af976ace60bbf6e6f6ccc}
+
+
+Definition at line 193 of file cvjni.\-cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{cvjni_8cpp_a97dabeac10a34403d1bbfa64be7ffc1f}{\index{cvjni.\-cpp@{cvjni.\-cpp}!Background1@{Background1}}
+\index{Background1@{Background1}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{Background1}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Mat Background1}}\label{cvjni_8cpp_a97dabeac10a34403d1bbfa64be7ffc1f}
+
+
+Definition at line 48 of file cvjni.\-cpp.
+
+\hypertarget{cvjni_8cpp_acb58e6fb7cf362a1886ccb5289ec0ff3}{\index{cvjni.\-cpp@{cvjni.\-cpp}!Background2@{Background2}}
+\index{Background2@{Background2}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{Background2}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Mat Background2}}\label{cvjni_8cpp_acb58e6fb7cf362a1886ccb5289ec0ff3}
+
+
+Definition at line 49 of file cvjni.\-cpp.
+
+\hypertarget{cvjni_8cpp_a05ce7a2b500916215a61204566a1a6ae}{\index{cvjni.\-cpp@{cvjni.\-cpp}!classification\-Map@{classification\-Map}}
+\index{classification\-Map@{classification\-Map}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{classification\-Map}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Mat classification\-Map}}\label{cvjni_8cpp_a05ce7a2b500916215a61204566a1a6ae}
+
+
+Definition at line 53 of file cvjni.\-cpp.
+
+\hypertarget{cvjni_8cpp_acfa974761375766abb84d52bb82b602c}{\index{cvjni.\-cpp@{cvjni.\-cpp}!d\-I\-\_\-\-Hi@{d\-I\-\_\-\-Hi}}
+\index{d\-I\-\_\-\-Hi@{d\-I\-\_\-\-Hi}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{d\-I\-\_\-\-Hi}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Mat d\-I\-\_\-\-Hi}}\label{cvjni_8cpp_acfa974761375766abb84d52bb82b602c}
+
+
+Definition at line 51 of file cvjni.\-cpp.
+
+\hypertarget{cvjni_8cpp_aad5039fac853ddff8b7b1e7eac173fab}{\index{cvjni.\-cpp@{cvjni.\-cpp}!d\-I\-\_\-\-Lo@{d\-I\-\_\-\-Lo}}
+\index{d\-I\-\_\-\-Lo@{d\-I\-\_\-\-Lo}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{d\-I\-\_\-\-Lo}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Mat d\-I\-\_\-\-Lo}}\label{cvjni_8cpp_aad5039fac853ddff8b7b1e7eac173fab}
+
+
+Definition at line 52 of file cvjni.\-cpp.
+
+\hypertarget{cvjni_8cpp_a746bc79de1877508caed884165c34757}{\index{cvjni.\-cpp@{cvjni.\-cpp}!g\-Height@{g\-Height}}
+\index{g\-Height@{g\-Height}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{g\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int g\-Height = 2448}}\label{cvjni_8cpp_a746bc79de1877508caed884165c34757}
+
+
+Definition at line 44 of file cvjni.\-cpp.
+
+\hypertarget{cvjni_8cpp_a057f0586e38af9f9b4011981cd2b8d30}{\index{cvjni.\-cpp@{cvjni.\-cpp}!g\-Width@{g\-Width}}
+\index{g\-Width@{g\-Width}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{g\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int g\-Width = 3264}}\label{cvjni_8cpp_a057f0586e38af9f9b4011981cd2b8d30}
+
+
+Definition at line 45 of file cvjni.\-cpp.
+
+\hypertarget{cvjni_8cpp_ae32d33890d0c6fa56df27c1d0b08838f}{\index{cvjni.\-cpp@{cvjni.\-cpp}!s\-Methods@{s\-Methods}}
+\index{s\-Methods@{s\-Methods}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{s\-Methods}]{\setlength{\rightskip}{0pt plus 5cm}{\bf J\-N\-I\-Native\-Method} s\-Methods\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{cvjni_8cpp_ae32d33890d0c6fa56df27c1d0b08838f}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+ \{
+    
+
+    \{\textcolor{stringliteral}{"pushImage"}, \textcolor{stringliteral}{"
+      (Landroid/graphics/Bitmap;ZLjava/lang/String;Ljava/lang/String;)[I"},
+                (\textcolor{keywordtype}{void}*)
+      \hyperlink{com__securics__photosnapper___photo_snapper_activity_8h_adc4a21c8309d9a0200568d07d4e91ebe}{Java\_com\_securics\_photosnapper\_PhotoSnapperActivity\_pushImage}
+      \},
+
+\}
+\end{DoxyCode}
+
+
+Definition at line 185 of file cvjni.\-cpp.
+
+\hypertarget{cvjni_8cpp_aeb3a274bd2dc7efe76e002aade3793a7}{\index{cvjni.\-cpp@{cvjni.\-cpp}!Thresholds@{Thresholds}}
+\index{Thresholds@{Thresholds}!cvjni.cpp@{cvjni.\-cpp}}
+\subsubsection[{Thresholds}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Mat Thresholds}}\label{cvjni_8cpp_aeb3a274bd2dc7efe76e002aade3793a7}
+
+
+Definition at line 50 of file cvjni.\-cpp.
+

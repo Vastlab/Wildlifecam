@@ -1,0 +1,28 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="My Preferences / Settings" >
+		<ListPreference 
+		    android:key="processingMode"
+		    android:title="Mode"
+		    android:summary="Select the processing mode to be used by WildLifeCam:"
+		    android:entries="@array/modes"
+		    android:entryValues="@array/modeValues"
+		    android:defaultValue="1"/>
+    </PreferenceCategory>
+</PreferenceScreen>
+<!-- 
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Mode Settings" >
+		<ListPreference 
+		    android:title="Mode"
+		    android:summary="Select the processing mode to be used by WildLifeCam:"
+		    android:key="processingMode"
+		    android:entries="@array/modes"
+		    android:entryValues="@array/modeValues"
+		    android:defaultValue="0"
+		    />
+    </PreferenceCategory>
+</PreferenceScreen>-->

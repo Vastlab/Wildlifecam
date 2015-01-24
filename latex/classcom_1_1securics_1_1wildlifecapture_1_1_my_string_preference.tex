@@ -1,0 +1,177 @@
+\section{com.\+securics.\+wildlifecapture.\+My\+String\+Preference Class Reference}
+\label{classcom_1_1securics_1_1wildlifecapture_1_1_my_string_preference}\index{com.\+securics.\+wildlifecapture.\+My\+String\+Preference@{com.\+securics.\+wildlifecapture.\+My\+String\+Preference}}
+Inheritance diagram for com.\+securics.\+wildlifecapture.\+My\+String\+Preference\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1securics_1_1wildlifecapture_1_1_my_string_preference}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Saved\+State}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf My\+String\+Preference} (Context context, Attribute\+Set attrs)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf on\+Bind\+View} (View view)
+\item 
+void {\bf on\+Dialog\+Closed} (boolean positive\+Result)
+\item 
+Object {\bf on\+Get\+Default\+Value} (Typed\+Array a, int index)
+\item 
+void {\bf on\+Set\+Initial\+Value} (boolean restore\+Value, Object default\+Value)
+\item 
+Parcelable {\bf on\+Save\+Instance\+State} ()
+\item 
+void {\bf on\+Restore\+Instance\+State} (Parcelable state)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String {\bf preference\+\_\+string}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file My\+String\+Preference.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}!My\+String\+Preference@{My\+String\+Preference}}
+\index{My\+String\+Preference@{My\+String\+Preference}!com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}}
+\subsubsection[{My\+String\+Preference}]{\setlength{\rightskip}{0pt plus 5cm}com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+My\+String\+Preference (
+\begin{DoxyParamCaption}
+\item[{Context}]{context, }
+\item[{Attribute\+Set}]{attrs}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_my_string_preference_ae31af000f466a9ca8489d0c93aa7c3ac}
+This is the constructor called by the inflater 
+\begin{DoxyParams}{Parameters}
+{\em context} & \\
+\hline
+{\em attrs} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file My\+String\+Preference.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}!on\+Bind\+View@{on\+Bind\+View}}
+\index{on\+Bind\+View@{on\+Bind\+View}!com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}}
+\subsubsection[{on\+Bind\+View}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+on\+Bind\+View (
+\begin{DoxyParamCaption}
+\item[{View}]{view}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_my_string_preference_a7dc194fb959c65ae2a909741ac7e0d90}
+Sets test to preference\+\_\+string if my\+Text\+View is null. If not, declare Edit\+Text\+Preference p as an extension of shared preference and let p save the value of preference\+\_\+string to it Set our custom views inside the layout 
+
+Definition at line 32 of file My\+String\+Preference.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+preference\+\_\+string.
+
+\index{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}!on\+Dialog\+Closed@{on\+Dialog\+Closed}}
+\index{on\+Dialog\+Closed@{on\+Dialog\+Closed}!com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}}
+\subsubsection[{on\+Dialog\+Closed}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+on\+Dialog\+Closed (
+\begin{DoxyParamCaption}
+\item[{boolean}]{positive\+Result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_my_string_preference_a2ed32e78661c200e1686be863df572fe}
+If positive\+Result is true, and preference\+\_\+string has changed, save preference\+\_\+string to Shared\+Preference 
+
+Definition at line 49 of file My\+String\+Preference.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+preference\+\_\+string.
+
+\index{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}!on\+Get\+Default\+Value@{on\+Get\+Default\+Value}}
+\index{on\+Get\+Default\+Value@{on\+Get\+Default\+Value}!com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}}
+\subsubsection[{on\+Get\+Default\+Value}]{\setlength{\rightskip}{0pt plus 5cm}Object com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+on\+Get\+Default\+Value (
+\begin{DoxyParamCaption}
+\item[{Typed\+Array}]{a, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_my_string_preference_a614d4c50889d172d4e60480042d1a05d}
+This preference type's value type is Integer, so we read the default value from the attributes as an Integer.
+
+Definition at line 63 of file My\+String\+Preference.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}!on\+Restore\+Instance\+State@{on\+Restore\+Instance\+State}}
+\index{on\+Restore\+Instance\+State@{on\+Restore\+Instance\+State}!com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}}
+\subsubsection[{on\+Restore\+Instance\+State}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+on\+Restore\+Instance\+State (
+\begin{DoxyParamCaption}
+\item[{Parcelable}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_my_string_preference_a51af4891f592eabe3e5f4a3f0d6a6ea5}
+Restores the instance state if it is not already 
+
+Definition at line 113 of file My\+String\+Preference.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+preference\+\_\+string.
+
+\index{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}!on\+Save\+Instance\+State@{on\+Save\+Instance\+State}}
+\index{on\+Save\+Instance\+State@{on\+Save\+Instance\+State}!com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}}
+\subsubsection[{on\+Save\+Instance\+State}]{\setlength{\rightskip}{0pt plus 5cm}Parcelable com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+on\+Save\+Instance\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_my_string_preference_a58bdbdf1330118d01f405572631a8717}
+Suppose a client uses this preference type without persisting. We must save the instance state so it is able to, for example, survive orientation changes.
+
+Definition at line 90 of file My\+String\+Preference.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+preference\+\_\+string.
+
+\index{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}!on\+Set\+Initial\+Value@{on\+Set\+Initial\+Value}}
+\index{on\+Set\+Initial\+Value@{on\+Set\+Initial\+Value}!com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}}
+\subsubsection[{on\+Set\+Initial\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+on\+Set\+Initial\+Value (
+\begin{DoxyParamCaption}
+\item[{boolean}]{restore\+Value, }
+\item[{Object}]{default\+Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_my_string_preference_a142288d6b4f3df72bf6b48e94a1ad63b}
+Intializes preference\+\_\+string 
+
+Definition at line 76 of file My\+String\+Preference.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+preference\+\_\+string.
+
+
+
+\subsection{Member Data Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}!preference\+\_\+string@{preference\+\_\+string}}
+\index{preference\+\_\+string@{preference\+\_\+string}!com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference@{com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}}
+\subsubsection[{preference\+\_\+string}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+preference\+\_\+string\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_my_string_preference_ae18f2dfcbea2946ec13ba306e73077e3}
+
+
+Definition at line 13 of file My\+String\+Preference.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+on\+Bind\+View(), com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+on\+Dialog\+Closed(), com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+on\+Restore\+Instance\+State(), com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+on\+Save\+Instance\+State(), and com.\+securics.\+wildlifecapture.\+My\+String\+Preference.\+on\+Set\+Initial\+Value().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/com/securics/wildlifecapture/{\bf My\+String\+Preference.\+java}\end{DoxyCompactItemize}

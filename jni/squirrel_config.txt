@@ -1,0 +1,109 @@
+#///============================================================================
+#/// Name        : squirrel_config.txt
+#/// Author      : RC Johnson
+#/// Version     :
+#/// Copyright   : Copyright Securics Inc
+#/// Description : Config file for the squirrel pipeline
+#/// Note		 : tabs separate elements from values
+#///============================================================================
+
+
+#Stuff
+fudge				0.1
+scale				16
+
+#Squirrel Size
+
+#SVM Model file location
+# newer tablets, older tablets and phones, windows, linux/osx
+#model_dir			/Removable/MicroSD/model/
+#model_dir			/mnt/sdcard/model/
+#model_dir			../../model/
+model_dir			./Models
+
+model_name	Squirrel31
+
+positive_exemplar_dir	/home/brian/Desktop/wildlifecapture/jni/positiveExemplars/
+#Hour of the day (0-24)
+starttime			6
+endtime				18
+
+#Log file location (newer tablets, older tablets and phones, windows, linux/osx)
+#logFile				/Removable/MicroSD/squirrel_log.txt
+#logFile			/mnt/sdcard/squirrel_log.txt
+#logFile			../../squirrel_log.txt	
+logFile			./squirrel_log.txt
+
+
+deviceID						0
+
+UPDATE_NUMBER					1
+HI_THRESHOLD_INC				20
+GLOBAL_INCREMENT				20
+GLOBAL_THRESHOLD_INIT				15
+THRESHOLD_DECREMENT_NUMBER			3
+THRESHOLD_DECREMENT_VALUE			1
+THRESHOLD_UPDATE_NEG_EXEMPLAR	3
+THRESHOLD_UPDATE_POS_EXEMPLAR	0
+THRESHOLD_UPDATE_TOO_BIG_SMALL	3
+
+UPDATE_BACKGROUND_INC	1
+
+MIN_AREA_QCC				6;
+
+PERCENT_PIXELS_NEEDED_HIGH_ONLY	0.17
+PERCENT_PIXELS_NEEDED_HIGH	0.12
+PERCENT_PIXELS_NEEDED_LOW	0.07
+NUMBER_OLD_FRAMES 15;
+
+USE_EXEMPLAR 1
+
+USE_MAX_AREA	1
+USE_MIN_AREA	1
+
+mMaxArea	162.821
+bMaxArea	-63702.139
+
+mMinArea	60.0661
+bMinArea	-35551.40
+
+maxAreaFudge	1000000
+minAreaFudge	35000
+
+minROIWidth		16
+minROIHeight	16
+
+maxOverlapBeforeMerge 0.05
+
+USE_MAX_AREA_AFTER_MERGE	1
+mMaxAreaAfterMerge	162.821 
+bMaxAreaAfterMerge	-63702.139
+maxAreaFudgeAfterMerge	1000000
+
+maxRatio					0.20
+
+maxCorrVal	0.80
+
+cropFudgeFactorExemplar	4
+minExemplarValue	0.00
+
+SAVE_NEGATIVE_EXEMPLARS	0
+negativeExemplarFolder	./negOutExemplar
+
+positiveExemplarMaxValFolder /media/_backup/cam2Out/positiveExemplarMaxVal
+positiveExemplarMinValFolder /media/_backup/cam2Out/positiveExemplarMinVal
+
+
+
+
+processedImages					./processedImages/
+positiveExemplars				./positiveExemplars/
+image_chips					./imageChips/
+outputFile					./squirrel_output.txt
+roi_coords_dir				./
+# Use only a part of the image as defined by a rectangle
+# of X, Y, Width, Height
+imageX						1000
+imageY						760
+imageWidth					0
+imageHeight					0

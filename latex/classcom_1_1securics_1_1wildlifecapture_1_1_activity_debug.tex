@@ -1,0 +1,257 @@
+\section{com.\+securics.\+wildlifecapture.\+Activity\+Debug Class Reference}
+\label{classcom_1_1securics_1_1wildlifecapture_1_1_activity_debug}\index{com.\+securics.\+wildlifecapture.\+Activity\+Debug@{com.\+securics.\+wildlifecapture.\+Activity\+Debug}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Activity\+Debug} (String lf)
+\item 
+void {\bf End\+Photo\+Snapper\+Debug} ()
+\item 
+void {\bf log\+Heap} (Class$<$?$>$ clazz)
+\item 
+void {\bf set\+I\+D} (String I\+D)
+\item 
+void {\bf log\+Message} (String tag, String message)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Broadcast\+Receiver {\bf battery\+Info\+Receiver}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float[$\,$] {\bf read\+Usage} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final long {\bf D\+E\+L\+A\+Y} = 1000 $\ast$ 30
+\item 
+String {\bf my\+I\+D} = \char`\"{}notset\char`\"{}
+\item 
+Handler {\bf P\+S\+Handler} = new Handler()
+\item 
+final String {\bf L\+O\+G\+\_\+\+F\+I\+L\+E}
+\item 
+Thread {\bf Reading\+Usage}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String {\bf T\+A\+G} = \char`\"{}My\+Debug\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file Activity\+Debug.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}!Activity\+Debug@{Activity\+Debug}}
+\index{Activity\+Debug@{Activity\+Debug}!com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}}
+\subsubsection[{Activity\+Debug}]{\setlength{\rightskip}{0pt plus 5cm}com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+Activity\+Debug (
+\begin{DoxyParamCaption}
+\item[{String}]{lf}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_activity_debug_ac8241c646872d2810f204c5d8086913b}
+Set L\+O\+G\+\_\+\+F\+I\+L\+E name and add Reading\+Usage to message Queue 
+\begin{DoxyParams}{Parameters}
+{\em lf} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file Activity\+Debug.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+L\+O\+G\+\_\+\+F\+I\+L\+E, and com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+Reading\+Usage.
+
+
+
+\subsection{Member Function Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}!End\+Photo\+Snapper\+Debug@{End\+Photo\+Snapper\+Debug}}
+\index{End\+Photo\+Snapper\+Debug@{End\+Photo\+Snapper\+Debug}!com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}}
+\subsubsection[{End\+Photo\+Snapper\+Debug}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+End\+Photo\+Snapper\+Debug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_activity_debug_ae74cfc36f69a03ffcde9cf950ba9d12b}
+Removes pending post from Reading\+Usage 
+
+Definition at line 48 of file Activity\+Debug.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+Reading\+Usage.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}!log\+Heap@{log\+Heap}}
+\index{log\+Heap@{log\+Heap}!com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}}
+\subsubsection[{log\+Heap}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+log\+Heap (
+\begin{DoxyParamCaption}
+\item[{Class$<$?$>$}]{clazz}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_activity_debug_adb7a7e5e64549039d253706c63ea231b}
+display head usage 
+\begin{DoxyParams}{Parameters}
+{\em clazz} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 143 of file Activity\+Debug.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+log\+Message(), and com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+T\+A\+G.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}!log\+Message@{log\+Message}}
+\index{log\+Message@{log\+Message}!com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}}
+\subsubsection[{log\+Message}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+log\+Message (
+\begin{DoxyParamCaption}
+\item[{String}]{tag, }
+\item[{String}]{message}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_activity_debug_a9b327191c91d2e2342427da9138fbae6}
+writes message in text file L\+O\+G\+\_\+\+F\+I\+L\+E 
+\begin{DoxyParams}{Parameters}
+{\em tag} & \\
+\hline
+{\em message} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 173 of file Activity\+Debug.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+L\+O\+G\+\_\+\+F\+I\+L\+E, and com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+my\+I\+D.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+log\+Heap(), and com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+read\+Usage().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}!read\+Usage@{read\+Usage}}
+\index{read\+Usage@{read\+Usage}!com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}}
+\subsubsection[{read\+Usage}]{\setlength{\rightskip}{0pt plus 5cm}float [$\,$] com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+read\+Usage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_activity_debug_aa133b9db7b81a4926548727ca39e8a5d}
+reads C\+P\+U usage 
+
+Definition at line 56 of file Activity\+Debug.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+log\+Message(), and com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+T\+A\+G.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}!set\+I\+D@{set\+I\+D}}
+\index{set\+I\+D@{set\+I\+D}!com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}}
+\subsubsection[{set\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+set\+I\+D (
+\begin{DoxyParamCaption}
+\item[{String}]{I\+D}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_activity_debug_a669f557ed5a111fd2917ff3413bc6a2a}
+gets I\+D 
+\begin{DoxyParams}{Parameters}
+{\em I\+D} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 164 of file Activity\+Debug.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+my\+I\+D.
+
+
+
+\subsection{Member Data Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}!battery\+Info\+Receiver@{battery\+Info\+Receiver}}
+\index{battery\+Info\+Receiver@{battery\+Info\+Receiver}!com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}}
+\subsubsection[{battery\+Info\+Receiver}]{\setlength{\rightskip}{0pt plus 5cm}Broadcast\+Receiver com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+battery\+Info\+Receiver}\label{classcom_1_1securics_1_1wildlifecapture_1_1_activity_debug_a8a1734d3834be4ee4b9c4beb722f5eec}
+gets level, scale, status, and teperature of battery 
+
+Definition at line 203 of file Activity\+Debug.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}!D\+E\+L\+A\+Y@{D\+E\+L\+A\+Y}}
+\index{D\+E\+L\+A\+Y@{D\+E\+L\+A\+Y}!com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}}
+\subsubsection[{D\+E\+L\+A\+Y}]{\setlength{\rightskip}{0pt plus 5cm}final long com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+D\+E\+L\+A\+Y = 1000 $\ast$ 30\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_activity_debug_a2408dab5bc1df8f0c81401046117c7b9}
+
+
+Definition at line 27 of file Activity\+Debug.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}!L\+O\+G\+\_\+\+F\+I\+L\+E@{L\+O\+G\+\_\+\+F\+I\+L\+E}}
+\index{L\+O\+G\+\_\+\+F\+I\+L\+E@{L\+O\+G\+\_\+\+F\+I\+L\+E}!com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}}
+\subsubsection[{L\+O\+G\+\_\+\+F\+I\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+L\+O\+G\+\_\+\+F\+I\+L\+E\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_activity_debug_a060dfb89d3ead3290912c6fc676e84bf}
+
+
+Definition at line 34 of file Activity\+Debug.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+Activity\+Debug(), and com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+log\+Message().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}!my\+I\+D@{my\+I\+D}}
+\index{my\+I\+D@{my\+I\+D}!com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}}
+\subsubsection[{my\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+my\+I\+D = \char`\"{}notset\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_activity_debug_a23b0f03d59e4c13081c17cda73191efd}
+
+
+Definition at line 29 of file Activity\+Debug.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+log\+Message(), and com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+set\+I\+D().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}!P\+S\+Handler@{P\+S\+Handler}}
+\index{P\+S\+Handler@{P\+S\+Handler}!com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}}
+\subsubsection[{P\+S\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}Handler com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+P\+S\+Handler = new Handler()\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_activity_debug_a243498b3b6ae19cfc20d40740337d4b4}
+
+
+Definition at line 31 of file Activity\+Debug.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}!Reading\+Usage@{Reading\+Usage}}
+\index{Reading\+Usage@{Reading\+Usage}!com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}}
+\subsubsection[{Reading\+Usage}]{\setlength{\rightskip}{0pt plus 5cm}Thread com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+Reading\+Usage\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_activity_debug_afa40c245f83351b1991359f39f574fe0}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} Thread() \{
+
+        @Override
+        \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+            readUsage();
+            PSHandler.postDelayed(ReadingUsage, DELAY);
+        \}       
+    \}
+\end{DoxyCode}
+runs Read\+Usage ina different thread and post it to the message queue 
+
+Definition at line 253 of file Activity\+Debug.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+Activity\+Debug(), and com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+End\+Photo\+Snapper\+Debug().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}!T\+A\+G@{T\+A\+G}}
+\index{T\+A\+G@{T\+A\+G}!com\+::securics\+::wildlifecapture\+::\+Activity\+Debug@{com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}}
+\subsubsection[{T\+A\+G}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+T\+A\+G = \char`\"{}My\+Debug\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_activity_debug_a10a4ded4877417f6eac32a0fc0193d1f}
+
+
+Definition at line 24 of file Activity\+Debug.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+log\+Heap(), and com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+read\+Usage().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/com/securics/wildlifecapture/{\bf Activity\+Debug.\+java}\end{DoxyCompactItemize}

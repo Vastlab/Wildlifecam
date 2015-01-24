@@ -1,0 +1,17 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="My Preferences / Settings" >
+	    
+		<CheckBoxPreference
+            android:key="Default Key"
+            android:title="Default TItle"
+            android:summary="Default Summary" />
+        
+        <com.securics.squirrelgpu.MyStringPreference
+            android:key="The Key"
+            android:title="The Title"
+            android:summary="The Summary"
+            android:defaultValue="The Value" />
+    </PreferenceCategory>
+</PreferenceScreen>

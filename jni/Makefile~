@@ -1,0 +1,32 @@
+OS=OSX
+#OS=LINUX
+
+SHELL=/bin/sh
+OBJS = squirrelPipeline
+DEBUG = -g
+CFLAGS = -Wall -c $(DEBUG)
+LFLAGS = -Wall $(DEBUG)
+INCLUDE = include
+ifeq ($(OS), OSX)
+	CVINCLUDE = /opt/local/include/opencv2/nonfree
+	LOCALLIB = /opt/local/lib
+	LOCALINCLUDE = /opt/local/include
+else 
+	CVINCLUDE = /usr/local/include/opencv2/nonfree
+	LOCALLIB = /usr/local/lib
+	LOCALINCLUDE = /usr/local/include
+endif
+LIBS = -lopencv_core -lopencv_highgui  -lopencv_objdetect -lopencv_imgproc -lopencv_features2d -lopencv_nonfree -lm
+
+SRCFILE = Squirrel_pipeline.cpp GRAB/KeyPoints/GRAB-kp.cpp GRAB/KeyPoints/Neighborhood-kp.cpp ./onevsetSVM/svm.cpp ./onevsetSVM/svm-predict.cpp
+TARGET =  keypoint_pipeline
+
+
+$(TARGET):	$(SRCFILE)
+	$(CXX) $(LFLAGS) $(SRCFILE) -I$(INCLUDE) -I$(CVINCLUDE) -L$(LOCALLIB) -I$(LOCALINCLUDE) $(LIBS) -o $(OBJS)
+
+all: $(TARGET)
+
+clean:
+	rm -f $(OBJS)
+

@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['tag',['TAG',['../_constants-kp_8h.html#afc3d101f633a076cc1ca84b85b6224b2',1,'Constants-kp.h']]],
+  ['tau',['TAU',['../svm_8cpp.html#a3d8c9c145887af5174ba4cc6789862ad',1,'TAU():&#160;svm.cpp'],['../_2svm_8cpp.html#a3d8c9c145887af5174ba4cc6789862ad',1,'TAU():&#160;svm.cpp']]],
+  ['temp_5flabels',['temp_labels',['../svm-train_8cpp.html#a8d832079d5b980f5955dcd7afc689ba9',1,'temp_labels():&#160;svm-train.cpp'],['../_2svm-train_8cpp.html#a8d832079d5b980f5955dcd7afc689ba9',1,'temp_labels():&#160;svm-train.cpp']]],
+  ['threshlower',['ThreshLower',['../_constants-kp_8h.html#af89f32402083cdbd7f66ce3f92580c89abfbd5ebfff408dfe5e0bb445b5f39261',1,'Constants-kp.h']]],
+  ['threshlowerbound',['ThreshLowerBound',['../_constants-kp_8h.html#af89f32402083cdbd7f66ce3f92580c89af1f44ffabeada7b64b21e92a5b7fab1a',1,'Constants-kp.h']]],
+  ['thresholds',['Thresholds',['../cvjni_8cpp.html#aeb3a274bd2dc7efe76e002aade3793a7',1,'cvjni.cpp']]],
+  ['threshstep',['ThreshStep',['../_constants-kp_8h.html#af89f32402083cdbd7f66ce3f92580c89a5fa271f7a7b1975e6f671feb2f625dea',1,'Constants-kp.h']]],
+  ['threshupper',['ThreshUpper',['../_constants-kp_8h.html#af89f32402083cdbd7f66ce3f92580c89a1e2c1af9c751dc59cbea94a3127052f8',1,'Constants-kp.h']]],
+  ['throw',['Throw',['../struct_j_n_i_native_interface.html#a69064bd2d544dd183aa05824380746e0',1,'JNINativeInterface']]],
+  ['thrownew',['ThrowNew',['../struct_j_n_i_native_interface.html#a51c48b249a30a99528a24a3a49a01294',1,'JNINativeInterface']]],
+  ['tid',['Tid',['../glob_8h.html#ae72026a65b7d40257f07da0b37e9e77b',1,'Tid():&#160;glob.h'],['../_2glob_8h.html#ae72026a65b7d40257f07da0b37e9e77b',1,'Tid():&#160;glob.h']]],
+  ['time_5fwith_5fsys_5ftime',['TIME_WITH_SYS_TIME',['../config_8h.html#a2b44ef64cf38e064ef11e11f35271380',1,'config.h']]],
+  ['toreflectedfield',['ToReflectedField',['../struct_j_n_i_native_interface.html#adba06951339cf7726986310a70325029',1,'JNINativeInterface']]],
+  ['toreflectedmethod',['ToReflectedMethod',['../struct_j_n_i_native_interface.html#a5b2c3cbad0a98782fb66f548986ad88c',1,'JNINativeInterface']]],
+  ['train',['train',['../train_8cpp.html#af1c2c54db01e61534778a34ab31b799a',1,'train(const char *trainingFile, int kernelType, int cost, float gamma, const char *modelFile):&#160;train.cpp'],['../train_8h.html#af1c2c54db01e61534778a34ab31b799a',1,'train(const char *trainingFile, int kernelType, int cost, float gamma, const char *modelFile):&#160;train.cpp'],['../_2train_8cpp.html#af1c2c54db01e61534778a34ab31b799a',1,'train(const char *trainingFile, int kernelType, int cost, float gamma, const char *modelFile):&#160;train.cpp'],['../_2train_8h.html#af1c2c54db01e61534778a34ab31b799a',1,'train(const char *trainingFile, int kernelType, int cost, float gamma, const char *modelFile):&#160;train.cpp']]],
+  ['train_2ecpp',['train.cpp',['../_2train_8cpp.html',1,'']]],
+  ['train_2ecpp',['train.cpp',['../train_8cpp.html',1,'']]],
+  ['train_2eh',['train.h',['../train_8h.html',1,'']]],
+  ['train_2eh',['train.h',['../_2train_8h.html',1,'']]],
+  ['translate_5famount',['translate_amount',['../class_meta_recognition.html#aca806c6373de29b8256427d0ab50148b',1,'MetaRecognition']]],
+  ['true',['TRUE',['../glob_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE():&#160;glob.h'],['../_2glob_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'TRUE():&#160;glob.h']]],
+  ['tthrow',['tthrow',['../lib_m_r_8cpp.html#afea2a015cf6fee567e75c01affa81c7a',1,'tthrow(int x, char *msg):&#160;libMR.cpp'],['../weibull_8cpp.html#afea2a015cf6fee567e75c01affa81c7a',1,'tthrow(int x, char *msg):&#160;weibull.cpp'],['../_2lib_m_r_8cpp.html#afea2a015cf6fee567e75c01affa81c7a',1,'tthrow(int x, char *msg):&#160;libMR.cpp'],['../_2weibull_8cpp.html#afea2a015cf6fee567e75c01affa81c7a',1,'tthrow(int x, char *msg):&#160;weibull.cpp']]]
+];

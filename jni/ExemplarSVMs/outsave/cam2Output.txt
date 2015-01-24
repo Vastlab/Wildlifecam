@@ -1,0 +1,182 @@
+Detected My score = 0.0559089 0 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK005953.JPG
+0 0 195.5 124.444 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK005953.JPG
+Detected My score = 1.28904 7 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008238.JPG
+69.0414 83.4345 372.824 305.927 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008238.JPG
+Detected My score = 0.116025 3 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008242.JPG
+10.7182 72.6375 181 269.796 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008242.JPG
+Detected My score = 0.442952 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008243.JPG
+0 35.9916 218.642 179.958 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008243.JPG
+Detected My score = 0.0232689 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008243.JPG
+27.3302 179.958 236 323.925 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008243.JPG
+Detected My score = 0.713028 2 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008244.JPG
+57.8055 38.7756 269.759 193.878 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008244.JPG
+Detected My score = 0.597749 5 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008244.JPG
+24.8666 132.465 285.966 325.14 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008244.JPG
+Detected My score = 1.68713 3 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008245.JPG
+72.7461 105.64 301.377 274.664 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008245.JPG
+Detected My score = 0.0298236 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008245.JPG
+45.2069 9.11007 253.158 136.651 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008245.JPG
+Detected My score = 0.487346 5 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008246.JPG
+47.4446 72.9734 320.251 267.569 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008246.JPG
+Detected My score = 0.824568 2 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008247.JPG
+210.399 210.151 410 362 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008247.JPG
+Detected My score = 0.695265 8 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008247.JPG
+14.675 120.716 366.875 362 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008247.JPG
+Detected My score = 0.377182 0 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008251.JPG
+83.5294 17.875 275.647 142 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008251.JPG
+Detected My score = 0.828963 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008253.JPG
+62.8327 161.685 251.331 305.404 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008253.JPG
+Detected My score = 0.503341 5 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008253.JPG
+179.723 121.805 371.427 353.234 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008253.JPG
+Detected My score = 0.196951 0 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008253.JPG
+132.615 0 389.558 134.044 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008253.JPG
+Detected My score = 1.13909 8 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008254.JPG
+14.8961 46.2635 342.61 293.002 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008254.JPG
+Detected My score = 1.18119 0 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008255.JPG
+114.882 75.0682 295.412 208.523 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008255.JPG
+Detected My score = 0.961299 10 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008255.JPG
+50.7272 35.0476 405.818 315.428 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008255.JPG
+Detected My score = 2.02764 5 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008257.JPG
+95.1827 167.709 380.731 359.377 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008257.JPG
+Detected My score = 0.378505 4 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008257.JPG
+0 0 262.846 175.744 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008257.JPG
+Detected My score = 0.0248071 6 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008257.JPG
+140.362 0 535.929 203.864 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008257.JPG
+Detected My score = 1.58808 0 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008420.JPG
+8.27083 174.825 206.771 308.025 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008420.JPG
+Detected My score = 0.612526 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008420.JPG
+207.291 162.156 396 306.295 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008420.JPG
+Detected My score = 0.277844 4 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008420.JPG
+121.358 55.4193 364.074 232.761 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008420.JPG
+Detected My score = 1.27181 0 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008460.JPG
+83.0435 68 265.739 204 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008460.JPG
+Detected My score = 1.06946 8 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008460.JPG
+0 45.6352 350.797 288 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008460.JPG
+Detected My score = 2.94827 6 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008461.JPG
+102.291 131.001 370.806 340.603 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008461.JPG
+Detected My score = 1.05456 4 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008461.JPG
+11.0839 33.3476 254.929 211.201 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008461.JPG
+Detected My score = 0.108799 4 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008461.JPG
+221.677 0 476.606 155.622 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008461.JPG
+Detected My score = 1.4493 4 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008462.JPG
+77.2278 88.9268 319.944 266.78 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008462.JPG
+Detected My score = 0.138113 0 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008462.JPG
+264.667 175.159 396 333.636 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008462.JPG
+Detected My score = 1.19191 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008482.JPG
+99.4551 18.8259 289.324 169.433 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008482.JPG
+Detected My score = 1.40899 6 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008483.JPG
+63.6601 0 356.496 182.896 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008483.JPG
+Detected My score = 1.17519 9 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008484.JPG
+47.2433 113.543 425.19 373.069 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008484.JPG
+Detected My score = 0.105113 3 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008484.JPG
+434.267 51.3477 595.855 246.469 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008484.JPG
+Detected My score = 0.0878253 3 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008484.JPG
+262.58 10.2695 474.664 174.582 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008484.JPG
+Detected My score = 0.842244 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008487.JPG
+36.1018 81.7495 234.662 227.082 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008487.JPG
+Detected My score = 0.28084 8 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008487.JPG
+0 120.716 328.084 362 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008487.JPG
+Detected My score = 1.13979 2 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008488.JPG
+29.0333 85.971 329.045 238.808 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008488.JPG
+Detected My score = 0.480381 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008488.JPG
+170.96 199.832 386 345.165 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008488.JPG
+Detected My score = 2.09565 6 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008489.JPG
+76.8311 63.8766 358.545 268.282 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008489.JPG
+Detected My score = 0.930314 2 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008490.JPG
+48.6601 77.0672 253.033 231.202 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008490.JPG
+Detected My score = 0.586706 0 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008490.JPG
+8.33333 199.529 183.333 332.549 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008490.JPG
+Detected My score = 0.495986 4 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008490.JPG
+78.9576 267.513 338.39 423 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008490.JPG
+Detected My score = 2.28035 8 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008491.JPG
+58.7 132.384 396.225 338.314 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008491.JPG
+Detected My score = 0.0973426 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008491.JPG
+141.918 0 354.794 141.831 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008491.JPG
+Detected My score = 1.14503 2 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008505.JPG
+19.6263 29.2918 235.516 185.515 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008505.JPG
+Detected My score = 0.26052 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008505.JPG
+126.751 108.862 334.986 253 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008505.JPG
+Detected My score = 0.560649 3 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008506.JPG
+0 10.5878 322.021 179.993 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008506.JPG
+Detected My score = 2.10099 4 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008507.JPG
+77.3231 99.4579 342.431 276.272 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008507.JPG
+Detected My score = 0.423879 0 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008513.JPG
+0 8.70588 193.2 147 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008513.JPG
+Detected My score = 0.129808 0 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008514.JPG
+67.1579 8.86667 260.237 132 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008514.JPG
+Detected My score = 3.19257 5 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008516.JPG
+71.5945 36.3655 357.973 230.315 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008516.JPG
+Detected My score = 2.26243 7 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008517.JPG
+231.851 85.6926 531.893 314.206 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008517.JPG
+Detected My score = 0.582471 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008517.JPG
+52.5969 144.407 254.218 288.815 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008517.JPG
+Detected My score = 0.0106143 6 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008517.JPG
+0 13.1751 280.539 223.976 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008517.JPG
+Detected My score = 1.84471 9 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008518.JPG
+235.924 81.9446 581.946 344.167 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008518.JPG
+Detected My score = 0.0142306 8 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008518.JPG
+86.298 0 316.426 287.142 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008518.JPG
+Detected My score = 2.01668 10 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008519.JPG
+0 53.3684 380.16 337 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008519.JPG
+Detected My score = 0.795724 7 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008520.JPG
+110.105 217.684 426.658 408.157 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008520.JPG
+Detected My score = 0.428875 10 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008520.JPG
+51.3103 34.88 444.689 279.04 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008520.JPG
+Detected My score = 2.20469 8 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008521.JPG
+174.458 60.3581 523.375 301.791 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008521.JPG
+Detected My score = 0.256404 7 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008521.JPG
+0 168.724 311.074 365.569 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008521.JPG
+Detected My score = 1.98878 7 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008522.JPG
+229.387 84.6042 539.733 310.215 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008522.JPG
+Detected My score = 0.131792 8 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008522.JPG
+0 46.1013 302.043 291.975 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008522.JPG
+Detected My score = 1.14657 2 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008523.JPG
+58.1137 229.291 280.883 363.045 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008523.JPG
+Detected My score = 0.605351 5 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008523.JPG
+130.068 59.3541 319.259 284.9 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008523.JPG
+Detected My score = 1.15648 0 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008894.JPG
+57.5965 159.917 238.614 294.583 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008894.JPG
+Detected My score = 0.46177 0 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008894.JPG
+148.105 25.25 403.175 159.917 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008894.JPG
+Detected My score = 0.229626 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008894.JPG
+230.29 147.06 416.293 294.121 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008894.JPG
+Detected My score = 1.32025 4 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008895.JPG
+44.6371 113.869 290.141 296.058 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008895.JPG
+Detected My score = 0.153544 0 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008895.JPG
+99.8298 8.32432 282.851 141.514 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008895.JPG
+Detected My score = 1.16696 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008896.JPG
+196.029 54.0576 400.969 180.192 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008896.JPG
+Detected My score = 0.541137 2 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008896.JPG
+173.771 129.248 376.504 287 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008896.JPG
+Detected My score = 0.314466 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008896.JPG
+53.4626 90.096 258.402 216.23 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008896.JPG
+Detected My score = 0.212563 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008896.JPG
+44.5521 0 320.775 144.154 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008896.JPG
+Detected My score = 1.18759 9 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008897.JPG
+111.625 47.6883 462.445 302.026 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008897.JPG
+Detected My score = 0.45286 4 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008897.JPG
+43.8736 242.654 383.894 419.13 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008897.JPG
+Detected My score = 2.31533 6 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008898.JPG
+101.792 51.4221 407.169 257.11 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008898.JPG
+Detected My score = 2.23955 5 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008899.JPG
+47.5913 59.4411 297.446 249.653 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008899.JPG
+Detected My score = 1.35539 2 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008899.JPG
+179.118 247.889 395.944 380 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008899.JPG
+Detected My score = 1.13172 12 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008899.JPG
+97.6393 60.2159 546 380 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008899.JPG
+Detected My score = 2.18632 6 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008900.JPG
+89.6363 51.1013 370 255.506 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK008900.JPG
+Detected My score = 1.08216 6 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK009280.JPG
+52.0957 0 338.622 215.569 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK009280.JPG
+Detected My score = 0.696657 0 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK009281.JPG
+84.7059 109.417 287 244.083 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK009281.JPG
+Detected My score = 0.204712 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK009281.JPG
+9.0096 0 287 147.06 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK009281.JPG
+Detected My score = 1.54712 7 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK009282.JPG
+40.9375 68.9014 368.438 289.386 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK009282.JPG
+Detected My score = 1.40446 4 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK009283.JPG
+132.063 55.3793 385.184 232.593 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK009283.JPG
+Detected My score = 0.290787 1 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK009283.JPG
+17.8136 231.764 222.67 356.561 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK009283.JPG
+Detected My score = 0.244114 7 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK009283.JPG
+95.1617 140.582 516 365 /home/brian/Desktop/yuiExemplar/ExemplarSVMs/Bushnell_Crop_Out/cam2/EK009283.JPG

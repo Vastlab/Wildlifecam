@@ -1,0 +1,410 @@
+\hypertarget{_2weibull_8cpp}{\section{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M-\//weibull.cpp File Reference}
+\label{_2weibull_8cpp}\index{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M-\//weibull.\-cpp@{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M-\//weibull.\-cpp}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$memory.\-h$>$}\\*
+{\ttfamily \#include $<$float.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$jni.\-h$>$}\\*
+{\ttfamily \#include $<$malloc.\-h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$log.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}weibull.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Meta\-Recognition.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_2weibull_8cpp_af3d016e4e99ca6f1988a90dd40de933b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}~\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a3357428f473998c530d5de9519a74d45}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}
+\item 
+\#define \hyperlink{_2weibull_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}~\char`\"{}J\-N\-I\-Lib\-M\-R\char`\"{}
+\item 
+\#define \hyperlink{_2weibull_8cpp_ab78bd305488c62caf8515ee765b1ed49}{L\-O\-G\-V}(...)~\hyperlink{log_8h_ac60e52c9711c53803ad9af639083afd5}{\-\_\-\-\_\-android\-\_\-log\-\_\-print}(\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a8daee540c7d1fc04a9dfecc2db988f3b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-S\-I\-L\-E\-N\-T}, \hyperlink{_squirrel__pipeline_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{_2weibull_8cpp_a5512e59d578a380a441a70256af997d0}{L\-O\-G\-I}(...)~\hyperlink{log_8h_ac60e52c9711c53803ad9af639083afd5}{\-\_\-\-\_\-android\-\_\-log\-\_\-print}(\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6ad46329103f1e9bf318b889f331d1ea8b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-I\-N\-F\-O}, \hyperlink{_squirrel__pipeline_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{_2weibull_8cpp_ae02538a80ad5fc009caec73487d11a8d}{L\-O\-G\-E}(...)~\hyperlink{log_8h_ac60e52c9711c53803ad9af639083afd5}{\-\_\-\-\_\-android\-\_\-log\-\_\-print}(\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6af1067b5ff6e64a6ece3249c113d2d164}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R}, \hyperlink{_squirrel__pipeline_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{_2weibull_8cpp_aa839997a58e14061861cd634fdb7664d}{L\-O\-G\-D}(...)~\hyperlink{log_8h_ac60e52c9711c53803ad9af639083afd5}{\-\_\-\-\_\-android\-\_\-log\-\_\-print}(\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a3357428f473998c530d5de9519a74d45}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}, \hyperlink{_squirrel__pipeline_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{_2weibull_8cpp_af5abd28c44c29b7397c84f1fec4b1d84}{A\-L\-P\-H\-A}~0.\-05
+\item 
+\#define \hyperlink{_2weibull_8cpp_a89ce8f4dfb11e45616dd31a2cb5b4cce}{F\-I\-T\-T\-I\-N\-G\-\_\-\-S\-I\-Z\-E}~9
+\item 
+\#define \hyperlink{_2weibull_8cpp_a6b6db035adf6725d88dc69ff26d00274}{W\-E\-I\-B\-U\-L\-L\-\_\-\-E\-R\-R\-O\-R\-\_\-\-H\-A\-N\-D\-L\-E\-R}(\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, msg)~return \hyperlink{_2weibull_8cpp_afea2a015cf6fee567e75c01affa81c7a}{tthrow}(\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x},msg)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{_2weibull_8cpp_afea2a015cf6fee567e75c01affa81c7a}{tthrow} (int \hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, char $\ast$msg)
+\item 
+\hyperlink{jni_8h_a5ef9c7c852d5e0abf2ae84d4e9c5a7b7}{J\-N\-I\-E\-X\-P\-O\-R\-T} \hyperlink{jni_8h_a7970b87de8d49c1fe5facc1ecda5d560}{jdouble\-Array} \hyperlink{jni_8h_a75ae116b9b28eeeb6a479622e476c1ed}{J\-N\-I\-C\-A\-L\-L} \hyperlink{_2weibull_8cpp_ae9947a16d6778cc4f244beef5d32126a}{Java\-\_\-lib\-M\-R\-\_\-boult\-\_\-\-Lib\-M\-R\-\_\-1\-Test\-Activity\-\_\-\-Meta\-Recognition} (\hyperlink{jni_8h_a2d06d32b6b6f1519799078a36fe2e380}{J\-N\-I\-Env} $\ast$env, \hyperlink{jni_8h_a24647d2a2f02c39f6338c2c6ce4c1004}{jobject} thiz)
+\item 
+\hyperlink{jni_8h_a5ef9c7c852d5e0abf2ae84d4e9c5a7b7}{J\-N\-I\-E\-X\-P\-O\-R\-T} \hyperlink{jni_8h_a7970b87de8d49c1fe5facc1ecda5d560}{jdouble\-Array} \hyperlink{jni_8h_a75ae116b9b28eeeb6a479622e476c1ed}{J\-N\-I\-C\-A\-L\-L} \hyperlink{_2weibull_8cpp_abaa2c58b9ca166523b95943f60a1354b}{Java\-\_\-lib\-M\-R\-\_\-boult\-\_\-\-Lib\-M\-R\-\_\-1\-Test\-Activity\-\_\-\-Weibull} (\hyperlink{jni_8h_a2d06d32b6b6f1519799078a36fe2e380}{J\-N\-I\-Env} $\ast$env, \hyperlink{jni_8h_a24647d2a2f02c39f6338c2c6ce4c1004}{jobject} thiz)
+\item 
+double \hyperlink{_2weibull_8cpp_a5676fa7821d22c891641b5ae750edbb7}{weibull\-\_\-cdf} (double \hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, double scale, double shape)
+\item 
+double \hyperlink{_2weibull_8cpp_a10654c6de021f056fa213203a6c0d0cb}{weibull\-\_\-inv} (double \hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, double scale, double shape)
+\item 
+void \hyperlink{_2weibull_8cpp_a6008cac4d8de6e6ea3404c70db4f05d0}{print\-Weibull\-Build\-Info} (F\-I\-L\-E $\ast$fh)
+\item 
+static int \hyperlink{_2weibull_8cpp_a7426cd1068c313e1761d33b1951db12d}{fix} (double n)
+\item 
+static double \hyperlink{_2weibull_8cpp_a2bf0ceb918e0e283e7ea07202ee69294}{wcalcerfc} (double \hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x})
+\item 
+static double \hyperlink{_2weibull_8cpp_aabeed41e4ede4e2c8f51ed4bf19a3684}{derfcinv} (double \hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x})
+\item 
+static int \hyperlink{_2weibull_8cpp_af537750b0854f0c9f73fb74d63b24fd4}{weibull\-\_\-neg\-\_\-log\-\_\-likelihood} (double $\ast$nlog\-L, double $\ast$acov, double $\ast$weibulparms, double $\ast$data, double $\ast$censoring, double $\ast$frequency, int size)
+\item 
+static double \hyperlink{_2weibull_8cpp_aa6b95fa216b38b5590b9f04ec6527b44}{weibull\-\_\-scale\-\_\-likelihood} (double sigma, double $\ast$\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, double $\ast$w, double xbar, int size)
+\item 
+static int \hyperlink{_2weibull_8cpp_a7e9f1cd6f75ce81fcb18ec974a0265eb}{wdfzero} (double $\ast$sigmahat, double $\ast$likelihood\-\_\-value, double $\ast$err, double $\ast$search\-\_\-bands, double tol, double $\ast$x0, double $\ast$frequency, double mean\-Uncensored, int size)
+\item 
+static int \hyperlink{_2weibull_8cpp_a3e8f93295b6889b2687a605300300036}{wnorminv} (double $\ast$\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, double $\ast$p, double $\ast$mu, double $\ast$sigma, int size)
+\item 
+int \hyperlink{_2weibull_8cpp_ae45643de52e8682e9a4ae59ec6d77c42}{weibull\-\_\-fit} (double $\ast$weibullparms, double $\ast$wparm\-\_\-confidenceintervals, double $\ast$input\-Data, double alpha, int size)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_2weibull_8cpp_af1a9aad2ffb1974415c6cdcba137d529}{weibull\-\_\-fit\-\_\-verbose\-\_\-debug} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_2weibull_8cpp_af5abd28c44c29b7397c84f1fec4b1d84}{\index{/weibull.\-cpp@{/weibull.\-cpp}!A\-L\-P\-H\-A@{A\-L\-P\-H\-A}}
+\index{A\-L\-P\-H\-A@{A\-L\-P\-H\-A}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{A\-L\-P\-H\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-L\-P\-H\-A~0.\-05}}\label{_2weibull_8cpp_af5abd28c44c29b7397c84f1fec4b1d84}
+
+
+Definition at line 29 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_af3d016e4e99ca6f1988a90dd40de933b}{\index{/weibull.\-cpp@{/weibull.\-cpp}!A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}}
+\index{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E~{\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}}}\label{_2weibull_8cpp_af3d016e4e99ca6f1988a90dd40de933b}
+
+
+Definition at line 16 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_a89ce8f4dfb11e45616dd31a2cb5b4cce}{\index{/weibull.\-cpp@{/weibull.\-cpp}!F\-I\-T\-T\-I\-N\-G\-\_\-\-S\-I\-Z\-E@{F\-I\-T\-T\-I\-N\-G\-\_\-\-S\-I\-Z\-E}}
+\index{F\-I\-T\-T\-I\-N\-G\-\_\-\-S\-I\-Z\-E@{F\-I\-T\-T\-I\-N\-G\-\_\-\-S\-I\-Z\-E}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{F\-I\-T\-T\-I\-N\-G\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-I\-T\-T\-I\-N\-G\-\_\-\-S\-I\-Z\-E~9}}\label{_2weibull_8cpp_a89ce8f4dfb11e45616dd31a2cb5b4cce}
+
+
+Definition at line 30 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{\index{/weibull.\-cpp@{/weibull.\-cpp}!L\-O\-G\-\_\-\-T\-A\-G@{L\-O\-G\-\_\-\-T\-A\-G}}
+\index{L\-O\-G\-\_\-\-T\-A\-G@{L\-O\-G\-\_\-\-T\-A\-G}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{L\-O\-G\-\_\-\-T\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-\_\-\-T\-A\-G~\char`\"{}J\-N\-I\-Lib\-M\-R\char`\"{}}}\label{_2weibull_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}
+
+
+Definition at line 17 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_aa839997a58e14061861cd634fdb7664d}{\index{/weibull.\-cpp@{/weibull.\-cpp}!L\-O\-G\-D@{L\-O\-G\-D}}
+\index{L\-O\-G\-D@{L\-O\-G\-D}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{L\-O\-G\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-D(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-android\-\_\-log\-\_\-print}({\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}, {\bf L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{_2weibull_8cpp_aa839997a58e14061861cd634fdb7664d}
+
+
+Definition at line 21 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_ae02538a80ad5fc009caec73487d11a8d}{\index{/weibull.\-cpp@{/weibull.\-cpp}!L\-O\-G\-E@{L\-O\-G\-E}}
+\index{L\-O\-G\-E@{L\-O\-G\-E}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{L\-O\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-E(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-android\-\_\-log\-\_\-print}({\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R}, {\bf L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{_2weibull_8cpp_ae02538a80ad5fc009caec73487d11a8d}
+
+
+Definition at line 20 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_a5512e59d578a380a441a70256af997d0}{\index{/weibull.\-cpp@{/weibull.\-cpp}!L\-O\-G\-I@{L\-O\-G\-I}}
+\index{L\-O\-G\-I@{L\-O\-G\-I}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{L\-O\-G\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-I(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-android\-\_\-log\-\_\-print}({\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-I\-N\-F\-O}, {\bf L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{_2weibull_8cpp_a5512e59d578a380a441a70256af997d0}
+
+
+Definition at line 19 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_ab78bd305488c62caf8515ee765b1ed49}{\index{/weibull.\-cpp@{/weibull.\-cpp}!L\-O\-G\-V@{L\-O\-G\-V}}
+\index{L\-O\-G\-V@{L\-O\-G\-V}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{L\-O\-G\-V}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-V(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-android\-\_\-log\-\_\-print}({\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-S\-I\-L\-E\-N\-T}, {\bf L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{_2weibull_8cpp_ab78bd305488c62caf8515ee765b1ed49}
+
+
+Definition at line 18 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_a6b6db035adf6725d88dc69ff26d00274}{\index{/weibull.\-cpp@{/weibull.\-cpp}!W\-E\-I\-B\-U\-L\-L\-\_\-\-E\-R\-R\-O\-R\-\_\-\-H\-A\-N\-D\-L\-E\-R@{W\-E\-I\-B\-U\-L\-L\-\_\-\-E\-R\-R\-O\-R\-\_\-\-H\-A\-N\-D\-L\-E\-R}}
+\index{W\-E\-I\-B\-U\-L\-L\-\_\-\-E\-R\-R\-O\-R\-\_\-\-H\-A\-N\-D\-L\-E\-R@{W\-E\-I\-B\-U\-L\-L\-\_\-\-E\-R\-R\-O\-R\-\_\-\-H\-A\-N\-D\-L\-E\-R}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{W\-E\-I\-B\-U\-L\-L\-\_\-\-E\-R\-R\-O\-R\-\_\-\-H\-A\-N\-D\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\-E\-I\-B\-U\-L\-L\-\_\-\-E\-R\-R\-O\-R\-\_\-\-H\-A\-N\-D\-L\-E\-R(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf x}, }
+\item[{}]{msg}
+\end{DoxyParamCaption}
+)~return {\bf tthrow}({\bf x},msg)}}\label{_2weibull_8cpp_a6b6db035adf6725d88dc69ff26d00274}
+
+
+Definition at line 51 of file weibull.\-cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_2weibull_8cpp_aabeed41e4ede4e2c8f51ed4bf19a3684}{\index{/weibull.\-cpp@{/weibull.\-cpp}!derfcinv@{derfcinv}}
+\index{derfcinv@{derfcinv}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{derfcinv}]{\setlength{\rightskip}{0pt plus 5cm}static double derfcinv (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{_2weibull_8cpp_aabeed41e4ede4e2c8f51ed4bf19a3684}
+
+
+Definition at line 585 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_a7426cd1068c313e1761d33b1951db12d}{\index{/weibull.\-cpp@{/weibull.\-cpp}!fix@{fix}}
+\index{fix@{fix}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{fix}]{\setlength{\rightskip}{0pt plus 5cm}static int fix (
+\begin{DoxyParamCaption}
+\item[{double}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{_2weibull_8cpp_a7426cd1068c313e1761d33b1951db12d}
+
+
+Definition at line 433 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_ae9947a16d6778cc4f244beef5d32126a}{\index{/weibull.\-cpp@{/weibull.\-cpp}!Java\-\_\-lib\-M\-R\-\_\-boult\-\_\-\-Lib\-M\-R\-\_\-1\-Test\-Activity\-\_\-\-Meta\-Recognition@{Java\-\_\-lib\-M\-R\-\_\-boult\-\_\-\-Lib\-M\-R\-\_\-1\-Test\-Activity\-\_\-\-Meta\-Recognition}}
+\index{Java\-\_\-lib\-M\-R\-\_\-boult\-\_\-\-Lib\-M\-R\-\_\-1\-Test\-Activity\-\_\-\-Meta\-Recognition@{Java\-\_\-lib\-M\-R\-\_\-boult\-\_\-\-Lib\-M\-R\-\_\-1\-Test\-Activity\-\_\-\-Meta\-Recognition}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{Java\-\_\-lib\-M\-R\-\_\-boult\-\_\-\-Lib\-M\-R\-\_\-1\-Test\-Activity\-\_\-\-Meta\-Recognition}]{\setlength{\rightskip}{0pt plus 5cm}{\bf J\-N\-I\-E\-X\-P\-O\-R\-T} {\bf jdouble\-Array} {\bf J\-N\-I\-C\-A\-L\-L} Java\-\_\-lib\-M\-R\-\_\-boult\-\_\-\-Lib\-M\-R\-\_\-1\-Test\-Activity\-\_\-\-Meta\-Recognition (
+\begin{DoxyParamCaption}
+\item[{{\bf J\-N\-I\-Env} $\ast$}]{env, }
+\item[{{\bf jobject}}]{thiz}
+\end{DoxyParamCaption}
+)}}\label{_2weibull_8cpp_ae9947a16d6778cc4f244beef5d32126a}
+
+
+Definition at line 56 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_abaa2c58b9ca166523b95943f60a1354b}{\index{/weibull.\-cpp@{/weibull.\-cpp}!Java\-\_\-lib\-M\-R\-\_\-boult\-\_\-\-Lib\-M\-R\-\_\-1\-Test\-Activity\-\_\-\-Weibull@{Java\-\_\-lib\-M\-R\-\_\-boult\-\_\-\-Lib\-M\-R\-\_\-1\-Test\-Activity\-\_\-\-Weibull}}
+\index{Java\-\_\-lib\-M\-R\-\_\-boult\-\_\-\-Lib\-M\-R\-\_\-1\-Test\-Activity\-\_\-\-Weibull@{Java\-\_\-lib\-M\-R\-\_\-boult\-\_\-\-Lib\-M\-R\-\_\-1\-Test\-Activity\-\_\-\-Weibull}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{Java\-\_\-lib\-M\-R\-\_\-boult\-\_\-\-Lib\-M\-R\-\_\-1\-Test\-Activity\-\_\-\-Weibull}]{\setlength{\rightskip}{0pt plus 5cm}{\bf J\-N\-I\-E\-X\-P\-O\-R\-T} {\bf jdouble\-Array} {\bf J\-N\-I\-C\-A\-L\-L} Java\-\_\-lib\-M\-R\-\_\-boult\-\_\-\-Lib\-M\-R\-\_\-1\-Test\-Activity\-\_\-\-Weibull (
+\begin{DoxyParamCaption}
+\item[{{\bf J\-N\-I\-Env} $\ast$}]{env, }
+\item[{{\bf jobject}}]{thiz}
+\end{DoxyParamCaption}
+)}}\label{_2weibull_8cpp_abaa2c58b9ca166523b95943f60a1354b}
+
+
+Definition at line 277 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_a6008cac4d8de6e6ea3404c70db4f05d0}{\index{/weibull.\-cpp@{/weibull.\-cpp}!print\-Weibull\-Build\-Info@{print\-Weibull\-Build\-Info}}
+\index{print\-Weibull\-Build\-Info@{print\-Weibull\-Build\-Info}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{print\-Weibull\-Build\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void print\-Weibull\-Build\-Info (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{fh}
+\end{DoxyParamCaption}
+)}}\label{_2weibull_8cpp_a6008cac4d8de6e6ea3404c70db4f05d0}
+Print information about this build to a file descriptor. Used for checking what is loaded for supporting people 
+
+Definition at line 409 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_afea2a015cf6fee567e75c01affa81c7a}{\index{/weibull.\-cpp@{/weibull.\-cpp}!tthrow@{tthrow}}
+\index{tthrow@{tthrow}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{tthrow}]{\setlength{\rightskip}{0pt plus 5cm}static int tthrow (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{char $\ast$}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{_2weibull_8cpp_afea2a015cf6fee567e75c01affa81c7a}
+
+
+Definition at line 50 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_a2bf0ceb918e0e283e7ea07202ee69294}{\index{/weibull.\-cpp@{/weibull.\-cpp}!wcalcerfc@{wcalcerfc}}
+\index{wcalcerfc@{wcalcerfc}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{wcalcerfc}]{\setlength{\rightskip}{0pt plus 5cm}static double wcalcerfc (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{_2weibull_8cpp_a2bf0ceb918e0e283e7ea07202ee69294}
+
+
+Definition at line 448 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_a7e9f1cd6f75ce81fcb18ec974a0265eb}{\index{/weibull.\-cpp@{/weibull.\-cpp}!wdfzero@{wdfzero}}
+\index{wdfzero@{wdfzero}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{wdfzero}]{\setlength{\rightskip}{0pt plus 5cm}static int wdfzero (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{sigmahat, }
+\item[{double $\ast$}]{likelihood\-\_\-value, }
+\item[{double $\ast$}]{err, }
+\item[{double $\ast$}]{search\-\_\-bands, }
+\item[{double}]{tol, }
+\item[{double $\ast$}]{x0, }
+\item[{double $\ast$}]{frequency, }
+\item[{double}]{mean\-Uncensored, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{_2weibull_8cpp_a7e9f1cd6f75ce81fcb18ec974a0265eb}
+
+
+Definition at line 760 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_a5676fa7821d22c891641b5ae750edbb7}{\index{/weibull.\-cpp@{/weibull.\-cpp}!weibull\-\_\-cdf@{weibull\-\_\-cdf}}
+\index{weibull\-\_\-cdf@{weibull\-\_\-cdf}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{weibull\-\_\-cdf}]{\setlength{\rightskip}{0pt plus 5cm}double weibull\-\_\-cdf (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{scale, }
+\item[{double}]{shape}
+\end{DoxyParamCaption}
+)}}\label{_2weibull_8cpp_a5676fa7821d22c891641b5ae750edbb7}
+\begin{DoxyVerb}if WEIBULL_USE_ASSERTS is defined, the code will use asserts to ensure its requirements are true, otherwise it returns error codes. Default is not defined        if WEIBULL_IGNORE_ERRORS is defined, the code will just presume things will work out and not waste time on testing for error. Default is not defined         weibull_cdf computes the probability (given our assumptions) that the value x is an outlier ABOVE the fit distribution.  if the distribution was non-match data, then it provides this probability that x is a match score.   If data was match-data then it would be the probability of it being a larger non-match. 
+\end{DoxyVerb}
+ computes \[ 1-e^{{\frac{x}{scale}}^{shape}} \]
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the location at which to compute the probability of being an outlier \\
+\hline
+{\em scale} & the scale parmaeter of the weibull. This is the first element in weibull\-\_\-parms (as computed by our wlbfit) \\
+\hline
+{\em shape} & the scale parmaeter of the weibull. This is the first second in weibull\-\_\-parms (as computed by our wlbfit) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if in the range \mbox{[}0-\/1\mbox{]} it is the probability of X being an outlier. Any value $<$ 0 is an error code. returns -\/1 for invalid scale $<$=0 , -\/2 for invalid shape $<$=0 
+\end{DoxyReturn}
+
+
+Definition at line 340 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_ae45643de52e8682e9a4ae59ec6d77c42}{\index{/weibull.\-cpp@{/weibull.\-cpp}!weibull\-\_\-fit@{weibull\-\_\-fit}}
+\index{weibull\-\_\-fit@{weibull\-\_\-fit}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{weibull\-\_\-fit}]{\setlength{\rightskip}{0pt plus 5cm}int weibull\-\_\-fit (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{weibullparms, }
+\item[{double $\ast$}]{wparm\-\_\-confidenceintervals, }
+\item[{double $\ast$}]{input\-Data, }
+\item[{double}]{alpha, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}}\label{_2weibull_8cpp_ae45643de52e8682e9a4ae59ec6d77c42}
+weibull\-\_\-fit does a maximum likelihood fitting to estimate the shape and scale parameters of a weibull probability distributon \[ \frac{shape}{scale} \left(\frac{x}{scale} \cdot e^{-{\left(\frac{x}{scale}\right)}^{shape}}\right)\]
+
+
+\begin{DoxyParams}{Parameters}
+{\em weibull\-\_\-parms} & is an array of 2 doubles, which must be preallocated. On successful completeion it will have shape and scale respectively. \\
+\hline
+{\em wparm\-\_\-confidenceintervals} & is an array of 4 doubles, which must be preallocated. On successful completeion it will have confidence interval for shape in the first two item and the C\-I for scale in the second two items \\
+\hline
+{\em input\-Data} & is a pointer the data to use for fitting the distribution. It must have at least size elements \\
+\hline
+{\em size} & is the size of the data to be used for fitting. \\
+\hline
+{\em alpha} & is parameter for Confidence interval size estimation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return should be 1 if all went well. Values $<$ 0 imply errors in fitting or data. -\/1 means some data was negative, -\/2 means bad data range (e.\-g. all the same) -\/3 or lower means M\-L\-E did not converge. 
+\end{DoxyReturn}
+
+
+Definition at line 1005 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_a10654c6de021f056fa213203a6c0d0cb}{\index{/weibull.\-cpp@{/weibull.\-cpp}!weibull\-\_\-inv@{weibull\-\_\-inv}}
+\index{weibull\-\_\-inv@{weibull\-\_\-inv}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{weibull\-\_\-inv}]{\setlength{\rightskip}{0pt plus 5cm}double weibull\-\_\-inv (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{scale, }
+\item[{double}]{shape}
+\end{DoxyParamCaption}
+)}}\label{_2weibull_8cpp_a10654c6de021f056fa213203a6c0d0cb}
+\begin{DoxyVerb} weibull_inv computes the inverse weibull, i.e. returns the score S (given our assumptions) such that x=wlbcdf(s,scale,shape). Note it estimates from above, so if x=1.0 expect an answer of Inf (infinity). 
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the location at which you compute the inverse (must be between \mbox{[}0,1\mbox{]} \\
+\hline
+{\em scale} & the scale parmaeter of the weibull. This is the first element in weibull\-\_\-parms (as computed by our wlbfit) \\
+\hline
+{\em shape} & the scale parmaeter of the weibull. This is the first second in weibull\-\_\-parms (as computed by our wlbfit) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if X in the range \mbox{[}0-\/1\mbox{]}, return S such that x=wlbcdf(s,scale,shape). The return value is in the range \mbox{[}0,Inf\mbox{]}. Any return value $<$ 0 is an error code. returns -\/1 for invalid scale $<$=0 , -\/2 for invalid shape $<$=0 -\/3 for X$<$0, -\/4 for x $>$1 
+\end{DoxyReturn}
+
+
+Definition at line 376 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_af537750b0854f0c9f73fb74d63b24fd4}{\index{/weibull.\-cpp@{/weibull.\-cpp}!weibull\-\_\-neg\-\_\-log\-\_\-likelihood@{weibull\-\_\-neg\-\_\-log\-\_\-likelihood}}
+\index{weibull\-\_\-neg\-\_\-log\-\_\-likelihood@{weibull\-\_\-neg\-\_\-log\-\_\-likelihood}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{weibull\-\_\-neg\-\_\-log\-\_\-likelihood}]{\setlength{\rightskip}{0pt plus 5cm}static int weibull\-\_\-neg\-\_\-log\-\_\-likelihood (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{nlog\-L, }
+\item[{double $\ast$}]{acov, }
+\item[{double $\ast$}]{weibulparms, }
+\item[{double $\ast$}]{data, }
+\item[{double $\ast$}]{censoring, }
+\item[{double $\ast$}]{frequency, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{_2weibull_8cpp_af537750b0854f0c9f73fb74d63b24fd4}
+
+
+Definition at line 663 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_aa6b95fa216b38b5590b9f04ec6527b44}{\index{/weibull.\-cpp@{/weibull.\-cpp}!weibull\-\_\-scale\-\_\-likelihood@{weibull\-\_\-scale\-\_\-likelihood}}
+\index{weibull\-\_\-scale\-\_\-likelihood@{weibull\-\_\-scale\-\_\-likelihood}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{weibull\-\_\-scale\-\_\-likelihood}]{\setlength{\rightskip}{0pt plus 5cm}static double weibull\-\_\-scale\-\_\-likelihood (
+\begin{DoxyParamCaption}
+\item[{double}]{sigma, }
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{w, }
+\item[{double}]{xbar, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{_2weibull_8cpp_aa6b95fa216b38b5590b9f04ec6527b44}
+
+
+Definition at line 728 of file weibull.\-cpp.
+
+\hypertarget{_2weibull_8cpp_a3e8f93295b6889b2687a605300300036}{\index{/weibull.\-cpp@{/weibull.\-cpp}!wnorminv@{wnorminv}}
+\index{wnorminv@{wnorminv}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{wnorminv}]{\setlength{\rightskip}{0pt plus 5cm}static int wnorminv (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{p, }
+\item[{double $\ast$}]{mu, }
+\item[{double $\ast$}]{sigma, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{_2weibull_8cpp_a3e8f93295b6889b2687a605300300036}
+
+
+Definition at line 922 of file weibull.\-cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_2weibull_8cpp_af1a9aad2ffb1974415c6cdcba137d529}{\index{/weibull.\-cpp@{/weibull.\-cpp}!weibull\-\_\-fit\-\_\-verbose\-\_\-debug@{weibull\-\_\-fit\-\_\-verbose\-\_\-debug}}
+\index{weibull\-\_\-fit\-\_\-verbose\-\_\-debug@{weibull\-\_\-fit\-\_\-verbose\-\_\-debug}!/weibull.cpp@{/weibull.\-cpp}}
+\subsubsection[{weibull\-\_\-fit\-\_\-verbose\-\_\-debug}]{\setlength{\rightskip}{0pt plus 5cm}int weibull\-\_\-fit\-\_\-verbose\-\_\-debug = 1}}\label{_2weibull_8cpp_af1a9aad2ffb1974415c6cdcba137d529}
+
+
+Definition at line 49 of file weibull.\-cpp.
+

@@ -1,0 +1,285 @@
+\hypertarget{svm-predict-old_8cpp}{\section{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M-\//svm-\/predict-\/old.cpp File Reference}
+\label{svm-predict-old_8cpp}\index{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M-\//svm-\/predict-\/old.\-cpp@{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M-\//svm-\/predict-\/old.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}../arch\-\_\-config.\-hpp\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$errno.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$malloc.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}svm.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}svm-\/predict.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{svm-predict-old_8cpp_a9191047fd644a5f519152ecb4aa60357}{Malloc}(type, n)~(type $\ast$)malloc((n)$\ast$sizeof(type))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static char $\ast$ \hyperlink{svm-predict-old_8cpp_aa324656b7bb4eb3ee42699d33c21ef7a}{readline} (F\-I\-L\-E $\ast$input)
+\item 
+void \hyperlink{svm-predict-old_8cpp_a9f4f4674bfe1596b0b4ff14005b047f5}{exit\-\_\-input\-\_\-error\-\_\-predict} (int line\-\_\-num)
+\item 
+int \hyperlink{svm-predict-old_8cpp_ae6ecfcdf838de45a1c4e65c6341d0bfa}{predict} (float $\ast$$\ast$values, int $\ast$$\ast$indices, int row\-Num, int col\-Num, int $\ast$labels, double $\ast$score\-\_\-labels)
+\item 
+void \hyperlink{svm-predict-old_8cpp_a7afe98ad0e31dd12549d624e922f3eae}{exit\-\_\-with\-\_\-help\-\_\-for\-\_\-predict} ()
+\item 
+int \hyperlink{svm-predict-old_8cpp_aca788894c462e86397220c8180009a98}{svmpredict} (float $\ast$$\ast$values, int $\ast$$\ast$indices, int row\-Num, int col\-Num, int \hyperlink{_2svm-predict_8cpp_a1501132f5226b295e5300d74da55a2b9}{predict\-\_\-probability}, const char $\ast$model\-File, int $\ast$labels, double $\ast$score\-\_\-labels, int numclasses)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{svm-predict-old_8cpp_af292311da2955e8e2dd274443d57ee3a}{open\-\_\-set\-\_\-p} = false
+\item 
+int \hyperlink{svm-predict-old_8cpp_a7f5f60f72ac3c9c0dfe1c1873dff770f}{nr\-\_\-classes\-\_\-p}
+\item 
+double $\ast$ \hyperlink{svm-predict-old_8cpp_a34e7d19a381f7dfe28c6de7f93295bbc}{lbl\-\_\-p}
+\item 
+struct \hyperlink{structsvm__node}{svm\-\_\-node} $\ast$ \hyperlink{svm-predict-old_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}
+\item 
+int \hyperlink{svm-predict-old_8cpp_af95bde9162db2c5dd97e80795b3548ed}{max\-\_\-nr\-\_\-attr} = 64
+\item 
+struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$ \hyperlink{svm-predict-old_8cpp_a50c87b127b14787341e9630f4f5c700a}{model}
+\item 
+struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$$\ast$ \hyperlink{svm-predict-old_8cpp_a639aa8f86cbf6b9c5d43e0c5082e26ac}{mdl}
+\item 
+int \hyperlink{svm-predict-old_8cpp_a1501132f5226b295e5300d74da55a2b9}{predict\-\_\-probability} = 0
+\item 
+double \hyperlink{svm-predict-old_8cpp_a3670388207cf8d0f4f4c9237a1482057}{min\-\_\-threshold} = 0
+\item 
+double \hyperlink{svm-predict-old_8cpp_a9090dc0b930a5f9212a3b6f3e4b5c5ab}{max\-\_\-threshold} = 0
+\item 
+bool \hyperlink{svm-predict-old_8cpp_aa816fb83dd1b415e1339bb8ddd6cdabc}{min\-\_\-set} = false
+\item 
+bool \hyperlink{svm-predict-old_8cpp_acd0f485f4131af58e0bdb273316d3805}{max\-\_\-set} = false
+\item 
+bool \hyperlink{svm-predict-old_8cpp_ab3f078684998b83967d507d0f453f454}{verbose} = true
+\item 
+static char $\ast$ \hyperlink{svm-predict-old_8cpp_a8adb30f4f6669f927fd9232f686c637b}{line} = N\-U\-L\-L
+\item 
+static int \hyperlink{svm-predict-old_8cpp_acad24c15bee67d2026f56bc94a1188c7}{max\-\_\-line\-\_\-len}
+\item 
+bool \hyperlink{svm-predict-old_8cpp_a7ce2b5cbc37a137a91ecc0cf035faba7}{output\-\_\-scores} = false
+\item 
+bool \hyperlink{svm-predict-old_8cpp_aa63d504586762ed1e2b057a76018d0fd}{output\-\_\-total\-\_\-scores} = false
+\item 
+bool \hyperlink{svm-predict-old_8cpp_ac3602f56435c68a322553ed33804e5d1}{output\-\_\-votes} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{svm-predict-old_8cpp_a9191047fd644a5f519152ecb4aa60357}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!Malloc@{Malloc}}
+\index{Malloc@{Malloc}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{Malloc}]{\setlength{\rightskip}{0pt plus 5cm}\#define Malloc(
+\begin{DoxyParamCaption}
+\item[{}]{type, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~(type $\ast$)malloc((n)$\ast$sizeof(type))}}\label{svm-predict-old_8cpp_a9191047fd644a5f519152ecb4aa60357}
+
+
+Definition at line 48 of file svm-\/predict-\/old.\-cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{svm-predict-old_8cpp_a9f4f4674bfe1596b0b4ff14005b047f5}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!exit\-\_\-input\-\_\-error\-\_\-predict@{exit\-\_\-input\-\_\-error\-\_\-predict}}
+\index{exit\-\_\-input\-\_\-error\-\_\-predict@{exit\-\_\-input\-\_\-error\-\_\-predict}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{exit\-\_\-input\-\_\-error\-\_\-predict}]{\setlength{\rightskip}{0pt plus 5cm}void exit\-\_\-input\-\_\-error\-\_\-predict (
+\begin{DoxyParamCaption}
+\item[{int}]{line\-\_\-num}
+\end{DoxyParamCaption}
+)}}\label{svm-predict-old_8cpp_a9f4f4674bfe1596b0b4ff14005b047f5}
+
+
+Definition at line 66 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_a7afe98ad0e31dd12549d624e922f3eae}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!exit\-\_\-with\-\_\-help\-\_\-for\-\_\-predict@{exit\-\_\-with\-\_\-help\-\_\-for\-\_\-predict}}
+\index{exit\-\_\-with\-\_\-help\-\_\-for\-\_\-predict@{exit\-\_\-with\-\_\-help\-\_\-for\-\_\-predict}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{exit\-\_\-with\-\_\-help\-\_\-for\-\_\-predict}]{\setlength{\rightskip}{0pt plus 5cm}void exit\-\_\-with\-\_\-help\-\_\-for\-\_\-predict (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{svm-predict-old_8cpp_a7afe98ad0e31dd12549d624e922f3eae}
+
+
+Definition at line 502 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_ae6ecfcdf838de45a1c4e65c6341d0bfa}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!predict@{predict}}
+\index{predict@{predict}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{predict}]{\setlength{\rightskip}{0pt plus 5cm}int predict (
+\begin{DoxyParamCaption}
+\item[{float $\ast$$\ast$}]{values, }
+\item[{int $\ast$$\ast$}]{indices, }
+\item[{int}]{row\-Num, }
+\item[{int}]{col\-Num, }
+\item[{int $\ast$}]{labels, }
+\item[{double $\ast$}]{score\-\_\-labels}
+\end{DoxyParamCaption}
+)}}\label{svm-predict-old_8cpp_ae6ecfcdf838de45a1c4e65c6341d0bfa}
+
+
+Definition at line 75 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_aa324656b7bb4eb3ee42699d33c21ef7a}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!readline@{readline}}
+\index{readline@{readline}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{readline}]{\setlength{\rightskip}{0pt plus 5cm}static char$\ast$ readline (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm-predict-old_8cpp_aa324656b7bb4eb3ee42699d33c21ef7a}
+
+
+Definition at line 50 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_aca788894c462e86397220c8180009a98}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!svmpredict@{svmpredict}}
+\index{svmpredict@{svmpredict}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{svmpredict}]{\setlength{\rightskip}{0pt plus 5cm}int svmpredict (
+\begin{DoxyParamCaption}
+\item[{float $\ast$$\ast$}]{values, }
+\item[{int $\ast$$\ast$}]{indices, }
+\item[{int}]{row\-Num, }
+\item[{int}]{col\-Num, }
+\item[{int}]{predict\-\_\-probability, }
+\item[{const char $\ast$}]{model\-File, }
+\item[{int $\ast$}]{labels, }
+\item[{double $\ast$}]{score\-\_\-labels, }
+\item[{int}]{numclasses}
+\end{DoxyParamCaption}
+)}}\label{svm-predict-old_8cpp_aca788894c462e86397220c8180009a98}
+
+
+Definition at line 528 of file svm-\/predict-\/old.\-cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{svm-predict-old_8cpp_a34e7d19a381f7dfe28c6de7f93295bbc}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!lbl\-\_\-p@{lbl\-\_\-p}}
+\index{lbl\-\_\-p@{lbl\-\_\-p}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{lbl\-\_\-p}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ lbl\-\_\-p}}\label{svm-predict-old_8cpp_a34e7d19a381f7dfe28c6de7f93295bbc}
+
+
+Definition at line 27 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_a8adb30f4f6669f927fd9232f686c637b}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!line@{line}}
+\index{line@{line}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ line = N\-U\-L\-L\hspace{0.3cm}{\ttfamily [static]}}}\label{svm-predict-old_8cpp_a8adb30f4f6669f927fd9232f686c637b}
+
+
+Definition at line 40 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_acad24c15bee67d2026f56bc94a1188c7}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!max\-\_\-line\-\_\-len@{max\-\_\-line\-\_\-len}}
+\index{max\-\_\-line\-\_\-len@{max\-\_\-line\-\_\-len}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{max\-\_\-line\-\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}int max\-\_\-line\-\_\-len\hspace{0.3cm}{\ttfamily [static]}}}\label{svm-predict-old_8cpp_acad24c15bee67d2026f56bc94a1188c7}
+
+
+Definition at line 41 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_af95bde9162db2c5dd97e80795b3548ed}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!max\-\_\-nr\-\_\-attr@{max\-\_\-nr\-\_\-attr}}
+\index{max\-\_\-nr\-\_\-attr@{max\-\_\-nr\-\_\-attr}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{max\-\_\-nr\-\_\-attr}]{\setlength{\rightskip}{0pt plus 5cm}int max\-\_\-nr\-\_\-attr = 64}}\label{svm-predict-old_8cpp_af95bde9162db2c5dd97e80795b3548ed}
+
+
+Definition at line 30 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_acd0f485f4131af58e0bdb273316d3805}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!max\-\_\-set@{max\-\_\-set}}
+\index{max\-\_\-set@{max\-\_\-set}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{max\-\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}bool max\-\_\-set = false}}\label{svm-predict-old_8cpp_acd0f485f4131af58e0bdb273316d3805}
+
+
+Definition at line 37 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_a9090dc0b930a5f9212a3b6f3e4b5c5ab}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!max\-\_\-threshold@{max\-\_\-threshold}}
+\index{max\-\_\-threshold@{max\-\_\-threshold}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{max\-\_\-threshold}]{\setlength{\rightskip}{0pt plus 5cm}double max\-\_\-threshold = 0}}\label{svm-predict-old_8cpp_a9090dc0b930a5f9212a3b6f3e4b5c5ab}
+
+
+Definition at line 36 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_a639aa8f86cbf6b9c5d43e0c5082e26ac}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!mdl@{mdl}}
+\index{mdl@{mdl}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{mdl}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf svm\-\_\-model}$\ast$$\ast$ mdl}}\label{svm-predict-old_8cpp_a639aa8f86cbf6b9c5d43e0c5082e26ac}
+
+
+Definition at line 33 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_aa816fb83dd1b415e1339bb8ddd6cdabc}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!min\-\_\-set@{min\-\_\-set}}
+\index{min\-\_\-set@{min\-\_\-set}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{min\-\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}bool min\-\_\-set = false}}\label{svm-predict-old_8cpp_aa816fb83dd1b415e1339bb8ddd6cdabc}
+
+
+Definition at line 37 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_a3670388207cf8d0f4f4c9237a1482057}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!min\-\_\-threshold@{min\-\_\-threshold}}
+\index{min\-\_\-threshold@{min\-\_\-threshold}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{min\-\_\-threshold}]{\setlength{\rightskip}{0pt plus 5cm}double min\-\_\-threshold = 0}}\label{svm-predict-old_8cpp_a3670388207cf8d0f4f4c9237a1482057}
+
+
+Definition at line 36 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_a50c87b127b14787341e9630f4f5c700a}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!model@{model}}
+\index{model@{model}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{model}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf svm\-\_\-model}$\ast$ model}}\label{svm-predict-old_8cpp_a50c87b127b14787341e9630f4f5c700a}
+
+
+Definition at line 32 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_a7f5f60f72ac3c9c0dfe1c1873dff770f}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!nr\-\_\-classes\-\_\-p@{nr\-\_\-classes\-\_\-p}}
+\index{nr\-\_\-classes\-\_\-p@{nr\-\_\-classes\-\_\-p}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{nr\-\_\-classes\-\_\-p}]{\setlength{\rightskip}{0pt plus 5cm}int nr\-\_\-classes\-\_\-p}}\label{svm-predict-old_8cpp_a7f5f60f72ac3c9c0dfe1c1873dff770f}
+
+
+Definition at line 26 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_af292311da2955e8e2dd274443d57ee3a}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!open\-\_\-set\-\_\-p@{open\-\_\-set\-\_\-p}}
+\index{open\-\_\-set\-\_\-p@{open\-\_\-set\-\_\-p}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{open\-\_\-set\-\_\-p}]{\setlength{\rightskip}{0pt plus 5cm}bool open\-\_\-set\-\_\-p = false}}\label{svm-predict-old_8cpp_af292311da2955e8e2dd274443d57ee3a}
+
+
+Definition at line 25 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_a7ce2b5cbc37a137a91ecc0cf035faba7}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!output\-\_\-scores@{output\-\_\-scores}}
+\index{output\-\_\-scores@{output\-\_\-scores}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{output\-\_\-scores}]{\setlength{\rightskip}{0pt plus 5cm}bool output\-\_\-scores = false}}\label{svm-predict-old_8cpp_a7ce2b5cbc37a137a91ecc0cf035faba7}
+
+
+Definition at line 44 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_aa63d504586762ed1e2b057a76018d0fd}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!output\-\_\-total\-\_\-scores@{output\-\_\-total\-\_\-scores}}
+\index{output\-\_\-total\-\_\-scores@{output\-\_\-total\-\_\-scores}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{output\-\_\-total\-\_\-scores}]{\setlength{\rightskip}{0pt plus 5cm}bool output\-\_\-total\-\_\-scores = false}}\label{svm-predict-old_8cpp_aa63d504586762ed1e2b057a76018d0fd}
+
+
+Definition at line 45 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_ac3602f56435c68a322553ed33804e5d1}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!output\-\_\-votes@{output\-\_\-votes}}
+\index{output\-\_\-votes@{output\-\_\-votes}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{output\-\_\-votes}]{\setlength{\rightskip}{0pt plus 5cm}bool output\-\_\-votes = false}}\label{svm-predict-old_8cpp_ac3602f56435c68a322553ed33804e5d1}
+
+
+Definition at line 46 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_a1501132f5226b295e5300d74da55a2b9}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!predict\-\_\-probability@{predict\-\_\-probability}}
+\index{predict\-\_\-probability@{predict\-\_\-probability}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{predict\-\_\-probability}]{\setlength{\rightskip}{0pt plus 5cm}int predict\-\_\-probability = 0}}\label{svm-predict-old_8cpp_a1501132f5226b295e5300d74da55a2b9}
+
+
+Definition at line 34 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_ab3f078684998b83967d507d0f453f454}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!verbose@{verbose}}
+\index{verbose@{verbose}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{verbose}]{\setlength{\rightskip}{0pt plus 5cm}bool verbose = true}}\label{svm-predict-old_8cpp_ab3f078684998b83967d507d0f453f454}
+
+
+Definition at line 38 of file svm-\/predict-\/old.\-cpp.
+
+\hypertarget{svm-predict-old_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{\index{svm-\/predict-\/old.\-cpp@{svm-\/predict-\/old.\-cpp}!x@{x}}
+\index{x@{x}!svm-predict-old.cpp@{svm-\/predict-\/old.\-cpp}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf svm\-\_\-node}$\ast$ x}}\label{svm-predict-old_8cpp_a9a5b72a4065074cac5da07efb80a1e79}
+
+
+Definition at line 29 of file svm-\/predict-\/old.\-cpp.
+

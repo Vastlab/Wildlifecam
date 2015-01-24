@@ -1,0 +1,25 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/device_title" >
+        <com.securics.wildlifecapture.MyStringPreference
+            android:defaultValue="@string/dID_default"
+            android:key="@string/dID_key"
+            android:summary="@string/dID_summary"
+            android:title="@string/dID_title" />
+        <com.securics.wildlifecapture.MyStringPreference
+            android:defaultValue="@string/dLocation_default"
+            android:key="@string/dLocation_key"
+            android:summary="@string/dLocation_summary"
+            android:title="@string/dLocation_title" />
+		<CheckBoxPreference
+            android:key="@string/skip_key"
+            android:title="@string/skip_title"
+            android:defaultValue="@string/skip_default"
+            android:summary="@string/skip_summary" />
+     </PreferenceCategory>
+
+    <com.securics.wildlifecapture.ResetDefaults
+        android:id="@+id/reset_defaults"
+        android:title="@string/reset_title" />
+
+</PreferenceScreen>

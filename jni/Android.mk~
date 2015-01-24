@@ -1,0 +1,32 @@
+LOCAL_PATH:= $(call my-dir)
+
+include $(CLEAR_VARS)
+
+OPENCV_CAMERA_MODULES:=off
+OPENCV_INSTALL_MODULES:=on
+OPENCV_LIB_TYPE:=STATIC
+
+OPENCV_MK_PATH:=${NDKROOT}/../OpenCV-2.4.3.2-android-sdk-tadp/sdk/native/jni/OpenCV-tegra3.mk
+#include includeOpenCV.mk
+
+include /home/mgohde/NVPACK/OpenCV-2.4.5-Tegra-sdk/sdk/native/jni/OpenCV-tegra3.mk
+
+#LOCAL_MODULE    := backgroundSubtract-jni
+LOCAL_MODULE	:=nativePipeline
+
+LOCAL_CFLAGS := $(LOCAL_C_INCLUDES:%=-I%)
+LOCAL_LDLIBS += -L$(SYSROOT)/usr/lib -ldl -llog -landroid \
+                -L$(TARGET_OUT) -ljnigraphics
+
+LOCAL_SRC_FILES := \
+	cvjni.cpp \
+	Squirrel_pipeline.cpp \
+	perspectivetransform.cpp \
+	GRAB/KeyPoints/GRAB-kp.cpp \
+	GRAB/KeyPoints/Neighborhood-kp.cpp \
+	onevsetSVM/svm.cpp \
+	onevsetSVM/svm-predict.cpp
+
+include $(BUILD_SHARED_LIBRARY)
+
+

@@ -1,0 +1,183 @@
+\section{com.\+securics.\+wildlifecapture.\+Camera\+Preview Class Reference}
+\label{classcom_1_1securics_1_1wildlifecapture_1_1_camera_preview}\index{com.\+securics.\+wildlifecapture.\+Camera\+Preview@{com.\+securics.\+wildlifecapture.\+Camera\+Preview}}
+Inheritance diagram for com.\+securics.\+wildlifecapture.\+Camera\+Preview\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1securics_1_1wildlifecapture_1_1_camera_preview}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Camera\+Preview} (Context context, Camera {\bf cam})
+\item 
+void {\bf surface\+Created} (Surface\+Holder holder)
+\item 
+void {\bf surface\+Changed} (Surface\+Holder holder, int format, int width, int height)
+\item 
+void {\bf surface\+Destroyed} (Surface\+Holder holder)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Camera {\bf cam}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf init\+Camera} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Surface\+Holder {\bf s\+Holder}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String {\bf T\+A\+G} = \char`\"{}Camera\+Preview\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Camera\+Preview.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}!Camera\+Preview@{Camera\+Preview}}
+\index{Camera\+Preview@{Camera\+Preview}!com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}}
+\subsubsection[{Camera\+Preview}]{\setlength{\rightskip}{0pt plus 5cm}com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+Camera\+Preview (
+\begin{DoxyParamCaption}
+\item[{Context}]{context, }
+\item[{Camera}]{cam}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_camera_preview_a98ff2a8512cd75a9d7981a962d396814}
+Call init\+Camera to set camera 
+\begin{DoxyParams}{Parameters}
+{\em context} & \\
+\hline
+{\em cam} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 27 of file Camera\+Preview.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+cam, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+init\+Camera(), com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+s\+Holder, and com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+T\+A\+G.
+
+
+
+\subsection{Member Function Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}!init\+Camera@{init\+Camera}}
+\index{init\+Camera@{init\+Camera}!com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}}
+\subsubsection[{init\+Camera}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+init\+Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_camera_preview_a9ae15f792a1663007353246d533c2da9}
+Set camera parameters to preferred settings 
+
+Definition at line 42 of file Camera\+Preview.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, and com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+Camera\+Preview().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}!surface\+Changed@{surface\+Changed}}
+\index{surface\+Changed@{surface\+Changed}!com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}}
+\subsubsection[{surface\+Changed}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+surface\+Changed (
+\begin{DoxyParamCaption}
+\item[{Surface\+Holder}]{holder, }
+\item[{int}]{format, }
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_camera_preview_ab804fbe7dc204b3f87897720610779ac}
+previews if camera is on 
+
+Definition at line 98 of file Camera\+Preview.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+cam, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}!surface\+Created@{surface\+Created}}
+\index{surface\+Created@{surface\+Created}!com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}}
+\subsubsection[{surface\+Created}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+surface\+Created (
+\begin{DoxyParamCaption}
+\item[{Surface\+Holder}]{holder}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_camera_preview_aac6d23452b929eade3d3550b230b2d7e}
+previews displau of camera is on 
+
+Definition at line 82 of file Camera\+Preview.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+cam, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+s\+Holder, and com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+T\+A\+G.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}!surface\+Destroyed@{surface\+Destroyed}}
+\index{surface\+Destroyed@{surface\+Destroyed}!com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}}
+\subsubsection[{surface\+Destroyed}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+surface\+Destroyed (
+\begin{DoxyParamCaption}
+\item[{Surface\+Holder}]{holder}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_camera_preview_a515e4c00aef971f61431ba02c90d3ebf}
+closes camera 
+
+Definition at line 114 of file Camera\+Preview.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+cam, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode.
+
+
+
+\subsection{Member Data Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}!cam@{cam}}
+\index{cam@{cam}!com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}}
+\subsubsection[{cam}]{\setlength{\rightskip}{0pt plus 5cm}Camera com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+cam}\label{classcom_1_1securics_1_1wildlifecapture_1_1_camera_preview_a97c474f61cd67209524fa379894ce528}
+
+
+Definition at line 19 of file Camera\+Preview.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+Camera\+Preview(), com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+surface\+Changed(), com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+surface\+Created(), and com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+surface\+Destroyed().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}!s\+Holder@{s\+Holder}}
+\index{s\+Holder@{s\+Holder}!com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}}
+\subsubsection[{s\+Holder}]{\setlength{\rightskip}{0pt plus 5cm}Surface\+Holder com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+s\+Holder\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_camera_preview_af07f87b9a8ff4d898182999976bdd0d5}
+
+
+Definition at line 20 of file Camera\+Preview.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+Camera\+Preview(), and com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+surface\+Created().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}!T\+A\+G@{T\+A\+G}}
+\index{T\+A\+G@{T\+A\+G}!com\+::securics\+::wildlifecapture\+::\+Camera\+Preview@{com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}}
+\subsubsection[{T\+A\+G}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+T\+A\+G = \char`\"{}Camera\+Preview\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_camera_preview_ada374cd3791b887dbbfc1ee7de9faacc}
+
+
+Definition at line 16 of file Camera\+Preview.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+Camera\+Preview(), com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+init\+Camera(), and com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+surface\+Created().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/com/securics/wildlifecapture/{\bf Camera\+Preview.\+java}\end{DoxyCompactItemize}

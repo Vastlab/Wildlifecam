@@ -1,0 +1,122 @@
+\hypertarget{_2_meta_recognition_8cpp}{\section{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M-\//\-Meta\-Recognition.cpp File Reference}
+\label{_2_meta_recognition_8cpp}\index{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M-\//\-Meta\-Recognition.\-cpp@{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M-\//\-Meta\-Recognition.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}Meta\-Recognition.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_2_meta_recognition_8cpp_a3490d2eede5f89ab9aa5363404113efc}{compare\-\_\-sort\-\_\-decending} (const void $\ast$a, const void $\ast$b)
+\item 
+int \hyperlink{_2_meta_recognition_8cpp_ae382ebb3b5774738d5cb28da645142f1}{compare\-\_\-sort\-\_\-assending} (const void $\ast$a, const void $\ast$b)
+\item 
+const char $\ast$const \hyperlink{_2_meta_recognition_8cpp_ac93e74dd234bdc36d781d21391123312}{Bool\-To\-String} (bool b)
+\item 
+int const \hyperlink{_2_meta_recognition_8cpp_a99d403c71c3243869f118c5e48bd8dd4}{Bool\-To\-Int} (bool b)
+\item 
+const bool \hyperlink{_2_meta_recognition_8cpp_a087113d1a8e694347182ee18d2464b1b}{Int\-To\-Bool} (const char $\ast$s)
+\item 
+std\-::ostream \& \hyperlink{_2_meta_recognition_8cpp_ab0d5f5fa4f0c9375e4799eee2f3ff1bc}{operator$<$$<$} (std\-::ostream \&os, const \hyperlink{class_meta_recognition}{Meta\-Recognition} \&mr)
+\item 
+std\-::ostream \& \hyperlink{_2_meta_recognition_8cpp_a803b3f2799c5e62cb2955978cdd850d4}{operator$>$$>$} (std\-::istream \&os, \hyperlink{class_meta_recognition}{Meta\-Recognition} \&mr)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_2_meta_recognition_8cpp_af1a9aad2ffb1974415c6cdcba137d529}{weibull\-\_\-fit\-\_\-verbose\-\_\-debug}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_2_meta_recognition_8cpp_a99d403c71c3243869f118c5e48bd8dd4}{\index{/\-Meta\-Recognition.\-cpp@{/\-Meta\-Recognition.\-cpp}!Bool\-To\-Int@{Bool\-To\-Int}}
+\index{Bool\-To\-Int@{Bool\-To\-Int}!/MetaRecognition.cpp@{/\-Meta\-Recognition.\-cpp}}
+\subsubsection[{Bool\-To\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int const Bool\-To\-Int (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_2_meta_recognition_8cpp_a99d403c71c3243869f118c5e48bd8dd4}
+
+
+Definition at line 110 of file Meta\-Recognition.\-cpp.
+
+\hypertarget{_2_meta_recognition_8cpp_ac93e74dd234bdc36d781d21391123312}{\index{/\-Meta\-Recognition.\-cpp@{/\-Meta\-Recognition.\-cpp}!Bool\-To\-String@{Bool\-To\-String}}
+\index{Bool\-To\-String@{Bool\-To\-String}!/MetaRecognition.cpp@{/\-Meta\-Recognition.\-cpp}}
+\subsubsection[{Bool\-To\-String}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ const Bool\-To\-String (
+\begin{DoxyParamCaption}
+\item[{bool}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_2_meta_recognition_8cpp_ac93e74dd234bdc36d781d21391123312}
+
+
+Definition at line 105 of file Meta\-Recognition.\-cpp.
+
+\hypertarget{_2_meta_recognition_8cpp_ae382ebb3b5774738d5cb28da645142f1}{\index{/\-Meta\-Recognition.\-cpp@{/\-Meta\-Recognition.\-cpp}!compare\-\_\-sort\-\_\-assending@{compare\-\_\-sort\-\_\-assending}}
+\index{compare\-\_\-sort\-\_\-assending@{compare\-\_\-sort\-\_\-assending}!/MetaRecognition.cpp@{/\-Meta\-Recognition.\-cpp}}
+\subsubsection[{compare\-\_\-sort\-\_\-assending}]{\setlength{\rightskip}{0pt plus 5cm}int compare\-\_\-sort\-\_\-assending (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{a, }
+\item[{const void $\ast$}]{b}
+\end{DoxyParamCaption}
+)}}\label{_2_meta_recognition_8cpp_ae382ebb3b5774738d5cb28da645142f1}
+
+
+Definition at line 98 of file Meta\-Recognition.\-cpp.
+
+\hypertarget{_2_meta_recognition_8cpp_a3490d2eede5f89ab9aa5363404113efc}{\index{/\-Meta\-Recognition.\-cpp@{/\-Meta\-Recognition.\-cpp}!compare\-\_\-sort\-\_\-decending@{compare\-\_\-sort\-\_\-decending}}
+\index{compare\-\_\-sort\-\_\-decending@{compare\-\_\-sort\-\_\-decending}!/MetaRecognition.cpp@{/\-Meta\-Recognition.\-cpp}}
+\subsubsection[{compare\-\_\-sort\-\_\-decending}]{\setlength{\rightskip}{0pt plus 5cm}int compare\-\_\-sort\-\_\-decending (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{a, }
+\item[{const void $\ast$}]{b}
+\end{DoxyParamCaption}
+)}}\label{_2_meta_recognition_8cpp_a3490d2eede5f89ab9aa5363404113efc}
+
+
+Definition at line 91 of file Meta\-Recognition.\-cpp.
+
+\hypertarget{_2_meta_recognition_8cpp_a087113d1a8e694347182ee18d2464b1b}{\index{/\-Meta\-Recognition.\-cpp@{/\-Meta\-Recognition.\-cpp}!Int\-To\-Bool@{Int\-To\-Bool}}
+\index{Int\-To\-Bool@{Int\-To\-Bool}!/MetaRecognition.cpp@{/\-Meta\-Recognition.\-cpp}}
+\subsubsection[{Int\-To\-Bool}]{\setlength{\rightskip}{0pt plus 5cm}const bool Int\-To\-Bool (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{_2_meta_recognition_8cpp_a087113d1a8e694347182ee18d2464b1b}
+
+
+Definition at line 115 of file Meta\-Recognition.\-cpp.
+
+\hypertarget{_2_meta_recognition_8cpp_ab0d5f5fa4f0c9375e4799eee2f3ff1bc}{\index{/\-Meta\-Recognition.\-cpp@{/\-Meta\-Recognition.\-cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!/MetaRecognition.cpp@{/\-Meta\-Recognition.\-cpp}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{const {\bf Meta\-Recognition} \&}]{mr}
+\end{DoxyParamCaption}
+)}}\label{_2_meta_recognition_8cpp_ab0d5f5fa4f0c9375e4799eee2f3ff1bc}
+
+
+Definition at line 325 of file Meta\-Recognition.\-cpp.
+
+\hypertarget{_2_meta_recognition_8cpp_a803b3f2799c5e62cb2955978cdd850d4}{\index{/\-Meta\-Recognition.\-cpp@{/\-Meta\-Recognition.\-cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!/MetaRecognition.cpp@{/\-Meta\-Recognition.\-cpp}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\-::istream \&}]{os, }
+\item[{{\bf Meta\-Recognition} \&}]{mr}
+\end{DoxyParamCaption}
+)}}\label{_2_meta_recognition_8cpp_a803b3f2799c5e62cb2955978cdd850d4}
+
+
+Definition at line 330 of file Meta\-Recognition.\-cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_2_meta_recognition_8cpp_af1a9aad2ffb1974415c6cdcba137d529}{\index{/\-Meta\-Recognition.\-cpp@{/\-Meta\-Recognition.\-cpp}!weibull\-\_\-fit\-\_\-verbose\-\_\-debug@{weibull\-\_\-fit\-\_\-verbose\-\_\-debug}}
+\index{weibull\-\_\-fit\-\_\-verbose\-\_\-debug@{weibull\-\_\-fit\-\_\-verbose\-\_\-debug}!/MetaRecognition.cpp@{/\-Meta\-Recognition.\-cpp}}
+\subsubsection[{weibull\-\_\-fit\-\_\-verbose\-\_\-debug}]{\setlength{\rightskip}{0pt plus 5cm}int weibull\-\_\-fit\-\_\-verbose\-\_\-debug}}\label{_2_meta_recognition_8cpp_af1a9aad2ffb1974415c6cdcba137d529}
+
+
+Definition at line 49 of file weibull.\-cpp.
+

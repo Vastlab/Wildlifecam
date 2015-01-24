@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['f',['f',['../unionjvalue.html#ad32f5996f5d0f5fb93fb38ef83a74eb0',1,'jvalue']]],
+  ['false',['FALSE',['../glob_8h.html#aa93f0eb578d23995850d61f7d61c55c1',1,'FALSE():&#160;glob.h'],['../_2glob_8h.html#aa93f0eb578d23995850d61f7d61c55c1',1,'FALSE():&#160;glob.h']]],
+  ['far_5fpreasure',['far_preasure',['../svm-train_8cpp.html#a57ce01656059264c677404c310f3a04e',1,'far_preasure():&#160;svm-train.cpp'],['../_2svm-train_8cpp.html#a57ce01656059264c677404c310f3a04e',1,'far_preasure():&#160;svm-train.cpp']]],
+  ['fatalerror',['FatalError',['../struct_j_n_i_native_interface.html#a927e3aa3cae1ad97b43dde0b94ccf4ff',1,'JNINativeInterface']]],
+  ['fftw_5fcc',['FFTW_CC',['../config_8h.html#ae5c2b9ef910f07b005d65ff3a20c657d',1,'config.h']]],
+  ['fftw_5fenable_5falloca',['FFTW_ENABLE_ALLOCA',['../config_8h.html#a6dc71727ba69050ba4bba1099fc2e143',1,'config.h']]],
+  ['filename',['Filename',['../glob_8h.html#a94a9e1e03b75fd8f5c2cc4774a0b9515',1,'Filename():&#160;glob.h'],['../_2glob_8h.html#a94a9e1e03b75fd8f5c2cc4774a0b9515',1,'Filename():&#160;glob.h']]],
+  ['find_5fbounding_5fboxes',['Find_Bounding_Boxes',['../_squirrel__pipeline_8cpp.html#a396191979b1665cc104b97840568de44',1,'Squirrel_pipeline.cpp']]],
+  ['find_5frectangles',['Find_Rectangles',['../_squirrel__pipeline_8cpp.html#aea0731f99aa86802e52db38826cc01dc',1,'Squirrel_pipeline.cpp']]],
+  ['findblobs',['FindBlobs',['../_squirrel__pipeline_8cpp.html#ab1dfd46b3af54621e0713279f6fd8140',1,'FindBlobs(const cv::Mat &amp;binary, std::vector&lt; std::vector&lt; cv::Point2i &gt; &gt; &amp;blobs):&#160;Squirrel_pipeline.cpp'],['../_squirrel__pipeline_8h.html#ab1dfd46b3af54621e0713279f6fd8140',1,'FindBlobs(const cv::Mat &amp;binary, std::vector&lt; std::vector&lt; cv::Point2i &gt; &gt; &amp;blobs):&#160;Squirrel_pipeline.cpp']]],
+  ['findclass',['FindClass',['../struct_j_n_i_native_interface.html#a9912828aa8ddc4a6070ea41f1d5f3d08',1,'JNINativeInterface']]],
+  ['findneighbors',['findNeighbors',['../class_neighborhood.html#a5f66d233e0d1048773773ff0c3312078',1,'Neighborhood::findNeighbors(int windowSize)'],['../class_neighborhood.html#a5f66d233e0d1048773773ff0c3312078',1,'Neighborhood::findNeighbors(int windowSize)']]],
+  ['fithigh',['FitHigh',['../class_meta_recognition.html#a40386f63ea6a8088cffc54505d959afb',1,'MetaRecognition::FitHigh(double *inputData, int inputDataSize)'],['../class_meta_recognition.html#a40386f63ea6a8088cffc54505d959afb',1,'MetaRecognition::FitHigh(double *inputData, int inputDataSize)']]],
+  ['fitlow',['FitLow',['../class_meta_recognition.html#ac5ccbad6727a464df72e743c27a0be80',1,'MetaRecognition::FitLow(double *inputData, int inputDataSize)'],['../class_meta_recognition.html#ac5ccbad6727a464df72e743c27a0be80',1,'MetaRecognition::FitLow(double *inputData, int inputDataSize)']]],
+  ['fitsvm',['FitSVM',['../class_meta_recognition.html#ad040c8334ffb7af7ea8e777cdfeb56c8',1,'MetaRecognition::FitSVM(svm_node_libsvm *SVMdata, int inputDataSize, int label_of_interest=1, bool label_has_positive_score=true, bool reject_complement=1)'],['../class_meta_recognition.html#ad040c8334ffb7af7ea8e777cdfeb56c8',1,'MetaRecognition::FitSVM(svm_node_libsvm *SVMdata, int inputDataSize, int label_of_interest=1, bool label_has_positive_score=true, bool reject_complement=1)']]],
+  ['fitting_5fsize',['fitting_size',['../class_meta_recognition.html#a1023b0e67708b18ca86f7f0d22541c6d',1,'MetaRecognition::fitting_size()'],['../lib_m_r_8cpp.html#a89ce8f4dfb11e45616dd31a2cb5b4cce',1,'FITTING_SIZE():&#160;libMR.cpp'],['../weibull_8cpp.html#a89ce8f4dfb11e45616dd31a2cb5b4cce',1,'FITTING_SIZE():&#160;weibull.cpp'],['../_2lib_m_r_8cpp.html#a89ce8f4dfb11e45616dd31a2cb5b4cce',1,'FITTING_SIZE():&#160;libMR.cpp'],['../_2weibull_8cpp.html#a89ce8f4dfb11e45616dd31a2cb5b4cce',1,'FITTING_SIZE():&#160;weibull.cpp']]],
+  ['fix',['fix',['../weibull_8cpp.html#a7426cd1068c313e1761d33b1951db12d',1,'fix(double n):&#160;weibull.cpp'],['../_2weibull_8cpp.html#a7426cd1068c313e1761d33b1951db12d',1,'fix(double n):&#160;weibull.cpp']]],
+  ['float',['FLOAT',['../glob_8h.html#a8d06b04c04132c6f7c0fcb08c6167455',1,'FLOAT():&#160;glob.h'],['../_2glob_8h.html#a8d06b04c04132c6f7c0fcb08c6167455',1,'FLOAT():&#160;glob.h']]],
+  ['fnptr',['fnPtr',['../struct_j_n_i_native_method.html#aa7f45aa7f42adb48cfdaea1ea73c1311',1,'JNINativeMethod']]],
+  ['free',['FREE',['../class_solver.html#ab8abfd7c2e958e4343d30e471b2f86a1acba0ae602a94ab81b47fc4c9ef223766',1,'Solver']]],
+  ['free_5fsv',['free_sv',['../structsvm__model.html#a2ae57ce1fa43497d151aff26c21a13a1',1,'svm_model']]],
+  ['fromreflectedfield',['FromReflectedField',['../struct_j_n_i_native_interface.html#a2b255910271138a5caf89b618e1e9ca2',1,'JNINativeInterface']]],
+  ['fromreflectedmethod',['FromReflectedMethod',['../struct_j_n_i_native_interface.html#ae2e46bbc4361bcae036dd61e96fcba30',1,'JNINativeInterface']]],
+  ['fu_5fcounter',['FU_Counter',['../_squirrel__pipeline_8cpp.html#ac348c2964e6239b7e1819f59092e6e8f',1,'Squirrel_pipeline.cpp']]],
+  ['functions',['functions',['../struct___j_n_i_env.html#acef9b977efc20a861da781946c1a67f2',1,'_JNIEnv::functions()'],['../struct___java_v_m.html#aad1eb9c5f99ef136f09aba7b8c230f65',1,'_JavaVM::functions()']]]
+];

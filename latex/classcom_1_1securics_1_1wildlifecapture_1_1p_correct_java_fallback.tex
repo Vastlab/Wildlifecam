@@ -1,0 +1,55 @@
+\hypertarget{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_java_fallback}{\section{com.\+securics.\+wildlifecapture.\+p\+Correct\+Java\+Fallback Class Reference}
+\label{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_java_fallback}\index{com.\+securics.\+wildlifecapture.\+p\+Correct\+Java\+Fallback@{com.\+securics.\+wildlifecapture.\+p\+Correct\+Java\+Fallback}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_java_fallback_a050ae4d5cb15dbce98db223927eab388}{transform\+Image} (\hyperlink{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_camera}{p\+Correct\+Camera} camera, String infile, String out\+File\+Location, double total\+View\+Angle)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the interface to the internal classes of p\+Correct. 
+
+Definition at line 15 of file p\+Correct\+Java\+Fallback.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_java_fallback_a050ae4d5cb15dbce98db223927eab388}{\index{com\+::securics\+::wildlifecapture\+::p\+Correct\+Java\+Fallback@{com\+::securics\+::wildlifecapture\+::p\+Correct\+Java\+Fallback}!transform\+Image@{transform\+Image}}
+\index{transform\+Image@{transform\+Image}!com\+::securics\+::wildlifecapture\+::p\+Correct\+Java\+Fallback@{com\+::securics\+::wildlifecapture\+::p\+Correct\+Java\+Fallback}}
+\subsubsection[{transform\+Image}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+p\+Correct\+Java\+Fallback.\+transform\+Image (
+\begin{DoxyParamCaption}
+\item[{{\bf p\+Correct\+Camera}}]{camera, }
+\item[{String}]{infile, }
+\item[{String}]{out\+File\+Location, }
+\item[{double}]{total\+View\+Angle}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_java_fallback_a050ae4d5cb15dbce98db223927eab388}
+public static \hyperlink{classcom_1_1securics_1_1wildlifecapture_1_1p_correct_camera}{p\+Correct\+Camera} output\+Calculation\+Camera; Unfortunately, Buffered\+Images are not available in Android.\+These are represented as U\+R\+Is because of the way that android loads images. This is the transformation matrix to be used in warp\+Perspective.
+
+Planes and point arrays that will be used in calculation.
+
+Variables that represent various facets of the camera.
+
+Set up the correction camera for usage.
+
+Make the intermediate plane\+: Uses camera because this is before the image gets inverted.
+
+Source corners list.
+
+Dest corners list.
+
+Write back to disk. 
+
+Definition at line 23 of file p\+Correct\+Java\+Fallback.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/com/securics/wildlifecapture/\hyperlink{p_correct_java_fallback_8java}{p\+Correct\+Java\+Fallback.\+java}\end{DoxyCompactItemize}

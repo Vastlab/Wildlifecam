@@ -1,0 +1,748 @@
+\hypertarget{svm_8cpp}{\section{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M/svm.cpp File Reference}
+\label{svm_8cpp}\index{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M/svm.\-cpp@{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M/svm.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}../arch\-\_\-config.\-hpp\char`\"{}}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include $<$float.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdarg.\-h$>$}\\*
+{\ttfamily \#include $<$limits.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}svm.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_cache}{Cache}
+\item 
+struct {\bfseries Cache\-::head\-\_\-t}
+\item 
+class \hyperlink{class_q_matrix}{Q\-Matrix}
+\item 
+class \hyperlink{class_kernel}{Kernel}
+\item 
+class \hyperlink{class_solver}{Solver}
+\item 
+struct \hyperlink{struct_solver_1_1_solution_info}{Solver\-::\-Solution\-Info}
+\item 
+class \hyperlink{class_solver___n_u}{Solver\-\_\-\-N\-U}
+\item 
+class \hyperlink{class_s_v_c___q}{S\-V\-C\-\_\-\-Q}
+\item 
+class \hyperlink{class_o_n_e___c_l_a_s_s___q}{O\-N\-E\-\_\-\-C\-L\-A\-S\-S\-\_\-\-Q}
+\item 
+class \hyperlink{class_s_v_r___q}{S\-V\-R\-\_\-\-Q}
+\item 
+struct \hyperlink{structdecision__function}{decision\-\_\-function}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{svm_8cpp_a12c2040f25d8e3a7b9e1c2024c618cb6}{I\-N\-F}~H\-U\-G\-E\-\_\-\-V\-A\-L
+\item 
+\#define \hyperlink{svm_8cpp_a3d8c9c145887af5174ba4cc6789862ad}{T\-A\-U}~1e-\/12
+\item 
+\#define \hyperlink{svm_8cpp_a9191047fd644a5f519152ecb4aa60357}{Malloc}(type, n)~(type $\ast$)malloc((n)$\ast$sizeof(type))
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef float \hyperlink{svm_8cpp_a8755d90a54ecfb8d15051af3e0542592}{Qfloat}
+\item 
+typedef signed char \hyperlink{svm_8cpp_a0fd9ce9d735064461bebfe6037026093}{schar}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\static T \hyperlink{svm_8cpp_a348440c5435269ac7c60d2e2d8916f48}{min} (T \hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, T y)
+\item 
+{\footnotesize template$<$class T $>$ }\\static T \hyperlink{svm_8cpp_a7cba98555a7346b01e4cc06205527d8a}{max} (T \hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, T y)
+\item 
+{\footnotesize template$<$class T $>$ }\\static void \hyperlink{svm_8cpp_a91e77fa16b1c9bbbf90f2eea392997b1}{swap} (T \&\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, T \&y)
+\item 
+{\footnotesize template$<$class S , class T $>$ }\\static void \hyperlink{svm_8cpp_af2d4d35f18533f3571dad9ce21f8e1cc}{clone} (T $\ast$\&dst, S $\ast$src, int n)
+\item 
+static double \hyperlink{svm_8cpp_a07a43a87f274795074408da4b34d46c4}{powi} (double base, int times)
+\item 
+static void \hyperlink{svm_8cpp_a4edee28127eebfbcdab94b75c57341c5}{print\-\_\-string\-\_\-stdout} (const char $\ast$s)
+\item 
+static void \hyperlink{svm_8cpp_ab834c069665121a3467868539fde9101}{info} (const char $\ast$fmt,...)
+\item 
+static void \hyperlink{svm_8cpp_a11814ad6e8976823b61af65e6e36ca1a}{solve\-\_\-c\-\_\-svc} (const \hyperlink{structsvm__problem}{svm\-\_\-problem} $\ast$\hyperlink{_2svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}, const \hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param}, double $\ast$alpha, \hyperlink{struct_solver_1_1_solution_info}{Solver\-::\-Solution\-Info} $\ast$si, double Cp, double Cn)
+\item 
+static void \hyperlink{svm_8cpp_a221d17018ed0cd7f218523dbbb9aab4d}{solve\-\_\-nu\-\_\-svc} (const \hyperlink{structsvm__problem}{svm\-\_\-problem} $\ast$\hyperlink{_2svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}, const \hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param}, double $\ast$alpha, \hyperlink{struct_solver_1_1_solution_info}{Solver\-::\-Solution\-Info} $\ast$si)
+\item 
+static void \hyperlink{svm_8cpp_a7a8a956d5b08b55756ceaaf63a5d2a87}{solve\-\_\-one\-\_\-class} (const \hyperlink{structsvm__problem}{svm\-\_\-problem} $\ast$\hyperlink{_2svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}, const \hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param}, double $\ast$alpha, \hyperlink{struct_solver_1_1_solution_info}{Solver\-::\-Solution\-Info} $\ast$si)
+\item 
+static void \hyperlink{svm_8cpp_a57df27962e3c80e9c2de6c3163850c79}{solve\-\_\-epsilon\-\_\-svr} (const \hyperlink{structsvm__problem}{svm\-\_\-problem} $\ast$\hyperlink{_2svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}, const \hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param}, double $\ast$alpha, \hyperlink{struct_solver_1_1_solution_info}{Solver\-::\-Solution\-Info} $\ast$si)
+\item 
+static void \hyperlink{svm_8cpp_add71d0d022422b58f690572f521f0f78}{solve\-\_\-nu\-\_\-svr} (const \hyperlink{structsvm__problem}{svm\-\_\-problem} $\ast$\hyperlink{_2svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}, const \hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param}, double $\ast$alpha, \hyperlink{struct_solver_1_1_solution_info}{Solver\-::\-Solution\-Info} $\ast$si)
+\item 
+static \hyperlink{structdecision__function}{decision\-\_\-function} \hyperlink{svm_8cpp_a402bb8c57abf732699dce636892faca7}{svm\-\_\-train\-\_\-one} (const \hyperlink{structsvm__problem}{svm\-\_\-problem} $\ast$\hyperlink{_2svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}, const \hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param}, double Cp, double Cn)
+\item 
+static void \hyperlink{svm_8cpp_a1da8eb99e9a14699eb36a30bc8f2bedb}{sigmoid\-\_\-train} (int l, const double $\ast$dec\-\_\-values, const double $\ast$labels, double \&A, double \&B)
+\item 
+static double \hyperlink{svm_8cpp_a681fcc7268133ceb472773fd30b97839}{sigmoid\-\_\-predict} (double decision\-\_\-value, double A, double B)
+\item 
+static void \hyperlink{svm_8cpp_a7efc9faed12382e55327581d3a4cfa8b}{multiclass\-\_\-probability} (int k, double $\ast$$\ast$r, double $\ast$p)
+\item 
+static void \hyperlink{svm_8cpp_ae862a4ec5aef90b7ded1cd2a602271f6}{svm\-\_\-binary\-\_\-svc\-\_\-probability} (const \hyperlink{structsvm__problem}{svm\-\_\-problem} $\ast$\hyperlink{_2svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}, const \hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param}, double Cp, double Cn, double \&prob\-A, double \&prob\-B)
+\item 
+static double \hyperlink{svm_8cpp_a18e6f0da08035830a3f53829c3b26508}{svm\-\_\-svr\-\_\-probability} (const \hyperlink{structsvm__problem}{svm\-\_\-problem} $\ast$\hyperlink{_2svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}, const \hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param})
+\item 
+static void \hyperlink{svm_8cpp_a2b0ace14a7145bfefeded6747d596c09}{svm\-\_\-group\-\_\-classes} (const \hyperlink{structsvm__problem}{svm\-\_\-problem} $\ast$\hyperlink{_2svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}, int $\ast$nr\-\_\-class\-\_\-ret, int $\ast$$\ast$label\-\_\-ret, int $\ast$$\ast$start\-\_\-ret, int $\ast$$\ast$count\-\_\-ret, int $\ast$perm)
+\item 
+\hyperlink{structsvm__model}{svm\-\_\-model} $\ast$ \hyperlink{svm_8cpp_ae6e4f84556602fab57ec5a330514b613}{svm\-\_\-train} (const \hyperlink{structsvm__problem}{svm\-\_\-problem} $\ast$\hyperlink{_2svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}, const \hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param})
+\item 
+void \hyperlink{svm_8cpp_a3f5a9c2ab91444d122c461511af9efd2}{svm\-\_\-cross\-\_\-validation} (const \hyperlink{structsvm__problem}{svm\-\_\-problem} $\ast$\hyperlink{_2svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}, const \hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param}, int \hyperlink{_2svm-train_8cpp_a8e8ea59d1060e411ced9b25867c66651}{nr\-\_\-fold}, double $\ast$target)
+\item 
+int \hyperlink{svm_8cpp_a28e647915c662f2862abadb987784875}{svm\-\_\-get\-\_\-svm\-\_\-type} (const \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model})
+\item 
+int \hyperlink{svm_8cpp_a187f866fb5372371ad53090c691d8528}{svm\-\_\-get\-\_\-nr\-\_\-class} (const \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model})
+\item 
+void \hyperlink{svm_8cpp_a0256f035fcd831cc9627d7da8657f65c}{svm\-\_\-get\-\_\-labels} (const \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model}, int $\ast$label)
+\item 
+double \hyperlink{svm_8cpp_a40c2f7a0d7e827b1b987959d2e847844}{svm\-\_\-get\-\_\-svr\-\_\-probability} (const \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model})
+\item 
+double \hyperlink{svm_8cpp_aabe5223ca8496af644883d8063007db2}{svm\-\_\-predict\-\_\-values} (const \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model}, const \hyperlink{structsvm__node}{svm\-\_\-node} $\ast$\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, double $\ast$dec\-\_\-values)
+\item 
+double \hyperlink{svm_8cpp_a8c50fdaace093b4aafd6ea600c26b3e2}{svm\-\_\-predict\-\_\-values\-\_\-extended} (const \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model}, const \hyperlink{structsvm__node}{svm\-\_\-node} $\ast$\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, double $\ast$\&dec\-\_\-values, double $\ast$$\ast$\&scores, int $\ast$\&vote)
+\item 
+double \hyperlink{svm_8cpp_a1e5816ec29e6c51bc3daeab47cb7e8ef}{svm\-\_\-predict} (const \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model}, const \hyperlink{structsvm__node}{svm\-\_\-node} $\ast$\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x})
+\item 
+double \hyperlink{svm_8cpp_aa6d064a6d798791d1a8d5cc04ce01df5}{svm\-\_\-predict\-\_\-extended} (const \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model}, const \hyperlink{structsvm__node}{svm\-\_\-node} $\ast$\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, double $\ast$$\ast$\&scores, int $\ast$\&vote)
+\item 
+double \hyperlink{svm_8cpp_aa605ffa3e514ec953de3963f804b011c}{svm\-\_\-predict\-\_\-probability} (const \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model}, const \hyperlink{structsvm__node}{svm\-\_\-node} $\ast$\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, double $\ast$prob\-\_\-estimates)
+\item 
+int \hyperlink{svm_8cpp_af5b82bcc256ba9d6034d94f28d3c8512}{svm\-\_\-save\-\_\-model} (const char $\ast$model\-\_\-file\-\_\-name, const \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model})
+\item 
+static char $\ast$ \hyperlink{svm_8cpp_aa324656b7bb4eb3ee42699d33c21ef7a}{readline} (F\-I\-L\-E $\ast$input)
+\item 
+\hyperlink{structsvm__model}{svm\-\_\-model} $\ast$ \hyperlink{svm_8cpp_a3e6ebc4bfaa5017e9336a28d8841097c}{svm\-\_\-load\-\_\-model} (const char $\ast$model\-\_\-file\-\_\-name)
+\item 
+void \hyperlink{svm_8cpp_aacfd6b0d366697f63c942036b93370d4}{svm\-\_\-free\-\_\-model\-\_\-content} (\hyperlink{structsvm__model}{svm\-\_\-model} $\ast$model\-\_\-ptr)
+\item 
+void \hyperlink{svm_8cpp_a300e06f7195c7ccb83571580d5865923}{svm\-\_\-free\-\_\-and\-\_\-destroy\-\_\-model} (\hyperlink{structsvm__model}{svm\-\_\-model} $\ast$$\ast$model\-\_\-ptr\-\_\-ptr)
+\item 
+void \hyperlink{svm_8cpp_a192f7f718da0b288dacc446d72b5a77a}{svm\-\_\-destroy\-\_\-param} (\hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param})
+\item 
+const char $\ast$ \hyperlink{svm_8cpp_a73fd8a0ae428e25666c89c1e29274984}{svm\-\_\-check\-\_\-parameter} (const \hyperlink{structsvm__problem}{svm\-\_\-problem} $\ast$\hyperlink{_2svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}, const \hyperlink{structsvm__parameter}{svm\-\_\-parameter} $\ast$\hyperlink{_2svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param})
+\item 
+int \hyperlink{svm_8cpp_a15f0af9b6487b426e68b467f1949e975}{svm\-\_\-check\-\_\-probability\-\_\-model} (const \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$\hyperlink{_2svm-predict_8cpp_a50c87b127b14787341e9630f4f5c700a}{model})
+\item 
+void \hyperlink{svm_8cpp_a308f7948988441f4a1a5c8c8abc367be}{svm\-\_\-set\-\_\-print\-\_\-string\-\_\-function} (void($\ast$print\-\_\-func)(const char $\ast$))
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{svm_8cpp_a9ba41253b462f42e64917cc38e0f2cc7}{libsvm\-\_\-version} = \hyperlink{_2svm_8h_ac7f5361b69ddd196a885f142b3c1d261}{L\-I\-B\-S\-V\-M\-\_\-\-V\-E\-R\-S\-I\-O\-N}
+\item 
+static void($\ast$ \hyperlink{svm_8cpp_a9a4e68dbfe2b342ff45c12c638ec39cb}{svm\-\_\-print\-\_\-string} )(const char $\ast$) = \&\hyperlink{_2svm_8cpp_a4edee28127eebfbcdab94b75c57341c5}{print\-\_\-string\-\_\-stdout}
+\item 
+static const char $\ast$ \hyperlink{svm_8cpp_a3be459e452f7ebeaae824e941e766770}{svm\-\_\-type\-\_\-table} \mbox{[}$\,$\mbox{]}
+\item 
+static const char $\ast$ \hyperlink{svm_8cpp_a2812fc7dc5b3db65a9bf7da83e25bb3d}{kernel\-\_\-type\-\_\-table} \mbox{[}$\,$\mbox{]}
+\item 
+static char $\ast$ \hyperlink{svm_8cpp_a8adb30f4f6669f927fd9232f686c637b}{line} = N\-U\-L\-L
+\item 
+static int \hyperlink{svm_8cpp_acad24c15bee67d2026f56bc94a1188c7}{max\-\_\-line\-\_\-len}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{svm_8cpp_a12c2040f25d8e3a7b9e1c2024c618cb6}{\index{svm.\-cpp@{svm.\-cpp}!I\-N\-F@{I\-N\-F}}
+\index{I\-N\-F@{I\-N\-F}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{I\-N\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-F~H\-U\-G\-E\-\_\-\-V\-A\-L}}\label{svm_8cpp_a12c2040f25d8e3a7b9e1c2024c618cb6}
+
+
+Definition at line 50 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a9191047fd644a5f519152ecb4aa60357}{\index{svm.\-cpp@{svm.\-cpp}!Malloc@{Malloc}}
+\index{Malloc@{Malloc}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{Malloc}]{\setlength{\rightskip}{0pt plus 5cm}\#define Malloc(
+\begin{DoxyParamCaption}
+\item[{}]{type, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~(type $\ast$)malloc((n)$\ast$sizeof(type))}}\label{svm_8cpp_a9191047fd644a5f519152ecb4aa60357}
+
+
+Definition at line 52 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a3d8c9c145887af5174ba4cc6789862ad}{\index{svm.\-cpp@{svm.\-cpp}!T\-A\-U@{T\-A\-U}}
+\index{T\-A\-U@{T\-A\-U}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{T\-A\-U}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-A\-U~1e-\/12}}\label{svm_8cpp_a3d8c9c145887af5174ba4cc6789862ad}
+
+
+Definition at line 51 of file svm.\-cpp.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{svm_8cpp_a8755d90a54ecfb8d15051af3e0542592}{\index{svm.\-cpp@{svm.\-cpp}!Qfloat@{Qfloat}}
+\index{Qfloat@{Qfloat}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{Qfloat}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf Qfloat}}}\label{svm_8cpp_a8755d90a54ecfb8d15051af3e0542592}
+
+
+Definition at line 19 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a0fd9ce9d735064461bebfe6037026093}{\index{svm.\-cpp@{svm.\-cpp}!schar@{schar}}
+\index{schar@{schar}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{schar}]{\setlength{\rightskip}{0pt plus 5cm}typedef signed char {\bf schar}}}\label{svm_8cpp_a0fd9ce9d735064461bebfe6037026093}
+
+
+Definition at line 20 of file svm.\-cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{svm_8cpp_af2d4d35f18533f3571dad9ce21f8e1cc}{\index{svm.\-cpp@{svm.\-cpp}!clone@{clone}}
+\index{clone@{clone}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class S , class T $>$ static void clone (
+\begin{DoxyParamCaption}
+\item[{T $\ast$\&}]{dst, }
+\item[{S $\ast$}]{src, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{svm_8cpp_af2d4d35f18533f3571dad9ce21f8e1cc}
+
+
+Definition at line 36 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_ab834c069665121a3467868539fde9101}{\index{svm.\-cpp@{svm.\-cpp}!info@{info}}
+\index{info@{info}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{info}]{\setlength{\rightskip}{0pt plus 5cm}static void info (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{fmt, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_ab834c069665121a3467868539fde9101}
+
+
+Definition at line 60 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a7cba98555a7346b01e4cc06205527d8a}{\index{svm.\-cpp@{svm.\-cpp}!max@{max}}
+\index{max@{max}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{max}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ static T max (
+\begin{DoxyParamCaption}
+\item[{T}]{x, }
+\item[{T}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{svm_8cpp_a7cba98555a7346b01e4cc06205527d8a}
+
+
+Definition at line 27 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a348440c5435269ac7c60d2e2d8916f48}{\index{svm.\-cpp@{svm.\-cpp}!min@{min}}
+\index{min@{min}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{min}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ static T min (
+\begin{DoxyParamCaption}
+\item[{T}]{x, }
+\item[{T}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{svm_8cpp_a348440c5435269ac7c60d2e2d8916f48}
+
+
+Definition at line 22 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a7efc9faed12382e55327581d3a4cfa8b}{\index{svm.\-cpp@{svm.\-cpp}!multiclass\-\_\-probability@{multiclass\-\_\-probability}}
+\index{multiclass\-\_\-probability@{multiclass\-\_\-probability}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{multiclass\-\_\-probability}]{\setlength{\rightskip}{0pt plus 5cm}static void multiclass\-\_\-probability (
+\begin{DoxyParamCaption}
+\item[{int}]{k, }
+\item[{double $\ast$$\ast$}]{r, }
+\item[{double $\ast$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_a7efc9faed12382e55327581d3a4cfa8b}
+
+
+Definition at line 1684 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a07a43a87f274795074408da4b34d46c4}{\index{svm.\-cpp@{svm.\-cpp}!powi@{powi}}
+\index{powi@{powi}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{powi}]{\setlength{\rightskip}{0pt plus 5cm}static double powi (
+\begin{DoxyParamCaption}
+\item[{double}]{base, }
+\item[{int}]{times}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{svm_8cpp_a07a43a87f274795074408da4b34d46c4}
+
+
+Definition at line 40 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a4edee28127eebfbcdab94b75c57341c5}{\index{svm.\-cpp@{svm.\-cpp}!print\-\_\-string\-\_\-stdout@{print\-\_\-string\-\_\-stdout}}
+\index{print\-\_\-string\-\_\-stdout@{print\-\_\-string\-\_\-stdout}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{print\-\_\-string\-\_\-stdout}]{\setlength{\rightskip}{0pt plus 5cm}static void print\-\_\-string\-\_\-stdout (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_a4edee28127eebfbcdab94b75c57341c5}
+
+
+Definition at line 54 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_aa324656b7bb4eb3ee42699d33c21ef7a}{\index{svm.\-cpp@{svm.\-cpp}!readline@{readline}}
+\index{readline@{readline}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{readline}]{\setlength{\rightskip}{0pt plus 5cm}static char$\ast$ readline (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_aa324656b7bb4eb3ee42699d33c21ef7a}
+
+
+Definition at line 2589 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a681fcc7268133ceb472773fd30b97839}{\index{svm.\-cpp@{svm.\-cpp}!sigmoid\-\_\-predict@{sigmoid\-\_\-predict}}
+\index{sigmoid\-\_\-predict@{sigmoid\-\_\-predict}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{sigmoid\-\_\-predict}]{\setlength{\rightskip}{0pt plus 5cm}static double sigmoid\-\_\-predict (
+\begin{DoxyParamCaption}
+\item[{double}]{decision\-\_\-value, }
+\item[{double}]{A, }
+\item[{double}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_a681fcc7268133ceb472773fd30b97839}
+
+
+Definition at line 1674 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a1da8eb99e9a14699eb36a30bc8f2bedb}{\index{svm.\-cpp@{svm.\-cpp}!sigmoid\-\_\-train@{sigmoid\-\_\-train}}
+\index{sigmoid\-\_\-train@{sigmoid\-\_\-train}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{sigmoid\-\_\-train}]{\setlength{\rightskip}{0pt plus 5cm}static void sigmoid\-\_\-train (
+\begin{DoxyParamCaption}
+\item[{int}]{l, }
+\item[{const double $\ast$}]{dec\-\_\-values, }
+\item[{const double $\ast$}]{labels, }
+\item[{double \&}]{A, }
+\item[{double \&}]{B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_a1da8eb99e9a14699eb36a30bc8f2bedb}
+
+
+Definition at line 1566 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a11814ad6e8976823b61af65e6e36ca1a}{\index{svm.\-cpp@{svm.\-cpp}!solve\-\_\-c\-\_\-svc@{solve\-\_\-c\-\_\-svc}}
+\index{solve\-\_\-c\-\_\-svc@{solve\-\_\-c\-\_\-svc}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{solve\-\_\-c\-\_\-svc}]{\setlength{\rightskip}{0pt plus 5cm}static void solve\-\_\-c\-\_\-svc (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-problem} $\ast$}]{prob, }
+\item[{const {\bf svm\-\_\-parameter} $\ast$}]{param, }
+\item[{double $\ast$}]{alpha, }
+\item[{{\bf Solver\-::\-Solution\-Info} $\ast$}]{si, }
+\item[{double}]{Cp, }
+\item[{double}]{Cn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_a11814ad6e8976823b61af65e6e36ca1a}
+
+
+Definition at line 1297 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a57df27962e3c80e9c2de6c3163850c79}{\index{svm.\-cpp@{svm.\-cpp}!solve\-\_\-epsilon\-\_\-svr@{solve\-\_\-epsilon\-\_\-svr}}
+\index{solve\-\_\-epsilon\-\_\-svr@{solve\-\_\-epsilon\-\_\-svr}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{solve\-\_\-epsilon\-\_\-svr}]{\setlength{\rightskip}{0pt plus 5cm}static void solve\-\_\-epsilon\-\_\-svr (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-problem} $\ast$}]{prob, }
+\item[{const {\bf svm\-\_\-parameter} $\ast$}]{param, }
+\item[{double $\ast$}]{alpha, }
+\item[{{\bf Solver\-::\-Solution\-Info} $\ast$}]{si}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_a57df27962e3c80e9c2de6c3163850c79}
+
+
+Definition at line 1435 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a221d17018ed0cd7f218523dbbb9aab4d}{\index{svm.\-cpp@{svm.\-cpp}!solve\-\_\-nu\-\_\-svc@{solve\-\_\-nu\-\_\-svc}}
+\index{solve\-\_\-nu\-\_\-svc@{solve\-\_\-nu\-\_\-svc}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{solve\-\_\-nu\-\_\-svc}]{\setlength{\rightskip}{0pt plus 5cm}static void solve\-\_\-nu\-\_\-svc (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-problem} $\ast$}]{prob, }
+\item[{const {\bf svm\-\_\-parameter} $\ast$}]{param, }
+\item[{double $\ast$}]{alpha, }
+\item[{{\bf Solver\-::\-Solution\-Info} $\ast$}]{si}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_a221d17018ed0cd7f218523dbbb9aab4d}
+
+
+Definition at line 1332 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_add71d0d022422b58f690572f521f0f78}{\index{svm.\-cpp@{svm.\-cpp}!solve\-\_\-nu\-\_\-svr@{solve\-\_\-nu\-\_\-svr}}
+\index{solve\-\_\-nu\-\_\-svr@{solve\-\_\-nu\-\_\-svr}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{solve\-\_\-nu\-\_\-svr}]{\setlength{\rightskip}{0pt plus 5cm}static void solve\-\_\-nu\-\_\-svr (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-problem} $\ast$}]{prob, }
+\item[{const {\bf svm\-\_\-parameter} $\ast$}]{param, }
+\item[{double $\ast$}]{alpha, }
+\item[{{\bf Solver\-::\-Solution\-Info} $\ast$}]{si}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_add71d0d022422b58f690572f521f0f78}
+
+
+Definition at line 1469 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a7a8a956d5b08b55756ceaaf63a5d2a87}{\index{svm.\-cpp@{svm.\-cpp}!solve\-\_\-one\-\_\-class@{solve\-\_\-one\-\_\-class}}
+\index{solve\-\_\-one\-\_\-class@{solve\-\_\-one\-\_\-class}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{solve\-\_\-one\-\_\-class}]{\setlength{\rightskip}{0pt plus 5cm}static void solve\-\_\-one\-\_\-class (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-problem} $\ast$}]{prob, }
+\item[{const {\bf svm\-\_\-parameter} $\ast$}]{param, }
+\item[{double $\ast$}]{alpha, }
+\item[{{\bf Solver\-::\-Solution\-Info} $\ast$}]{si}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_a7a8a956d5b08b55756ceaaf63a5d2a87}
+
+
+Definition at line 1382 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_ae862a4ec5aef90b7ded1cd2a602271f6}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-binary\-\_\-svc\-\_\-probability@{svm\-\_\-binary\-\_\-svc\-\_\-probability}}
+\index{svm\-\_\-binary\-\_\-svc\-\_\-probability@{svm\-\_\-binary\-\_\-svc\-\_\-probability}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-binary\-\_\-svc\-\_\-probability}]{\setlength{\rightskip}{0pt plus 5cm}static void svm\-\_\-binary\-\_\-svc\-\_\-probability (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-problem} $\ast$}]{prob, }
+\item[{const {\bf svm\-\_\-parameter} $\ast$}]{param, }
+\item[{double}]{Cp, }
+\item[{double}]{Cn, }
+\item[{double \&}]{prob\-A, }
+\item[{double \&}]{prob\-B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_ae862a4ec5aef90b7ded1cd2a602271f6}
+
+
+Definition at line 1742 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a73fd8a0ae428e25666c89c1e29274984}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-check\-\_\-parameter@{svm\-\_\-check\-\_\-parameter}}
+\index{svm\-\_\-check\-\_\-parameter@{svm\-\_\-check\-\_\-parameter}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-check\-\_\-parameter}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ svm\-\_\-check\-\_\-parameter (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-problem} $\ast$}]{prob, }
+\item[{const {\bf svm\-\_\-parameter} $\ast$}]{param}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_a73fd8a0ae428e25666c89c1e29274984}
+
+
+Definition at line 2831 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a15f0af9b6487b426e68b467f1949e975}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-check\-\_\-probability\-\_\-model@{svm\-\_\-check\-\_\-probability\-\_\-model}}
+\index{svm\-\_\-check\-\_\-probability\-\_\-model@{svm\-\_\-check\-\_\-probability\-\_\-model}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-check\-\_\-probability\-\_\-model}]{\setlength{\rightskip}{0pt plus 5cm}int svm\-\_\-check\-\_\-probability\-\_\-model (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-model} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_a15f0af9b6487b426e68b467f1949e975}
+
+
+Definition at line 2934 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a3f5a9c2ab91444d122c461511af9efd2}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-cross\-\_\-validation@{svm\-\_\-cross\-\_\-validation}}
+\index{svm\-\_\-cross\-\_\-validation@{svm\-\_\-cross\-\_\-validation}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-cross\-\_\-validation}]{\setlength{\rightskip}{0pt plus 5cm}void svm\-\_\-cross\-\_\-validation (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-problem} $\ast$}]{prob, }
+\item[{const {\bf svm\-\_\-parameter} $\ast$}]{param, }
+\item[{int}]{nr\-\_\-fold, }
+\item[{double $\ast$}]{target}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_a3f5a9c2ab91444d122c461511af9efd2}
+
+
+Definition at line 2140 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a192f7f718da0b288dacc446d72b5a77a}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-destroy\-\_\-param@{svm\-\_\-destroy\-\_\-param}}
+\index{svm\-\_\-destroy\-\_\-param@{svm\-\_\-destroy\-\_\-param}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-destroy\-\_\-param}]{\setlength{\rightskip}{0pt plus 5cm}void svm\-\_\-destroy\-\_\-param (
+\begin{DoxyParamCaption}
+\item[{{\bf svm\-\_\-parameter} $\ast$}]{param}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_a192f7f718da0b288dacc446d72b5a77a}
+
+
+Definition at line 2826 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a300e06f7195c7ccb83571580d5865923}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-free\-\_\-and\-\_\-destroy\-\_\-model@{svm\-\_\-free\-\_\-and\-\_\-destroy\-\_\-model}}
+\index{svm\-\_\-free\-\_\-and\-\_\-destroy\-\_\-model@{svm\-\_\-free\-\_\-and\-\_\-destroy\-\_\-model}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-free\-\_\-and\-\_\-destroy\-\_\-model}]{\setlength{\rightskip}{0pt plus 5cm}void svm\-\_\-free\-\_\-and\-\_\-destroy\-\_\-model (
+\begin{DoxyParamCaption}
+\item[{{\bf svm\-\_\-model} $\ast$$\ast$}]{model\-\_\-ptr\-\_\-ptr}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_a300e06f7195c7ccb83571580d5865923}
+
+
+Definition at line 2818 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_aacfd6b0d366697f63c942036b93370d4}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-free\-\_\-model\-\_\-content@{svm\-\_\-free\-\_\-model\-\_\-content}}
+\index{svm\-\_\-free\-\_\-model\-\_\-content@{svm\-\_\-free\-\_\-model\-\_\-content}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-free\-\_\-model\-\_\-content}]{\setlength{\rightskip}{0pt plus 5cm}void svm\-\_\-free\-\_\-model\-\_\-content (
+\begin{DoxyParamCaption}
+\item[{{\bf svm\-\_\-model} $\ast$}]{model\-\_\-ptr}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_aacfd6b0d366697f63c942036b93370d4}
+
+
+Definition at line 2788 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a0256f035fcd831cc9627d7da8657f65c}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-get\-\_\-labels@{svm\-\_\-get\-\_\-labels}}
+\index{svm\-\_\-get\-\_\-labels@{svm\-\_\-get\-\_\-labels}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-get\-\_\-labels}]{\setlength{\rightskip}{0pt plus 5cm}void svm\-\_\-get\-\_\-labels (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-model} $\ast$}]{model, }
+\item[{int $\ast$}]{label}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_a0256f035fcd831cc9627d7da8657f65c}
+
+
+Definition at line 2259 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a187f866fb5372371ad53090c691d8528}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-get\-\_\-nr\-\_\-class@{svm\-\_\-get\-\_\-nr\-\_\-class}}
+\index{svm\-\_\-get\-\_\-nr\-\_\-class@{svm\-\_\-get\-\_\-nr\-\_\-class}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-get\-\_\-nr\-\_\-class}]{\setlength{\rightskip}{0pt plus 5cm}int svm\-\_\-get\-\_\-nr\-\_\-class (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-model} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_a187f866fb5372371ad53090c691d8528}
+
+
+Definition at line 2255 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a28e647915c662f2862abadb987784875}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-get\-\_\-svm\-\_\-type@{svm\-\_\-get\-\_\-svm\-\_\-type}}
+\index{svm\-\_\-get\-\_\-svm\-\_\-type@{svm\-\_\-get\-\_\-svm\-\_\-type}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-get\-\_\-svm\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}int svm\-\_\-get\-\_\-svm\-\_\-type (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-model} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_a28e647915c662f2862abadb987784875}
+
+
+Definition at line 2251 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a40c2f7a0d7e827b1b987959d2e847844}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-get\-\_\-svr\-\_\-probability@{svm\-\_\-get\-\_\-svr\-\_\-probability}}
+\index{svm\-\_\-get\-\_\-svr\-\_\-probability@{svm\-\_\-get\-\_\-svr\-\_\-probability}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-get\-\_\-svr\-\_\-probability}]{\setlength{\rightskip}{0pt plus 5cm}double svm\-\_\-get\-\_\-svr\-\_\-probability (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-model} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_a40c2f7a0d7e827b1b987959d2e847844}
+
+
+Definition at line 2265 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a2b0ace14a7145bfefeded6747d596c09}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-group\-\_\-classes@{svm\-\_\-group\-\_\-classes}}
+\index{svm\-\_\-group\-\_\-classes@{svm\-\_\-group\-\_\-classes}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-group\-\_\-classes}]{\setlength{\rightskip}{0pt plus 5cm}static void svm\-\_\-group\-\_\-classes (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-problem} $\ast$}]{prob, }
+\item[{int $\ast$}]{nr\-\_\-class\-\_\-ret, }
+\item[{int $\ast$$\ast$}]{label\-\_\-ret, }
+\item[{int $\ast$$\ast$}]{start\-\_\-ret, }
+\item[{int $\ast$$\ast$}]{count\-\_\-ret, }
+\item[{int $\ast$}]{perm}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_a2b0ace14a7145bfefeded6747d596c09}
+
+
+Definition at line 1857 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a3e6ebc4bfaa5017e9336a28d8841097c}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-load\-\_\-model@{svm\-\_\-load\-\_\-model}}
+\index{svm\-\_\-load\-\_\-model@{svm\-\_\-load\-\_\-model}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-load\-\_\-model}]{\setlength{\rightskip}{0pt plus 5cm}{\bf svm\-\_\-model}$\ast$ svm\-\_\-load\-\_\-model (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{model\-\_\-file\-\_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [read]}}}\label{svm_8cpp_a3e6ebc4bfaa5017e9336a28d8841097c}
+
+
+Definition at line 2605 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a1e5816ec29e6c51bc3daeab47cb7e8ef}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-predict@{svm\-\_\-predict}}
+\index{svm\-\_\-predict@{svm\-\_\-predict}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-predict}]{\setlength{\rightskip}{0pt plus 5cm}double svm\-\_\-predict (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-model} $\ast$}]{model, }
+\item[{const {\bf svm\-\_\-node} $\ast$}]{x}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_a1e5816ec29e6c51bc3daeab47cb7e8ef}
+
+
+Definition at line 2390 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_aa6d064a6d798791d1a8d5cc04ce01df5}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-predict\-\_\-extended@{svm\-\_\-predict\-\_\-extended}}
+\index{svm\-\_\-predict\-\_\-extended@{svm\-\_\-predict\-\_\-extended}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-predict\-\_\-extended}]{\setlength{\rightskip}{0pt plus 5cm}double svm\-\_\-predict\-\_\-extended (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-model} $\ast$}]{model, }
+\item[{const {\bf svm\-\_\-node} $\ast$}]{x, }
+\item[{double $\ast$$\ast$\&}]{scores, }
+\item[{int $\ast$\&}]{vote}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_aa6d064a6d798791d1a8d5cc04ce01df5}
+
+
+Definition at line 2411 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_aa605ffa3e514ec953de3963f804b011c}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-predict\-\_\-probability@{svm\-\_\-predict\-\_\-probability}}
+\index{svm\-\_\-predict\-\_\-probability@{svm\-\_\-predict\-\_\-probability}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-predict\-\_\-probability}]{\setlength{\rightskip}{0pt plus 5cm}double svm\-\_\-predict\-\_\-probability (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-model} $\ast$}]{model, }
+\item[{const {\bf svm\-\_\-node} $\ast$}]{x, }
+\item[{double $\ast$}]{prob\-\_\-estimates}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_aa605ffa3e514ec953de3963f804b011c}
+
+
+Definition at line 2430 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_aabe5223ca8496af644883d8063007db2}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-predict\-\_\-values@{svm\-\_\-predict\-\_\-values}}
+\index{svm\-\_\-predict\-\_\-values@{svm\-\_\-predict\-\_\-values}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-predict\-\_\-values}]{\setlength{\rightskip}{0pt plus 5cm}double svm\-\_\-predict\-\_\-values (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-model} $\ast$}]{model, }
+\item[{const {\bf svm\-\_\-node} $\ast$}]{x, }
+\item[{double $\ast$}]{dec\-\_\-values}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_aabe5223ca8496af644883d8063007db2}
+
+
+Definition at line 2277 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a8c50fdaace093b4aafd6ea600c26b3e2}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-predict\-\_\-values\-\_\-extended@{svm\-\_\-predict\-\_\-values\-\_\-extended}}
+\index{svm\-\_\-predict\-\_\-values\-\_\-extended@{svm\-\_\-predict\-\_\-values\-\_\-extended}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-predict\-\_\-values\-\_\-extended}]{\setlength{\rightskip}{0pt plus 5cm}double svm\-\_\-predict\-\_\-values\-\_\-extended (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-model} $\ast$}]{model, }
+\item[{const {\bf svm\-\_\-node} $\ast$}]{x, }
+\item[{double $\ast$\&}]{dec\-\_\-values, }
+\item[{double $\ast$$\ast$\&}]{scores, }
+\item[{int $\ast$\&}]{vote}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_a8c50fdaace093b4aafd6ea600c26b3e2}
+
+
+Definition at line 2303 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_af5b82bcc256ba9d6034d94f28d3c8512}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-save\-\_\-model@{svm\-\_\-save\-\_\-model}}
+\index{svm\-\_\-save\-\_\-model@{svm\-\_\-save\-\_\-model}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-save\-\_\-model}]{\setlength{\rightskip}{0pt plus 5cm}int svm\-\_\-save\-\_\-model (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{model\-\_\-file\-\_\-name, }
+\item[{const {\bf svm\-\_\-model} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_af5b82bcc256ba9d6034d94f28d3c8512}
+
+
+Definition at line 2473 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a308f7948988441f4a1a5c8c8abc367be}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-set\-\_\-print\-\_\-string\-\_\-function@{svm\-\_\-set\-\_\-print\-\_\-string\-\_\-function}}
+\index{svm\-\_\-set\-\_\-print\-\_\-string\-\_\-function@{svm\-\_\-set\-\_\-print\-\_\-string\-\_\-function}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-set\-\_\-print\-\_\-string\-\_\-function}]{\setlength{\rightskip}{0pt plus 5cm}void svm\-\_\-set\-\_\-print\-\_\-string\-\_\-function (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(const char $\ast$)}]{print\-\_\-func}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_a308f7948988441f4a1a5c8c8abc367be}
+
+
+Definition at line 2941 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a18e6f0da08035830a3f53829c3b26508}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-svr\-\_\-probability@{svm\-\_\-svr\-\_\-probability}}
+\index{svm\-\_\-svr\-\_\-probability@{svm\-\_\-svr\-\_\-probability}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-svr\-\_\-probability}]{\setlength{\rightskip}{0pt plus 5cm}static double svm\-\_\-svr\-\_\-probability (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-problem} $\ast$}]{prob, }
+\item[{const {\bf svm\-\_\-parameter} $\ast$}]{param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_a18e6f0da08035830a3f53829c3b26508}
+
+
+Definition at line 1824 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_ae6e4f84556602fab57ec5a330514b613}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-train@{svm\-\_\-train}}
+\index{svm\-\_\-train@{svm\-\_\-train}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-train}]{\setlength{\rightskip}{0pt plus 5cm}{\bf svm\-\_\-model}$\ast$ svm\-\_\-train (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-problem} $\ast$}]{prob, }
+\item[{const {\bf svm\-\_\-parameter} $\ast$}]{param}
+\end{DoxyParamCaption}
+)}}\label{svm_8cpp_ae6e4f84556602fab57ec5a330514b613}
+
+
+Definition at line 1911 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a402bb8c57abf732699dce636892faca7}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-train\-\_\-one@{svm\-\_\-train\-\_\-one}}
+\index{svm\-\_\-train\-\_\-one@{svm\-\_\-train\-\_\-one}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-train\-\_\-one}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf decision\-\_\-function} svm\-\_\-train\-\_\-one (
+\begin{DoxyParamCaption}
+\item[{const {\bf svm\-\_\-problem} $\ast$}]{prob, }
+\item[{const {\bf svm\-\_\-parameter} $\ast$}]{param, }
+\item[{double}]{Cp, }
+\item[{double}]{Cn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_a402bb8c57abf732699dce636892faca7}
+
+
+Definition at line 1512 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a91e77fa16b1c9bbbf90f2eea392997b1}{\index{svm.\-cpp@{svm.\-cpp}!swap@{swap}}
+\index{swap@{swap}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ static void swap (
+\begin{DoxyParamCaption}
+\item[{T \&}]{x, }
+\item[{T \&}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{svm_8cpp_a91e77fa16b1c9bbbf90f2eea392997b1}
+
+
+Definition at line 31 of file svm.\-cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{svm_8cpp_a2812fc7dc5b3db65a9bf7da83e25bb3d}{\index{svm.\-cpp@{svm.\-cpp}!kernel\-\_\-type\-\_\-table@{kernel\-\_\-type\-\_\-table}}
+\index{kernel\-\_\-type\-\_\-table@{kernel\-\_\-type\-\_\-table}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{kernel\-\_\-type\-\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ kernel\-\_\-type\-\_\-table\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_a2812fc7dc5b3db65a9bf7da83e25bb3d}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+ \{ \textcolor{stringliteral}{"linear"}, \textcolor{stringliteral}{"polynomial"}, \textcolor{stringliteral}{"rbf"},
+                \textcolor{stringliteral}{"sigmoid"}, \textcolor{stringliteral}{"precomputed"}, NULL \}
+\end{DoxyCode}
+
+
+Definition at line 2470 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a9ba41253b462f42e64917cc38e0f2cc7}{\index{svm.\-cpp@{svm.\-cpp}!libsvm\-\_\-version@{libsvm\-\_\-version}}
+\index{libsvm\-\_\-version@{libsvm\-\_\-version}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{libsvm\-\_\-version}]{\setlength{\rightskip}{0pt plus 5cm}int libsvm\-\_\-version = {\bf L\-I\-B\-S\-V\-M\-\_\-\-V\-E\-R\-S\-I\-O\-N}}}\label{svm_8cpp_a9ba41253b462f42e64917cc38e0f2cc7}
+
+
+Definition at line 18 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a8adb30f4f6669f927fd9232f686c637b}{\index{svm.\-cpp@{svm.\-cpp}!line@{line}}
+\index{line@{line}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ line = N\-U\-L\-L\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_a8adb30f4f6669f927fd9232f686c637b}
+
+
+Definition at line 2586 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_acad24c15bee67d2026f56bc94a1188c7}{\index{svm.\-cpp@{svm.\-cpp}!max\-\_\-line\-\_\-len@{max\-\_\-line\-\_\-len}}
+\index{max\-\_\-line\-\_\-len@{max\-\_\-line\-\_\-len}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{max\-\_\-line\-\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}int max\-\_\-line\-\_\-len\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_acad24c15bee67d2026f56bc94a1188c7}
+
+
+Definition at line 2587 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a9a4e68dbfe2b342ff45c12c638ec39cb}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-print\-\_\-string@{svm\-\_\-print\-\_\-string}}
+\index{svm\-\_\-print\-\_\-string@{svm\-\_\-print\-\_\-string}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-print\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ svm\-\_\-print\-\_\-string)(const char $\ast$) = \&{\bf print\-\_\-string\-\_\-stdout}\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_a9a4e68dbfe2b342ff45c12c638ec39cb}
+
+
+Definition at line 58 of file svm.\-cpp.
+
+\hypertarget{svm_8cpp_a3be459e452f7ebeaae824e941e766770}{\index{svm.\-cpp@{svm.\-cpp}!svm\-\_\-type\-\_\-table@{svm\-\_\-type\-\_\-table}}
+\index{svm\-\_\-type\-\_\-table@{svm\-\_\-type\-\_\-table}!svm.cpp@{svm.\-cpp}}
+\subsubsection[{svm\-\_\-type\-\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ svm\-\_\-type\-\_\-table\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{svm_8cpp_a3be459e452f7ebeaae824e941e766770}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+ \{ \textcolor{stringliteral}{"c\_svc"}, \textcolor{stringliteral}{"nu\_svc"}, \textcolor{stringliteral}{"one\_class"},
+                \textcolor{stringliteral}{"epsilon\_svr"}, \textcolor{stringliteral}{"nu\_svr"}, \textcolor{stringliteral}{"1\_v\_set"}, NULL \}
+\end{DoxyCode}
+
+
+Definition at line 2467 of file svm.\-cpp.
+

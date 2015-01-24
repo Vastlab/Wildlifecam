@@ -1,0 +1,17 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Preferences - Select Start and Stop times" >
+        <com.securics.wildlifecapture.TimePreference
+            android:key="@string/start_key"
+            android:title="@string/start_title" />
+        <com.securics.wildlifecapture.TimePreference
+            android:key="@string/stop_key"
+            android:title="@string/stop_title" />
+        <EditTextPreference 
+            android:key="Capture Cycle Interval"
+            android:title="Capture Cycle Interval"
+            android:summary="Enter the number of seconds to elapse between checks."
+            android:defaultValue="60"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

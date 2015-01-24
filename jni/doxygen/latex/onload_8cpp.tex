@@ -1,0 +1,99 @@
+\hypertarget{onload_8cpp}{\section{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M/onload.cpp File Reference}
+\label{onload_8cpp}\index{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M/onload.\-cpp@{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M/onload.\-cpp}}
+}
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$assert.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}jni.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}log.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{onload_8cpp_af3d016e4e99ca6f1988a90dd40de933b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}~\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a3357428f473998c530d5de9519a74d45}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}
+\item 
+\#define \hyperlink{onload_8cpp_ab78bd305488c62caf8515ee765b1ed49}{L\-O\-G\-V}(...)~\hyperlink{log_8h_ac60e52c9711c53803ad9af639083afd5}{\-\_\-\-\_\-android\-\_\-log\-\_\-print}(\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6a8daee540c7d1fc04a9dfecc2db988f3b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-S\-I\-L\-E\-N\-T}, \hyperlink{_squirrel__pipeline_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{onload_8cpp_a5512e59d578a380a441a70256af997d0}{L\-O\-G\-I}(...)~\hyperlink{log_8h_ac60e52c9711c53803ad9af639083afd5}{\-\_\-\-\_\-android\-\_\-log\-\_\-print}(\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6ad46329103f1e9bf318b889f331d1ea8b}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-I\-N\-F\-O}, \hyperlink{_squirrel__pipeline_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{onload_8cpp_ae02538a80ad5fc009caec73487d11a8d}{L\-O\-G\-E}(...)~\hyperlink{log_8h_ac60e52c9711c53803ad9af639083afd5}{\-\_\-\-\_\-android\-\_\-log\-\_\-print}(\hyperlink{log_8h_afb8ac810cc71f3ad8cdccae79f4cc6b6af1067b5ff6e64a6ece3249c113d2d164}{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R}, \hyperlink{_squirrel__pipeline_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{onload_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{L\-O\-G\-\_\-\-T\-A\-G}~\char`\"{}J\-N\-I O\-N\-\_\-\-L\-O\-A\-D\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{onload_8cpp_a52d5f370c13464623101ddf94deb11c6}{register\-\_\-\-M\-R\-\_\-jni} (\hyperlink{jni_8h_a2d06d32b6b6f1519799078a36fe2e380}{J\-N\-I\-Env} $\ast$env)
+\item 
+\hyperlink{jni_8h_ad6e59d976b9b5bae7a19d746bd2879c1}{jint} \hyperlink{onload_8cpp_ad2f07df887428c1c8e78f3c485e9c71c}{J\-N\-I\-\_\-\-On\-Load} (\hyperlink{jni_8h_af9349ee5bb0a99fab460a1b46fc077d5}{Java\-V\-M} $\ast$vm, void $\ast$reserved)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{onload_8cpp_af3d016e4e99ca6f1988a90dd40de933b}{\index{onload.\-cpp@{onload.\-cpp}!A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}}
+\index{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E@{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}!onload.cpp@{onload.\-cpp}}
+\subsubsection[{A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-V\-E\-R\-B\-O\-S\-E~{\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-D\-E\-B\-U\-G}}}\label{onload_8cpp_af3d016e4e99ca6f1988a90dd40de933b}
+
+
+Definition at line 6 of file onload.\-cpp.
+
+\hypertarget{onload_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}{\index{onload.\-cpp@{onload.\-cpp}!L\-O\-G\-\_\-\-T\-A\-G@{L\-O\-G\-\_\-\-T\-A\-G}}
+\index{L\-O\-G\-\_\-\-T\-A\-G@{L\-O\-G\-\_\-\-T\-A\-G}!onload.cpp@{onload.\-cpp}}
+\subsubsection[{L\-O\-G\-\_\-\-T\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-\_\-\-T\-A\-G~\char`\"{}J\-N\-I O\-N\-\_\-\-L\-O\-A\-D\char`\"{}}}\label{onload_8cpp_a7ce0df38eb467e59f209470c8f5ac4e6}
+
+
+Definition at line 11 of file onload.\-cpp.
+
+\hypertarget{onload_8cpp_ae02538a80ad5fc009caec73487d11a8d}{\index{onload.\-cpp@{onload.\-cpp}!L\-O\-G\-E@{L\-O\-G\-E}}
+\index{L\-O\-G\-E@{L\-O\-G\-E}!onload.cpp@{onload.\-cpp}}
+\subsubsection[{L\-O\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-E(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-android\-\_\-log\-\_\-print}({\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R}, {\bf L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{onload_8cpp_ae02538a80ad5fc009caec73487d11a8d}
+
+
+Definition at line 10 of file onload.\-cpp.
+
+\hypertarget{onload_8cpp_a5512e59d578a380a441a70256af997d0}{\index{onload.\-cpp@{onload.\-cpp}!L\-O\-G\-I@{L\-O\-G\-I}}
+\index{L\-O\-G\-I@{L\-O\-G\-I}!onload.cpp@{onload.\-cpp}}
+\subsubsection[{L\-O\-G\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-I(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-android\-\_\-log\-\_\-print}({\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-I\-N\-F\-O}, {\bf L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{onload_8cpp_a5512e59d578a380a441a70256af997d0}
+
+
+Definition at line 9 of file onload.\-cpp.
+
+\hypertarget{onload_8cpp_ab78bd305488c62caf8515ee765b1ed49}{\index{onload.\-cpp@{onload.\-cpp}!L\-O\-G\-V@{L\-O\-G\-V}}
+\index{L\-O\-G\-V@{L\-O\-G\-V}!onload.cpp@{onload.\-cpp}}
+\subsubsection[{L\-O\-G\-V}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-V(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-android\-\_\-log\-\_\-print}({\bf A\-N\-D\-R\-O\-I\-D\-\_\-\-L\-O\-G\-\_\-\-S\-I\-L\-E\-N\-T}, {\bf L\-O\-G\-\_\-\-T\-A\-G}, \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{onload_8cpp_ab78bd305488c62caf8515ee765b1ed49}
+
+
+Definition at line 8 of file onload.\-cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{onload_8cpp_ad2f07df887428c1c8e78f3c485e9c71c}{\index{onload.\-cpp@{onload.\-cpp}!J\-N\-I\-\_\-\-On\-Load@{J\-N\-I\-\_\-\-On\-Load}}
+\index{J\-N\-I\-\_\-\-On\-Load@{J\-N\-I\-\_\-\-On\-Load}!onload.cpp@{onload.\-cpp}}
+\subsubsection[{J\-N\-I\-\_\-\-On\-Load}]{\setlength{\rightskip}{0pt plus 5cm}{\bf jint} J\-N\-I\-\_\-\-On\-Load (
+\begin{DoxyParamCaption}
+\item[{{\bf Java\-V\-M} $\ast$}]{vm, }
+\item[{void $\ast$}]{reserved}
+\end{DoxyParamCaption}
+)}}\label{onload_8cpp_ad2f07df887428c1c8e78f3c485e9c71c}
+
+
+Definition at line 19 of file onload.\-cpp.
+
+\hypertarget{onload_8cpp_a52d5f370c13464623101ddf94deb11c6}{\index{onload.\-cpp@{onload.\-cpp}!register\-\_\-\-M\-R\-\_\-jni@{register\-\_\-\-M\-R\-\_\-jni}}
+\index{register\-\_\-\-M\-R\-\_\-jni@{register\-\_\-\-M\-R\-\_\-jni}!onload.cpp@{onload.\-cpp}}
+\subsubsection[{register\-\_\-\-M\-R\-\_\-jni}]{\setlength{\rightskip}{0pt plus 5cm}int register\-\_\-\-M\-R\-\_\-jni (
+\begin{DoxyParamCaption}
+\item[{{\bf J\-N\-I\-Env} $\ast$}]{env}
+\end{DoxyParamCaption}
+)}}\label{onload_8cpp_a52d5f370c13464623101ddf94deb11c6}

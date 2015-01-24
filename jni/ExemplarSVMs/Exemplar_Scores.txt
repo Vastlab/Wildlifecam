@@ -1,0 +1,9 @@
+Cam: 1 Correct: 68 Total: 101 Percent Correct:  67.327
+Cam: 2 Correct: 53 Total: 78 Percent Correct:  67.949
+Cam: 3 Correct: 27 Total: 93 Percent Correct:  29.032
+Cam: 4 Correct: 19 Total: 26 Percent Correct:  73.077
+Cam: 5 Correct: 9 Total: 23 Percent Correct:  39.130
+Cam: 6 Correct: 7 Total: 74 Percent Correct:   9.459
+Cam: 7 Correct: 31 Total: 73 Percent Correct:  42.466
+Cam: 9 Correct: 60 Total: 67 Percent Correct:  89.552
+Total Correct: 274 Total: 535 Percent Total Correct:  51.215

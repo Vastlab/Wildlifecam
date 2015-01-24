@@ -1,0 +1,171 @@
+//============================================================================
+// Name        : Squirrel_Detection_pipeline.h
+// Author      : RC Johnson
+// Version     :
+// Copyright   : Copyright Securics Inc
+// Description : Squirrel Pipeline Header file
+//============================================================================
+#pragma once
+#ifdef _CH_
+#pragma package <opencv>
+#endif
+
+
+#ifndef _EiC
+#include <opencv2/opencv.hpp>
+
+#include <stdio.h>
+#include <cstdlib>
+#include <stdlib.h>
+#include <string.h>
+#include <iostream>
+#include <fstream>
+#include <string.h>
+#include <sstream>
+#include <dirent.h>
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <iostream>
+#include <fstream>
+#include <string.h>
+#include <sstream>
+#include <vector>
+#include <complex>
+#include <string.h>
+#include <time.h>
+
+#ifndef SQUIRREL_PIPELINE_H
+#define SQUIRREL_PIPELINE_H
+
+#include "NewTransformEngine.hpp"
+
+//GRAB
+#include "GRAB/KeyPoints/GRAB-kp.h"
+
+//SVM
+#include "onevsetSVM/predict.h"
+
+#if !defined(__APPLE__)
+#include <malloc.h>
+#endif
+#include <vector>
+#endif
+
+using namespace std;
+using namespace cv;
+
+//Why have to use this rather than the include guard? Ask whoever designed the preprocessor!
+#ifndef CONFIGDEF
+struct sConfig {
+
+	char myID[256];
+
+	//Stuff
+	float fudge;
+	int scale;
+
+	//Squirrel Size
+	int squirrelMinArea;
+	int squirrelMaxArea;
+
+	int g_starttime;
+	int g_endtime;
+
+        //Location of files that scored rank 1 from ExemplarSVMs code
+        char positiveExemplar[256];
+
+	//SVM model files location
+	char model_dir[256];
+
+	//ImageChips Location
+	char image_chips[256];
+
+	//Image Gallery Location
+	char image_gallery[256];
+
+	//Processed Images Location
+	char processed_images[256];
+
+	//Output File location
+	char output_file[256];
+
+	//Log file location
+	char log_file[256];
+
+	int CONDITION1_HI;
+	int CONDITION1_LOW;
+	int CONDITION2_LOW;
+
+	//
+	int UPDATE_NUMBER;
+
+	//
+	int HI_THRESHOLD_INC;
+
+	//
+	int GLOBAL_INCREMENT;
+
+	//
+	int GLOBAL_THRESHOLD_INIT;
+
+	//
+	int THRESHOLD_DECREMENT_NUMBER;
+	int THRESHOLD_DECREMENT_VALUE;
+
+	//Sliding Window Parameters
+	double maxRatio;
+	int octavesBelow;
+	int octavesAbove;
+	float scaleFactor;
+	int step;
+	int windowSize;
+
+        //Dimensions of image to process a subrect with the dimensions
+        int iX; // X
+        int iY; // Y
+        int iW; // width
+        int iH; // height
+
+};
+#define CONFIGDEF
+#endif
+
+void LOGGING(int level, char *fmt, ...);
+
+vector< vector<int> > startGrab(int *arr, vector<KeyPoint> kp, Mat img);
+
+int** getCenterPoints(char *fName, vector<KeyPoint> kp);
+
+void Update_Threshold_Background(bool firstFrame, Mat inputFrame,
+				 Mat Background1, Mat Background2, Mat Thresholds,
+				 Mat Blobs, Mat Classifications, int* GLOBAL_THRESHOLD);
+
+
+void Background_Subtraction(Mat& diffImage, Mat inputFrame, Mat Background1, Mat Background2,
+			    Mat Thresholds, Mat Detected_Image_HI, Mat Detected_Image_LOW,
+			    Mat classificationMap, int* GLOBAL_THRESHOLD, int HI_THRESHOLD_INC);
+
+void QCC(Mat imgHi, Mat imgLow, Mat parentImage);
+
+
+void FindBlobs(const cv::Mat &binary,
+	       std::vector<std::vector<cv::Point2i> > &blobs);
+
+vector<int> run_program(sConfig &config, bool firstFrame, Mat grayImage,
+		Mat colorFrame, Mat b1, Mat b2, Mat thresh, Mat Hi, Mat Lo,
+		Mat classificationMap, const char *baseName,
+		const char* rawName);
+
+int svmpredict(float **values, int **indices, int rowNum, int colNum,
+		int isProb, const char *modelFile, int *labels, double *scores,
+		int numclasses);
+
+//Declare the ranged function.
+vector<int> runWithSizeRange(sConfig &config, bool firstFrame, Mat grayImage,
+		Mat colorFrame, Mat b1, Mat b2, Mat thresh, Mat Hi, Mat Lo,
+		Mat classificationMap, const char *baseName, const char* rawName, double minArea, double maxArea,
+		pCorrectCamera cam, double horizDegRange, double vertDegRange);
+
+#endif /*SQUIRREL_PIPELINE_H*/

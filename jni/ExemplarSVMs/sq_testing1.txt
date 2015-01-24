@@ -1,0 +1,4 @@
+./Test/squirrel_test.jpg
+./Test/squirrel_68.jpg
+./Test/squirrel_28.jpg
+

@@ -1,0 +1,246 @@
+\section{com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity Class Reference}
+\label{classcom_1_1securics_1_1wildlifecapture_1_1_change_resolution_activity}\index{com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity@{com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity}}
+Inheritance diagram for com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1securics_1_1wildlifecapture_1_1_change_resolution_activity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf get\+Size\+Data} ()
+\item 
+void {\bf size\+To\+String} ()
+\item 
+void {\bf set\+List\+View} ()
+\item 
+boolean {\bf on\+Create\+Options\+Menu} (Menu menu)
+\item 
+void {\bf on\+List\+Item\+Click} (List\+View tmp, View v, int pos, long id)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf on\+Create} (Bundle saved\+Instance\+State)
+\item 
+void {\bf on\+Resume} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Camera {\bf get\+Camera\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List\+View {\bf internal\+View}
+\item 
+Camera {\bf cam\+Copy}
+\item 
+Size {\bf pic\+Size}
+\item 
+List$<$ Size $>$ {\bf size\+List}
+\item 
+String[$\,$] {\bf size\+Names}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Change\+Resolution\+Activity.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}!get\+Camera\+Instance@{get\+Camera\+Instance}}
+\index{get\+Camera\+Instance@{get\+Camera\+Instance}!com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}}
+\subsubsection[{get\+Camera\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}Camera com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+get\+Camera\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_change_resolution_activity_a98b2bd95379921a8b75f94f836e0e60f}
+Attempt to get a camera. 
+
+Definition at line 135 of file Change\+Resolution\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+on\+Resume().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}!get\+Size\+Data@{get\+Size\+Data}}
+\index{get\+Size\+Data@{get\+Size\+Data}!com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}}
+\subsubsection[{get\+Size\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+get\+Size\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_change_resolution_activity_aef0e2e7375dd5b11be1e83cfccd2c301}
+This should probably be able to potentially maybe get the size\+List from the non-\/static copy of the static camera contained in \doxyref{Main\+Activity}{p.}{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity}. 
+
+Definition at line 28 of file Change\+Resolution\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+size\+List.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+on\+Resume().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}}
+\subsubsection[{on\+Create}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+on\+Create (
+\begin{DoxyParamCaption}
+\item[{Bundle}]{saved\+Instance\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_change_resolution_activity_ad0fe1988bd214444cce7aeb4a8af91c4}
+set layout 
+
+Definition at line 75 of file Change\+Resolution\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}!on\+Create\+Options\+Menu@{on\+Create\+Options\+Menu}}
+\index{on\+Create\+Options\+Menu@{on\+Create\+Options\+Menu}!com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}}
+\subsubsection[{on\+Create\+Options\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+on\+Create\+Options\+Menu (
+\begin{DoxyParamCaption}
+\item[{Menu}]{menu}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_change_resolution_activity_a9257daf73e6172dfbe622d485c8d9053}
+Create an option menu Inflate the menu; this adds items to the action bar if it is present. 
+
+Definition at line 109 of file Change\+Resolution\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}!on\+List\+Item\+Click@{on\+List\+Item\+Click}}
+\index{on\+List\+Item\+Click@{on\+List\+Item\+Click}!com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}}
+\subsubsection[{on\+List\+Item\+Click}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+on\+List\+Item\+Click (
+\begin{DoxyParamCaption}
+\item[{List\+View}]{tmp, }
+\item[{View}]{v, }
+\item[{int}]{pos, }
+\item[{long}]{id}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_change_resolution_activity_a513eca395f902994466650ac38a07b85}
+Set resolution on \doxyref{Main\+Activity}{p.}{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity} 
+
+Definition at line 118 of file Change\+Resolution\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+cam\+Copy, and com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+size\+Names.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}!on\+Resume@{on\+Resume}}
+\index{on\+Resume@{on\+Resume}!com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}}
+\subsubsection[{on\+Resume}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+on\+Resume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_change_resolution_activity_a08c2b11c761468de4b0adfb1fe19451c}
+get instance of camera 
+
+Definition at line 85 of file Change\+Resolution\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+cam\+Copy, com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+get\+Camera\+Instance(), com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+get\+Size\+Data(), com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+internal\+View, com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+set\+List\+View(), and com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+size\+To\+String().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}!set\+List\+View@{set\+List\+View}}
+\index{set\+List\+View@{set\+List\+View}!com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}}
+\subsubsection[{set\+List\+View}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+set\+List\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_change_resolution_activity_a0b9caa29636ab330db88a52a33505420}
+set list adapter Set up the array adapter. 
+
+Definition at line 64 of file Change\+Resolution\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+size\+Names.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+on\+Resume().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}!size\+To\+String@{size\+To\+String}}
+\index{size\+To\+String@{size\+To\+String}!com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}}
+\subsubsection[{size\+To\+String}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+size\+To\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_change_resolution_activity_a021c5c14e5a3e03cb43f29d5fe112997}
+Add all picture sizes to size\+Names array 
+
+Definition at line 39 of file Change\+Resolution\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+size\+List, and com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+size\+Names.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+on\+Resume().
+
+
+
+\subsection{Member Data Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}!cam\+Copy@{cam\+Copy}}
+\index{cam\+Copy@{cam\+Copy}!com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}}
+\subsubsection[{cam\+Copy}]{\setlength{\rightskip}{0pt plus 5cm}Camera com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+cam\+Copy\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_change_resolution_activity_a6b50fb23769ed5f2c15feaf5556b321a}
+
+
+Definition at line 19 of file Change\+Resolution\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+on\+List\+Item\+Click(), and com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+on\+Resume().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}!internal\+View@{internal\+View}}
+\index{internal\+View@{internal\+View}!com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}}
+\subsubsection[{internal\+View}]{\setlength{\rightskip}{0pt plus 5cm}List\+View com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+internal\+View\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_change_resolution_activity_a66e338edadd91789e8ec6f1d2e3ac988}
+
+
+Definition at line 18 of file Change\+Resolution\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+on\+Resume().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}!pic\+Size@{pic\+Size}}
+\index{pic\+Size@{pic\+Size}!com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}}
+\subsubsection[{pic\+Size}]{\setlength{\rightskip}{0pt plus 5cm}Size com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+pic\+Size\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_change_resolution_activity_aa177f6f8767814e1884e32694cd2b0e8}
+
+
+Definition at line 20 of file Change\+Resolution\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}!size\+List@{size\+List}}
+\index{size\+List@{size\+List}!com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}}
+\subsubsection[{size\+List}]{\setlength{\rightskip}{0pt plus 5cm}List$<$Size$>$ com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+size\+List\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_change_resolution_activity_ae85857326d2d3e3a6e3a99add2918112}
+
+
+Definition at line 21 of file Change\+Resolution\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+get\+Size\+Data(), and com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+size\+To\+String().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}!size\+Names@{size\+Names}}
+\index{size\+Names@{size\+Names}!com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity@{com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}}
+\subsubsection[{size\+Names}]{\setlength{\rightskip}{0pt plus 5cm}String [$\,$] com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+size\+Names\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_change_resolution_activity_a565b5e88750a511709118a7c2eb2ece4}
+
+
+Definition at line 22 of file Change\+Resolution\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+on\+List\+Item\+Click(), com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+set\+List\+View(), and com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+size\+To\+String().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/com/securics/wildlifecapture/{\bf Change\+Resolution\+Activity.\+java}\end{DoxyCompactItemize}

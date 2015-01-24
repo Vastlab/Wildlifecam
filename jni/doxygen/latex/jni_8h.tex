@@ -1,0 +1,525 @@
+\hypertarget{jni_8h}{\section{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/jni.h File Reference}
+\label{jni_8h}\index{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/jni.\-h@{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/jni.\-h}}
+}
+{\ttfamily \#include $<$stdarg.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unionjvalue}{jvalue}
+\item 
+struct \hyperlink{struct_j_n_i_native_method}{J\-N\-I\-Native\-Method}
+\item 
+struct \hyperlink{struct_j_n_i_native_interface}{J\-N\-I\-Native\-Interface}
+\item 
+struct \hyperlink{struct___j_n_i_env}{\-\_\-\-J\-N\-I\-Env}
+\item 
+struct \hyperlink{struct_j_n_i_invoke_interface}{J\-N\-I\-Invoke\-Interface}
+\item 
+struct \hyperlink{struct___java_v_m}{\-\_\-\-Java\-V\-M}
+\item 
+struct \hyperlink{struct_java_v_m_attach_args}{Java\-V\-M\-Attach\-Args}
+\item 
+struct \hyperlink{struct_java_v_m_option}{Java\-V\-M\-Option}
+\item 
+struct \hyperlink{struct_java_v_m_init_args}{Java\-V\-M\-Init\-Args}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{jni_8h_a50975ea4a54595c67faee6bed2fb1898}{J\-N\-I\-I\-M\-P\-O\-R\-T}
+\item 
+\#define \hyperlink{jni_8h_a5ef9c7c852d5e0abf2ae84d4e9c5a7b7}{J\-N\-I\-E\-X\-P\-O\-R\-T}~\-\_\-\-\_\-attribute\-\_\-\-\_\- ((visibility (\char`\"{}default\char`\"{})))
+\item 
+\#define \hyperlink{jni_8h_a75ae116b9b28eeeb6a479622e476c1ed}{J\-N\-I\-C\-A\-L\-L}
+\item 
+\#define \hyperlink{jni_8h_a5fd57fea84fa4636af3929a914f5731e}{J\-N\-I\-\_\-\-F\-A\-L\-S\-E}~0
+\item 
+\#define \hyperlink{jni_8h_a64617dee10abb250af2d09ff99ebe625}{J\-N\-I\-\_\-\-T\-R\-U\-E}~1
+\item 
+\#define \hyperlink{jni_8h_a6d21e6c4854a55e7c23e4248f1ecc767}{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-1}~0x00010001
+\item 
+\#define \hyperlink{jni_8h_aa08d1ca2173568670520ccb93e9d08b5}{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-2}~0x00010002
+\item 
+\#define \hyperlink{jni_8h_abe07f84830613322c10a403b52896965}{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-4}~0x00010004
+\item 
+\#define \hyperlink{jni_8h_a187e9b8b99e42b7e8efa1dbe7164345d}{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-6}~0x00010006
+\item 
+\#define \hyperlink{jni_8h_ae51e2d91aef86f0b097f07b0f7186740}{J\-N\-I\-\_\-\-O\-K}~(0)         /$\ast$ no error $\ast$/
+\item 
+\#define \hyperlink{jni_8h_a69dc4907f1b6367cd4a7e640569d20c0}{J\-N\-I\-\_\-\-E\-R\-R}~(-\/1)        /$\ast$ generic error $\ast$/
+\item 
+\#define \hyperlink{jni_8h_a30499e80605d7c600bb8f80f603b8da5}{J\-N\-I\-\_\-\-E\-D\-E\-T\-A\-C\-H\-E\-D}~(-\/2)        /$\ast$ thread detached from the V\-M $\ast$/
+\item 
+\#define \hyperlink{jni_8h_a9d49707d0375d668fdbd1aa3b66a8b37}{J\-N\-I\-\_\-\-E\-V\-E\-R\-S\-I\-O\-N}~(-\/3)        /$\ast$ J\-N\-I version error $\ast$/
+\item 
+\#define \hyperlink{jni_8h_ab2697b544d5fa5fca47096d596f754bc}{J\-N\-I\-\_\-\-C\-O\-M\-M\-I\-T}~1           /$\ast$ copy content, do not free buffer $\ast$/
+\item 
+\#define \hyperlink{jni_8h_a1dc6542d58a1718957bc599ff884d664}{J\-N\-I\-\_\-\-A\-B\-O\-R\-T}~2           /$\ast$ free buffer w/o copying back $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned char \hyperlink{jni_8h_a3e597066bbafe45e3d729fc1f4f9829f}{jboolean}
+\item 
+typedef signed char \hyperlink{jni_8h_acb5e31bb111c99042a7459568cab51bc}{jbyte}
+\item 
+typedef unsigned short \hyperlink{jni_8h_ae1d44de84f1089a96983c1ffe4982405}{jchar}
+\item 
+typedef short \hyperlink{jni_8h_ae579a9c82feef40bb9fc48810e152cf6}{jshort}
+\item 
+typedef int \hyperlink{jni_8h_ad6e59d976b9b5bae7a19d746bd2879c1}{jint}
+\item 
+typedef long long \hyperlink{jni_8h_ab9b0f43bf72fd26315ed0165966ddb25}{jlong}
+\item 
+typedef float \hyperlink{jni_8h_a5d393cee6f500e76ac60e7e29279bf17}{jfloat}
+\item 
+typedef double \hyperlink{jni_8h_a4dbf307878725eebfb852c2800a951fa}{jdouble}
+\item 
+typedef \hyperlink{jni_8h_ad6e59d976b9b5bae7a19d746bd2879c1}{jint} \hyperlink{jni_8h_ae76ffede4acd03ec31101899cce740ea}{jsize}
+\item 
+typedef void $\ast$ \hyperlink{jni_8h_a24647d2a2f02c39f6338c2c6ce4c1004}{jobject}
+\item 
+typedef \hyperlink{jni_8h_a24647d2a2f02c39f6338c2c6ce4c1004}{jobject} \hyperlink{jni_8h_a5b236a554a9caf14a835f4e83b4c16b3}{jclass}
+\item 
+typedef \hyperlink{jni_8h_a24647d2a2f02c39f6338c2c6ce4c1004}{jobject} \hyperlink{jni_8h_a6b61b4d7ccdc1edb60f2c735f9b401c9}{jstring}
+\item 
+typedef \hyperlink{jni_8h_a24647d2a2f02c39f6338c2c6ce4c1004}{jobject} \hyperlink{jni_8h_a78544f163134d629b0907abc1e63138f}{jarray}
+\item 
+typedef \hyperlink{jni_8h_a78544f163134d629b0907abc1e63138f}{jarray} \hyperlink{jni_8h_a563317be23add0c2922e34b6983fec7e}{jobject\-Array}
+\item 
+typedef \hyperlink{jni_8h_a78544f163134d629b0907abc1e63138f}{jarray} \hyperlink{jni_8h_a4009296a2297910b95c3457a227328e1}{jboolean\-Array}
+\item 
+typedef \hyperlink{jni_8h_a78544f163134d629b0907abc1e63138f}{jarray} \hyperlink{jni_8h_acb34823f6a2f4a76dc58fd9cf6b52ff6}{jbyte\-Array}
+\item 
+typedef \hyperlink{jni_8h_a78544f163134d629b0907abc1e63138f}{jarray} \hyperlink{jni_8h_a511d51e9d38d61dce8c2ffbe5ecfb22d}{jchar\-Array}
+\item 
+typedef \hyperlink{jni_8h_a78544f163134d629b0907abc1e63138f}{jarray} \hyperlink{jni_8h_a324cb95947c7dd8d9670de754abba052}{jshort\-Array}
+\item 
+typedef \hyperlink{jni_8h_a78544f163134d629b0907abc1e63138f}{jarray} \hyperlink{jni_8h_a2bf7845ae665f91517ba1ea33f659701}{jint\-Array}
+\item 
+typedef \hyperlink{jni_8h_a78544f163134d629b0907abc1e63138f}{jarray} \hyperlink{jni_8h_a1090d6a7969eb2030190f0fde9606545}{jlong\-Array}
+\item 
+typedef \hyperlink{jni_8h_a78544f163134d629b0907abc1e63138f}{jarray} \hyperlink{jni_8h_aadf58d5e9c7189db4638d7e50bed3841}{jfloat\-Array}
+\item 
+typedef \hyperlink{jni_8h_a78544f163134d629b0907abc1e63138f}{jarray} \hyperlink{jni_8h_a7970b87de8d49c1fe5facc1ecda5d560}{jdouble\-Array}
+\item 
+typedef \hyperlink{jni_8h_a24647d2a2f02c39f6338c2c6ce4c1004}{jobject} \hyperlink{jni_8h_a890ad8298bcbec657011f49aa6a37e83}{jthrowable}
+\item 
+typedef \hyperlink{jni_8h_a24647d2a2f02c39f6338c2c6ce4c1004}{jobject} \hyperlink{jni_8h_a26669d38099b76c494391cc887a030f2}{jweak}
+\item 
+typedef struct \-\_\-jfield\-I\-D $\ast$ \hyperlink{jni_8h_a72513bd82c955054b04665c731aa662a}{jfield\-I\-D}
+\item 
+typedef struct \-\_\-jmethod\-I\-D $\ast$ \hyperlink{jni_8h_a91d8a65fefade9d27c9f749e69f37c40}{jmethod\-I\-D}
+\item 
+typedef union \hyperlink{unionjvalue}{jvalue} \hyperlink{jni_8h_adf8ca729ef660d2fb827034597694ee0}{jvalue}
+\item 
+typedef enum \hyperlink{jni_8h_a71fd13caccd2833c566990351ef21edd}{jobject\-Ref\-Type} \hyperlink{jni_8h_affbc28137b4e05ee99d18e41c6257357}{jobject\-Ref\-Type}
+\item 
+typedef struct \hyperlink{struct_j_n_i_native_interface}{J\-N\-I\-Native\-Interface} $\ast$ \hyperlink{jni_8h_aeac99bfb7a71497aecb392de65df2c0e}{C\-\_\-\-J\-N\-I\-Env}
+\item 
+typedef struct \hyperlink{struct_j_n_i_native_interface}{J\-N\-I\-Native\-Interface} $\ast$ \hyperlink{jni_8h_a2d06d32b6b6f1519799078a36fe2e380}{J\-N\-I\-Env}
+\item 
+typedef struct \hyperlink{struct_j_n_i_invoke_interface}{J\-N\-I\-Invoke\-Interface} $\ast$ \hyperlink{jni_8h_af9349ee5bb0a99fab460a1b46fc077d5}{Java\-V\-M}
+\item 
+typedef struct \hyperlink{struct_java_v_m_attach_args}{Java\-V\-M\-Attach\-Args} \hyperlink{jni_8h_aa44ce848673ad11992f94ccfefe1331d}{Java\-V\-M\-Attach\-Args}
+\item 
+typedef struct \hyperlink{struct_java_v_m_option}{Java\-V\-M\-Option} \hyperlink{jni_8h_a76991fb4dea9773d01fee0e0f1ea1791}{Java\-V\-M\-Option}
+\item 
+typedef struct \hyperlink{struct_java_v_m_init_args}{Java\-V\-M\-Init\-Args} \hyperlink{jni_8h_a65b8ad0f2f8659e5ddd7a1f190eb5b6a}{Java\-V\-M\-Init\-Args}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{jni_8h_a71fd13caccd2833c566990351ef21edd}{jobject\-Ref\-Type} \{ \hyperlink{jni_8h_a71fd13caccd2833c566990351ef21eddac71b1095d77f398d5af846337af33304}{J\-N\-I\-Invalid\-Ref\-Type} =  0, 
+\hyperlink{jni_8h_a71fd13caccd2833c566990351ef21eddaf85d5813bc13144eea43eec066b24235}{J\-N\-I\-Local\-Ref\-Type} =  1, 
+\hyperlink{jni_8h_a71fd13caccd2833c566990351ef21eddae2d2d3ebbde3a5032a3c3b31f06841e6}{J\-N\-I\-Global\-Ref\-Type} =  2, 
+\hyperlink{jni_8h_a71fd13caccd2833c566990351ef21edda7510ffcf2084e84df627e6e033cd030b}{J\-N\-I\-Weak\-Global\-Ref\-Type} =  3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{jni_8h_a5ef9c7c852d5e0abf2ae84d4e9c5a7b7}{J\-N\-I\-E\-X\-P\-O\-R\-T} \hyperlink{jni_8h_ad6e59d976b9b5bae7a19d746bd2879c1}{jint} \hyperlink{jni_8h_a31734e0be752a40edb602aae49862783}{J\-N\-I\-\_\-\-On\-Load} (\hyperlink{jni_8h_af9349ee5bb0a99fab460a1b46fc077d5}{Java\-V\-M} $\ast$vm, void $\ast$reserved)
+\item 
+\hyperlink{jni_8h_a5ef9c7c852d5e0abf2ae84d4e9c5a7b7}{J\-N\-I\-E\-X\-P\-O\-R\-T} void \hyperlink{jni_8h_a877974254318363574f31d4c600f57db}{J\-N\-I\-\_\-\-On\-Unload} (\hyperlink{jni_8h_af9349ee5bb0a99fab460a1b46fc077d5}{Java\-V\-M} $\ast$vm, void $\ast$reserved)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{jni_8h_a1dc6542d58a1718957bc599ff884d664}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-\_\-\-A\-B\-O\-R\-T@{J\-N\-I\-\_\-\-A\-B\-O\-R\-T}}
+\index{J\-N\-I\-\_\-\-A\-B\-O\-R\-T@{J\-N\-I\-\_\-\-A\-B\-O\-R\-T}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-\_\-\-A\-B\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-N\-I\-\_\-\-A\-B\-O\-R\-T~2           /$\ast$ free buffer w/o copying back $\ast$/}}\label{jni_8h_a1dc6542d58a1718957bc599ff884d664}
+
+
+Definition at line 1154 of file jni.\-h.
+
+\hypertarget{jni_8h_ab2697b544d5fa5fca47096d596f754bc}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-\_\-\-C\-O\-M\-M\-I\-T@{J\-N\-I\-\_\-\-C\-O\-M\-M\-I\-T}}
+\index{J\-N\-I\-\_\-\-C\-O\-M\-M\-I\-T@{J\-N\-I\-\_\-\-C\-O\-M\-M\-I\-T}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-\_\-\-C\-O\-M\-M\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-N\-I\-\_\-\-C\-O\-M\-M\-I\-T~1           /$\ast$ copy content, do not free buffer $\ast$/}}\label{jni_8h_ab2697b544d5fa5fca47096d596f754bc}
+
+
+Definition at line 1153 of file jni.\-h.
+
+\hypertarget{jni_8h_a30499e80605d7c600bb8f80f603b8da5}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-\_\-\-E\-D\-E\-T\-A\-C\-H\-E\-D@{J\-N\-I\-\_\-\-E\-D\-E\-T\-A\-C\-H\-E\-D}}
+\index{J\-N\-I\-\_\-\-E\-D\-E\-T\-A\-C\-H\-E\-D@{J\-N\-I\-\_\-\-E\-D\-E\-T\-A\-C\-H\-E\-D}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-\_\-\-E\-D\-E\-T\-A\-C\-H\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-N\-I\-\_\-\-E\-D\-E\-T\-A\-C\-H\-E\-D~(-\/2)        /$\ast$ thread detached from the V\-M $\ast$/}}\label{jni_8h_a30499e80605d7c600bb8f80f603b8da5}
+
+
+Definition at line 1150 of file jni.\-h.
+
+\hypertarget{jni_8h_a69dc4907f1b6367cd4a7e640569d20c0}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-\_\-\-E\-R\-R@{J\-N\-I\-\_\-\-E\-R\-R}}
+\index{J\-N\-I\-\_\-\-E\-R\-R@{J\-N\-I\-\_\-\-E\-R\-R}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-\_\-\-E\-R\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-N\-I\-\_\-\-E\-R\-R~(-\/1)        /$\ast$ generic error $\ast$/}}\label{jni_8h_a69dc4907f1b6367cd4a7e640569d20c0}
+
+
+Definition at line 1149 of file jni.\-h.
+
+\hypertarget{jni_8h_a9d49707d0375d668fdbd1aa3b66a8b37}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-\_\-\-E\-V\-E\-R\-S\-I\-O\-N@{J\-N\-I\-\_\-\-E\-V\-E\-R\-S\-I\-O\-N}}
+\index{J\-N\-I\-\_\-\-E\-V\-E\-R\-S\-I\-O\-N@{J\-N\-I\-\_\-\-E\-V\-E\-R\-S\-I\-O\-N}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-\_\-\-E\-V\-E\-R\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-N\-I\-\_\-\-E\-V\-E\-R\-S\-I\-O\-N~(-\/3)        /$\ast$ J\-N\-I version error $\ast$/}}\label{jni_8h_a9d49707d0375d668fdbd1aa3b66a8b37}
+
+
+Definition at line 1151 of file jni.\-h.
+
+\hypertarget{jni_8h_a5fd57fea84fa4636af3929a914f5731e}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-\_\-\-F\-A\-L\-S\-E@{J\-N\-I\-\_\-\-F\-A\-L\-S\-E}}
+\index{J\-N\-I\-\_\-\-F\-A\-L\-S\-E@{J\-N\-I\-\_\-\-F\-A\-L\-S\-E}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-\_\-\-F\-A\-L\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-N\-I\-\_\-\-F\-A\-L\-S\-E~0}}\label{jni_8h_a5fd57fea84fa4636af3929a914f5731e}
+
+
+Definition at line 1140 of file jni.\-h.
+
+\hypertarget{jni_8h_ae51e2d91aef86f0b097f07b0f7186740}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-\_\-\-O\-K@{J\-N\-I\-\_\-\-O\-K}}
+\index{J\-N\-I\-\_\-\-O\-K@{J\-N\-I\-\_\-\-O\-K}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-\_\-\-O\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-N\-I\-\_\-\-O\-K~(0)         /$\ast$ no error $\ast$/}}\label{jni_8h_ae51e2d91aef86f0b097f07b0f7186740}
+
+
+Definition at line 1148 of file jni.\-h.
+
+\hypertarget{jni_8h_a64617dee10abb250af2d09ff99ebe625}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-\_\-\-T\-R\-U\-E@{J\-N\-I\-\_\-\-T\-R\-U\-E}}
+\index{J\-N\-I\-\_\-\-T\-R\-U\-E@{J\-N\-I\-\_\-\-T\-R\-U\-E}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-\_\-\-T\-R\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-N\-I\-\_\-\-T\-R\-U\-E~1}}\label{jni_8h_a64617dee10abb250af2d09ff99ebe625}
+
+
+Definition at line 1141 of file jni.\-h.
+
+\hypertarget{jni_8h_a6d21e6c4854a55e7c23e4248f1ecc767}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-1@{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-1}}
+\index{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-1@{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-1}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-1~0x00010001}}\label{jni_8h_a6d21e6c4854a55e7c23e4248f1ecc767}
+
+
+Definition at line 1143 of file jni.\-h.
+
+\hypertarget{jni_8h_aa08d1ca2173568670520ccb93e9d08b5}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-2@{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-2}}
+\index{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-2@{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-2}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-2~0x00010002}}\label{jni_8h_aa08d1ca2173568670520ccb93e9d08b5}
+
+
+Definition at line 1144 of file jni.\-h.
+
+\hypertarget{jni_8h_abe07f84830613322c10a403b52896965}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-4@{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-4}}
+\index{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-4@{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-4}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-4}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-4~0x00010004}}\label{jni_8h_abe07f84830613322c10a403b52896965}
+
+
+Definition at line 1145 of file jni.\-h.
+
+\hypertarget{jni_8h_a187e9b8b99e42b7e8efa1dbe7164345d}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-6@{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-6}}
+\index{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-6@{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-6}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-6}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-N\-I\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-1\-\_\-6~0x00010006}}\label{jni_8h_a187e9b8b99e42b7e8efa1dbe7164345d}
+
+
+Definition at line 1146 of file jni.\-h.
+
+\hypertarget{jni_8h_a75ae116b9b28eeeb6a479622e476c1ed}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-C\-A\-L\-L@{J\-N\-I\-C\-A\-L\-L}}
+\index{J\-N\-I\-C\-A\-L\-L@{J\-N\-I\-C\-A\-L\-L}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-C\-A\-L\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-N\-I\-C\-A\-L\-L}}\label{jni_8h_a75ae116b9b28eeeb6a479622e476c1ed}
+
+
+Definition at line 1123 of file jni.\-h.
+
+\hypertarget{jni_8h_a5ef9c7c852d5e0abf2ae84d4e9c5a7b7}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-E\-X\-P\-O\-R\-T@{J\-N\-I\-E\-X\-P\-O\-R\-T}}
+\index{J\-N\-I\-E\-X\-P\-O\-R\-T@{J\-N\-I\-E\-X\-P\-O\-R\-T}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-E\-X\-P\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-N\-I\-E\-X\-P\-O\-R\-T~\-\_\-\-\_\-attribute\-\_\-\-\_\- ((visibility (\char`\"{}default\char`\"{})))}}\label{jni_8h_a5ef9c7c852d5e0abf2ae84d4e9c5a7b7}
+
+
+Definition at line 1122 of file jni.\-h.
+
+\hypertarget{jni_8h_a50975ea4a54595c67faee6bed2fb1898}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-I\-M\-P\-O\-R\-T@{J\-N\-I\-I\-M\-P\-O\-R\-T}}
+\index{J\-N\-I\-I\-M\-P\-O\-R\-T@{J\-N\-I\-I\-M\-P\-O\-R\-T}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-I\-M\-P\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-N\-I\-I\-M\-P\-O\-R\-T}}\label{jni_8h_a50975ea4a54595c67faee6bed2fb1898}
+
+
+Definition at line 1121 of file jni.\-h.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{jni_8h_aeac99bfb7a71497aecb392de65df2c0e}{\index{jni.\-h@{jni.\-h}!C\-\_\-\-J\-N\-I\-Env@{C\-\_\-\-J\-N\-I\-Env}}
+\index{C\-\_\-\-J\-N\-I\-Env@{C\-\_\-\-J\-N\-I\-Env}!jni.h@{jni.\-h}}
+\subsubsection[{C\-\_\-\-J\-N\-I\-Env}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf J\-N\-I\-Native\-Interface}$\ast$ {\bf C\-\_\-\-J\-N\-I\-Env}}}\label{jni_8h_aeac99bfb7a71497aecb392de65df2c0e}
+
+
+Definition at line 150 of file jni.\-h.
+
+\hypertarget{jni_8h_a78544f163134d629b0907abc1e63138f}{\index{jni.\-h@{jni.\-h}!jarray@{jarray}}
+\index{jarray@{jarray}!jni.h@{jni.\-h}}
+\subsubsection[{jarray}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jobject} {\bf jarray}}}\label{jni_8h_a78544f163134d629b0907abc1e63138f}
+
+
+Definition at line 100 of file jni.\-h.
+
+\hypertarget{jni_8h_af9349ee5bb0a99fab460a1b46fc077d5}{\index{jni.\-h@{jni.\-h}!Java\-V\-M@{Java\-V\-M}}
+\index{Java\-V\-M@{Java\-V\-M}!jni.h@{jni.\-h}}
+\subsubsection[{Java\-V\-M}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf J\-N\-I\-Invoke\-Interface}$\ast$ {\bf Java\-V\-M}}}\label{jni_8h_af9349ee5bb0a99fab460a1b46fc077d5}
+
+
+Definition at line 157 of file jni.\-h.
+
+\hypertarget{jni_8h_aa44ce848673ad11992f94ccfefe1331d}{\index{jni.\-h@{jni.\-h}!Java\-V\-M\-Attach\-Args@{Java\-V\-M\-Attach\-Args}}
+\index{Java\-V\-M\-Attach\-Args@{Java\-V\-M\-Attach\-Args}!jni.h@{jni.\-h}}
+\subsubsection[{Java\-V\-M\-Attach\-Args}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Java\-V\-M\-Attach\-Args} {\bf Java\-V\-M\-Attach\-Args}}}\label{jni_8h_aa44ce848673ad11992f94ccfefe1331d}
+
+
+Definition at line 1088 of file jni.\-h.
+
+\hypertarget{jni_8h_a65b8ad0f2f8659e5ddd7a1f190eb5b6a}{\index{jni.\-h@{jni.\-h}!Java\-V\-M\-Init\-Args@{Java\-V\-M\-Init\-Args}}
+\index{Java\-V\-M\-Init\-Args@{Java\-V\-M\-Init\-Args}!jni.h@{jni.\-h}}
+\subsubsection[{Java\-V\-M\-Init\-Args}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Java\-V\-M\-Init\-Args}  {\bf Java\-V\-M\-Init\-Args}}}\label{jni_8h_a65b8ad0f2f8659e5ddd7a1f190eb5b6a}
+\hypertarget{jni_8h_a76991fb4dea9773d01fee0e0f1ea1791}{\index{jni.\-h@{jni.\-h}!Java\-V\-M\-Option@{Java\-V\-M\-Option}}
+\index{Java\-V\-M\-Option@{Java\-V\-M\-Option}!jni.h@{jni.\-h}}
+\subsubsection[{Java\-V\-M\-Option}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Java\-V\-M\-Option}  {\bf Java\-V\-M\-Option}}}\label{jni_8h_a76991fb4dea9773d01fee0e0f1ea1791}
+\hypertarget{jni_8h_a3e597066bbafe45e3d729fc1f4f9829f}{\index{jni.\-h@{jni.\-h}!jboolean@{jboolean}}
+\index{jboolean@{jboolean}!jni.h@{jni.\-h}}
+\subsubsection[{jboolean}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf jboolean}}}\label{jni_8h_a3e597066bbafe45e3d729fc1f4f9829f}
+
+
+Definition at line 43 of file jni.\-h.
+
+\hypertarget{jni_8h_a4009296a2297910b95c3457a227328e1}{\index{jni.\-h@{jni.\-h}!jboolean\-Array@{jboolean\-Array}}
+\index{jboolean\-Array@{jboolean\-Array}!jni.h@{jni.\-h}}
+\subsubsection[{jboolean\-Array}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jarray} {\bf jboolean\-Array}}}\label{jni_8h_a4009296a2297910b95c3457a227328e1}
+
+
+Definition at line 102 of file jni.\-h.
+
+\hypertarget{jni_8h_acb5e31bb111c99042a7459568cab51bc}{\index{jni.\-h@{jni.\-h}!jbyte@{jbyte}}
+\index{jbyte@{jbyte}!jni.h@{jni.\-h}}
+\subsubsection[{jbyte}]{\setlength{\rightskip}{0pt plus 5cm}typedef signed char {\bf jbyte}}}\label{jni_8h_acb5e31bb111c99042a7459568cab51bc}
+
+
+Definition at line 44 of file jni.\-h.
+
+\hypertarget{jni_8h_acb34823f6a2f4a76dc58fd9cf6b52ff6}{\index{jni.\-h@{jni.\-h}!jbyte\-Array@{jbyte\-Array}}
+\index{jbyte\-Array@{jbyte\-Array}!jni.h@{jni.\-h}}
+\subsubsection[{jbyte\-Array}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jarray} {\bf jbyte\-Array}}}\label{jni_8h_acb34823f6a2f4a76dc58fd9cf6b52ff6}
+
+
+Definition at line 103 of file jni.\-h.
+
+\hypertarget{jni_8h_ae1d44de84f1089a96983c1ffe4982405}{\index{jni.\-h@{jni.\-h}!jchar@{jchar}}
+\index{jchar@{jchar}!jni.h@{jni.\-h}}
+\subsubsection[{jchar}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf jchar}}}\label{jni_8h_ae1d44de84f1089a96983c1ffe4982405}
+
+
+Definition at line 45 of file jni.\-h.
+
+\hypertarget{jni_8h_a511d51e9d38d61dce8c2ffbe5ecfb22d}{\index{jni.\-h@{jni.\-h}!jchar\-Array@{jchar\-Array}}
+\index{jchar\-Array@{jchar\-Array}!jni.h@{jni.\-h}}
+\subsubsection[{jchar\-Array}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jarray} {\bf jchar\-Array}}}\label{jni_8h_a511d51e9d38d61dce8c2ffbe5ecfb22d}
+
+
+Definition at line 104 of file jni.\-h.
+
+\hypertarget{jni_8h_a5b236a554a9caf14a835f4e83b4c16b3}{\index{jni.\-h@{jni.\-h}!jclass@{jclass}}
+\index{jclass@{jclass}!jni.h@{jni.\-h}}
+\subsubsection[{jclass}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jobject} {\bf jclass}}}\label{jni_8h_a5b236a554a9caf14a835f4e83b4c16b3}
+
+
+Definition at line 98 of file jni.\-h.
+
+\hypertarget{jni_8h_a4dbf307878725eebfb852c2800a951fa}{\index{jni.\-h@{jni.\-h}!jdouble@{jdouble}}
+\index{jdouble@{jdouble}!jni.h@{jni.\-h}}
+\subsubsection[{jdouble}]{\setlength{\rightskip}{0pt plus 5cm}typedef double {\bf jdouble}}}\label{jni_8h_a4dbf307878725eebfb852c2800a951fa}
+
+
+Definition at line 50 of file jni.\-h.
+
+\hypertarget{jni_8h_a7970b87de8d49c1fe5facc1ecda5d560}{\index{jni.\-h@{jni.\-h}!jdouble\-Array@{jdouble\-Array}}
+\index{jdouble\-Array@{jdouble\-Array}!jni.h@{jni.\-h}}
+\subsubsection[{jdouble\-Array}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jarray} {\bf jdouble\-Array}}}\label{jni_8h_a7970b87de8d49c1fe5facc1ecda5d560}
+
+
+Definition at line 109 of file jni.\-h.
+
+\hypertarget{jni_8h_a72513bd82c955054b04665c731aa662a}{\index{jni.\-h@{jni.\-h}!jfield\-I\-D@{jfield\-I\-D}}
+\index{jfield\-I\-D@{jfield\-I\-D}!jni.h@{jni.\-h}}
+\subsubsection[{jfield\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct \-\_\-jfield\-I\-D$\ast$ {\bf jfield\-I\-D}}}\label{jni_8h_a72513bd82c955054b04665c731aa662a}
+
+
+Definition at line 116 of file jni.\-h.
+
+\hypertarget{jni_8h_a5d393cee6f500e76ac60e7e29279bf17}{\index{jni.\-h@{jni.\-h}!jfloat@{jfloat}}
+\index{jfloat@{jfloat}!jni.h@{jni.\-h}}
+\subsubsection[{jfloat}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf jfloat}}}\label{jni_8h_a5d393cee6f500e76ac60e7e29279bf17}
+
+
+Definition at line 49 of file jni.\-h.
+
+\hypertarget{jni_8h_aadf58d5e9c7189db4638d7e50bed3841}{\index{jni.\-h@{jni.\-h}!jfloat\-Array@{jfloat\-Array}}
+\index{jfloat\-Array@{jfloat\-Array}!jni.h@{jni.\-h}}
+\subsubsection[{jfloat\-Array}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jarray} {\bf jfloat\-Array}}}\label{jni_8h_aadf58d5e9c7189db4638d7e50bed3841}
+
+
+Definition at line 108 of file jni.\-h.
+
+\hypertarget{jni_8h_ad6e59d976b9b5bae7a19d746bd2879c1}{\index{jni.\-h@{jni.\-h}!jint@{jint}}
+\index{jint@{jint}!jni.h@{jni.\-h}}
+\subsubsection[{jint}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf jint}}}\label{jni_8h_ad6e59d976b9b5bae7a19d746bd2879c1}
+
+
+Definition at line 47 of file jni.\-h.
+
+\hypertarget{jni_8h_a2bf7845ae665f91517ba1ea33f659701}{\index{jni.\-h@{jni.\-h}!jint\-Array@{jint\-Array}}
+\index{jint\-Array@{jint\-Array}!jni.h@{jni.\-h}}
+\subsubsection[{jint\-Array}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jarray} {\bf jint\-Array}}}\label{jni_8h_a2bf7845ae665f91517ba1ea33f659701}
+
+
+Definition at line 106 of file jni.\-h.
+
+\hypertarget{jni_8h_ab9b0f43bf72fd26315ed0165966ddb25}{\index{jni.\-h@{jni.\-h}!jlong@{jlong}}
+\index{jlong@{jlong}!jni.h@{jni.\-h}}
+\subsubsection[{jlong}]{\setlength{\rightskip}{0pt plus 5cm}typedef long long {\bf jlong}}}\label{jni_8h_ab9b0f43bf72fd26315ed0165966ddb25}
+
+
+Definition at line 48 of file jni.\-h.
+
+\hypertarget{jni_8h_a1090d6a7969eb2030190f0fde9606545}{\index{jni.\-h@{jni.\-h}!jlong\-Array@{jlong\-Array}}
+\index{jlong\-Array@{jlong\-Array}!jni.h@{jni.\-h}}
+\subsubsection[{jlong\-Array}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jarray} {\bf jlong\-Array}}}\label{jni_8h_a1090d6a7969eb2030190f0fde9606545}
+
+
+Definition at line 107 of file jni.\-h.
+
+\hypertarget{jni_8h_a91d8a65fefade9d27c9f749e69f37c40}{\index{jni.\-h@{jni.\-h}!jmethod\-I\-D@{jmethod\-I\-D}}
+\index{jmethod\-I\-D@{jmethod\-I\-D}!jni.h@{jni.\-h}}
+\subsubsection[{jmethod\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct \-\_\-jmethod\-I\-D$\ast$ {\bf jmethod\-I\-D}}}\label{jni_8h_a91d8a65fefade9d27c9f749e69f37c40}
+
+
+Definition at line 119 of file jni.\-h.
+
+\hypertarget{jni_8h_a2d06d32b6b6f1519799078a36fe2e380}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-Env@{J\-N\-I\-Env}}
+\index{J\-N\-I\-Env@{J\-N\-I\-Env}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-Env}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf J\-N\-I\-Native\-Interface}$\ast$ {\bf J\-N\-I\-Env}}}\label{jni_8h_a2d06d32b6b6f1519799078a36fe2e380}
+
+
+Definition at line 156 of file jni.\-h.
+
+\hypertarget{jni_8h_a24647d2a2f02c39f6338c2c6ce4c1004}{\index{jni.\-h@{jni.\-h}!jobject@{jobject}}
+\index{jobject@{jobject}!jni.h@{jni.\-h}}
+\subsubsection[{jobject}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf jobject}}}\label{jni_8h_a24647d2a2f02c39f6338c2c6ce4c1004}
+
+
+Definition at line 97 of file jni.\-h.
+
+\hypertarget{jni_8h_a563317be23add0c2922e34b6983fec7e}{\index{jni.\-h@{jni.\-h}!jobject\-Array@{jobject\-Array}}
+\index{jobject\-Array@{jobject\-Array}!jni.h@{jni.\-h}}
+\subsubsection[{jobject\-Array}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jarray} {\bf jobject\-Array}}}\label{jni_8h_a563317be23add0c2922e34b6983fec7e}
+
+
+Definition at line 101 of file jni.\-h.
+
+\hypertarget{jni_8h_affbc28137b4e05ee99d18e41c6257357}{\index{jni.\-h@{jni.\-h}!jobject\-Ref\-Type@{jobject\-Ref\-Type}}
+\index{jobject\-Ref\-Type@{jobject\-Ref\-Type}!jni.h@{jni.\-h}}
+\subsubsection[{jobject\-Ref\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf jobject\-Ref\-Type}  {\bf jobject\-Ref\-Type}}}\label{jni_8h_affbc28137b4e05ee99d18e41c6257357}
+\hypertarget{jni_8h_ae579a9c82feef40bb9fc48810e152cf6}{\index{jni.\-h@{jni.\-h}!jshort@{jshort}}
+\index{jshort@{jshort}!jni.h@{jni.\-h}}
+\subsubsection[{jshort}]{\setlength{\rightskip}{0pt plus 5cm}typedef short {\bf jshort}}}\label{jni_8h_ae579a9c82feef40bb9fc48810e152cf6}
+
+
+Definition at line 46 of file jni.\-h.
+
+\hypertarget{jni_8h_a324cb95947c7dd8d9670de754abba052}{\index{jni.\-h@{jni.\-h}!jshort\-Array@{jshort\-Array}}
+\index{jshort\-Array@{jshort\-Array}!jni.h@{jni.\-h}}
+\subsubsection[{jshort\-Array}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jarray} {\bf jshort\-Array}}}\label{jni_8h_a324cb95947c7dd8d9670de754abba052}
+
+
+Definition at line 105 of file jni.\-h.
+
+\hypertarget{jni_8h_ae76ffede4acd03ec31101899cce740ea}{\index{jni.\-h@{jni.\-h}!jsize@{jsize}}
+\index{jsize@{jsize}!jni.h@{jni.\-h}}
+\subsubsection[{jsize}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jint} {\bf jsize}}}\label{jni_8h_ae76ffede4acd03ec31101899cce740ea}
+
+
+Definition at line 54 of file jni.\-h.
+
+\hypertarget{jni_8h_a6b61b4d7ccdc1edb60f2c735f9b401c9}{\index{jni.\-h@{jni.\-h}!jstring@{jstring}}
+\index{jstring@{jstring}!jni.h@{jni.\-h}}
+\subsubsection[{jstring}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jobject} {\bf jstring}}}\label{jni_8h_a6b61b4d7ccdc1edb60f2c735f9b401c9}
+
+
+Definition at line 99 of file jni.\-h.
+
+\hypertarget{jni_8h_a890ad8298bcbec657011f49aa6a37e83}{\index{jni.\-h@{jni.\-h}!jthrowable@{jthrowable}}
+\index{jthrowable@{jthrowable}!jni.h@{jni.\-h}}
+\subsubsection[{jthrowable}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jobject} {\bf jthrowable}}}\label{jni_8h_a890ad8298bcbec657011f49aa6a37e83}
+
+
+Definition at line 110 of file jni.\-h.
+
+\hypertarget{jni_8h_adf8ca729ef660d2fb827034597694ee0}{\index{jni.\-h@{jni.\-h}!jvalue@{jvalue}}
+\index{jvalue@{jvalue}!jni.h@{jni.\-h}}
+\subsubsection[{jvalue}]{\setlength{\rightskip}{0pt plus 5cm}typedef union {\bf jvalue}  {\bf jvalue}}}\label{jni_8h_adf8ca729ef660d2fb827034597694ee0}
+\hypertarget{jni_8h_a26669d38099b76c494391cc887a030f2}{\index{jni.\-h@{jni.\-h}!jweak@{jweak}}
+\index{jweak@{jweak}!jni.h@{jni.\-h}}
+\subsubsection[{jweak}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf jobject} {\bf jweak}}}\label{jni_8h_a26669d38099b76c494391cc887a030f2}
+
+
+Definition at line 111 of file jni.\-h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{jni_8h_a71fd13caccd2833c566990351ef21edd}{\index{jni.\-h@{jni.\-h}!jobject\-Ref\-Type@{jobject\-Ref\-Type}}
+\index{jobject\-Ref\-Type@{jobject\-Ref\-Type}!jni.h@{jni.\-h}}
+\subsubsection[{jobject\-Ref\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf jobject\-Ref\-Type}}}\label{jni_8h_a71fd13caccd2833c566990351ef21edd}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{J\-N\-I\-Invalid\-Ref\-Type@{J\-N\-I\-Invalid\-Ref\-Type}!jni.\-h@{jni.\-h}}\index{jni.\-h@{jni.\-h}!J\-N\-I\-Invalid\-Ref\-Type@{J\-N\-I\-Invalid\-Ref\-Type}}\item[{\em 
+\hypertarget{jni_8h_a71fd13caccd2833c566990351ef21eddac71b1095d77f398d5af846337af33304}{J\-N\-I\-Invalid\-Ref\-Type}\label{jni_8h_a71fd13caccd2833c566990351ef21eddac71b1095d77f398d5af846337af33304}
+}]\index{J\-N\-I\-Local\-Ref\-Type@{J\-N\-I\-Local\-Ref\-Type}!jni.\-h@{jni.\-h}}\index{jni.\-h@{jni.\-h}!J\-N\-I\-Local\-Ref\-Type@{J\-N\-I\-Local\-Ref\-Type}}\item[{\em 
+\hypertarget{jni_8h_a71fd13caccd2833c566990351ef21eddaf85d5813bc13144eea43eec066b24235}{J\-N\-I\-Local\-Ref\-Type}\label{jni_8h_a71fd13caccd2833c566990351ef21eddaf85d5813bc13144eea43eec066b24235}
+}]\index{J\-N\-I\-Global\-Ref\-Type@{J\-N\-I\-Global\-Ref\-Type}!jni.\-h@{jni.\-h}}\index{jni.\-h@{jni.\-h}!J\-N\-I\-Global\-Ref\-Type@{J\-N\-I\-Global\-Ref\-Type}}\item[{\em 
+\hypertarget{jni_8h_a71fd13caccd2833c566990351ef21eddae2d2d3ebbde3a5032a3c3b31f06841e6}{J\-N\-I\-Global\-Ref\-Type}\label{jni_8h_a71fd13caccd2833c566990351ef21eddae2d2d3ebbde3a5032a3c3b31f06841e6}
+}]\index{J\-N\-I\-Weak\-Global\-Ref\-Type@{J\-N\-I\-Weak\-Global\-Ref\-Type}!jni.\-h@{jni.\-h}}\index{jni.\-h@{jni.\-h}!J\-N\-I\-Weak\-Global\-Ref\-Type@{J\-N\-I\-Weak\-Global\-Ref\-Type}}\item[{\em 
+\hypertarget{jni_8h_a71fd13caccd2833c566990351ef21edda7510ffcf2084e84df627e6e033cd030b}{J\-N\-I\-Weak\-Global\-Ref\-Type}\label{jni_8h_a71fd13caccd2833c566990351ef21edda7510ffcf2084e84df627e6e033cd030b}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 135 of file jni.\-h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{jni_8h_a31734e0be752a40edb602aae49862783}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-\_\-\-On\-Load@{J\-N\-I\-\_\-\-On\-Load}}
+\index{J\-N\-I\-\_\-\-On\-Load@{J\-N\-I\-\_\-\-On\-Load}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-\_\-\-On\-Load}]{\setlength{\rightskip}{0pt plus 5cm}{\bf J\-N\-I\-E\-X\-P\-O\-R\-T} {\bf jint} J\-N\-I\-\_\-\-On\-Load (
+\begin{DoxyParamCaption}
+\item[{{\bf Java\-V\-M} $\ast$}]{vm, }
+\item[{void $\ast$}]{reserved}
+\end{DoxyParamCaption}
+)}}\label{jni_8h_a31734e0be752a40edb602aae49862783}
+
+
+Definition at line 19 of file onload.\-cpp.
+
+\hypertarget{jni_8h_a877974254318363574f31d4c600f57db}{\index{jni.\-h@{jni.\-h}!J\-N\-I\-\_\-\-On\-Unload@{J\-N\-I\-\_\-\-On\-Unload}}
+\index{J\-N\-I\-\_\-\-On\-Unload@{J\-N\-I\-\_\-\-On\-Unload}!jni.h@{jni.\-h}}
+\subsubsection[{J\-N\-I\-\_\-\-On\-Unload}]{\setlength{\rightskip}{0pt plus 5cm}{\bf J\-N\-I\-E\-X\-P\-O\-R\-T} void J\-N\-I\-\_\-\-On\-Unload (
+\begin{DoxyParamCaption}
+\item[{{\bf Java\-V\-M} $\ast$}]{vm, }
+\item[{void $\ast$}]{reserved}
+\end{DoxyParamCaption}
+)}}\label{jni_8h_a877974254318363574f31d4c600f57db}

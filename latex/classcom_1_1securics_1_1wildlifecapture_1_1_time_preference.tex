@@ -1,0 +1,321 @@
+\section{com.\+securics.\+wildlifecapture.\+Time\+Preference Class Reference}
+\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference}\index{com.\+securics.\+wildlifecapture.\+Time\+Preference@{com.\+securics.\+wildlifecapture.\+Time\+Preference}}
+Inheritance diagram for com.\+securics.\+wildlifecapture.\+Time\+Preference\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Saved\+State}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Time\+Preference} (Context ctxt)
+\item 
+{\bf Time\+Preference} (Context ctxt, Attribute\+Set attrs)
+\item 
+{\bf Time\+Preference} (Context ctxt, Attribute\+Set attrs, int def\+Style)
+\item 
+Char\+Sequence {\bf get\+Summary} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+View {\bf on\+Create\+Dialog\+View} ()
+\item 
+void {\bf on\+Bind\+Dialog\+View} (View v)
+\item 
+void {\bf on\+Dialog\+Closed} (boolean positive\+Result)
+\item 
+Object {\bf on\+Get\+Default\+Value} (Typed\+Array a, int index)
+\item 
+void {\bf on\+Set\+Initial\+Value} (boolean restore\+Value, Object default\+Value)
+\item 
+Parcelable {\bf on\+Save\+Instance\+State} ()
+\item 
+void {\bf on\+Restore\+Instance\+State} (Parcelable state)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Calendar {\bf calendar}
+\item 
+Time\+Picker {\bf picker} = null
+\item 
+int {\bf the\+Hour}
+\item 
+String {\bf hour} = \char`\"{}the\+Hour\char`\"{} + get\+Key()
+\item 
+String {\bf minute} = \char`\"{}the\+Minute\char`\"{} + get\+Key()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file Time\+Preference.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!Time\+Preference@{Time\+Preference}}
+\index{Time\+Preference@{Time\+Preference}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{Time\+Preference}]{\setlength{\rightskip}{0pt plus 5cm}com.\+securics.\+wildlifecapture.\+Time\+Preference.\+Time\+Preference (
+\begin{DoxyParamCaption}
+\item[{Context}]{ctxt}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_a22083df72eb24e63407aa3a5c4bce994}
+sets context 
+\begin{DoxyParams}{Parameters}
+{\em ctxt} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file Time\+Preference.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!Time\+Preference@{Time\+Preference}}
+\index{Time\+Preference@{Time\+Preference}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{Time\+Preference}]{\setlength{\rightskip}{0pt plus 5cm}com.\+securics.\+wildlifecapture.\+Time\+Preference.\+Time\+Preference (
+\begin{DoxyParamCaption}
+\item[{Context}]{ctxt, }
+\item[{Attribute\+Set}]{attrs}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_ab407e898b108cb291b5f947ecc5ec86d}
+set context and attribute 
+\begin{DoxyParams}{Parameters}
+{\em ctxt} & \\
+\hline
+{\em attrs} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 43 of file Time\+Preference.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!Time\+Preference@{Time\+Preference}}
+\index{Time\+Preference@{Time\+Preference}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{Time\+Preference}]{\setlength{\rightskip}{0pt plus 5cm}com.\+securics.\+wildlifecapture.\+Time\+Preference.\+Time\+Preference (
+\begin{DoxyParamCaption}
+\item[{Context}]{ctxt, }
+\item[{Attribute\+Set}]{attrs, }
+\item[{int}]{def\+Style}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_a45cc1252e5af89ca6ee9c0b90179c968}
+set context, attrs, and defstype. Set positive and negative button and set calendar as a new instance of Gregorian\+Calendar 
+\begin{DoxyParams}{Parameters}
+{\em ctxt} & \\
+\hline
+{\em attrs} & \\
+\hline
+{\em def\+Style} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 54 of file Time\+Preference.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Time\+Preference.\+calendar.
+
+
+
+\subsection{Member Function Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!get\+Summary@{get\+Summary}}
+\index{get\+Summary@{get\+Summary}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{get\+Summary}]{\setlength{\rightskip}{0pt plus 5cm}Char\+Sequence com.\+securics.\+wildlifecapture.\+Time\+Preference.\+get\+Summary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_ae15d6443ba9c8cf488f26775ed1a331e}
+gets value for the\+Hour and the\+Minute, set calendar to the values and return date format of calendar 
+
+Definition at line 226 of file Time\+Preference.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Time\+Preference.\+calendar, com.\+securics.\+wildlifecapture.\+Time\+Preference.\+hour, com.\+securics.\+wildlifecapture.\+Time\+Preference.\+minute, and com.\+securics.\+wildlifecapture.\+Time\+Preference.\+the\+Hour.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Dialog\+Closed(), and com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Set\+Initial\+Value().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!on\+Bind\+Dialog\+View@{on\+Bind\+Dialog\+View}}
+\index{on\+Bind\+Dialog\+View@{on\+Bind\+Dialog\+View}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{on\+Bind\+Dialog\+View}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Bind\+Dialog\+View (
+\begin{DoxyParamCaption}
+\item[{View}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_affd66952552dd629860448a108f08d97}
+set value for picker 
+
+Definition at line 76 of file Time\+Preference.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Time\+Preference.\+hour, com.\+securics.\+wildlifecapture.\+Time\+Preference.\+minute, and com.\+securics.\+wildlifecapture.\+Time\+Preference.\+the\+Hour.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!on\+Create\+Dialog\+View@{on\+Create\+Dialog\+View}}
+\index{on\+Create\+Dialog\+View@{on\+Create\+Dialog\+View}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{on\+Create\+Dialog\+View}]{\setlength{\rightskip}{0pt plus 5cm}View com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Create\+Dialog\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_a9fd289d5af6246e9bc721179a5602d61}
+sets picker to the preference for Time\+Picker and return it 
+
+Definition at line 66 of file Time\+Preference.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Time\+Preference.\+picker.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!on\+Dialog\+Closed@{on\+Dialog\+Closed}}
+\index{on\+Dialog\+Closed@{on\+Dialog\+Closed}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{on\+Dialog\+Closed}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Dialog\+Closed (
+\begin{DoxyParamCaption}
+\item[{boolean}]{positive\+Result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_ad202bf4e33436ab7255bb1d45e35e2b2}
+get value for the\+Hour and the\+Minute and save it to the editor 
+
+Definition at line 99 of file Time\+Preference.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Time\+Preference.\+calendar, com.\+securics.\+wildlifecapture.\+Time\+Preference.\+get\+Summary(), com.\+securics.\+wildlifecapture.\+Time\+Preference.\+hour, com.\+securics.\+wildlifecapture.\+Time\+Preference.\+minute, and com.\+securics.\+wildlifecapture.\+Time\+Preference.\+the\+Hour.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!on\+Get\+Default\+Value@{on\+Get\+Default\+Value}}
+\index{on\+Get\+Default\+Value@{on\+Get\+Default\+Value}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{on\+Get\+Default\+Value}]{\setlength{\rightskip}{0pt plus 5cm}Object com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Get\+Default\+Value (
+\begin{DoxyParamCaption}
+\item[{Typed\+Array}]{a, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_ac857d848cb1e3a6489cd0b6813dc5fac}
+returns the value of Typed\+Array a in the index if there is no value return 4 
+
+Definition at line 176 of file Time\+Preference.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!on\+Restore\+Instance\+State@{on\+Restore\+Instance\+State}}
+\index{on\+Restore\+Instance\+State@{on\+Restore\+Instance\+State}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{on\+Restore\+Instance\+State}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Restore\+Instance\+State (
+\begin{DoxyParamCaption}
+\item[{Parcelable}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_af9ea0a6ae78fe4e9bfa5bcbe4234e002}
+Set super\+State from the parameter to the subclass Check whether we saved the state in on\+Save\+Instance\+State
+
+Didn't save the state, so call superclass
+
+Cast state to custom Base\+Saved\+State and pass to superclass
+
+Set this Preference's widget to reflect the restored state 
+
+Definition at line 284 of file Time\+Preference.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Time\+Preference.\+the\+Hour.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!on\+Save\+Instance\+State@{on\+Save\+Instance\+State}}
+\index{on\+Save\+Instance\+State@{on\+Save\+Instance\+State}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{on\+Save\+Instance\+State}]{\setlength{\rightskip}{0pt plus 5cm}Parcelable com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Save\+Instance\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_a6eaf9549d293854c602a6df5790130dd}
+Create instance of custom Base\+Saved\+State
+
+Set the state's value with the class member that holds current 
+
+Definition at line 252 of file Time\+Preference.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Time\+Preference.\+hour, com.\+securics.\+wildlifecapture.\+Time\+Preference.\+minute, and com.\+securics.\+wildlifecapture.\+Time\+Preference.\+the\+Hour.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!on\+Set\+Initial\+Value@{on\+Set\+Initial\+Value}}
+\index{on\+Set\+Initial\+Value@{on\+Set\+Initial\+Value}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{on\+Set\+Initial\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Set\+Initial\+Value (
+\begin{DoxyParamCaption}
+\item[{boolean}]{restore\+Value, }
+\item[{Object}]{default\+Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_a2fbcf848fb896d4c554da5c22eff91ab}
+Sets calendar to proper values and save those values to editor 
+
+Definition at line 185 of file Time\+Preference.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Time\+Preference.\+get\+Summary(), com.\+securics.\+wildlifecapture.\+Time\+Preference.\+hour, com.\+securics.\+wildlifecapture.\+Time\+Preference.\+minute, and com.\+securics.\+wildlifecapture.\+Time\+Preference.\+the\+Hour.
+
+
+
+\subsection{Member Data Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!calendar@{calendar}}
+\index{calendar@{calendar}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{calendar}]{\setlength{\rightskip}{0pt plus 5cm}Calendar com.\+securics.\+wildlifecapture.\+Time\+Preference.\+calendar\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_ae5cf2fa4244972e3b5579973eea52c1d}
+
+
+Definition at line 24 of file Time\+Preference.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Time\+Preference.\+get\+Summary(), com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Dialog\+Closed(), and com.\+securics.\+wildlifecapture.\+Time\+Preference.\+Time\+Preference().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!hour@{hour}}
+\index{hour@{hour}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{hour}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+securics.\+wildlifecapture.\+Time\+Preference.\+hour = \char`\"{}the\+Hour\char`\"{} + get\+Key()\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_a27ca8afcc9788451f6d945664dcb76f4}
+
+
+Definition at line 27 of file Time\+Preference.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Time\+Preference.\+get\+Summary(), com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Bind\+Dialog\+View(), com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Dialog\+Closed(), com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Save\+Instance\+State(), and com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Set\+Initial\+Value().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!minute@{minute}}
+\index{minute@{minute}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{minute}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+securics.\+wildlifecapture.\+Time\+Preference.\+minute = \char`\"{}the\+Minute\char`\"{} + get\+Key()\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_a1b182be6b16555cda598ce517db4cf98}
+
+
+Definition at line 28 of file Time\+Preference.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Time\+Preference.\+get\+Summary(), com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Bind\+Dialog\+View(), com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Dialog\+Closed(), com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Save\+Instance\+State(), and com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Set\+Initial\+Value().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!picker@{picker}}
+\index{picker@{picker}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{picker}]{\setlength{\rightskip}{0pt plus 5cm}Time\+Picker com.\+securics.\+wildlifecapture.\+Time\+Preference.\+picker = null\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_ae0b342584072cfbd27dfae91a4895047}
+
+
+Definition at line 25 of file Time\+Preference.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Create\+Dialog\+View().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}!the\+Hour@{the\+Hour}}
+\index{the\+Hour@{the\+Hour}!com\+::securics\+::wildlifecapture\+::\+Time\+Preference@{com\+::securics\+::wildlifecapture\+::\+Time\+Preference}}
+\subsubsection[{the\+Hour}]{\setlength{\rightskip}{0pt plus 5cm}int com.\+securics.\+wildlifecapture.\+Time\+Preference.\+the\+Hour\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_time_preference_aeead0024cc7795b4b0983a9bf2ed45d6}
+
+
+Definition at line 26 of file Time\+Preference.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Time\+Preference.\+get\+Summary(), com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Bind\+Dialog\+View(), com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Dialog\+Closed(), com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Restore\+Instance\+State(), com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Save\+Instance\+State(), and com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Set\+Initial\+Value().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/com/securics/wildlifecapture/{\bf Time\+Preference.\+java}\end{DoxyCompactItemize}

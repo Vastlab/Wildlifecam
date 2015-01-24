@@ -1,0 +1,486 @@
+\hypertarget{svm-train_8cpp}{\section{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M/svm-\/train.cpp File Reference}
+\label{svm-train_8cpp}\index{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M/svm-\/train.\-cpp@{/\-Users/rcjohnson/\-Documents/\-Securics/squirrel\-\_\-pipeline/jni/onevset\-S\-V\-M/svm-\/train.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}../arch\-\_\-config.\-hpp\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include $<$errno.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}svm.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structscore__data}{score\-\_\-data}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{svm-train_8cpp_a9191047fd644a5f519152ecb4aa60357}{Malloc}(type, n)~(type $\ast$)malloc((n)$\ast$sizeof(type))
+\item 
+\#define \hyperlink{svm-train_8cpp_a3b4c01e0da1a3811cb4a826e9195bded}{O\-P\-T\-\_\-\-P\-R\-E\-C\-I\-S\-I\-O\-N}~1
+\item 
+\#define \hyperlink{svm-train_8cpp_a8731e6e890928e6058488d8d11ff53de}{O\-P\-T\-\_\-\-R\-E\-C\-A\-L\-L}~2
+\item 
+\#define \hyperlink{svm-train_8cpp_a565d2328dc3467a90c2181480d9e9cc7}{O\-P\-T\-\_\-\-F\-M\-E\-A\-S\-U\-R\-E}~3
+\item 
+\#define \hyperlink{svm-train_8cpp_a9e0dc2a94ebfe16c57b1b54d3e011d55}{O\-P\-T\-\_\-\-H\-I\-N\-G\-E}~4
+\item 
+\#define \hyperlink{svm-train_8cpp_a534c2d1c329720ab36237c4d297a2b20}{O\-P\-T\-\_\-\-B\-A\-L\-A\-N\-C\-E\-D\-R\-I\-S\-K}~5
+\item 
+\#define \hyperlink{svm-train_8cpp_a74e75242132eaabbc1c512488a135926}{M\-I\-N}(\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, y)~(\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x} $<$ y ? \hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x} \-: y)
+\item 
+\#define \hyperlink{svm-train_8cpp_aacc3ee1a7f283f8ef65cea31f4436a95}{M\-A\-X}(\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x}, y)~(\hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x} $>$ y ? \hyperlink{_2svm-predict_8cpp_a9a5b72a4065074cac5da07efb80a1e79}{x} \-: y)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{svm-train_8cpp_a65c4fd49dffe24dd51ad9505c5c1ff4a}{print\-\_\-null} (const char $\ast$s)
+\item 
+void \hyperlink{svm-train_8cpp_a6f420eac4f979422d475754e1ee41a0f}{analyze} (struct \hyperlink{structsvm__problem}{svm\-\_\-problem}, struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$)
+\item 
+void \hyperlink{svm-train_8cpp_a8bbbfc2cd5ea26b69d3b880c6f509e93}{exit\-\_\-with\-\_\-help} ()
+\item 
+void \hyperlink{svm-train_8cpp_ada0be431a4ed2ba4b1a09d4449f2c75b}{exit\-\_\-input\-\_\-error} (int line\-\_\-num)
+\item 
+void \hyperlink{svm-train_8cpp_a15f26fdd66eabc2d70d032433a9c8a50}{parse\-\_\-command\-\_\-line} (int argc, char $\ast$$\ast$argv, char $\ast$input\-\_\-file\-\_\-name, char $\ast$model\-\_\-file\-\_\-name)
+\item 
+void \hyperlink{svm-train_8cpp_a867369fb2d5148f5da088f4279a2ae8b}{read\-\_\-problem} (const char $\ast$filename)
+\item 
+void \hyperlink{svm-train_8cpp_a997126c915d77402d81a828226383928}{do\-\_\-cross\-\_\-validation} ()
+\item 
+static char $\ast$ \hyperlink{svm-train_8cpp_aa324656b7bb4eb3ee42699d33c21ef7a}{readline} (F\-I\-L\-E $\ast$input)
+\item 
+int \hyperlink{svm-train_8cpp_ae76c8c1fe85a0e20a93cf587b71f9ea9}{svmtrain} (int argc, char $\ast$$\ast$argv)
+\item 
+int \hyperlink{svm-train_8cpp_aa4983a5b9ebd114f13a80eb2f68f2bb7}{compare\-\_\-thresholds} (const void $\ast$v1, const void $\ast$v2)
+\item 
+int \hyperlink{svm-train_8cpp_ab7647dadbd83ef2020afa080091c43bd}{compare\-\_\-scores} (const void $\ast$v1, const void $\ast$v2)
+\item 
+double \hyperlink{svm-train_8cpp_af07f0fa4ba41934e435cb8f3b955ea8d}{compute\-\_\-risk} (double far, double near, double pos\-\_\-width, double fmeasure)
+\item 
+double \hyperlink{svm-train_8cpp_a9fccbe7b58f4809ef8085cac3d8ac32c}{error\-\_\-for\-\_\-optimization} (double far, double near, double pos\-\_\-width, int true\-\_\-pos, int true\-\_\-neg, int false\-\_\-pos, int false\-\_\-neg)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsvm__parameter}{svm\-\_\-parameter} \hyperlink{svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{param}
+\item 
+struct \hyperlink{structsvm__problem}{svm\-\_\-problem} \hyperlink{svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{prob}
+\item 
+struct \hyperlink{structsvm__model}{svm\-\_\-model} $\ast$ \hyperlink{svm-train_8cpp_a0b730cfd99e9c8a2ece39a165ebcc5ef}{modelt}
+\item 
+struct \hyperlink{structsvm__node}{svm\-\_\-node} $\ast$ \hyperlink{svm-train_8cpp_aee6e5726660b16e12499d9bfa6eef01f}{x\-\_\-space}
+\item 
+bool \hyperlink{svm-train_8cpp_a17843ee1d8102ef588a3f997e827bc70}{open\-\_\-set} = false
+\item 
+double \hyperlink{svm-train_8cpp_a2bcd8955244b3b5ed1918acc0ce4014e}{oset\-\_\-min} = 99999
+\item 
+double \hyperlink{svm-train_8cpp_a6a83be17519c65392007b1449d5246e9}{oset\-\_\-max} = -\/99999
+\item 
+double \hyperlink{svm-train_8cpp_ab569b65ce2e86831530c897a3ad5c901}{near\-\_\-preasure} = 0
+\item 
+double \hyperlink{svm-train_8cpp_a57ce01656059264c677404c310f3a04e}{far\-\_\-preasure} = 0
+\item 
+int \hyperlink{svm-train_8cpp_aee8f27d5a82f967da296688aee11c230}{preasure\-\_\-cnt} \mbox{[}4\mbox{]} = \{ 0 \}
+\item 
+int \hyperlink{svm-train_8cpp_a3ed295b75b08a20ed2bbed4a67f8d18a}{cross\-\_\-validation}
+\item 
+int \hyperlink{svm-train_8cpp_a8e8ea59d1060e411ced9b25867c66651}{nr\-\_\-fold}
+\item 
+int \hyperlink{svm-train_8cpp_ad88594354ad0cd1b5f3cebf37f8381cf}{nr\-\_\-classes} = 0
+\item 
+F\-I\-L\-E $\ast$ \hyperlink{svm-train_8cpp_a32ca8324fdbaa5886494c3794aabb98e}{vfile} = N\-U\-L\-L
+\item 
+int \hyperlink{svm-train_8cpp_aa33cf9fcdc419d39c5d05fa458bf089a}{optimize} = \hyperlink{_2svm-train_8cpp_a534c2d1c329720ab36237c4d297a2b20}{O\-P\-T\-\_\-\-B\-A\-L\-A\-N\-C\-E\-D\-R\-I\-S\-K}
+\item 
+double \hyperlink{svm-train_8cpp_aea4397c2cc729e6e21e3eab9b9a2351e}{opt\-\_\-param} = 1.\-000
+\item 
+double $\ast$ \hyperlink{svm-train_8cpp_a537df30cd5b5b576ee32aeffd22affe2}{lbl} = 0
+\item 
+double $\ast$ \hyperlink{svm-train_8cpp_a8d832079d5b980f5955dcd7afc689ba9}{temp\-\_\-labels} = 0
+\item 
+static char $\ast$ \hyperlink{svm-train_8cpp_a8adb30f4f6669f927fd9232f686c637b}{line} = N\-U\-L\-L
+\item 
+static int \hyperlink{svm-train_8cpp_acad24c15bee67d2026f56bc94a1188c7}{max\-\_\-line\-\_\-len}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{svm-train_8cpp_a9191047fd644a5f519152ecb4aa60357}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!Malloc@{Malloc}}
+\index{Malloc@{Malloc}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{Malloc}]{\setlength{\rightskip}{0pt plus 5cm}\#define Malloc(
+\begin{DoxyParamCaption}
+\item[{}]{type, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~(type $\ast$)malloc((n)$\ast$sizeof(type))}}\label{svm-train_8cpp_a9191047fd644a5f519152ecb4aa60357}
+
+
+Definition at line 15 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_aacc3ee1a7f283f8ef65cea31f4436a95}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!M\-A\-X@{M\-A\-X}}
+\index{M\-A\-X@{M\-A\-X}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{M\-A\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf x}, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)~({\bf x} $>$ y ? {\bf x} \-: y)}}\label{svm-train_8cpp_aacc3ee1a7f283f8ef65cea31f4436a95}
+
+
+Definition at line 702 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a74e75242132eaabbc1c512488a135926}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!M\-I\-N@{M\-I\-N}}
+\index{M\-I\-N@{M\-I\-N}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{M\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-I\-N(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf x}, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)~({\bf x} $<$ y ? {\bf x} \-: y)}}\label{svm-train_8cpp_a74e75242132eaabbc1c512488a135926}
+
+
+Definition at line 701 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a534c2d1c329720ab36237c4d297a2b20}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!O\-P\-T\-\_\-\-B\-A\-L\-A\-N\-C\-E\-D\-R\-I\-S\-K@{O\-P\-T\-\_\-\-B\-A\-L\-A\-N\-C\-E\-D\-R\-I\-S\-K}}
+\index{O\-P\-T\-\_\-\-B\-A\-L\-A\-N\-C\-E\-D\-R\-I\-S\-K@{O\-P\-T\-\_\-\-B\-A\-L\-A\-N\-C\-E\-D\-R\-I\-S\-K}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{O\-P\-T\-\_\-\-B\-A\-L\-A\-N\-C\-E\-D\-R\-I\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-P\-T\-\_\-\-B\-A\-L\-A\-N\-C\-E\-D\-R\-I\-S\-K~5}}\label{svm-train_8cpp_a534c2d1c329720ab36237c4d297a2b20}
+
+
+Definition at line 123 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a565d2328dc3467a90c2181480d9e9cc7}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!O\-P\-T\-\_\-\-F\-M\-E\-A\-S\-U\-R\-E@{O\-P\-T\-\_\-\-F\-M\-E\-A\-S\-U\-R\-E}}
+\index{O\-P\-T\-\_\-\-F\-M\-E\-A\-S\-U\-R\-E@{O\-P\-T\-\_\-\-F\-M\-E\-A\-S\-U\-R\-E}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{O\-P\-T\-\_\-\-F\-M\-E\-A\-S\-U\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-P\-T\-\_\-\-F\-M\-E\-A\-S\-U\-R\-E~3}}\label{svm-train_8cpp_a565d2328dc3467a90c2181480d9e9cc7}
+
+
+Definition at line 121 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a9e0dc2a94ebfe16c57b1b54d3e011d55}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!O\-P\-T\-\_\-\-H\-I\-N\-G\-E@{O\-P\-T\-\_\-\-H\-I\-N\-G\-E}}
+\index{O\-P\-T\-\_\-\-H\-I\-N\-G\-E@{O\-P\-T\-\_\-\-H\-I\-N\-G\-E}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{O\-P\-T\-\_\-\-H\-I\-N\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-P\-T\-\_\-\-H\-I\-N\-G\-E~4}}\label{svm-train_8cpp_a9e0dc2a94ebfe16c57b1b54d3e011d55}
+
+
+Definition at line 122 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a3b4c01e0da1a3811cb4a826e9195bded}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!O\-P\-T\-\_\-\-P\-R\-E\-C\-I\-S\-I\-O\-N@{O\-P\-T\-\_\-\-P\-R\-E\-C\-I\-S\-I\-O\-N}}
+\index{O\-P\-T\-\_\-\-P\-R\-E\-C\-I\-S\-I\-O\-N@{O\-P\-T\-\_\-\-P\-R\-E\-C\-I\-S\-I\-O\-N}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{O\-P\-T\-\_\-\-P\-R\-E\-C\-I\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-P\-T\-\_\-\-P\-R\-E\-C\-I\-S\-I\-O\-N~1}}\label{svm-train_8cpp_a3b4c01e0da1a3811cb4a826e9195bded}
+
+
+Definition at line 119 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a8731e6e890928e6058488d8d11ff53de}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!O\-P\-T\-\_\-\-R\-E\-C\-A\-L\-L@{O\-P\-T\-\_\-\-R\-E\-C\-A\-L\-L}}
+\index{O\-P\-T\-\_\-\-R\-E\-C\-A\-L\-L@{O\-P\-T\-\_\-\-R\-E\-C\-A\-L\-L}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{O\-P\-T\-\_\-\-R\-E\-C\-A\-L\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-P\-T\-\_\-\-R\-E\-C\-A\-L\-L~2}}\label{svm-train_8cpp_a8731e6e890928e6058488d8d11ff53de}
+
+
+Definition at line 120 of file svm-\/train.\-cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{svm-train_8cpp_a6f420eac4f979422d475754e1ee41a0f}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!analyze@{analyze}}
+\index{analyze@{analyze}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{analyze}]{\setlength{\rightskip}{0pt plus 5cm}void analyze (
+\begin{DoxyParamCaption}
+\item[{struct {\bf svm\-\_\-problem}}]{prob, }
+\item[{struct {\bf svm\-\_\-model} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}}\label{svm-train_8cpp_a6f420eac4f979422d475754e1ee41a0f}
+
+
+Definition at line 800 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_ab7647dadbd83ef2020afa080091c43bd}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!compare\-\_\-scores@{compare\-\_\-scores}}
+\index{compare\-\_\-scores@{compare\-\_\-scores}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{compare\-\_\-scores}]{\setlength{\rightskip}{0pt plus 5cm}int compare\-\_\-scores (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{v1, }
+\item[{const void $\ast$}]{v2}
+\end{DoxyParamCaption}
+)}}\label{svm-train_8cpp_ab7647dadbd83ef2020afa080091c43bd}
+
+
+Definition at line 718 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_aa4983a5b9ebd114f13a80eb2f68f2bb7}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!compare\-\_\-thresholds@{compare\-\_\-thresholds}}
+\index{compare\-\_\-thresholds@{compare\-\_\-thresholds}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{compare\-\_\-thresholds}]{\setlength{\rightskip}{0pt plus 5cm}int compare\-\_\-thresholds (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{v1, }
+\item[{const void $\ast$}]{v2}
+\end{DoxyParamCaption}
+)}}\label{svm-train_8cpp_aa4983a5b9ebd114f13a80eb2f68f2bb7}
+
+
+Definition at line 709 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_af07f0fa4ba41934e435cb8f3b955ea8d}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!compute\-\_\-risk@{compute\-\_\-risk}}
+\index{compute\-\_\-risk@{compute\-\_\-risk}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{compute\-\_\-risk}]{\setlength{\rightskip}{0pt plus 5cm}double compute\-\_\-risk (
+\begin{DoxyParamCaption}
+\item[{double}]{far, }
+\item[{double}]{near, }
+\item[{double}]{pos\-\_\-width, }
+\item[{double}]{fmeasure}
+\end{DoxyParamCaption}
+)}}\label{svm-train_8cpp_af07f0fa4ba41934e435cb8f3b955ea8d}
+
+
+Definition at line 728 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a997126c915d77402d81a828226383928}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!do\-\_\-cross\-\_\-validation@{do\-\_\-cross\-\_\-validation}}
+\index{do\-\_\-cross\-\_\-validation@{do\-\_\-cross\-\_\-validation}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{do\-\_\-cross\-\_\-validation}]{\setlength{\rightskip}{0pt plus 5cm}void do\-\_\-cross\-\_\-validation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{svm-train_8cpp_a997126c915d77402d81a828226383928}
+
+
+Definition at line 299 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a9fccbe7b58f4809ef8085cac3d8ac32c}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!error\-\_\-for\-\_\-optimization@{error\-\_\-for\-\_\-optimization}}
+\index{error\-\_\-for\-\_\-optimization@{error\-\_\-for\-\_\-optimization}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{error\-\_\-for\-\_\-optimization}]{\setlength{\rightskip}{0pt plus 5cm}double error\-\_\-for\-\_\-optimization (
+\begin{DoxyParamCaption}
+\item[{double}]{far, }
+\item[{double}]{near, }
+\item[{double}]{pos\-\_\-width, }
+\item[{int}]{true\-\_\-pos, }
+\item[{int}]{true\-\_\-neg, }
+\item[{int}]{false\-\_\-pos, }
+\item[{int}]{false\-\_\-neg}
+\end{DoxyParamCaption}
+)}}\label{svm-train_8cpp_a9fccbe7b58f4809ef8085cac3d8ac32c}
+
+
+Definition at line 774 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_ada0be431a4ed2ba4b1a09d4449f2c75b}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!exit\-\_\-input\-\_\-error@{exit\-\_\-input\-\_\-error}}
+\index{exit\-\_\-input\-\_\-error@{exit\-\_\-input\-\_\-error}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{exit\-\_\-input\-\_\-error}]{\setlength{\rightskip}{0pt plus 5cm}void exit\-\_\-input\-\_\-error (
+\begin{DoxyParamCaption}
+\item[{int}]{line\-\_\-num}
+\end{DoxyParamCaption}
+)}}\label{svm-train_8cpp_ada0be431a4ed2ba4b1a09d4449f2c75b}
+
+
+Definition at line 92 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a8bbbfc2cd5ea26b69d3b880c6f509e93}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!exit\-\_\-with\-\_\-help@{exit\-\_\-with\-\_\-help}}
+\index{exit\-\_\-with\-\_\-help@{exit\-\_\-with\-\_\-help}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{exit\-\_\-with\-\_\-help}]{\setlength{\rightskip}{0pt plus 5cm}void exit\-\_\-with\-\_\-help (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{svm-train_8cpp_a8bbbfc2cd5ea26b69d3b880c6f509e93}
+
+
+Definition at line 22 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a15f26fdd66eabc2d70d032433a9c8a50}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!parse\-\_\-command\-\_\-line@{parse\-\_\-command\-\_\-line}}
+\index{parse\-\_\-command\-\_\-line@{parse\-\_\-command\-\_\-line}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{parse\-\_\-command\-\_\-line}]{\setlength{\rightskip}{0pt plus 5cm}void parse\-\_\-command\-\_\-line (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv, }
+\item[{char $\ast$}]{input\-\_\-file\-\_\-name, }
+\item[{char $\ast$}]{model\-\_\-file\-\_\-name}
+\end{DoxyParamCaption}
+)}}\label{svm-train_8cpp_a15f26fdd66eabc2d70d032433a9c8a50}
+
+
+Definition at line 352 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a65c4fd49dffe24dd51ad9505c5c1ff4a}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!print\-\_\-null@{print\-\_\-null}}
+\index{print\-\_\-null@{print\-\_\-null}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{print\-\_\-null}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-null (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{svm-train_8cpp_a65c4fd49dffe24dd51ad9505c5c1ff4a}
+
+
+Definition at line 17 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a867369fb2d5148f5da088f4279a2ae8b}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!read\-\_\-problem@{read\-\_\-problem}}
+\index{read\-\_\-problem@{read\-\_\-problem}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{read\-\_\-problem}]{\setlength{\rightskip}{0pt plus 5cm}void read\-\_\-problem (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}\label{svm-train_8cpp_a867369fb2d5148f5da088f4279a2ae8b}
+
+
+Definition at line 541 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_aa324656b7bb4eb3ee42699d33c21ef7a}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!readline@{readline}}
+\index{readline@{readline}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{readline}]{\setlength{\rightskip}{0pt plus 5cm}static char$\ast$ readline (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{svm-train_8cpp_aa324656b7bb4eb3ee42699d33c21ef7a}
+
+
+Definition at line 134 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_ae76c8c1fe85a0e20a93cf587b71f9ea9}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!svmtrain@{svmtrain}}
+\index{svmtrain@{svmtrain}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{svmtrain}]{\setlength{\rightskip}{0pt plus 5cm}int svmtrain (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}\label{svm-train_8cpp_ae76c8c1fe85a0e20a93cf587b71f9ea9}
+
+
+Definition at line 150 of file svm-\/train.\-cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{svm-train_8cpp_a3ed295b75b08a20ed2bbed4a67f8d18a}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!cross\-\_\-validation@{cross\-\_\-validation}}
+\index{cross\-\_\-validation@{cross\-\_\-validation}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{cross\-\_\-validation}]{\setlength{\rightskip}{0pt plus 5cm}int cross\-\_\-validation}}\label{svm-train_8cpp_a3ed295b75b08a20ed2bbed4a67f8d18a}
+
+
+Definition at line 114 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a57ce01656059264c677404c310f3a04e}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!far\-\_\-preasure@{far\-\_\-preasure}}
+\index{far\-\_\-preasure@{far\-\_\-preasure}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{far\-\_\-preasure}]{\setlength{\rightskip}{0pt plus 5cm}double far\-\_\-preasure = 0}}\label{svm-train_8cpp_a57ce01656059264c677404c310f3a04e}
+
+
+Definition at line 112 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a537df30cd5b5b576ee32aeffd22affe2}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!lbl@{lbl}}
+\index{lbl@{lbl}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{lbl}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ lbl = 0}}\label{svm-train_8cpp_a537df30cd5b5b576ee32aeffd22affe2}
+
+
+Definition at line 128 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a8adb30f4f6669f927fd9232f686c637b}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!line@{line}}
+\index{line@{line}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ line = N\-U\-L\-L\hspace{0.3cm}{\ttfamily [static]}}}\label{svm-train_8cpp_a8adb30f4f6669f927fd9232f686c637b}
+
+
+Definition at line 131 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_acad24c15bee67d2026f56bc94a1188c7}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!max\-\_\-line\-\_\-len@{max\-\_\-line\-\_\-len}}
+\index{max\-\_\-line\-\_\-len@{max\-\_\-line\-\_\-len}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{max\-\_\-line\-\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}int max\-\_\-line\-\_\-len\hspace{0.3cm}{\ttfamily [static]}}}\label{svm-train_8cpp_acad24c15bee67d2026f56bc94a1188c7}
+
+
+Definition at line 132 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a0b730cfd99e9c8a2ece39a165ebcc5ef}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!modelt@{modelt}}
+\index{modelt@{modelt}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{modelt}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf svm\-\_\-model}$\ast$ modelt}}\label{svm-train_8cpp_a0b730cfd99e9c8a2ece39a165ebcc5ef}
+
+
+Definition at line 108 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_ab569b65ce2e86831530c897a3ad5c901}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!near\-\_\-preasure@{near\-\_\-preasure}}
+\index{near\-\_\-preasure@{near\-\_\-preasure}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{near\-\_\-preasure}]{\setlength{\rightskip}{0pt plus 5cm}double near\-\_\-preasure = 0}}\label{svm-train_8cpp_ab569b65ce2e86831530c897a3ad5c901}
+
+
+Definition at line 112 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_ad88594354ad0cd1b5f3cebf37f8381cf}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!nr\-\_\-classes@{nr\-\_\-classes}}
+\index{nr\-\_\-classes@{nr\-\_\-classes}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{nr\-\_\-classes}]{\setlength{\rightskip}{0pt plus 5cm}int nr\-\_\-classes = 0}}\label{svm-train_8cpp_ad88594354ad0cd1b5f3cebf37f8381cf}
+
+
+Definition at line 115 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a8e8ea59d1060e411ced9b25867c66651}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!nr\-\_\-fold@{nr\-\_\-fold}}
+\index{nr\-\_\-fold@{nr\-\_\-fold}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{nr\-\_\-fold}]{\setlength{\rightskip}{0pt plus 5cm}int nr\-\_\-fold}}\label{svm-train_8cpp_a8e8ea59d1060e411ced9b25867c66651}
+
+
+Definition at line 115 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a17843ee1d8102ef588a3f997e827bc70}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!open\-\_\-set@{open\-\_\-set}}
+\index{open\-\_\-set@{open\-\_\-set}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{open\-\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}bool open\-\_\-set = false}}\label{svm-train_8cpp_a17843ee1d8102ef588a3f997e827bc70}
+
+
+Definition at line 110 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_aea4397c2cc729e6e21e3eab9b9a2351e}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!opt\-\_\-param@{opt\-\_\-param}}
+\index{opt\-\_\-param@{opt\-\_\-param}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{opt\-\_\-param}]{\setlength{\rightskip}{0pt plus 5cm}double opt\-\_\-param = 1.\-000}}\label{svm-train_8cpp_aea4397c2cc729e6e21e3eab9b9a2351e}
+
+
+Definition at line 126 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_aa33cf9fcdc419d39c5d05fa458bf089a}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!optimize@{optimize}}
+\index{optimize@{optimize}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{optimize}]{\setlength{\rightskip}{0pt plus 5cm}int optimize = {\bf O\-P\-T\-\_\-\-B\-A\-L\-A\-N\-C\-E\-D\-R\-I\-S\-K}}}\label{svm-train_8cpp_aa33cf9fcdc419d39c5d05fa458bf089a}
+
+
+Definition at line 125 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a6a83be17519c65392007b1449d5246e9}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!oset\-\_\-max@{oset\-\_\-max}}
+\index{oset\-\_\-max@{oset\-\_\-max}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{oset\-\_\-max}]{\setlength{\rightskip}{0pt plus 5cm}double oset\-\_\-max = -\/99999}}\label{svm-train_8cpp_a6a83be17519c65392007b1449d5246e9}
+
+
+Definition at line 111 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a2bcd8955244b3b5ed1918acc0ce4014e}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!oset\-\_\-min@{oset\-\_\-min}}
+\index{oset\-\_\-min@{oset\-\_\-min}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{oset\-\_\-min}]{\setlength{\rightskip}{0pt plus 5cm}double oset\-\_\-min = 99999}}\label{svm-train_8cpp_a2bcd8955244b3b5ed1918acc0ce4014e}
+
+
+Definition at line 111 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!param@{param}}
+\index{param@{param}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{param}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf svm\-\_\-parameter} param}}\label{svm-train_8cpp_abef2e39cc4fa6cc6870dddf9afa2cfad}
+
+
+Definition at line 106 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_aee8f27d5a82f967da296688aee11c230}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!preasure\-\_\-cnt@{preasure\-\_\-cnt}}
+\index{preasure\-\_\-cnt@{preasure\-\_\-cnt}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{preasure\-\_\-cnt}]{\setlength{\rightskip}{0pt plus 5cm}int preasure\-\_\-cnt\mbox{[}4\mbox{]} = \{ 0 \}}}\label{svm-train_8cpp_aee8f27d5a82f967da296688aee11c230}
+
+
+Definition at line 113 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!prob@{prob}}
+\index{prob@{prob}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{prob}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf svm\-\_\-problem} prob}}\label{svm-train_8cpp_a3d3cd08abb1a582bcbb3095eb03ed0d6}
+
+
+Definition at line 107 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a8d832079d5b980f5955dcd7afc689ba9}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!temp\-\_\-labels@{temp\-\_\-labels}}
+\index{temp\-\_\-labels@{temp\-\_\-labels}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{temp\-\_\-labels}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ temp\-\_\-labels = 0}}\label{svm-train_8cpp_a8d832079d5b980f5955dcd7afc689ba9}
+
+
+Definition at line 129 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_a32ca8324fdbaa5886494c3794aabb98e}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!vfile@{vfile}}
+\index{vfile@{vfile}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{vfile}]{\setlength{\rightskip}{0pt plus 5cm}F\-I\-L\-E$\ast$ vfile = N\-U\-L\-L}}\label{svm-train_8cpp_a32ca8324fdbaa5886494c3794aabb98e}
+
+
+Definition at line 116 of file svm-\/train.\-cpp.
+
+\hypertarget{svm-train_8cpp_aee6e5726660b16e12499d9bfa6eef01f}{\index{svm-\/train.\-cpp@{svm-\/train.\-cpp}!x\-\_\-space@{x\-\_\-space}}
+\index{x\-\_\-space@{x\-\_\-space}!svm-train.cpp@{svm-\/train.\-cpp}}
+\subsubsection[{x\-\_\-space}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf svm\-\_\-node}$\ast$ x\-\_\-space}}\label{svm-train_8cpp_aee6e5726660b16e12499d9bfa6eef01f}
+
+
+Definition at line 109 of file svm-\/train.\-cpp.
+

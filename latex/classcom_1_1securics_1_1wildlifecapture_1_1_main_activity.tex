@@ -1,0 +1,1672 @@
+\section{com.\+securics.\+wildlifecapture.\+Main\+Activity Class Reference}
+\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity}\index{com.\+securics.\+wildlifecapture.\+Main\+Activity@{com.\+securics.\+wildlifecapture.\+Main\+Activity}}
+Inheritance diagram for com.\+securics.\+wildlifecapture.\+Main\+Activity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Auto\+Code\+Runner\+Runnable}
+\item 
+class {\bf Auto\+Focus\+Runnable}
+\item 
+class {\bf Burst\+Checker\+Runnable}
+\item 
+class {\bf Burst\+Runnable}
+\item 
+class {\bf Push\+To\+J\+N\+I\+Runnable}
+\item 
+class {\bf Save\+Photo\+Task}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+native int {\bf do\+Revised\+J\+N\+I} (String raw\+Name, String config\+File\+Name, String name, double {\bf cam\+Vert\+Deg\+Range}, double {\bf cam\+Horiz\+Deg\+Range}, double pic\+Size\+X, double pic\+Size\+Y)
+\item 
+void {\bf on\+Resume} ()
+\item 
+void {\bf on\+Pause} ()
+\item 
+void {\bf on\+Destroy} ()
+\item 
+boolean {\bf on\+Create\+Options\+Menu} (Menu menu)
+\item 
+boolean {\bf on\+Options\+Item\+Selected} (Menu\+Item item)
+\item 
+void {\bf log\+Photo} (String filename)
+\item 
+String {\bf get\+Root\+S\+D\+Card} ()
+\item 
+void {\bf on\+Accuracy\+Changed} (Sensor sensor, int accuracy)
+\item 
+void {\bf on\+Sensor\+Changed} (Sensor\+Event event)
+\item 
+double {\bf calc\+Days} (Camera.\+Parameters params, int id\+Num)
+\item 
+void {\bf fit\+R\+A\+M} ()
+\item 
+boolean {\bf calc\+For\+R\+A\+M} (long length, long width)
+\item 
+int {\bf calc\+Num\+Of\+Pictures} (int width, int height)
+\item 
+void {\bf capture\+Video} (int length\+In\+Millis)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static native int {\bf give\+Config} (String key, String value)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+File {\bf processing\+Queue\+Log} = null
+\item 
+boolean {\bf will\+Do\+Camera\+Burst} =false
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static boolean {\bf debug\+Mode} = true
+\item 
+static boolean {\bf may\+Auto\+Delete} =false
+\item 
+static double {\bf min\+Obj\+Width} =2
+\item 
+static double {\bf min\+Obj\+Height} =2
+\item 
+static double {\bf max\+Obj\+Width} =20
+\item 
+static double {\bf max\+Obj\+Height} =20
+\item 
+static long {\bf time\+Interval} =60000
+\item 
+static int {\bf num\+Of\+Pics\+Per\+Capture} =2
+\item 
+static double {\bf min\+Pixel\+Obj\+Width} =800
+\item 
+static double {\bf min\+Pixel\+Obj\+Height} =600
+\item 
+static double {\bf max\+Pixel\+Obj\+Width} =1920
+\item 
+static double {\bf max\+Pixel\+Obj\+Height} =1080
+\item 
+static Camera.\+Parameters {\bf public\+Params}
+\item 
+static int {\bf public\+Width}
+\item 
+static int {\bf public\+Height}
+\item 
+static double {\bf cam\+Height\+Above\+Ground} =4
+\item 
+static double {\bf cam\+Measured\+Degrees}
+\item 
+static Sensor\+Manager {\bf sensor\+Manager}
+\item 
+static Sensor {\bf pitch\+Sensor}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf on\+Create} (Bundle saved\+Instance\+State)
+\item 
+void {\bf on\+Activity\+Result} (int request\+Code, int result\+Code, Intent data)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf start\+Stop} ()
+\item 
+void {\bf push\+Str} (String f\+Name)
+\item 
+void {\bf Auto\+Run\+Code} ()
+\item 
+Camera {\bf get\+Camera\+Instance} ()
+\item 
+boolean {\bf load\+Prefs} ()
+\item 
+void {\bf create\+Folder} (int id\+\_\+key, int id\+\_\+default)
+\item 
+void {\bf save\+Camera\+Params} ()
+\item 
+void {\bf show\+Popup\+Menu} (View v)
+\item 
+long {\bf space\+Available} ()
+\item 
+boolean {\bf send\+Config\+To\+J\+N\+I} ()
+\item 
+boolean {\bf is\+Space\+Available} (long length)
+\item 
+void {\bf run\+Resolution\+Dialog} (Camera.\+Parameters params)
+\item 
+void {\bf set\+Res} (int pos)
+\item 
+void {\bf run\+Max\+Length\+Width\+Dialog} ()
+\item 
+void {\bf run\+Min\+Length\+Width\+Dialog} ()
+\item 
+void {\bf run\+Vert\+Dialog} ()
+\item 
+void {\bf change\+Freq\+Dialog} ()
+\item 
+void {\bf capture\+Burst} ()  throws Interrupted\+Exception 	
+\item 
+void {\bf auto\+Delete} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Dialog {\bf out\+Dialog}
+\item 
+String {\bf res\+String\+List} [$\,$]
+\item 
+List\+View {\bf dialog\+View\+List}
+\item 
+View {\bf view}
+\item 
+Camera {\bf cam} = null
+\item 
+{\bf Camera\+Preview} {\bf cam\+Preview}
+\item 
+{\bf Activity\+Debug} {\bf m\+Debug} = null
+\item 
+boolean {\bf prefs\+Loaded} = false
+\item 
+String {\bf D\+E\+V\+I\+C\+E\+\_\+\+I\+D} = \char`\"{}I\+D\char`\"{}
+\item 
+boolean {\bf S\+K\+I\+P\+\_\+\+J\+N\+I} = false
+\item 
+File {\bf directory} = null
+\item 
+File {\bf burst\+Capture\+Dir} = null
+\item 
+long {\bf S\+T\+A\+R\+T\+\_\+\+H\+O\+U\+R} = -\/1
+\item 
+long {\bf S\+T\+A\+R\+T\+\_\+\+M\+I\+N\+U\+T\+E} = -\/1
+\item 
+long {\bf E\+N\+D\+\_\+\+H\+O\+U\+R} = -\/1
+\item 
+long {\bf E\+N\+D\+\_\+\+M\+I\+N\+U\+T\+E} = -\/1
+\item 
+Handler {\bf P\+S\+Handler} = new Handler()
+\item 
+boolean {\bf burst\+Is\+Busy}
+\item 
+int {\bf burst\+Num} =2
+\item 
+boolean {\bf camera\+Lock}
+\item 
+Thread {\bf auto\+Run\+Code\+Runner}
+\item 
+boolean {\bf auto\+Run\+Code\+May\+Run} =true
+\item 
+Thread {\bf burst\+Capture\+Thread}
+\item 
+Thread {\bf exec\+Burst\+Capture\+Thread}
+\item 
+Thread {\bf auto\+Focus\+Thread}
+\item 
+Thread {\bf J\+N\+I\+Thread}
+\item 
+Thread {\bf C\+P\+U\+Information\+Thread}
+\item 
+boolean {\bf burst\+Can\+Run}
+\item 
+{\bf Auto\+Code\+Runner\+Runnable} {\bf auto\+Code\+Runnable}
+\item 
+String {\bf most\+Recent\+Filename}
+\item 
+String[$\,$] {\bf request\+List}
+\item 
+int {\bf current\+Request} = 0
+\item 
+final int {\bf R\+E\+Q\+U\+E\+S\+T\+L\+I\+S\+T\+L\+E\+N\+G\+T\+H} = 2
+\item 
+Camera.\+Parameters {\bf private\+Params}
+\item 
+double {\bf current\+Pitch} = 0.\+0
+\item 
+double {\bf camera\+Vertical\+Degree\+Range} = 0.\+0
+\item 
+double {\bf cam\+Vert\+Deg\+Range}
+\item 
+double {\bf cam\+Horiz\+Deg\+Range}
+\item 
+boolean {\bf use\+New\+Process}
+\item 
+Base\+Loader\+Callback {\bf m\+Loader\+Callback}
+\item 
+Camera.\+Auto\+Focus\+Callback {\bf Focus\+Callback}
+\item 
+Picture\+Callback {\bf Pic\+Callback}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static boolean {\bf R\+U\+N\+N\+I\+N\+G} = false
+\item 
+static boolean {\bf D\+E\+A\+T\+H} = false
+\item 
+static final String {\bf T\+A\+G} = \char`\"{}Wild\+Life\+Capture\+Main\char`\"{}
+\item 
+static final int {\bf C\+A\+M\+\_\+3\+D} = 0
+\item 
+static String {\bf L\+O\+G\+\_\+\+F\+I\+L\+E} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 65 of file Main\+Activity.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!auto\+Delete@{auto\+Delete}}
+\index{auto\+Delete@{auto\+Delete}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{auto\+Delete}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+auto\+Delete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a023ae328c54e6f1424c382fb1d9ff190}
+This function automatically deletes the images that have been moved to the \char`\"{}.\+Processed\char`\"{} directory. 
+
+Definition at line 2718 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Focus\+Runnable.\+run().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!Auto\+Run\+Code@{Auto\+Run\+Code}}
+\index{Auto\+Run\+Code@{Auto\+Run\+Code}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{Auto\+Run\+Code}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Run\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a144d3bb31ed30e5d1126770926675c3d}
+This code is to be modified to complete task 1. 
+
+Definition at line 1105 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+auto\+Run\+Code\+May\+Run, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+auto\+Run\+Code\+Runner.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+start\+Stop().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!calc\+Days@{calc\+Days}}
+\index{calc\+Days@{calc\+Days}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{calc\+Days}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+securics.\+wildlifecapture.\+Main\+Activity.\+calc\+Days (
+\begin{DoxyParamCaption}
+\item[{Camera.\+Parameters}]{params, }
+\item[{int}]{id\+Num}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a8e439b1985724e77596982457ed5433b}
+
+
+Definition at line 1978 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+calc\+Num\+Of\+Pictures().
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Resolution\+Dialog().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!calc\+For\+R\+A\+M@{calc\+For\+R\+A\+M}}
+\index{calc\+For\+R\+A\+M@{calc\+For\+R\+A\+M}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{calc\+For\+R\+A\+M}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+calc\+For\+R\+A\+M (
+\begin{DoxyParamCaption}
+\item[{long}]{length, }
+\item[{long}]{width}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a13302fd957ee20f1eb5ad8e9178113fd}
+This function will accept a resolution value and return whether or not that selected resolution should work with the device while processing. Due to the variable nature of image compression and memory configurations, this will be calculated as a proportion from the baseline established on the Asus testing tablet. 
+
+Definition at line 2035 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Resolution\+Dialog().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!calc\+Num\+Of\+Pictures@{calc\+Num\+Of\+Pictures}}
+\index{calc\+Num\+Of\+Pictures@{calc\+Num\+Of\+Pictures}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{calc\+Num\+Of\+Pictures}]{\setlength{\rightskip}{0pt plus 5cm}int com.\+securics.\+wildlifecapture.\+Main\+Activity.\+calc\+Num\+Of\+Pictures (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a4be45a099a4eeadd21b9d891fa41af2a}
+This function accepts a resolution and estimates the number of images at this resolution that will fit into the device's storage. Since J\+P\+E\+G is a compressed format, this is more of a guess than a real estimate. 
+
+Definition at line 2124 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+calc\+Days(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Resolution\+Dialog(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+set\+Res().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!capture\+Burst@{capture\+Burst}}
+\index{capture\+Burst@{capture\+Burst}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{capture\+Burst}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+capture\+Burst (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws Interrupted\+Exception\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a7e8979229c820f6e79ee9289c98fe4f8}
+This is the camera burst capture function. 
+
+Definition at line 2633 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+burst\+Can\+Run, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+burst\+Capture\+Thread.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Burst\+Checker\+Runnable.\+run().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!capture\+Video@{capture\+Video}}
+\index{capture\+Video@{capture\+Video}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{capture\+Video}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+capture\+Video (
+\begin{DoxyParamCaption}
+\item[{int}]{length\+In\+Millis}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a899816bf9ce1f336989a4802af64d7eb}
+Capture a brief bit of video when Push\+To\+J\+N\+I says so\+: N\+O\+T\+E\+: This funtion does not cause a crash in the program. 
+
+Definition at line 2386 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!change\+Freq\+Dialog@{change\+Freq\+Dialog}}
+\index{change\+Freq\+Dialog@{change\+Freq\+Dialog}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{change\+Freq\+Dialog}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+change\+Freq\+Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a0f5588290244b1f177929e5d6f5856dc}
+
+
+Definition at line 2301 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+num\+Of\+Pics\+Per\+Capture, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+out\+Dialog, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+time\+Interval.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!create\+Folder@{create\+Folder}}
+\index{create\+Folder@{create\+Folder}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{create\+Folder}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+create\+Folder (
+\begin{DoxyParamCaption}
+\item[{int}]{id\+\_\+key, }
+\item[{int}]{id\+\_\+default}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a1824fc85ffb28ad2a51985987042b268}
+
+
+Definition at line 1526 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Root\+S\+D\+Card(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+m\+Debug, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!do\+Revised\+J\+N\+I@{do\+Revised\+J\+N\+I}}
+\index{do\+Revised\+J\+N\+I@{do\+Revised\+J\+N\+I}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{do\+Revised\+J\+N\+I}]{\setlength{\rightskip}{0pt plus 5cm}native int com.\+securics.\+wildlifecapture.\+Main\+Activity.\+do\+Revised\+J\+N\+I (
+\begin{DoxyParamCaption}
+\item[{String}]{raw\+Name, }
+\item[{String}]{config\+File\+Name, }
+\item[{String}]{name, }
+\item[{double}]{cam\+Vert\+Deg\+Range, }
+\item[{double}]{cam\+Horiz\+Deg\+Range, }
+\item[{double}]{pic\+Size\+X, }
+\item[{double}]{pic\+Size\+Y}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_af59add4f1b645c92b846bc7f372fb93d}
+So we can pass the config stuff to J\+N\+I 
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Push\+To\+J\+N\+I\+Runnable.\+do\+Pushing(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+push\+Str().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!fit\+R\+A\+M@{fit\+R\+A\+M}}
+\index{fit\+R\+A\+M@{fit\+R\+A\+M}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{fit\+R\+A\+M}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+fit\+R\+A\+M (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a3b3d4b245cfb2051cafa747a2deeb785}
+This function exists to automatically determine which camera resolution is best for the user given the amount of R\+A\+M available in the device. Open up a kernel data structure for reading\+:
+
+Definition at line 1994 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!get\+Camera\+Instance@{get\+Camera\+Instance}}
+\index{get\+Camera\+Instance@{get\+Camera\+Instance}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{get\+Camera\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}Camera com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Camera\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a66c9d87fc57923db9f17671affcd7ed6}
+
+
+Definition at line 1377 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+C\+A\+M\+\_\+3\+D, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!get\+Root\+S\+D\+Card@{get\+Root\+S\+D\+Card}}
+\index{get\+Root\+S\+D\+Card@{get\+Root\+S\+D\+Card}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{get\+Root\+S\+D\+Card}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Root\+S\+D\+Card (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a428f1388557d4d8bfe5dc8c097990ae8}
+
+
+Definition at line 1390 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+create\+Folder(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+send\+Config\+To\+J\+N\+I(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+show\+Popup\+Menu(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+space\+Available(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+start\+Stop().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!give\+Config@{give\+Config}}
+\index{give\+Config@{give\+Config}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{give\+Config}]{\setlength{\rightskip}{0pt plus 5cm}static native int com.\+securics.\+wildlifecapture.\+Main\+Activity.\+give\+Config (
+\begin{DoxyParamCaption}
+\item[{String}]{key, }
+\item[{String}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a1733c80fb35108217795d7eed7c636f5}
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+send\+Config\+To\+J\+N\+I().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!is\+Space\+Available@{is\+Space\+Available}}
+\index{is\+Space\+Available@{is\+Space\+Available}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{is\+Space\+Available}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+is\+Space\+Available (
+\begin{DoxyParamCaption}
+\item[{long}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_aa9198be81da890e3dbffcf248340aff5}
+
+
+Definition at line 1820 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+space\+Available().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!load\+Prefs@{load\+Prefs}}
+\index{load\+Prefs@{load\+Prefs}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{load\+Prefs}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a5694cd375e560a51f30bfaa4cdcc04b5}
+
+
+Definition at line 1436 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+burst\+Capture\+Dir, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+create\+Folder(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+directory, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+E\+N\+D\+\_\+\+H\+O\+U\+R, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+E\+N\+D\+\_\+\+M\+I\+N\+U\+T\+E, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Root\+S\+D\+Card(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+L\+O\+G\+\_\+\+F\+I\+L\+E, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+prefs\+Loaded, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+S\+K\+I\+P\+\_\+\+J\+N\+I, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+S\+T\+A\+R\+T\+\_\+\+H\+O\+U\+R, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+S\+T\+A\+R\+T\+\_\+\+M\+I\+N\+U\+T\+E, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Activity\+Result(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!log\+Photo@{log\+Photo}}
+\index{log\+Photo@{log\+Photo}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{log\+Photo}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+log\+Photo (
+\begin{DoxyParamCaption}
+\item[{String}]{filename}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_add3b43a26f18f606661f4874fb577ede}
+This will put a photo into a log during the image capture only mode so that the process only mode will be able to process through it 
+
+Definition at line 1349 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+processing\+Queue\+Log, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Save\+Photo\+Task.\+do\+In\+Background(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Code\+Runner\+Runnable.\+run().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!on\+Accuracy\+Changed@{on\+Accuracy\+Changed}}
+\index{on\+Accuracy\+Changed@{on\+Accuracy\+Changed}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{on\+Accuracy\+Changed}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Accuracy\+Changed (
+\begin{DoxyParamCaption}
+\item[{Sensor}]{sensor, }
+\item[{int}]{accuracy}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a855784f2c4a534eba85664352a1f0450}
+
+
+Definition at line 1775 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!on\+Activity\+Result@{on\+Activity\+Result}}
+\index{on\+Activity\+Result@{on\+Activity\+Result}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{on\+Activity\+Result}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Activity\+Result (
+\begin{DoxyParamCaption}
+\item[{int}]{request\+Code, }
+\item[{int}]{result\+Code, }
+\item[{Intent}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_abce6dc066e16542ff6791cb1127a6c6c}
+
+
+Definition at line 891 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam\+Preview, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+send\+Config\+To\+J\+N\+I(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{on\+Create}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create (
+\begin{DoxyParamCaption}
+\item[{Bundle}]{saved\+Instance\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a0e0ae9b4eace21aa47eabb7949503ee9}
+
+
+Definition at line 255 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+auto\+Code\+Runnable, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+auto\+Focus\+Thread, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+camera\+Lock, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+D\+E\+A\+T\+H, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+exec\+Burst\+Capture\+Thread, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Camera\+Instance(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Root\+S\+D\+Card(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+J\+N\+I\+Thread, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+m\+Debug, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+pitch\+Sensor, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+prefs\+Loaded, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+processing\+Queue\+Log, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+request\+List, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+R\+E\+Q\+U\+E\+S\+T\+L\+I\+S\+T\+L\+E\+N\+G\+T\+H, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+sensor\+Manager, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!on\+Create\+Options\+Menu@{on\+Create\+Options\+Menu}}
+\index{on\+Create\+Options\+Menu@{on\+Create\+Options\+Menu}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{on\+Create\+Options\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create\+Options\+Menu (
+\begin{DoxyParamCaption}
+\item[{Menu}]{menu}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a00b2aa1919565175441aaf8289e6e154}
+Inflate the menu; this adds items to the action bar if it is present.
+
+Definition at line 649 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+m\+Debug, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!on\+Destroy@{on\+Destroy}}
+\index{on\+Destroy@{on\+Destroy}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{on\+Destroy}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a39a7545ae9a240e0c22f3ef4e9021320}
+
+
+Definition at line 628 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+D\+E\+A\+T\+H, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+m\+Debug, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+R\+U\+N\+N\+I\+N\+G, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!on\+Options\+Item\+Selected@{on\+Options\+Item\+Selected}}
+\index{on\+Options\+Item\+Selected@{on\+Options\+Item\+Selected}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{on\+Options\+Item\+Selected}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected (
+\begin{DoxyParamCaption}
+\item[{Menu\+Item}]{item}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a4e8508f69e64373a46fd34d530ed6494}
+This should handle the settings menu.
+
+Definition at line 671 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+capture\+Video(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+change\+Freq\+Dialog(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+fit\+R\+A\+M(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Root\+S\+D\+Card(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+m\+Debug, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+processing\+Queue\+Log, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+push\+Str(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+request\+List, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Max\+Length\+Width\+Dialog(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Min\+Length\+Width\+Dialog(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+R\+U\+N\+N\+I\+N\+G, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Resolution\+Dialog(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Vert\+Dialog(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+start\+Stop(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+use\+New\+Process, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+will\+Do\+Camera\+Burst.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!on\+Pause@{on\+Pause}}
+\index{on\+Pause@{on\+Pause}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{on\+Pause}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Pause (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_ac55a0a68378d0b0fcf4350f17980e75e}
+
+
+Definition at line 615 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+m\+Debug.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!on\+Resume@{on\+Resume}}
+\index{on\+Resume@{on\+Resume}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{on\+Resume}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a2934f3fba10e6353cb8faca39c7bbde3}
+
+
+Definition at line 337 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam\+Height\+Above\+Ground, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam\+Preview, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Camera\+Instance(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+L\+O\+G\+\_\+\+F\+I\+L\+E, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+max\+Obj\+Height, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+max\+Obj\+Width, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+m\+Debug, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+min\+Obj\+Height, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+min\+Obj\+Width, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+m\+Loader\+Callback, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+pitch\+Sensor, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+public\+Height, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+public\+Width, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+save\+Camera\+Params(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+show\+Popup\+Menu(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+time\+Interval, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+view.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!on\+Sensor\+Changed@{on\+Sensor\+Changed}}
+\index{on\+Sensor\+Changed@{on\+Sensor\+Changed}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{on\+Sensor\+Changed}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Sensor\+Changed (
+\begin{DoxyParamCaption}
+\item[{Sensor\+Event}]{event}
+\end{DoxyParamCaption}
+)}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a328d687fbbdb1553a216038355cdedb9}
+
+
+Definition at line 1780 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+current\+Pitch.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!push\+Str@{push\+Str}}
+\index{push\+Str@{push\+Str}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{push\+Str}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+push\+Str (
+\begin{DoxyParamCaption}
+\item[{String}]{f\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a7241c9d9427fdabc848982193a01e647}
+This function is intended to be used by the automatic parsing function. Since there is no need for this to share any processing resources with the rest of the application, this is not intended to be used as a thread. 
+
+Definition at line 1025 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+D\+E\+A\+T\+H, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+directory, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+do\+Revised\+J\+N\+I(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+request\+List, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+R\+E\+Q\+U\+E\+S\+T\+L\+I\+S\+T\+L\+E\+N\+G\+T\+H, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+use\+New\+Process.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+start\+Stop().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!run\+Max\+Length\+Width\+Dialog@{run\+Max\+Length\+Width\+Dialog}}
+\index{run\+Max\+Length\+Width\+Dialog@{run\+Max\+Length\+Width\+Dialog}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{run\+Max\+Length\+Width\+Dialog}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Max\+Length\+Width\+Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a504e78cccc2b297b0f7809f63b63d4a4}
+This dialog allows the user to enter maximum areas for detected objects. 
+
+Definition at line 2149 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+max\+Obj\+Height, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+max\+Obj\+Width, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+out\+Dialog, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!run\+Min\+Length\+Width\+Dialog@{run\+Min\+Length\+Width\+Dialog}}
+\index{run\+Min\+Length\+Width\+Dialog@{run\+Min\+Length\+Width\+Dialog}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{run\+Min\+Length\+Width\+Dialog}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Min\+Length\+Width\+Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a4130d45ec52f306d9f85f3d43d20c680}
+
+
+Definition at line 2199 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+min\+Obj\+Height, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+min\+Obj\+Width, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+out\+Dialog, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!run\+Resolution\+Dialog@{run\+Resolution\+Dialog}}
+\index{run\+Resolution\+Dialog@{run\+Resolution\+Dialog}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{run\+Resolution\+Dialog}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Resolution\+Dialog (
+\begin{DoxyParamCaption}
+\item[{Camera.\+Parameters}]{params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a519c36b7c5fab199ceeac29dfba26774}
+This function runs a resolution dialog. 
+
+Definition at line 1909 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+calc\+Days(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+calc\+For\+R\+A\+M(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+calc\+Num\+Of\+Pictures(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+out\+Dialog, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+res\+String\+List, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+set\+Res(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!run\+Vert\+Dialog@{run\+Vert\+Dialog}}
+\index{run\+Vert\+Dialog@{run\+Vert\+Dialog}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{run\+Vert\+Dialog}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Vert\+Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a7f143ec00f7f633e1af758e81a54097a}
+This is for the vertical distance above the ground dialog box. 
+
+Definition at line 2254 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam\+Height\+Above\+Ground, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+out\+Dialog, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!save\+Camera\+Params@{save\+Camera\+Params}}
+\index{save\+Camera\+Params@{save\+Camera\+Params}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{save\+Camera\+Params}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+save\+Camera\+Params (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a81808b302c536428c7cafa011894628f}
+
+
+Definition at line 1564 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!send\+Config\+To\+J\+N\+I@{send\+Config\+To\+J\+N\+I}}
+\index{send\+Config\+To\+J\+N\+I@{send\+Config\+To\+J\+N\+I}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{send\+Config\+To\+J\+N\+I}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+send\+Config\+To\+J\+N\+I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_aa45ef35ed6e66f95fc95f8b5887fe2f8}
+
+
+Definition at line 1694 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Root\+S\+D\+Card(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+give\+Config(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+m\+Debug, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Activity\+Result(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+show\+Popup\+Menu().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!set\+Res@{set\+Res}}
+\index{set\+Res@{set\+Res}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{set\+Res}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+set\+Res (
+\begin{DoxyParamCaption}
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_ae695d46ad529340948efb3b5de755698}
+Set the picture resolution given the position in the array this was in. 
+
+Definition at line 2065 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+calc\+Num\+Of\+Pictures(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+public\+Height, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+public\+Width.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Resolution\+Dialog().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!show\+Popup\+Menu@{show\+Popup\+Menu}}
+\index{show\+Popup\+Menu@{show\+Popup\+Menu}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{show\+Popup\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+show\+Popup\+Menu (
+\begin{DoxyParamCaption}
+\item[{View}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a7ac1cff8860d1efac3a39eb7a6c0e5ca}
+
+
+Definition at line 1616 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Root\+S\+D\+Card(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+L\+O\+G\+\_\+\+F\+I\+L\+E, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+R\+U\+N\+N\+I\+N\+G, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+send\+Config\+To\+J\+N\+I(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+space\+Available(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+start\+Stop().
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!space\+Available@{space\+Available}}
+\index{space\+Available@{space\+Available}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{space\+Available}]{\setlength{\rightskip}{0pt plus 5cm}long com.\+securics.\+wildlifecapture.\+Main\+Activity.\+space\+Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a278e2918916365aa5defd9b8afdbb70d}
+
+
+Definition at line 1670 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Root\+S\+D\+Card(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+m\+Debug, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+is\+Space\+Available(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Focus\+Runnable.\+run(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+show\+Popup\+Menu().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!start\+Stop@{start\+Stop}}
+\index{start\+Stop@{start\+Stop}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{start\+Stop}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+securics.\+wildlifecapture.\+Main\+Activity.\+start\+Stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_af5cb9a828658f6deac8947c894f10c5a}
+
+
+Definition at line 907 of file Main\+Activity.\+java.
+
+
+
+References com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Run\+Code(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+auto\+Run\+Code\+May\+Run, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Root\+S\+D\+Card(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+processing\+Queue\+Log, com.\+securics.\+wildlifecapture.\+Main\+Activity.\+push\+Str(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+R\+U\+N\+N\+I\+N\+G, and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+show\+Popup\+Menu().
+
+
+
+\subsection{Member Data Documentation}
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!auto\+Code\+Runnable@{auto\+Code\+Runnable}}
+\index{auto\+Code\+Runnable@{auto\+Code\+Runnable}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{auto\+Code\+Runnable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Auto\+Code\+Runner\+Runnable} com.\+securics.\+wildlifecapture.\+Main\+Activity.\+auto\+Code\+Runnable\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a53bc8adc96d52a1bb6b0ac6c64b4b264}
+
+
+Definition at line 165 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!auto\+Focus\+Thread@{auto\+Focus\+Thread}}
+\index{auto\+Focus\+Thread@{auto\+Focus\+Thread}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{auto\+Focus\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}Thread com.\+securics.\+wildlifecapture.\+Main\+Activity.\+auto\+Focus\+Thread\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_aad861d414926c16008fc1e7b1508a13e}
+
+
+Definition at line 161 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!auto\+Run\+Code\+May\+Run@{auto\+Run\+Code\+May\+Run}}
+\index{auto\+Run\+Code\+May\+Run@{auto\+Run\+Code\+May\+Run}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{auto\+Run\+Code\+May\+Run}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+auto\+Run\+Code\+May\+Run =true\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a7a9453ba94134c5f56cf5444359fe753}
+
+
+Definition at line 147 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Run\+Code(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Code\+Runner\+Runnable.\+run(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+start\+Stop().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!auto\+Run\+Code\+Runner@{auto\+Run\+Code\+Runner}}
+\index{auto\+Run\+Code\+Runner@{auto\+Run\+Code\+Runner}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{auto\+Run\+Code\+Runner}]{\setlength{\rightskip}{0pt plus 5cm}Thread com.\+securics.\+wildlifecapture.\+Main\+Activity.\+auto\+Run\+Code\+Runner\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a538a2543e0e8343334fc65c698627cc2}
+
+
+Definition at line 146 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Run\+Code().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!burst\+Can\+Run@{burst\+Can\+Run}}
+\index{burst\+Can\+Run@{burst\+Can\+Run}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{burst\+Can\+Run}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+burst\+Can\+Run\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a8b95534a1946729aa4d6f81f23e790f3}
+
+
+Definition at line 164 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+capture\+Burst(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Burst\+Runnable.\+run().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!burst\+Capture\+Dir@{burst\+Capture\+Dir}}
+\index{burst\+Capture\+Dir@{burst\+Capture\+Dir}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{burst\+Capture\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}File com.\+securics.\+wildlifecapture.\+Main\+Activity.\+burst\+Capture\+Dir = null\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_aa580afeebcad535b3bdb93a57aa86835}
+
+
+Definition at line 109 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!burst\+Capture\+Thread@{burst\+Capture\+Thread}}
+\index{burst\+Capture\+Thread@{burst\+Capture\+Thread}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{burst\+Capture\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}Thread com.\+securics.\+wildlifecapture.\+Main\+Activity.\+burst\+Capture\+Thread\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a9a097f487e8869c3a796016453421beb}
+
+
+Definition at line 159 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+capture\+Burst().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!burst\+Is\+Busy@{burst\+Is\+Busy}}
+\index{burst\+Is\+Busy@{burst\+Is\+Busy}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{burst\+Is\+Busy}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+burst\+Is\+Busy\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_ae9b4d030cd6337e81af673f135a024a8}
+
+
+Definition at line 138 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Code\+Runner\+Runnable.\+run(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Burst\+Runnable.\+run().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!burst\+Num@{burst\+Num}}
+\index{burst\+Num@{burst\+Num}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{burst\+Num}]{\setlength{\rightskip}{0pt plus 5cm}int com.\+securics.\+wildlifecapture.\+Main\+Activity.\+burst\+Num =2\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a97dba74479a63351478bdfe1a962c4b5}
+
+
+Definition at line 140 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Code\+Runner\+Runnable.\+run(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Burst\+Runnable.\+run().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!cam@{cam}}
+\index{cam@{cam}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{cam}]{\setlength{\rightskip}{0pt plus 5cm}Camera com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam = null\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a9249bb7c2b8b3ac253f6090c2f36f696}
+
+
+Definition at line 96 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+capture\+Video(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Push\+To\+J\+N\+I\+Runnable.\+do\+Pushing(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Activity\+Result(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Destroy(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Pause(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+push\+Str(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Code\+Runner\+Runnable.\+run(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Burst\+Runnable.\+run(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+start\+Stop().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!C\+A\+M\+\_\+3\+D@{C\+A\+M\+\_\+3\+D}}
+\index{C\+A\+M\+\_\+3\+D@{C\+A\+M\+\_\+3\+D}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{C\+A\+M\+\_\+3\+D}]{\setlength{\rightskip}{0pt plus 5cm}final int com.\+securics.\+wildlifecapture.\+Main\+Activity.\+C\+A\+M\+\_\+3\+D = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_aaab96c4eaf51003350daa6b71fd28899}
+
+
+Definition at line 94 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Camera\+Instance().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!camera\+Lock@{camera\+Lock}}
+\index{camera\+Lock@{camera\+Lock}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{camera\+Lock}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+camera\+Lock\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a2edbb748bf878070282353cbd0b378f2}
+
+
+Definition at line 144 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Code\+Runner\+Runnable.\+run(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Burst\+Runnable.\+run().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!camera\+Vertical\+Degree\+Range@{camera\+Vertical\+Degree\+Range}}
+\index{camera\+Vertical\+Degree\+Range@{camera\+Vertical\+Degree\+Range}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{camera\+Vertical\+Degree\+Range}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+securics.\+wildlifecapture.\+Main\+Activity.\+camera\+Vertical\+Degree\+Range = 0.\+0\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a111b8b4c0395124314db5ba11884fad9}
+
+
+Definition at line 204 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!cam\+Height\+Above\+Ground@{cam\+Height\+Above\+Ground}}
+\index{cam\+Height\+Above\+Ground@{cam\+Height\+Above\+Ground}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{cam\+Height\+Above\+Ground}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam\+Height\+Above\+Ground =4\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a88fb2bdf22d4fb138f7d9ed4c259c7e4}
+
+
+Definition at line 210 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Vert\+Dialog().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!cam\+Horiz\+Deg\+Range@{cam\+Horiz\+Deg\+Range}}
+\index{cam\+Horiz\+Deg\+Range@{cam\+Horiz\+Deg\+Range}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{cam\+Horiz\+Deg\+Range}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam\+Horiz\+Deg\+Range\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a4e37c2663888d3023275a73b4e4469ec}
+
+
+Definition at line 213 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!cam\+Measured\+Degrees@{cam\+Measured\+Degrees}}
+\index{cam\+Measured\+Degrees@{cam\+Measured\+Degrees}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{cam\+Measured\+Degrees}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam\+Measured\+Degrees\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a8fd2e5a0a3360a15bcbb2dc4f7716797}
+
+
+Definition at line 211 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!cam\+Preview@{cam\+Preview}}
+\index{cam\+Preview@{cam\+Preview}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{cam\+Preview}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera\+Preview} com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam\+Preview\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a5e8a1817dc03f7fc5fc9c8ad486b017b}
+
+
+Definition at line 97 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Activity\+Result(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!cam\+Vert\+Deg\+Range@{cam\+Vert\+Deg\+Range}}
+\index{cam\+Vert\+Deg\+Range@{cam\+Vert\+Deg\+Range}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{cam\+Vert\+Deg\+Range}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+securics.\+wildlifecapture.\+Main\+Activity.\+cam\+Vert\+Deg\+Range\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a0dd3ea68422c22169d9b227c75004550}
+
+
+Definition at line 212 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!C\+P\+U\+Information\+Thread@{C\+P\+U\+Information\+Thread}}
+\index{C\+P\+U\+Information\+Thread@{C\+P\+U\+Information\+Thread}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{C\+P\+U\+Information\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}Thread com.\+securics.\+wildlifecapture.\+Main\+Activity.\+C\+P\+U\+Information\+Thread\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_aa935b3a374c08302f7abe05c53385b42}
+
+
+Definition at line 163 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!current\+Pitch@{current\+Pitch}}
+\index{current\+Pitch@{current\+Pitch}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{current\+Pitch}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+securics.\+wildlifecapture.\+Main\+Activity.\+current\+Pitch = 0.\+0\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a27699779f8ece25cd6cbb239edfd803f}
+
+
+Definition at line 203 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Sensor\+Changed().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!current\+Request@{current\+Request}}
+\index{current\+Request@{current\+Request}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{current\+Request}]{\setlength{\rightskip}{0pt plus 5cm}int com.\+securics.\+wildlifecapture.\+Main\+Activity.\+current\+Request = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a344c7130c86ba9ba032c15e0088726bb}
+
+
+Definition at line 195 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Save\+Photo\+Task.\+do\+In\+Background().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!D\+E\+A\+T\+H@{D\+E\+A\+T\+H}}
+\index{D\+E\+A\+T\+H@{D\+E\+A\+T\+H}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{D\+E\+A\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+D\+E\+A\+T\+H = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_af5fb687b2439cd06543f099f13dbd13d}
+
+
+Definition at line 69 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Push\+To\+J\+N\+I\+Runnable.\+do\+Pushing(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Destroy(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+push\+Str(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Code\+Runner\+Runnable.\+run(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Burst\+Runnable.\+run(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Burst\+Checker\+Runnable.\+run(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Focus\+Runnable.\+run().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!debug\+Mode@{debug\+Mode}}
+\index{debug\+Mode@{debug\+Mode}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{debug\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+debug\+Mode = true\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_af683177dcc2165774be47543d1e4bb2c}
+
+
+Definition at line 74 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+calc\+Num\+Of\+Pictures(), com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+Camera\+Preview(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+capture\+Video(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+create\+Folder(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Save\+Photo\+Task.\+do\+In\+Background(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Push\+To\+J\+N\+I\+Runnable.\+do\+Pushing(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+fit\+R\+A\+M(), com.\+securics.\+wildlifecapture.\+General\+Settings.\+General\+Settings(), com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity.\+get\+Camera\+Instance(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Camera\+Instance(), com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+init\+Camera(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+is\+Space\+Available(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs(), com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+log\+Message(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Activity\+Result(), com.\+securics.\+wildlifecapture.\+My\+Number\+Preference.\+on\+Bind\+View(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create\+Options\+Menu(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Destroy(), com.\+securics.\+wildlifecapture.\+My\+Number\+Preference.\+on\+Dialog\+Closed(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Pause(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume(), com.\+securics.\+wildlifecapture.\+Time\+Preference.\+on\+Set\+Initial\+Value(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+push\+Str(), com.\+securics.\+wildlifecapture.\+Activity\+Debug.\+read\+Usage(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Code\+Runner\+Runnable.\+run(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Burst\+Runnable.\+run(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+save\+Camera\+Params(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+send\+Config\+To\+J\+N\+I(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+space\+Available(), com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+surface\+Changed(), com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+surface\+Created(), and com.\+securics.\+wildlifecapture.\+Camera\+Preview.\+surface\+Destroyed().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!D\+E\+V\+I\+C\+E\+\_\+\+I\+D@{D\+E\+V\+I\+C\+E\+\_\+\+I\+D}}
+\index{D\+E\+V\+I\+C\+E\+\_\+\+I\+D@{D\+E\+V\+I\+C\+E\+\_\+\+I\+D}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{D\+E\+V\+I\+C\+E\+\_\+\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+securics.\+wildlifecapture.\+Main\+Activity.\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D = \char`\"{}I\+D\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a45003cfe138bead6277e344b1b1b4e3f}
+
+
+Definition at line 104 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+capture\+Video(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Save\+Photo\+Task.\+do\+In\+Background(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!dialog\+View\+List@{dialog\+View\+List}}
+\index{dialog\+View\+List@{dialog\+View\+List}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{dialog\+View\+List}]{\setlength{\rightskip}{0pt plus 5cm}List\+View com.\+securics.\+wildlifecapture.\+Main\+Activity.\+dialog\+View\+List\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a453c28e586a0ace2a2b58828c5836481}
+
+
+Definition at line 88 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!directory@{directory}}
+\index{directory@{directory}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{directory}]{\setlength{\rightskip}{0pt plus 5cm}File com.\+securics.\+wildlifecapture.\+Main\+Activity.\+directory = null\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_acb6fab88962828f914505962edd3db01}
+
+
+Definition at line 108 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Save\+Photo\+Task.\+do\+In\+Background(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Push\+To\+J\+N\+I\+Runnable.\+do\+Pushing(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+push\+Str().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!E\+N\+D\+\_\+\+H\+O\+U\+R@{E\+N\+D\+\_\+\+H\+O\+U\+R}}
+\index{E\+N\+D\+\_\+\+H\+O\+U\+R@{E\+N\+D\+\_\+\+H\+O\+U\+R}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{E\+N\+D\+\_\+\+H\+O\+U\+R}]{\setlength{\rightskip}{0pt plus 5cm}long com.\+securics.\+wildlifecapture.\+Main\+Activity.\+E\+N\+D\+\_\+\+H\+O\+U\+R = -\/1\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_adf7bc40f7c3d9baef3787491995092a6}
+
+
+Definition at line 114 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!E\+N\+D\+\_\+\+M\+I\+N\+U\+T\+E@{E\+N\+D\+\_\+\+M\+I\+N\+U\+T\+E}}
+\index{E\+N\+D\+\_\+\+M\+I\+N\+U\+T\+E@{E\+N\+D\+\_\+\+M\+I\+N\+U\+T\+E}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{E\+N\+D\+\_\+\+M\+I\+N\+U\+T\+E}]{\setlength{\rightskip}{0pt plus 5cm}long com.\+securics.\+wildlifecapture.\+Main\+Activity.\+E\+N\+D\+\_\+\+M\+I\+N\+U\+T\+E = -\/1\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a9b702aea63fdfdbdbd5775cd9b19c562}
+
+
+Definition at line 115 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!exec\+Burst\+Capture\+Thread@{exec\+Burst\+Capture\+Thread}}
+\index{exec\+Burst\+Capture\+Thread@{exec\+Burst\+Capture\+Thread}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{exec\+Burst\+Capture\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}Thread com.\+securics.\+wildlifecapture.\+Main\+Activity.\+exec\+Burst\+Capture\+Thread\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a88e4c3d9685a6aec123636bcf32ad27b}
+
+
+Definition at line 160 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!Focus\+Callback@{Focus\+Callback}}
+\index{Focus\+Callback@{Focus\+Callback}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{Focus\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}Camera.\+Auto\+Focus\+Callback com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Focus\+Callback\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_aa4d0bbbea77a09171efeb2d6b500ad85}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} Camera.AutoFocusCallback() \{
+
+        @Override
+        \textcolor{keyword}{public} \textcolor{keywordtype}{void} onAutoFocus(\textcolor{keywordtype}{boolean} success, Camera camera) \{
+            
+            
+            cameraLock=\textcolor{keyword}{true};
+            cam.takePicture(null, null, PicCallback);
+            cameraLock=\textcolor{keyword}{false};
+        \}
+    \}
+\end{DoxyCode}
+
+
+Definition at line 1789 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!J\+N\+I\+Thread@{J\+N\+I\+Thread}}
+\index{J\+N\+I\+Thread@{J\+N\+I\+Thread}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{J\+N\+I\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}Thread com.\+securics.\+wildlifecapture.\+Main\+Activity.\+J\+N\+I\+Thread\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_aaf23832a1fe2eb7698e1b87f6b012394}
+
+
+Definition at line 162 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!L\+O\+G\+\_\+\+F\+I\+L\+E@{L\+O\+G\+\_\+\+F\+I\+L\+E}}
+\index{L\+O\+G\+\_\+\+F\+I\+L\+E@{L\+O\+G\+\_\+\+F\+I\+L\+E}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{L\+O\+G\+\_\+\+F\+I\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+securics.\+wildlifecapture.\+Main\+Activity.\+L\+O\+G\+\_\+\+F\+I\+L\+E = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_af0e2800cd7e97b0cb2f704cd4990ae0a}
+
+
+Definition at line 117 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+show\+Popup\+Menu().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!max\+Obj\+Height@{max\+Obj\+Height}}
+\index{max\+Obj\+Height@{max\+Obj\+Height}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{max\+Obj\+Height}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+securics.\+wildlifecapture.\+Main\+Activity.\+max\+Obj\+Height =20\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_ac16616961300bb01e0691e9e526a9c59}
+
+
+Definition at line 173 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Max\+Length\+Width\+Dialog().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!max\+Obj\+Width@{max\+Obj\+Width}}
+\index{max\+Obj\+Width@{max\+Obj\+Width}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{max\+Obj\+Width}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+securics.\+wildlifecapture.\+Main\+Activity.\+max\+Obj\+Width =20\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a7e8c239d95e1869a8f7c3cc6327dbf13}
+
+
+Definition at line 172 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Max\+Length\+Width\+Dialog().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!max\+Pixel\+Obj\+Height@{max\+Pixel\+Obj\+Height}}
+\index{max\+Pixel\+Obj\+Height@{max\+Pixel\+Obj\+Height}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{max\+Pixel\+Obj\+Height}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+securics.\+wildlifecapture.\+Main\+Activity.\+max\+Pixel\+Obj\+Height =1080\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a56c6c4101234fe7219e315ea816fbf17}
+
+
+Definition at line 185 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!max\+Pixel\+Obj\+Width@{max\+Pixel\+Obj\+Width}}
+\index{max\+Pixel\+Obj\+Width@{max\+Pixel\+Obj\+Width}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{max\+Pixel\+Obj\+Width}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+securics.\+wildlifecapture.\+Main\+Activity.\+max\+Pixel\+Obj\+Width =1920\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_afbdc445aa34b07cd2fac3b6b7c338ed2}
+
+
+Definition at line 184 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!may\+Auto\+Delete@{may\+Auto\+Delete}}
+\index{may\+Auto\+Delete@{may\+Auto\+Delete}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{may\+Auto\+Delete}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+may\+Auto\+Delete =false\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a4e85ef083647d7f20c7187756b87725a}
+
+
+Definition at line 78 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Focus\+Runnable.\+run().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!m\+Debug@{m\+Debug}}
+\index{m\+Debug@{m\+Debug}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{m\+Debug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Activity\+Debug} com.\+securics.\+wildlifecapture.\+Main\+Activity.\+m\+Debug = null\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a5925cf5f0d7e4aab303cd57025c4883a}
+
+
+Definition at line 100 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+create\+Folder(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create\+Options\+Menu(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Destroy(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Pause(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Burst\+Runnable.\+run(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+send\+Config\+To\+J\+N\+I(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+space\+Available().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!min\+Obj\+Height@{min\+Obj\+Height}}
+\index{min\+Obj\+Height@{min\+Obj\+Height}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{min\+Obj\+Height}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+securics.\+wildlifecapture.\+Main\+Activity.\+min\+Obj\+Height =2\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a2bc09e24cfc9caf85eb5af413eb5e33c}
+
+
+Definition at line 171 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Min\+Length\+Width\+Dialog().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!min\+Obj\+Width@{min\+Obj\+Width}}
+\index{min\+Obj\+Width@{min\+Obj\+Width}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{min\+Obj\+Width}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+securics.\+wildlifecapture.\+Main\+Activity.\+min\+Obj\+Width =2\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a79862d70fd84dc5dbde834a40007e23f}
+
+
+Definition at line 170 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Min\+Length\+Width\+Dialog().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!min\+Pixel\+Obj\+Height@{min\+Pixel\+Obj\+Height}}
+\index{min\+Pixel\+Obj\+Height@{min\+Pixel\+Obj\+Height}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{min\+Pixel\+Obj\+Height}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+securics.\+wildlifecapture.\+Main\+Activity.\+min\+Pixel\+Obj\+Height =600\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_af5fa8d67544857f044a40ac57c300e01}
+
+
+Definition at line 183 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!min\+Pixel\+Obj\+Width@{min\+Pixel\+Obj\+Width}}
+\index{min\+Pixel\+Obj\+Width@{min\+Pixel\+Obj\+Width}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{min\+Pixel\+Obj\+Width}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+securics.\+wildlifecapture.\+Main\+Activity.\+min\+Pixel\+Obj\+Width =800\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_ae6fc0cb159757d1fd6a989f87a7a8f2e}
+
+
+Definition at line 182 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!m\+Loader\+Callback@{m\+Loader\+Callback}}
+\index{m\+Loader\+Callback@{m\+Loader\+Callback}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{m\+Loader\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}Base\+Loader\+Callback com.\+securics.\+wildlifecapture.\+Main\+Activity.\+m\+Loader\+Callback\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a245966455a5f379f46a69e91bea74b9b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} BaseLoaderCallback(\textcolor{keyword}{this}) \{
+        @Override
+        \textcolor{keyword}{public} \textcolor{keywordtype}{void} onManagerConnected(\textcolor{keywordtype}{int} status) \{
+
+            \textcolor{keywordflow}{switch} (status) \{
+            \textcolor{keywordflow}{case} LoaderCallbackInterface.SUCCESS: \{
+                \textcolor{keywordflow}{if} (debugMode)
+                    Log.i(TAG, \textcolor{stringliteral}{"OpenCV loaded successfully"});
+
+            \}
+                \textcolor{keywordflow}{break};
+            \textcolor{keywordflow}{default}: \{
+                super.onManagerConnected(status);
+            \}
+                \textcolor{keywordflow}{break};
+            \}
+        \}
+    \}
+\end{DoxyCode}
+
+
+Definition at line 223 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!most\+Recent\+Filename@{most\+Recent\+Filename}}
+\index{most\+Recent\+Filename@{most\+Recent\+Filename}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{most\+Recent\+Filename}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+securics.\+wildlifecapture.\+Main\+Activity.\+most\+Recent\+Filename\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a351c05af34c6f259b2bad9efa332ef54}
+
+
+Definition at line 193 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!num\+Of\+Pics\+Per\+Capture@{num\+Of\+Pics\+Per\+Capture}}
+\index{num\+Of\+Pics\+Per\+Capture@{num\+Of\+Pics\+Per\+Capture}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{num\+Of\+Pics\+Per\+Capture}]{\setlength{\rightskip}{0pt plus 5cm}int com.\+securics.\+wildlifecapture.\+Main\+Activity.\+num\+Of\+Pics\+Per\+Capture =2\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_ae072a2e4ac5cc978e2a87b866f9eb345}
+
+
+Definition at line 177 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+change\+Freq\+Dialog().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!out\+Dialog@{out\+Dialog}}
+\index{out\+Dialog@{out\+Dialog}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{out\+Dialog}]{\setlength{\rightskip}{0pt plus 5cm}Dialog com.\+securics.\+wildlifecapture.\+Main\+Activity.\+out\+Dialog\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_ade48e47c6e28618977b7fc930b32b9c0}
+
+
+Definition at line 85 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+change\+Freq\+Dialog(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Max\+Length\+Width\+Dialog(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Min\+Length\+Width\+Dialog(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Resolution\+Dialog(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Vert\+Dialog().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!Pic\+Callback@{Pic\+Callback}}
+\index{Pic\+Callback@{Pic\+Callback}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{Pic\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}Picture\+Callback com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Pic\+Callback\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a2ad6c918b2929c0c05f62204c339813c}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} PictureCallback() \{
+
+        @Override
+        \textcolor{keyword}{public} \textcolor{keywordtype}{void} onPictureTaken(byte[] data, Camera camera) \{
+            cam.startPreview();
+            \textcolor{keywordtype}{boolean} haveSpace = \textcolor{keyword}{false};
+            \textcolor{keywordflow}{while} (!haveSpace) \{
+                \textcolor{keywordflow}{if} (isSpaceAvailable(data.length * 10)) \{
+                    \textcolor{keyword}{new} SavePhotoTask().execute(data);
+                    spaceAvailable = \textcolor{keyword}{true};
+                    haveSpace = \textcolor{keyword}{true};
+                \}
+            \}
+            
+            
+            cameraLock=\textcolor{keyword}{false};
+        \}
+    \}
+\end{DoxyCode}
+
+
+Definition at line 1801 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Burst\+Runnable.\+run().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!pitch\+Sensor@{pitch\+Sensor}}
+\index{pitch\+Sensor@{pitch\+Sensor}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{pitch\+Sensor}]{\setlength{\rightskip}{0pt plus 5cm}Sensor com.\+securics.\+wildlifecapture.\+Main\+Activity.\+pitch\+Sensor\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a26a1e373456f6f832b8cbb54b460c20e}
+
+
+Definition at line 216 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!prefs\+Loaded@{prefs\+Loaded}}
+\index{prefs\+Loaded@{prefs\+Loaded}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{prefs\+Loaded}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+prefs\+Loaded = false\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_acb04dc8eeac4467240ea3f274bac74c3}
+
+
+Definition at line 102 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!private\+Params@{private\+Params}}
+\index{private\+Params@{private\+Params}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{private\+Params}]{\setlength{\rightskip}{0pt plus 5cm}Camera.\+Parameters com.\+securics.\+wildlifecapture.\+Main\+Activity.\+private\+Params\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a5f28e113c5d564fcd0913d6fb43638dc}
+
+
+Definition at line 199 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!processing\+Queue\+Log@{processing\+Queue\+Log}}
+\index{processing\+Queue\+Log@{processing\+Queue\+Log}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{processing\+Queue\+Log}]{\setlength{\rightskip}{0pt plus 5cm}File com.\+securics.\+wildlifecapture.\+Main\+Activity.\+processing\+Queue\+Log = null}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a91f58acd4aee3e5e863cad05e125e6b5}
+
+
+Definition at line 119 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+log\+Photo(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+start\+Stop().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!P\+S\+Handler@{P\+S\+Handler}}
+\index{P\+S\+Handler@{P\+S\+Handler}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{P\+S\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}Handler com.\+securics.\+wildlifecapture.\+Main\+Activity.\+P\+S\+Handler = new Handler()\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_ac26217ffabb287c0dd73c93e4b482c0c}
+
+
+Definition at line 127 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!public\+Height@{public\+Height}}
+\index{public\+Height@{public\+Height}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{public\+Height}]{\setlength{\rightskip}{0pt plus 5cm}int com.\+securics.\+wildlifecapture.\+Main\+Activity.\+public\+Height\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a43ab48591bfbc4722021467b4ffcb470}
+
+
+Definition at line 201 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+set\+Res().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!public\+Params@{public\+Params}}
+\index{public\+Params@{public\+Params}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{public\+Params}]{\setlength{\rightskip}{0pt plus 5cm}Camera.\+Parameters com.\+securics.\+wildlifecapture.\+Main\+Activity.\+public\+Params\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a857ce53b54c728ee3d20a30336119017}
+
+
+Definition at line 198 of file Main\+Activity.\+java.
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!public\+Width@{public\+Width}}
+\index{public\+Width@{public\+Width}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{public\+Width}]{\setlength{\rightskip}{0pt plus 5cm}int com.\+securics.\+wildlifecapture.\+Main\+Activity.\+public\+Width\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a1e823bc9d7c588129fc7a9e7240da2d3}
+
+
+Definition at line 200 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+set\+Res().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!request\+List@{request\+List}}
+\index{request\+List@{request\+List}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{request\+List}]{\setlength{\rightskip}{0pt plus 5cm}String [$\,$] com.\+securics.\+wildlifecapture.\+Main\+Activity.\+request\+List\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_af66c321e0bd25d9fb672e785e936531c}
+
+
+Definition at line 194 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Save\+Photo\+Task.\+do\+In\+Background(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Push\+To\+J\+N\+I\+Runnable.\+do\+Pushing(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+push\+Str(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Code\+Runner\+Runnable.\+run().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!R\+E\+Q\+U\+E\+S\+T\+L\+I\+S\+T\+L\+E\+N\+G\+T\+H@{R\+E\+Q\+U\+E\+S\+T\+L\+I\+S\+T\+L\+E\+N\+G\+T\+H}}
+\index{R\+E\+Q\+U\+E\+S\+T\+L\+I\+S\+T\+L\+E\+N\+G\+T\+H@{R\+E\+Q\+U\+E\+S\+T\+L\+I\+S\+T\+L\+E\+N\+G\+T\+H}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{R\+E\+Q\+U\+E\+S\+T\+L\+I\+S\+T\+L\+E\+N\+G\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}final int com.\+securics.\+wildlifecapture.\+Main\+Activity.\+R\+E\+Q\+U\+E\+S\+T\+L\+I\+S\+T\+L\+E\+N\+G\+T\+H = 2\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_ad4062bb96e8a0cbe20bec174e939eac3}
+
+
+Definition at line 196 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Save\+Photo\+Task.\+do\+In\+Background(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Push\+To\+J\+N\+I\+Runnable.\+do\+Pushing(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+push\+Str().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!res\+String\+List@{res\+String\+List}}
+\index{res\+String\+List@{res\+String\+List}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{res\+String\+List}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+securics.\+wildlifecapture.\+Main\+Activity.\+res\+String\+List[$\,$]\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_acf368b6f87af288cfeb49699dde1ca39}
+
+
+Definition at line 87 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Resolution\+Dialog().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!R\+U\+N\+N\+I\+N\+G@{R\+U\+N\+N\+I\+N\+G}}
+\index{R\+U\+N\+N\+I\+N\+G@{R\+U\+N\+N\+I\+N\+G}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{R\+U\+N\+N\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+R\+U\+N\+N\+I\+N\+G = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a98a7fba4ccb48dfbfea86dc5e3b021b1}
+
+
+Definition at line 68 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Destroy(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+show\+Popup\+Menu(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+start\+Stop().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!sensor\+Manager@{sensor\+Manager}}
+\index{sensor\+Manager@{sensor\+Manager}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{sensor\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}Sensor\+Manager com.\+securics.\+wildlifecapture.\+Main\+Activity.\+sensor\+Manager\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a27701a212f9e06ba41fe0bb9e4201b3c}
+
+
+Definition at line 215 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!S\+K\+I\+P\+\_\+\+J\+N\+I@{S\+K\+I\+P\+\_\+\+J\+N\+I}}
+\index{S\+K\+I\+P\+\_\+\+J\+N\+I@{S\+K\+I\+P\+\_\+\+J\+N\+I}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{S\+K\+I\+P\+\_\+\+J\+N\+I}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+S\+K\+I\+P\+\_\+\+J\+N\+I = false\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a2b8351d2d4449ae7f540395eda2a411b}
+
+
+Definition at line 106 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!S\+T\+A\+R\+T\+\_\+\+H\+O\+U\+R@{S\+T\+A\+R\+T\+\_\+\+H\+O\+U\+R}}
+\index{S\+T\+A\+R\+T\+\_\+\+H\+O\+U\+R@{S\+T\+A\+R\+T\+\_\+\+H\+O\+U\+R}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{S\+T\+A\+R\+T\+\_\+\+H\+O\+U\+R}]{\setlength{\rightskip}{0pt plus 5cm}long com.\+securics.\+wildlifecapture.\+Main\+Activity.\+S\+T\+A\+R\+T\+\_\+\+H\+O\+U\+R = -\/1\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a440051ecd9043efbef97c5328ded0155}
+
+
+Definition at line 111 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!S\+T\+A\+R\+T\+\_\+\+M\+I\+N\+U\+T\+E@{S\+T\+A\+R\+T\+\_\+\+M\+I\+N\+U\+T\+E}}
+\index{S\+T\+A\+R\+T\+\_\+\+M\+I\+N\+U\+T\+E@{S\+T\+A\+R\+T\+\_\+\+M\+I\+N\+U\+T\+E}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{S\+T\+A\+R\+T\+\_\+\+M\+I\+N\+U\+T\+E}]{\setlength{\rightskip}{0pt plus 5cm}long com.\+securics.\+wildlifecapture.\+Main\+Activity.\+S\+T\+A\+R\+T\+\_\+\+M\+I\+N\+U\+T\+E = -\/1\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a590a67f61ae32c48a1054d1219631d1a}
+
+
+Definition at line 112 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!T\+A\+G@{T\+A\+G}}
+\index{T\+A\+G@{T\+A\+G}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{T\+A\+G}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+securics.\+wildlifecapture.\+Main\+Activity.\+T\+A\+G = \char`\"{}Wild\+Life\+Capture\+Main\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_aad8964113ec84171490ba418167d96d8}
+
+
+Definition at line 81 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+calc\+For\+R\+A\+M(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+calc\+Num\+Of\+Pictures(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+capture\+Video(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+change\+Freq\+Dialog(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+create\+Folder(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Save\+Photo\+Task.\+do\+In\+Background(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Push\+To\+J\+N\+I\+Runnable.\+do\+Pushing(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+fit\+R\+A\+M(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Camera\+Instance(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+get\+Root\+S\+D\+Card(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+load\+Prefs(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+log\+Photo(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Activity\+Result(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Create\+Options\+Menu(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Destroy(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+push\+Str(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Code\+Runner\+Runnable.\+run(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Burst\+Runnable.\+run(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Max\+Length\+Width\+Dialog(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Min\+Length\+Width\+Dialog(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Resolution\+Dialog(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+run\+Vert\+Dialog(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+save\+Camera\+Params(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+send\+Config\+To\+J\+N\+I(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+space\+Available(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+start\+Stop().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!time\+Interval@{time\+Interval}}
+\index{time\+Interval@{time\+Interval}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{time\+Interval}]{\setlength{\rightskip}{0pt plus 5cm}long com.\+securics.\+wildlifecapture.\+Main\+Activity.\+time\+Interval =60000\hspace{0.3cm}{\ttfamily [static]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a290d0c371c64f7e4cb39b963dd70a7f9}
+
+
+Definition at line 175 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+change\+Freq\+Dialog(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!use\+New\+Process@{use\+New\+Process}}
+\index{use\+New\+Process@{use\+New\+Process}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{use\+New\+Process}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+use\+New\+Process\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_ab7b5aac3107a74f406f666f79bd6ab7c}
+
+
+Definition at line 220 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Push\+To\+J\+N\+I\+Runnable.\+do\+Pushing(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+push\+Str().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!view@{view}}
+\index{view@{view}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{view}]{\setlength{\rightskip}{0pt plus 5cm}View com.\+securics.\+wildlifecapture.\+Main\+Activity.\+view\hspace{0.3cm}{\ttfamily [private]}}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_ab4d577ba8de8b58d8b2fbd17871e01ce}
+
+
+Definition at line 89 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Resume().
+
+\index{com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}!will\+Do\+Camera\+Burst@{will\+Do\+Camera\+Burst}}
+\index{will\+Do\+Camera\+Burst@{will\+Do\+Camera\+Burst}!com\+::securics\+::wildlifecapture\+::\+Main\+Activity@{com\+::securics\+::wildlifecapture\+::\+Main\+Activity}}
+\subsubsection[{will\+Do\+Camera\+Burst}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+securics.\+wildlifecapture.\+Main\+Activity.\+will\+Do\+Camera\+Burst =false}\label{classcom_1_1securics_1_1wildlifecapture_1_1_main_activity_a63f04d1478f7011e1b7aa1212dea111a}
+
+
+Definition at line 156 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+securics.\+wildlifecapture.\+Main\+Activity.\+on\+Options\+Item\+Selected(), com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Code\+Runner\+Runnable.\+run(), and com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Burst\+Checker\+Runnable.\+run().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/com/securics/wildlifecapture/{\bf Main\+Activity.\+java}\end{DoxyCompactItemize}

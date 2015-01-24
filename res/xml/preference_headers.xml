@@ -1,0 +1,59 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<!-- 
+	<header
+        android:fragment="com.securics.wildlifecapture.SettingsActivity$ExampleSettings"
+        android:summary="Settings Example section"
+        android:title="Example" />
+-->
+	
+    <header
+        android:fragment="com.securics.wildlifecapture.SettingsActivity$DeviceSettings"
+        android:summary="Location and ID"
+        android:title="Device Settings" />
+    
+    <header
+        android:fragment="com.securics.wildlifecapture.SettingsActivity$ModeSettings"
+        android:summary="Set Application Mode"
+        android:title="Mode Settings"
+        />
+    
+    <header
+        android:fragment="com.securics.wildlifecapture.SettingsActivity$CameraSettings"
+        android:summary="Parameters for Camera Settings"
+        android:title="Camera Settings" />
+    
+    <header
+        android:title="Camera Position"
+        android:summary="Set where the camera is."
+        android:fragment="com.securics.wildlifecapture.SettingsActivity$CamLocationSettings"/>
+    
+    <!-- This has been functionally replaced by the dialog box in the main menu.
+    <header
+        android:summary="Change camera resolution. Opens new window."
+        android:title="Change Resolution.">
+        <intent android:targetPackage="com.securics.wildlifecapture"
+            android:targetClass="com.securics.wildlifecapture.ChangeResolutionActivity"/>
+    </header>-->
+    
+    <header
+        android:fragment="com.securics.wildlifecapture.SettingsActivity$CaptureSettings"
+        android:summary="Start and Stop times for capturing"
+        android:title="Capture Schedule" />
+    <header
+        android:fragment="com.securics.wildlifecapture.SettingsActivity$ImageSettings"
+        android:summary="Image, Model and Log file locations"
+        android:title="Data Preferences" />
+    
+    <!-- FAQ Header removed because FAQ moved to help.
+    <header
+        android:fragment="com.securics.wildlifecapture.SettingsActivity$FAQSettings"
+        android:summary="Frequently Asked Questions"
+        android:title="F.A.Q." />
+    -->
+    <header
+        android:fragment="com.securics.wildlifecapture.SettingsActivity$GeneralSettings"
+        android:summary="Parameters for Image Processing"
+        android:title="Advanced Settings" />
+
+</preference-headers>

@@ -1,0 +1,21 @@
+OBJS = RunPicodes
+CXX = g++ 
+CFLAGS = -g -O3
+INCLUDE = include
+CVINCLUDE = /opt/local/include/opencv/
+CVINCLUDE2 = /opt/local/include/opencv2/
+LOCALLIB = /opt/local/lib
+LOCALINCLUDE = /opt/local/include
+LIBS = -stdlib=libstdc++ -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_objdetect -lopencv_ml -lpthread
+
+SRCFILE = RunPicodes.cpp ./utils/ImageSet.cpp ./internal/TrainModels.cpp ./internal/Detect.cpp ./internal/NMS.cpp ./internal/PiCoDes.cpp ./internal/Pyramid.cpp ./libsvm/svmtrain.c ./libsvm/svm.cpp ./libMR/MetaRecognition.cpp ./libMR/weibull.cpp
+TARGET = RunPicodes
+
+
+$(TARGET):	$(SRCFILE)
+	$(CXX) $(CFLAGS) $(SRCFILE) -I$(INCLUDE) -I$(CVINCLUDE) -I$(CVINCLUDE2) -L$(LOCALLIB) -I$(LOCALINCLUDE) $(LIBS) -o $(OBJS) -Wno-deprecated 
+
+all: $(TARGET)
+
+clean:
+	rm -f $(OBJS)

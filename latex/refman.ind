@@ -1,0 +1,935 @@
+\begin{theindex}
+
+  \item {Activity\+Debug}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}, 
+		12
+  \item {add\+My\+List}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Camera\+Preference}, 
+		18
+  \item {auto\+Code\+Runnable}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		36
+  \item {auto\+Delete}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		30
+  \item {auto\+Focus\+Thread}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		37
+  \item {Auto\+Run\+Code}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		30
+  \item {auto\+Run\+Code\+May\+Run}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		37
+  \item {auto\+Run\+Code\+Runner}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		37
+
+  \indexspace
+
+  \item {battery\+Info\+Receiver}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}, 
+		14
+  \item {burst\+Can\+Run}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		37
+  \item {burst\+Capture\+Dir}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		37
+  \item {burst\+Capture\+Thread}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		37
+  \item {burst\+Is\+Busy}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		37
+  \item {burst\+Num}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		37
+
+  \indexspace
+
+  \item {C\+A\+M\+\_\+3\+D}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		38
+  \item {C\+P\+U\+Information\+Thread}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		38
+  \item {calc\+Days}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		30
+  \item {calc\+For\+R\+A\+M}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		30
+  \item {calc\+Num\+Of\+Pictures}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		30
+  \item {calendar}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Time\+Preference}, 
+		62
+  \item {cam}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}, 
+		21
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		37
+  \item {cam\+Copy}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}, 
+		24
+  \item {cam\+Height\+Above\+Ground}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		38
+  \item {cam\+Horiz\+Deg\+Range}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		38
+  \item {cam\+Measured\+Degrees}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		38
+  \item {cam\+Preview}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		38
+  \item {cam\+Vert\+Deg\+Range}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		38
+  \item {camera\+Lock}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		38
+  \item {Camera\+Preference}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Camera\+Preference}, 
+		18
+  \item {Camera\+Preview}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}, 
+		20
+  \item {camera\+Vertical\+Degree\+Range}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		38
+  \item {capture\+Burst}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		31
+  \item {capture\+Video}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		31
+  \item {change\+Freq\+Dialog}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		31
+  \item {com}, 9
+  \item {com.\+securics}, 9
+  \item {com.\+securics.\+wildlifecapture}, 9
+  \item {com.\+securics.\+wildlifecapture.\+Activity\+Debug}, 11
+  \item {com.\+securics.\+wildlifecapture.\+Camera\+Preference}, 17
+  \item {com.\+securics.\+wildlifecapture.\+Camera\+Preference.\+My\+List}, 
+		49
+  \item {com.\+securics.\+wildlifecapture.\+Camera\+Preview}, 19
+  \item {com.\+securics.\+wildlifecapture.\+Change\+Resolution\+Activity}, 
+		22
+  \item {com.\+securics.\+wildlifecapture.\+Documentation}, 25
+  \item {com.\+securics.\+wildlifecapture.\+General\+Settings}, 26
+  \item {com.\+securics.\+wildlifecapture.\+Main\+Activity}, 27
+  \item {com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Code\+Runner\+Runnable}, 
+		15
+  \item {com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Auto\+Focus\+Runnable}, 
+		15
+  \item {com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Burst\+Checker\+Runnable}, 
+		16
+  \item {com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Burst\+Runnable}, 
+		17
+  \item {com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Push\+To\+J\+N\+I\+Runnable}, 
+		55
+  \item {com.\+securics.\+wildlifecapture.\+Main\+Activity.\+Save\+Photo\+Task}, 
+		57
+  \item {com.\+securics.\+wildlifecapture.\+My\+Number\+Preference}, 50
+  \item {com.\+securics.\+wildlifecapture.\+My\+String\+Preference}, 53
+  \item {com.\+securics.\+wildlifecapture.\+Perspective\+Transformation\+Engine}, 
+		55
+  \item {com.\+securics.\+wildlifecapture.\+Reset\+Defaults}, 56
+  \item {com.\+securics.\+wildlifecapture.\+Reset\+Defaults.\+My\+F\+A\+Q}, 
+		46
+  \item {com.\+securics.\+wildlifecapture.\+Settings\+Activity}, 58
+  \item {com.\+securics.\+wildlifecapture.\+Size\+Calculation\+Data}, 
+		58
+  \item {com.\+securics.\+wildlifecapture.\+Time\+Preference}, 59
+  \item {com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}
+    \subitem {Activity\+Debug}, 12
+    \subitem {battery\+Info\+Receiver}, 14
+    \subitem {D\+E\+L\+A\+Y}, 14
+    \subitem {End\+Photo\+Snapper\+Debug}, 13
+    \subitem {L\+O\+G\+\_\+\+F\+I\+L\+E}, 14
+    \subitem {log\+Heap}, 13
+    \subitem {log\+Message}, 13
+    \subitem {my\+I\+D}, 14
+    \subitem {P\+S\+Handler}, 14
+    \subitem {read\+Usage}, 13
+    \subitem {Reading\+Usage}, 14
+    \subitem {set\+I\+D}, 13
+    \subitem {T\+A\+G}, 14
+  \item {com\+::securics\+::wildlifecapture\+::\+Camera\+Preference}
+    \subitem {add\+My\+List}, 18
+    \subitem {Camera\+Preference}, 18
+    \subitem {on\+Bind\+View}, 18
+  \item {com\+::securics\+::wildlifecapture\+::\+Camera\+Preference\+::\+My\+List}
+    \subitem {My\+List}, 49
+    \subitem {my\+Mode}, 49
+  \item {com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}
+    \subitem {cam}, 21
+    \subitem {Camera\+Preview}, 20
+    \subitem {init\+Camera}, 21
+    \subitem {s\+Holder}, 22
+    \subitem {surface\+Changed}, 21
+    \subitem {surface\+Created}, 21
+    \subitem {surface\+Destroyed}, 21
+    \subitem {T\+A\+G}, 22
+  \item {com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}
+    \subitem {cam\+Copy}, 24
+    \subitem {get\+Camera\+Instance}, 23
+    \subitem {get\+Size\+Data}, 23
+    \subitem {internal\+View}, 24
+    \subitem {on\+Create}, 23
+    \subitem {on\+Create\+Options\+Menu}, 23
+    \subitem {on\+List\+Item\+Click}, 23
+    \subitem {on\+Resume}, 23
+    \subitem {pic\+Size}, 24
+    \subitem {set\+List\+View}, 24
+    \subitem {size\+List}, 24
+    \subitem {size\+Names}, 24
+    \subitem {size\+To\+String}, 24
+  \item {com\+::securics\+::wildlifecapture\+::\+Documentation}
+    \subitem {on\+Create}, 25
+    \subitem {on\+Create\+Options\+Menu}, 25
+    \subitem {on\+Options\+Item\+Selected}, 25
+  \item {com\+::securics\+::wildlifecapture\+::\+General\+Settings}
+    \subitem {General\+Settings}, 26
+    \subitem {load\+Params}, 27
+    \subitem {on\+Bind\+View}, 27
+  \item {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}
+    \subitem {auto\+Code\+Runnable}, 36
+    \subitem {auto\+Delete}, 30
+    \subitem {auto\+Focus\+Thread}, 37
+    \subitem {Auto\+Run\+Code}, 30
+    \subitem {auto\+Run\+Code\+May\+Run}, 37
+    \subitem {auto\+Run\+Code\+Runner}, 37
+    \subitem {burst\+Can\+Run}, 37
+    \subitem {burst\+Capture\+Dir}, 37
+    \subitem {burst\+Capture\+Thread}, 37
+    \subitem {burst\+Is\+Busy}, 37
+    \subitem {burst\+Num}, 37
+    \subitem {C\+A\+M\+\_\+3\+D}, 38
+    \subitem {C\+P\+U\+Information\+Thread}, 38
+    \subitem {calc\+Days}, 30
+    \subitem {calc\+For\+R\+A\+M}, 30
+    \subitem {calc\+Num\+Of\+Pictures}, 30
+    \subitem {cam}, 37
+    \subitem {cam\+Height\+Above\+Ground}, 38
+    \subitem {cam\+Horiz\+Deg\+Range}, 38
+    \subitem {cam\+Measured\+Degrees}, 38
+    \subitem {cam\+Preview}, 38
+    \subitem {cam\+Vert\+Deg\+Range}, 38
+    \subitem {camera\+Lock}, 38
+    \subitem {camera\+Vertical\+Degree\+Range}, 38
+    \subitem {capture\+Burst}, 31
+    \subitem {capture\+Video}, 31
+    \subitem {change\+Freq\+Dialog}, 31
+    \subitem {create\+Folder}, 31
+    \subitem {current\+Pitch}, 39
+    \subitem {current\+Request}, 39
+    \subitem {D\+E\+A\+T\+H}, 39
+    \subitem {D\+E\+V\+I\+C\+E\+\_\+\+I\+D}, 39
+    \subitem {debug\+Mode}, 39
+    \subitem {dialog\+View\+List}, 40
+    \subitem {directory}, 40
+    \subitem {do\+Revised\+J\+N\+I}, 31
+    \subitem {E\+N\+D\+\_\+\+H\+O\+U\+R}, 40
+    \subitem {E\+N\+D\+\_\+\+M\+I\+N\+U\+T\+E}, 40
+    \subitem {exec\+Burst\+Capture\+Thread}, 40
+    \subitem {fit\+R\+A\+M}, 31
+    \subitem {Focus\+Callback}, 40
+    \subitem {get\+Camera\+Instance}, 32
+    \subitem {get\+Root\+S\+D\+Card}, 32
+    \subitem {give\+Config}, 32
+    \subitem {is\+Space\+Available}, 32
+    \subitem {J\+N\+I\+Thread}, 40
+    \subitem {L\+O\+G\+\_\+\+F\+I\+L\+E}, 40
+    \subitem {load\+Prefs}, 32
+    \subitem {log\+Photo}, 32
+    \subitem {m\+Debug}, 41
+    \subitem {m\+Loader\+Callback}, 42
+    \subitem {max\+Obj\+Height}, 41
+    \subitem {max\+Obj\+Width}, 41
+    \subitem {max\+Pixel\+Obj\+Height}, 41
+    \subitem {max\+Pixel\+Obj\+Width}, 41
+    \subitem {may\+Auto\+Delete}, 41
+    \subitem {min\+Obj\+Height}, 41
+    \subitem {min\+Obj\+Width}, 41
+    \subitem {min\+Pixel\+Obj\+Height}, 42
+    \subitem {min\+Pixel\+Obj\+Width}, 42
+    \subitem {most\+Recent\+Filename}, 42
+    \subitem {num\+Of\+Pics\+Per\+Capture}, 42
+    \subitem {on\+Accuracy\+Changed}, 33
+    \subitem {on\+Activity\+Result}, 33
+    \subitem {on\+Create}, 33
+    \subitem {on\+Create\+Options\+Menu}, 33
+    \subitem {on\+Destroy}, 33
+    \subitem {on\+Options\+Item\+Selected}, 33
+    \subitem {on\+Pause}, 34
+    \subitem {on\+Resume}, 34
+    \subitem {on\+Sensor\+Changed}, 34
+    \subitem {out\+Dialog}, 42
+    \subitem {P\+S\+Handler}, 43
+    \subitem {Pic\+Callback}, 42
+    \subitem {pitch\+Sensor}, 43
+    \subitem {prefs\+Loaded}, 43
+    \subitem {private\+Params}, 43
+    \subitem {processing\+Queue\+Log}, 43
+    \subitem {public\+Height}, 43
+    \subitem {public\+Params}, 43
+    \subitem {public\+Width}, 44
+    \subitem {push\+Str}, 34
+    \subitem {R\+E\+Q\+U\+E\+S\+T\+L\+I\+S\+T\+L\+E\+N\+G\+T\+H}, 44
+    \subitem {R\+U\+N\+N\+I\+N\+G}, 44
+    \subitem {request\+List}, 44
+    \subitem {res\+String\+List}, 44
+    \subitem {run\+Max\+Length\+Width\+Dialog}, 35
+    \subitem {run\+Min\+Length\+Width\+Dialog}, 35
+    \subitem {run\+Resolution\+Dialog}, 35
+    \subitem {run\+Vert\+Dialog}, 35
+    \subitem {S\+K\+I\+P\+\_\+\+J\+N\+I}, 44
+    \subitem {S\+T\+A\+R\+T\+\_\+\+H\+O\+U\+R}, 44
+    \subitem {S\+T\+A\+R\+T\+\_\+\+M\+I\+N\+U\+T\+E}, 45
+    \subitem {save\+Camera\+Params}, 35
+    \subitem {send\+Config\+To\+J\+N\+I}, 35
+    \subitem {sensor\+Manager}, 44
+    \subitem {set\+Res}, 36
+    \subitem {show\+Popup\+Menu}, 36
+    \subitem {space\+Available}, 36
+    \subitem {start\+Stop}, 36
+    \subitem {T\+A\+G}, 45
+    \subitem {time\+Interval}, 45
+    \subitem {use\+New\+Process}, 45
+    \subitem {view}, 45
+    \subitem {will\+Do\+Camera\+Burst}, 45
+  \item {com\+::securics\+::wildlifecapture\+::\+Main\+Activity\+::\+Auto\+Code\+Runner\+Runnable}
+    \subitem {run}, 15
+  \item {com\+::securics\+::wildlifecapture\+::\+Main\+Activity\+::\+Auto\+Focus\+Runnable}
+    \subitem {run}, 16
+  \item {com\+::securics\+::wildlifecapture\+::\+Main\+Activity\+::\+Burst\+Checker\+Runnable}
+    \subitem {run}, 16
+  \item {com\+::securics\+::wildlifecapture\+::\+Main\+Activity\+::\+Burst\+Runnable}
+    \subitem {run}, 17
+  \item {com\+::securics\+::wildlifecapture\+::\+Main\+Activity\+::\+Push\+To\+J\+N\+I\+Runnable}
+    \subitem {do\+Pushing}, 55
+    \subitem {run}, 56
+  \item {com\+::securics\+::wildlifecapture\+::\+Main\+Activity\+::\+Save\+Photo\+Task}
+    \subitem {do\+In\+Background}, 57
+  \item {com\+::securics\+::wildlifecapture\+::\+My\+Number\+Preference}
+    \subitem {default\+Value}, 51
+    \subitem {my\+Default\+Value}, 52
+    \subitem {My\+Number\+Preference}, 50
+    \subitem {my\+Type}, 52
+    \subitem {on\+Bind\+View}, 51
+    \subitem {on\+Dialog\+Closed}, 51
+    \subitem {on\+Get\+Default\+Value}, 51
+    \subitem {on\+Save\+Instance\+State}, 51
+    \subitem {on\+Set\+Initial\+Value}, 51
+    \subitem {preference\+\_\+string}, 52
+    \subitem {saved\+Float}, 52
+    \subitem {saved\+Int}, 52
+    \subitem {set\+Type}, 52
+  \item {com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}
+    \subitem {My\+String\+Preference}, 53
+    \subitem {on\+Bind\+View}, 54
+    \subitem {on\+Dialog\+Closed}, 54
+    \subitem {on\+Get\+Default\+Value}, 54
+    \subitem {on\+Restore\+Instance\+State}, 54
+    \subitem {on\+Save\+Instance\+State}, 54
+    \subitem {on\+Set\+Initial\+Value}, 54
+    \subitem {preference\+\_\+string}, 55
+  \item {com\+::securics\+::wildlifecapture\+::\+Reset\+Defaults}
+    \subitem {on\+Bind\+View}, 57
+    \subitem {Reset\+Defaults}, 56
+  \item {com\+::securics\+::wildlifecapture\+::\+Reset\+Defaults\+::\+My\+F\+A\+Q}
+    \subitem {get\+Text}, 47
+    \subitem {m\+Edit\+Text}, 48
+    \subitem {m\+Text}, 48
+    \subitem {My\+F\+A\+Q}, 46, 47
+    \subitem {on\+Bind\+Dialog\+View}, 47
+    \subitem {on\+Click}, 47
+    \subitem {on\+Create\+Dialog\+View}, 47
+    \subitem {reset\+All\+Settings}, 48
+    \subitem {set\+Text}, 48
+  \item {com\+::securics\+::wildlifecapture\+::\+Settings\+Activity}
+    \subitem {on\+Build\+Headers}, 58
+    \subitem {on\+Create}, 58
+  \item {com\+::securics\+::wildlifecapture\+::\+Size\+Calculation\+Data}
+    \subitem {Size\+Calculation\+Data}, 59
+  \item {com\+::securics\+::wildlifecapture\+::\+Time\+Preference}
+    \subitem {calendar}, 62
+    \subitem {get\+Summary}, 61
+    \subitem {hour}, 62
+    \subitem {minute}, 62
+    \subitem {on\+Bind\+Dialog\+View}, 61
+    \subitem {on\+Create\+Dialog\+View}, 61
+    \subitem {on\+Dialog\+Closed}, 61
+    \subitem {on\+Get\+Default\+Value}, 61
+    \subitem {on\+Restore\+Instance\+State}, 61
+    \subitem {on\+Save\+Instance\+State}, 62
+    \subitem {on\+Set\+Initial\+Value}, 62
+    \subitem {picker}, 62
+    \subitem {the\+Hour}, 63
+    \subitem {Time\+Preference}, 60
+  \item {create\+Folder}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		31
+  \item {current\+Pitch}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		39
+  \item {current\+Request}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		39
+
+  \indexspace
+
+  \item {D\+E\+A\+T\+H}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		39
+  \item {D\+E\+L\+A\+Y}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}, 
+		14
+  \item {D\+E\+V\+I\+C\+E\+\_\+\+I\+D}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		39
+  \item {debug\+Mode}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		39
+  \item {default\+Value}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+Number\+Preference}, 
+		51
+  \item {dialog\+View\+List}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		40
+  \item {directory}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		40
+  \item {do\+In\+Background}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity\+::\+Save\+Photo\+Task}, 
+		57
+  \item {do\+Pushing}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity\+::\+Push\+To\+J\+N\+I\+Runnable}, 
+		55
+  \item {do\+Revised\+J\+N\+I}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		31
+
+  \indexspace
+
+  \item {E\+N\+D\+\_\+\+H\+O\+U\+R}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		40
+  \item {E\+N\+D\+\_\+\+M\+I\+N\+U\+T\+E}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		40
+  \item {End\+Photo\+Snapper\+Debug}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}, 
+		13
+  \item {exec\+Burst\+Capture\+Thread}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		40
+
+  \indexspace
+
+  \item {fit\+R\+A\+M}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		31
+  \item {Focus\+Callback}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		40
+
+  \indexspace
+
+  \item {General\+Settings}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+General\+Settings}, 
+		26
+  \item {get\+Camera\+Instance}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}, 
+		23
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		32
+  \item {get\+Root\+S\+D\+Card}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		32
+  \item {get\+Size\+Data}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}, 
+		23
+  \item {get\+Summary}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Time\+Preference}, 
+		61
+  \item {get\+Text}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Reset\+Defaults\+::\+My\+F\+A\+Q}, 
+		47
+  \item {give\+Config}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		32
+
+  \indexspace
+
+  \item {hour}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Time\+Preference}, 
+		62
+
+  \indexspace
+
+  \item {init\+Camera}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}, 
+		21
+  \item {internal\+View}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}, 
+		24
+  \item {is\+Space\+Available}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		32
+
+  \indexspace
+
+  \item {J\+N\+I\+Thread}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		40
+
+  \indexspace
+
+  \item {L\+O\+G\+\_\+\+F\+I\+L\+E}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}, 
+		14
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		40
+  \item {load\+Params}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+General\+Settings}, 
+		27
+  \item {load\+Prefs}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		32
+  \item {log\+Heap}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}, 
+		13
+  \item {log\+Message}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}, 
+		13
+  \item {log\+Photo}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		32
+
+  \indexspace
+
+  \item {m\+Debug}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		41
+  \item {m\+Edit\+Text}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Reset\+Defaults\+::\+My\+F\+A\+Q}, 
+		48
+  \item {m\+Loader\+Callback}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		42
+  \item {m\+Text}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Reset\+Defaults\+::\+My\+F\+A\+Q}, 
+		48
+  \item {max\+Obj\+Height}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		41
+  \item {max\+Obj\+Width}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		41
+  \item {max\+Pixel\+Obj\+Height}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		41
+  \item {max\+Pixel\+Obj\+Width}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		41
+  \item {may\+Auto\+Delete}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		41
+  \item {min\+Obj\+Height}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		41
+  \item {min\+Obj\+Width}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		41
+  \item {min\+Pixel\+Obj\+Height}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		42
+  \item {min\+Pixel\+Obj\+Width}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		42
+  \item {minute}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Time\+Preference}, 
+		62
+  \item {most\+Recent\+Filename}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		42
+  \item {my\+Default\+Value}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+Number\+Preference}, 
+		52
+  \item {My\+F\+A\+Q}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Reset\+Defaults\+::\+My\+F\+A\+Q}, 
+		46, 47
+  \item {my\+I\+D}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}, 
+		14
+  \item {My\+List}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Camera\+Preference\+::\+My\+List}, 
+		49
+  \item {my\+Mode}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Camera\+Preference\+::\+My\+List}, 
+		49
+  \item {My\+Number\+Preference}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+Number\+Preference}, 
+		50
+  \item {My\+String\+Preference}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}, 
+		53
+  \item {my\+Type}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+Number\+Preference}, 
+		52
+
+  \indexspace
+
+  \item {num\+Of\+Pics\+Per\+Capture}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		42
+
+  \indexspace
+
+  \item {on\+Accuracy\+Changed}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		33
+  \item {on\+Activity\+Result}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		33
+  \item {on\+Bind\+Dialog\+View}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Reset\+Defaults\+::\+My\+F\+A\+Q}, 
+		47
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Time\+Preference}, 
+		61
+  \item {on\+Bind\+View}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Camera\+Preference}, 
+		18
+    \subitem {com\+::securics\+::wildlifecapture\+::\+General\+Settings}, 
+		27
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+Number\+Preference}, 
+		51
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}, 
+		54
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Reset\+Defaults}, 
+		57
+  \item {on\+Build\+Headers}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Settings\+Activity}, 
+		58
+  \item {on\+Click}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Reset\+Defaults\+::\+My\+F\+A\+Q}, 
+		47
+  \item {on\+Create}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}, 
+		23
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Documentation}, 
+		25
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		33
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Settings\+Activity}, 
+		58
+  \item {on\+Create\+Dialog\+View}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Reset\+Defaults\+::\+My\+F\+A\+Q}, 
+		47
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Time\+Preference}, 
+		61
+  \item {on\+Create\+Options\+Menu}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}, 
+		23
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Documentation}, 
+		25
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		33
+  \item {on\+Destroy}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		33
+  \item {on\+Dialog\+Closed}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+Number\+Preference}, 
+		51
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}, 
+		54
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Time\+Preference}, 
+		61
+  \item {on\+Get\+Default\+Value}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+Number\+Preference}, 
+		51
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}, 
+		54
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Time\+Preference}, 
+		61
+  \item {on\+List\+Item\+Click}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}, 
+		23
+  \item {on\+Options\+Item\+Selected}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Documentation}, 
+		25
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		33
+  \item {on\+Pause}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		34
+  \item {on\+Restore\+Instance\+State}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}, 
+		54
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Time\+Preference}, 
+		61
+  \item {on\+Resume}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}, 
+		23
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		34
+  \item {on\+Save\+Instance\+State}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+Number\+Preference}, 
+		51
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}, 
+		54
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Time\+Preference}, 
+		62
+  \item {on\+Sensor\+Changed}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		34
+  \item {on\+Set\+Initial\+Value}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+Number\+Preference}, 
+		51
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}, 
+		54
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Time\+Preference}, 
+		62
+  \item {out\+Dialog}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		42
+
+  \indexspace
+
+  \item {P\+S\+Handler}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}, 
+		14
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		43
+  \item {Pic\+Callback}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		42
+  \item {pic\+Size}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}, 
+		24
+  \item {picker}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Time\+Preference}, 
+		62
+  \item {pitch\+Sensor}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		43
+  \item {preference\+\_\+string}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+Number\+Preference}, 
+		52
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+String\+Preference}, 
+		55
+  \item {prefs\+Loaded}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		43
+  \item {private\+Params}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		43
+  \item {processing\+Queue\+Log}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		43
+  \item {public\+Height}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		43
+  \item {public\+Params}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		43
+  \item {public\+Width}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		44
+  \item {push\+Str}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		34
+
+  \indexspace
+
+  \item {R\+E\+Q\+U\+E\+S\+T\+L\+I\+S\+T\+L\+E\+N\+G\+T\+H}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		44
+  \item {R\+U\+N\+N\+I\+N\+G}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		44
+  \item {read\+Usage}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}, 
+		13
+  \item {Reading\+Usage}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}, 
+		14
+  \item {request\+List}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		44
+  \item {res\+String\+List}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		44
+  \item {reset\+All\+Settings}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Reset\+Defaults\+::\+My\+F\+A\+Q}, 
+		48
+  \item {Reset\+Defaults}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Reset\+Defaults}, 
+		56
+  \item {run}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity\+::\+Auto\+Code\+Runner\+Runnable}, 
+		15
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity\+::\+Auto\+Focus\+Runnable}, 
+		16
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity\+::\+Burst\+Checker\+Runnable}, 
+		16
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity\+::\+Burst\+Runnable}, 
+		17
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity\+::\+Push\+To\+J\+N\+I\+Runnable}, 
+		56
+  \item {run\+Max\+Length\+Width\+Dialog}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		35
+  \item {run\+Min\+Length\+Width\+Dialog}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		35
+  \item {run\+Resolution\+Dialog}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		35
+  \item {run\+Vert\+Dialog}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		35
+
+  \indexspace
+
+  \item {s\+Holder}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}, 
+		22
+  \item {S\+K\+I\+P\+\_\+\+J\+N\+I}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		44
+  \item {S\+T\+A\+R\+T\+\_\+\+H\+O\+U\+R}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		44
+  \item {S\+T\+A\+R\+T\+\_\+\+M\+I\+N\+U\+T\+E}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		45
+  \item {save\+Camera\+Params}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		35
+  \item {saved\+Float}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+Number\+Preference}, 
+		52
+  \item {saved\+Int}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+Number\+Preference}, 
+		52
+  \item {send\+Config\+To\+J\+N\+I}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		35
+  \item {sensor\+Manager}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		44
+  \item {set\+I\+D}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}, 
+		13
+  \item {set\+List\+View}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}, 
+		24
+  \item {set\+Res}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		36
+  \item {set\+Text}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Reset\+Defaults\+::\+My\+F\+A\+Q}, 
+		48
+  \item {set\+Type}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+My\+Number\+Preference}, 
+		52
+  \item {show\+Popup\+Menu}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		36
+  \item {Size\+Calculation\+Data}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Size\+Calculation\+Data}, 
+		59
+  \item {size\+List}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}, 
+		24
+  \item {size\+Names}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}, 
+		24
+  \item {size\+To\+String}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Change\+Resolution\+Activity}, 
+		24
+  \item {space\+Available}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		36
+  \item {src/com/securics/wildlifecapture/\+Activity\+Debug.\+java}, 65
+  \item {src/com/securics/wildlifecapture/\+Camera\+Preference.\+java}, 
+		65
+  \item {src/com/securics/wildlifecapture/\+Camera\+Preview.\+java}, 65
+  \item {src/com/securics/wildlifecapture/\+Change\+Resolution\+Activity.\+java}, 
+		66
+  \item {src/com/securics/wildlifecapture/\+Documentation.\+java}, 66
+  \item {src/com/securics/wildlifecapture/\+General\+Settings.\+java}, 
+		66
+  \item {src/com/securics/wildlifecapture/\+Main\+Activity.\+java}, 66
+  \item {src/com/securics/wildlifecapture/\+My\+Number\+Preference.\+java}, 
+		67
+  \item {src/com/securics/wildlifecapture/\+My\+String\+Preference.\+java}, 
+		67
+  \item {src/com/securics/wildlifecapture/\+Perspective\+Transformation\+Engine.\+java}, 
+		67
+  \item {src/com/securics/wildlifecapture/\+Reset\+Defaults.\+java}, 67
+  \item {src/com/securics/wildlifecapture/\+Settings\+Activity.\+java}, 
+		68
+  \item {src/com/securics/wildlifecapture/\+Size\+Calculation\+Data.\+java}, 
+		68
+  \item {src/com/securics/wildlifecapture/\+Time\+Preference.\+java}, 
+		68
+  \item {start\+Stop}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		36
+  \item {surface\+Changed}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}, 
+		21
+  \item {surface\+Created}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}, 
+		21
+  \item {surface\+Destroyed}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}, 
+		21
+
+  \indexspace
+
+  \item {T\+A\+G}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Activity\+Debug}, 
+		14
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Camera\+Preview}, 
+		22
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		45
+  \item {the\+Hour}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Time\+Preference}, 
+		63
+  \item {time\+Interval}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		45
+  \item {Time\+Preference}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Time\+Preference}, 
+		60
+
+  \indexspace
+
+  \item {use\+New\+Process}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		45
+
+  \indexspace
+
+  \item {view}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		45
+
+  \indexspace
+
+  \item {will\+Do\+Camera\+Burst}
+    \subitem {com\+::securics\+::wildlifecapture\+::\+Main\+Activity}, 
+		45
+
+\end{theindex}
